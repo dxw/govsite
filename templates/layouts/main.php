@@ -29,20 +29,31 @@
     <?php get_template_part('partials/nav'); ?>
   </nav> -->
 
-  <header>
-    <div class="row">
-      <div class="small-4 column">
-        logo
-      </div>
-      <div class="small-8 column">
-        <?php get_template_part('partials/nav'); ?>
-      </div>
+  <div class="row">
+    <div class="large-12 column">
+      <header class="site-header">
+        <div class="row">
+          <div class="medium-12 large-8 column right">
+            <div class="row">
+              <div class="small-12 column">
+                <?php get_template_part('partials/nav'); ?>
+              </div>
+              <div class="small-12 column">
+                <?php get_template_part('partials/social-media'); ?>
+              </div>
+            </div>
+          </div>
+          <div class="medium-12 large-4 column left">
+            <h1><a href="/"><?php bloginfo('name'); ?></a></h1>
+          </div>
+        </div>
+      </header>
     </div>
-  </header>
+  </div>
 
   <?php w_requested_template(); ?>
 
-  <footer>
+  <footer class="site-footer">
     <div class="row">
       <div class="large-12 column">
         <?php dynamic_sidebar('sidebar-footer'); ?>

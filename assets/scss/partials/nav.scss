@@ -1,0 +1,26 @@
+header.site-header {
+
+  ul {
+    
+    @include inline-list;
+
+    a {
+      border-top: 5px solid transparent;
+      padding: $space-small $space-small/2 0 $space-small/2;
+      color: $body-font-color;
+      &:hover, &:focus {
+        color: $logo-color;
+      }
+    }
+
+    li.current-menu-item,
+    li.current_page_item {
+      a {
+        border-top-color: $logo-color;
+        color: $logo-color;
+      }
+    }
+
+  }
+
+}

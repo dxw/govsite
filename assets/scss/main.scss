@@ -2,23 +2,25 @@
 @import "normalize";
 
 // Foundation
+@import "global"; // variables & mixins
 @import "foundation";
 
 // Custom fonts
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Asap:400,700);
+@import url(http://fonts.googleapis.com/css?family=Contrail+One);
 
 // Common
-@import "common/variables";
-@import "common/mixins";
 @import "common/type";
 @import "common/common";
 @import "common/header";
 
 // Partials
-
+@import "partials/nav";
 
 // Templates
 @import "templates/archive";
 @import "templates/page";
 @import "templates/search";
 @import "templates/single";
+//@import "templates/nav";
