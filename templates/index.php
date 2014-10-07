@@ -1,0 +1,1 @@
+Don't use the index template.

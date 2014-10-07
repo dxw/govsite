@@ -1,0 +1,5 @@
+vendor/node_modules
+vendor/.grunt
+vendor/bower_components
+templates/assets/
+.npm-debug.log
