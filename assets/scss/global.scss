@@ -22,6 +22,64 @@ $base-font-size: 100% !default;
 // $base-line-height is 24px while $base-font-size is 16px
 $base-line-height: 1.5 !default;
 
+// Variables
+//
+// Paths
+
+$imagePath: "../assets/img";
+$fontPath: "../assets/fonts";
+
+// Margin and padding widths
+
+$space-small: 10px;
+$space-medium: 15px;
+$space-large: 25px;
+
+// Icon font
+
+$icons: (
+  googleplus: "\e600",
+  facebook:   "\e601",
+  twitter:    "\e602"
+);
+
+@mixin icon($position: before, $icon: false, $styles: true) {
+  @if $position == both {
+    $position: 'before, &:after';
+  }
+  // Either a :before or :after pseudo-element, or both, defaulting to :before
+  &:#{$position} {
+    @if $icon {
+      // A particular icon has been specified
+      content: "#{map-get($icons, $icon)}";
+    }
+    @if $styles {
+      // Supportive icon styles required
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-family: 'icomoon';
+      line-height: 1;
+      -webkit-font-smoothing: $font-smoothing;
+    }
+    // Include any extra rules supplied for the pseudo-element
+    @content;
+  }
+}
+
+// Font size and line height
+
+@mixin font-size( $sizeValue: 12 ) {
+  $pxValue: $sizeValue;
+  $remValue: ($sizeValue * 0.062);
+  $lineHeightPx: ($pxValue + 8); 
+  $lineHeightRem: ($pxValue * 0.093); 
+  font-size: $pxValue + px; 
+  font-size: $remValue + rem; 
+  line-height: $lineHeightPx + px; 
+  line-height: $lineHeightRem + rem;
+}
+
 //
 // Global Foundation Mixins
 //
@@ -228,6 +286,10 @@ $alert-color: #f04124 !default;     // cinnabar
 $success-color: #43AC6A !default;   // sea-green
 $warning-color: #f08a24 !default;   // carrot
 $info-color: #a0d3e8 !default;      // cornflower
+
+$twitter-color: #55acee;
+$facebook-color: #3b5998;
+$googleplus-color: #dd4b39;
 
 $white         : #FFFFFF !default;
 $ghost         : #FAFAFA !default;
@@ -453,11 +515,3 @@ $cursor-text-value: text !default;
     select { width: 100%; }
   }
 }
-
-// spacing
-//
-// margin and padding widths
-
-$space-small: 10px;
-$space-medium: 15px;
-$space-large: 25px;

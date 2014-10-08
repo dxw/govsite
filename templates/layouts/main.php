@@ -29,9 +29,9 @@
     <?php get_template_part('partials/nav'); ?>
   </nav> -->
 
-  <div class="row">
-    <div class="large-12 column">
-      <header class="site-header">
+  <header class="site-header">
+    <div class="row">
+      <div class="large-12 column">
         <div class="row">
           <div class="medium-12 large-8 column right">
             <div class="row">
@@ -47,9 +47,9 @@
             <h1><a href="/"><?php bloginfo('name'); ?></a></h1>
           </div>
         </div>
-      </header>
+      </div>
     </div>
-  </div>
+  </header>
 
   <?php w_requested_template(); ?>
 

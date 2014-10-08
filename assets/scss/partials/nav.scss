@@ -1,8 +1,16 @@
 header.site-header {
 
-  ul {
-    
-    @include inline-list;
+  nav {
+
+    ul {
+
+      @include inline-list;
+
+    }
+
+    li {
+      @include font-size(18);
+    }
 
     a {
       border-top: 5px solid transparent;
@@ -18,6 +26,9 @@ header.site-header {
       a {
         border-top-color: $logo-color;
         color: $logo-color;
+        &:hover, &:focus {
+          color: scale-color($logo-color, $lightness: -14%);
+        }
       }
     }
 

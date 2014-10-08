@@ -1,0 +1,41 @@
+ul.social-media {
+
+  @include inline-list;
+
+  > li {
+    margin-left: 1px;
+  }
+
+  a {
+
+    padding: $space-small;
+    color: $white;
+    line-height: 1;
+
+    &.twitter {
+      background: $twitter-color;
+      @include icon(before, twitter);
+      &:hover, &:focus {
+        background: scale-color($twitter-color, $lightness: -14%);
+      }
+    }
+
+    &.facebook {
+      background: $facebook-color;
+      @include icon(before, facebook);
+      &:hover, &:focus {
+        background: scale-color($facebook-color, $lightness: -14%);
+      }
+    }
+
+    &.googleplus {
+      background: $googleplus-color;
+      @include icon(before, googleplus);
+      &:hover, &:focus {
+        background: scale-color($googleplus-color, $lightness: -14%);
+      }
+    }
+
+  }
+
+}

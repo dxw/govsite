@@ -1,19 +1,19 @@
 header.site-header {
 
-  $header-top-margin: 1rem;
-  $header-bottom-margin: 1rem;
+  $header-top-margin: 1.8rem;
+  $header-bottom-margin: 1.8rem;
 
-  margin-bottom: $header-bottom-margin;
-  border-bottom: 1px solid $silver;
+  border-bottom: 1px solid $white-smoke;
+  background: $white;
 
   h1 {
     margin-top: $header-top-margin;
     margin-bottom: $header-bottom-margin;
-    font-size: 3rem;
     font-family: $font-family-sans-serif;
     font-weight: 700;
 
     a {
+      @include font-size(50);
       color: $logo-color;
       &:hover, &:focus {
         color: scale-color($logo-color, $lightness: -14%);
