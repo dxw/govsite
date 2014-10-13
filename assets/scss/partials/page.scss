@@ -1,5 +1,26 @@
 .page-element {
-  border-bottom: 2px solid $smoke;
+  border-bottom: 1px solid $gainsboro;
   padding-top: $space-medium*2;
   padding-bottom: $space-medium*2;
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
+
+  article {
+    @include clearfix;
+    margin-bottom: $space-medium*2;
+
+    img {
+      float: left;
+      margin-top: $space-small/2;
+      margin-right: 4%;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+  }
+
 }

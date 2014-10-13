@@ -1,27 +1,42 @@
+p, a, button, .button {
+  @include font-size(18);
+}
+
 h1 {
   @include font-size(36);
+  a, button, .button {
+    @include font-size(36);
+  }
 }
 
 h2 {
   @include font-size(30);
+  a, button, .button {
+    @include font-size(30);
+  }
 }
 
 h3 {
   @include font-size(28);
+  a, button, .button {
+    @include font-size(28);
+  }
 }
 
 h4 {
   @include font-size(24);
+  a, button, .button {
+    @include font-size(24);
+  }
 }
 
 h5 {
   @include font-size(20);
+  a, button, .button {
+    @include font-size(20);
+  }
 }
 
 h6 {
-  @include font-size(18);
-}
-
-p, a, button, .button {
   @include font-size(18);
 }

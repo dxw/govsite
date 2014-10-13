@@ -12,6 +12,10 @@ ul.social-media {
     color: $white;
     line-height: 1;
 
+    &:before {
+      @include font-size(24);
+    }
+
     &.twitter {
       background: $twitter-color;
       @include icon(before, twitter);
@@ -33,6 +37,30 @@ ul.social-media {
       @include icon(before, googleplus);
       &:hover, &:focus {
         background: scale-color($googleplus-color, $lightness: -14%);
+      }
+    }
+
+    &.flickr {
+      background: $flickr-color;
+      @include icon(before, flickr);
+      &:hover, &:focus {
+        background: scale-color($flickr-color, $lightness: -14%);
+      }
+    }
+
+    &.linkedin {
+      background: $linkedin-color;
+      @include icon(before, linkedin);
+      &:hover, &:focus {
+        background: scale-color($linkedin-color, $lightness: -14%);
+      }
+    }
+
+    &.youtube {
+      background: $youtube-color;
+      @include icon(before, youtube);
+      &:hover, &:focus {
+        background: scale-color($youtube-color, $lightness: -14%);
       }
     }
 

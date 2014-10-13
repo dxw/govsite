@@ -1,0 +1,32 @@
+$thumb-border-style: solid;
+$thumb-border-width: $space-small;
+$thumb-border-color: $smoke;
+$thumb-border-color-hover: $gainsboro;
+
+@mixin thumb(
+  $border-width: $thumb-border-width) {
+  line-height: 0;
+  display: inline-block;
+  border: $thumb-border-style $border-width $thumb-border-color;
+  max-width: 100%;
+  box-shadow: none;
+
+  &:hover,
+  &:focus {
+    border-color: $thumb-border-color-hover;
+    box-shadow: none;
+  }
+}
+
+@include exports("thumb") {
+  @if $include-html-media-classes {
+
+    /* Image Thumbnails */
+    .th {
+      @include thumb;
+      @include single-transition(all,$thumb-transition-speed,ease-out);
+
+      &.radius { @include radius($thumb-radius); }
+    }
+  }
+}

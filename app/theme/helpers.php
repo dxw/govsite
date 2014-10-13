@@ -15,3 +15,11 @@ add_action('wp_footer', function() {
   </script>
 <?php
 });
+
+function trim_content($characters) {
+  $content = get_the_content();
+  $trimmed_content = wp_trim_words( $content, $characters, ' ...' );
+  echo $trimmed_content;
+}
+
+add_theme_support( 'post-thumbnails' );

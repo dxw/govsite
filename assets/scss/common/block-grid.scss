@@ -1,0 +1,34 @@
+ul[class*="block-grid-"] {
+  padding-top: 1.25rem;
+
+  li {
+
+    p {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: $space-medium;
+    }
+
+  }
+
+}
+
+ul[class*="small-block-grid-"] {
+  
+  @media #{$small-only} {
+    p {
+      width: 54%;
+      float: left;
+    }
+    a.image {
+      width: 42%;
+      float: left;
+      margin-right: 4%;
+    }
+  }
+
+}

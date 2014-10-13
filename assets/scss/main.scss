@@ -32,12 +32,18 @@
 @import "common/type";
 @import "common/common";
 @import "common/header";
+@import "common/footer";
+@import "common/sidebar";
 @import "common/buttons";
+@import "common/block-grid";
+@import "common/thumbs";
 
 // Partials
 @import "partials/nav";
 @import "partials/social-media";
 @import "partials/page";
+@import "partials/entry-meta";
+@import "partials/sidebar-banner";
 
 // Templates
 @import "templates/archive";

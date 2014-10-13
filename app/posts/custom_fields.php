@@ -101,8 +101,8 @@ if(function_exists("register_field_group"))
       ),
       array (
         'key' => 'field_54356cbde3ff8',
-        'label' => 'Description 1',
-        'name' => 'description_1',
+        'label' => 'Description 2',
+        'name' => 'description_2',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
@@ -178,6 +178,43 @@ if(function_exists("register_field_group"))
   ));
 
   register_field_group(array (
+    'id' => 'acf_link-to-the-news-page-2',
+    'title' => 'Link to the News page',
+    'fields' => array (
+      array (
+        'key' => 'field_543c037dba0bf',
+        'label' => 'News page URL',
+        'name' => 'news_page_url',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'page_template',
+          'operator' => '==',
+          'value' => 'page-home.php',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'normal',
+      'layout' => 'default',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+
+  register_field_group(array (
     'id' => 'acf_social-media',
     'title' => 'Social media',
     'fields' => array (
@@ -192,10 +229,10 @@ if(function_exists("register_field_group"))
           'linkedin' => 'LinkedIn',
           'googleplus' => 'Google+',
           'flickr' => 'Flickr',
-          'youtube' => 'You Tube',
+          'youtube' => 'YouTube',
         ),
         'default_value' => '',
-        'allow_null' => 0,
+        'allow_null' => 1,
         'multiple' => 0,
       ),
       array (
@@ -221,10 +258,10 @@ if(function_exists("register_field_group"))
           'linkedin' => 'LinkedIn',
           'googleplus' => 'Google+',
           'flickr' => 'Flickr',
-          'youtube' => 'You Tube',
+          'youtube' => 'YouTube',
         ),
         'default_value' => '',
-        'allow_null' => 0,
+        'allow_null' => 1,
         'multiple' => 0,
       ),
       array (
@@ -250,16 +287,88 @@ if(function_exists("register_field_group"))
           'linkedin' => 'LinkedIn',
           'googleplus' => 'Google+',
           'flickr' => 'Flickr',
-          'youtube' => 'You Tube',
+          'youtube' => 'YouTube',
         ),
         'default_value' => '',
-        'allow_null' => 0,
+        'allow_null' => 1,
         'multiple' => 0,
       ),
       array (
         'key' => 'field_54356e333919d',
         'label' => 'Profile 3 URL',
         'name' => 'profile_3_url',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'page_template',
+          'operator' => '==',
+          'value' => 'page-home.php',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'side',
+      'layout' => 'default',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+
+  register_field_group(array (
+    'id' => 'acf_side-banner',
+    'title' => 'Side banner',
+    'fields' => array (
+      array (
+        'key' => 'field_543c05975b673',
+        'label' => 'Banner title',
+        'name' => 'banner_title',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_543c059e5b674',
+        'label' => 'Banner description',
+        'name' => 'banner_description',
+        'type' => 'textarea',
+        'default_value' => '',
+        'placeholder' => '',
+        'maxlength' => '',
+        'rows' => '',
+        'formatting' => 'br',
+      ),
+      array (
+        'key' => 'field_543c05ab5b675',
+        'label' => 'Banner URL',
+        'name' => 'banner_url',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_543c05b35b676',
+        'label' => 'Banner URL description',
+        'name' => 'banner_url_description',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',

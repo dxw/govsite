@@ -1,0 +1,6 @@
+ul.entry-meta {
+  @include inline-list;
+  margin-bottom: $space-small;
+  color: $jumbo;
+  @include font-size(14);
+}
