@@ -1,5 +1,7 @@
 <?php
 
+return; // remove return if you'd like to use expoxted ACFs 
+
 if(function_exists("register_field_group"))
 {
 
@@ -214,117 +216,117 @@ if(function_exists("register_field_group"))
     'menu_order' => 0,
   ));
 
-  register_field_group(array (
-    'id' => 'acf_social-media',
-    'title' => 'Social media',
-    'fields' => array (
-      array (
-        'key' => 'field_54356d3939198',
-        'label' => 'Profile 1',
-        'name' => 'profile_1',
-        'type' => 'select',
-        'choices' => array (
-          'facebook' => 'Facebook',
-          'twitter' => 'Twitter',
-          'linkedin' => 'LinkedIn',
-          'googleplus' => 'Google+',
-          'flickr' => 'Flickr',
-          'youtube' => 'YouTube',
-        ),
-        'default_value' => '',
-        'allow_null' => 1,
-        'multiple' => 0,
-      ),
-      array (
-        'key' => 'field_54356e0439199',
-        'label' => 'Profile 1 URL',
-        'name' => 'profile_1_url',
-        'type' => 'text',
-        'default_value' => '',
-        'placeholder' => '',
-        'prepend' => '',
-        'append' => '',
-        'formatting' => 'html',
-        'maxlength' => '',
-      ),
-      array (
-        'key' => 'field_54356e0f3919a',
-        'label' => 'Profile 2',
-        'name' => 'profile_2',
-        'type' => 'select',
-        'choices' => array (
-          'facebook' => 'Facebook',
-          'twitter' => 'Twitter',
-          'linkedin' => 'LinkedIn',
-          'googleplus' => 'Google+',
-          'flickr' => 'Flickr',
-          'youtube' => 'YouTube',
-        ),
-        'default_value' => '',
-        'allow_null' => 1,
-        'multiple' => 0,
-      ),
-      array (
-        'key' => 'field_54356e1b3919b',
-        'label' => 'Profile 2 URL',
-        'name' => 'profile_2_url',
-        'type' => 'text',
-        'default_value' => '',
-        'placeholder' => '',
-        'prepend' => '',
-        'append' => '',
-        'formatting' => 'html',
-        'maxlength' => '',
-      ),
-      array (
-        'key' => 'field_54356e293919c',
-        'label' => 'Profile 3',
-        'name' => 'profile_3',
-        'type' => 'select',
-        'choices' => array (
-          'facebook' => 'Facebook',
-          'twitter' => 'Twitter',
-          'linkedin' => 'LinkedIn',
-          'googleplus' => 'Google+',
-          'flickr' => 'Flickr',
-          'youtube' => 'YouTube',
-        ),
-        'default_value' => '',
-        'allow_null' => 1,
-        'multiple' => 0,
-      ),
-      array (
-        'key' => 'field_54356e333919d',
-        'label' => 'Profile 3 URL',
-        'name' => 'profile_3_url',
-        'type' => 'text',
-        'default_value' => '',
-        'placeholder' => '',
-        'prepend' => '',
-        'append' => '',
-        'formatting' => 'html',
-        'maxlength' => '',
-      ),
-    ),
-    'location' => array (
-      array (
-        array (
-          'param' => 'page_template',
-          'operator' => '==',
-          'value' => 'page-home.php',
-          'order_no' => 0,
-          'group_no' => 0,
-        ),
-      ),
-    ),
-    'options' => array (
-      'position' => 'side',
-      'layout' => 'default',
-      'hide_on_screen' => array (
-      ),
-    ),
-    'menu_order' => 0,
-  ));
+  // register_field_group(array (
+  //   'id' => 'acf_social-media',
+  //   'title' => 'Social media',
+  //   'fields' => array (
+  //     array (
+  //       'key' => 'field_54356d3939198',
+  //       'label' => 'Profile 1',
+  //       'name' => 'profile_1',
+  //       'type' => 'select',
+  //       'choices' => array (
+  //         'facebook' => 'Facebook',
+  //         'twitter' => 'Twitter',
+  //         'linkedin' => 'LinkedIn',
+  //         'googleplus' => 'Google+',
+  //         'flickr' => 'Flickr',
+  //         'youtube' => 'YouTube',
+  //       ),
+  //       'default_value' => '',
+  //       'allow_null' => 1,
+  //       'multiple' => 0,
+  //     ),
+  //     array (
+  //       'key' => 'field_54356e0439199',
+  //       'label' => 'Profile 1 URL',
+  //       'name' => 'profile_1_url',
+  //       'type' => 'text',
+  //       'default_value' => '',
+  //       'placeholder' => '',
+  //       'prepend' => '',
+  //       'append' => '',
+  //       'formatting' => 'html',
+  //       'maxlength' => '',
+  //     ),
+  //     array (
+  //       'key' => 'field_54356e0f3919a',
+  //       'label' => 'Profile 2',
+  //       'name' => 'profile_2',
+  //       'type' => 'select',
+  //       'choices' => array (
+  //         'facebook' => 'Facebook',
+  //         'twitter' => 'Twitter',
+  //         'linkedin' => 'LinkedIn',
+  //         'googleplus' => 'Google+',
+  //         'flickr' => 'Flickr',
+  //         'youtube' => 'YouTube',
+  //       ),
+  //       'default_value' => '',
+  //       'allow_null' => 1,
+  //       'multiple' => 0,
+  //     ),
+  //     array (
+  //       'key' => 'field_54356e1b3919b',
+  //       'label' => 'Profile 2 URL',
+  //       'name' => 'profile_2_url',
+  //       'type' => 'text',
+  //       'default_value' => '',
+  //       'placeholder' => '',
+  //       'prepend' => '',
+  //       'append' => '',
+  //       'formatting' => 'html',
+  //       'maxlength' => '',
+  //     ),
+  //     array (
+  //       'key' => 'field_54356e293919c',
+  //       'label' => 'Profile 3',
+  //       'name' => 'profile_3',
+  //       'type' => 'select',
+  //       'choices' => array (
+  //         'facebook' => 'Facebook',
+  //         'twitter' => 'Twitter',
+  //         'linkedin' => 'LinkedIn',
+  //         'googleplus' => 'Google+',
+  //         'flickr' => 'Flickr',
+  //         'youtube' => 'YouTube',
+  //       ),
+  //       'default_value' => '',
+  //       'allow_null' => 1,
+  //       'multiple' => 0,
+  //     ),
+  //     array (
+  //       'key' => 'field_54356e333919d',
+  //       'label' => 'Profile 3 URL',
+  //       'name' => 'profile_3_url',
+  //       'type' => 'text',
+  //       'default_value' => '',
+  //       'placeholder' => '',
+  //       'prepend' => '',
+  //       'append' => '',
+  //       'formatting' => 'html',
+  //       'maxlength' => '',
+  //     ),
+  //   ),
+  //   'location' => array (
+  //     array (
+  //       array (
+  //         'param' => 'page_template',
+  //         'operator' => '==',
+  //         'value' => 'page-home.php',
+  //         'order_no' => 0,
+  //         'group_no' => 0,
+  //       ),
+  //     ),
+  //   ),
+  //   'options' => array (
+  //     'position' => 'side',
+  //     'layout' => 'default',
+  //     'hide_on_screen' => array (
+  //     ),
+  //   ),
+  //   'menu_order' => 0,
+  // ));
 
   register_field_group(array (
     'id' => 'acf_side-banner',

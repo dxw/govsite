@@ -16,8 +16,10 @@ header.site-header {
       border-top: 5px solid transparent;
       padding: $space-small $space-small/2 0 $space-small/2;
       color: $body-font-color;
+      @include single-transition(border-top, 300ms, ease-in);
       &:hover, &:focus {
-        color: $logo-color;
+        border-top: 5px solid $primary-color;
+        color: $primary-color;
       }
     }
 

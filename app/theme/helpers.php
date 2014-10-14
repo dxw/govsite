@@ -1,5 +1,6 @@
 <?php
 
+// Google Analytics
 add_action('wp_footer', function() {
   ?>
   <script type="text/javascript">
@@ -16,10 +17,12 @@ add_action('wp_footer', function() {
 <?php
 });
 
+// Function to trim page content
 function trim_content($characters) {
   $content = get_the_content();
   $trimmed_content = wp_trim_words( $content, $characters, ' ...' );
   echo $trimmed_content;
 }
 
+// Featured images in posts and pages
 add_theme_support( 'post-thumbnails' );

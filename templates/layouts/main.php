@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title><?php wp_title('|', true, 'right'); ?></title>
+  <title><?php bloginfo('name'); ?><?php wp_title('|', true, 'left'); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/templates/assets/img/dxw.png" />
 
@@ -33,17 +33,17 @@
     <div class="row">
       <div class="large-12 column">
         <div class="row">
-          <div class="medium-12 large-8 column right">
+          <div class="medium-12 large-8 columns right">
             <div class="row">
-              <div class="small-12 column">
+              <div class="small-12 columns">
                 <?php get_template_part('partials/nav'); ?>
               </div>
-              <div class="small-12 column">
+              <div class="small-12 columns">
                 <?php get_template_part('partials/social-media'); ?>
               </div>
             </div>
           </div>
-          <div class="medium-12 large-4 column left">
+          <div class="medium-12 large-4 columns left">
             <h1><a href="/"><?php bloginfo('name'); ?></a></h1>
           </div>
         </div>
@@ -54,12 +54,23 @@
   <?php w_requested_template(); ?>
 
   <footer class="site-footer">
+
     <div class="row">
-      <div class="large-12 column">
-        <?php dynamic_sidebar('sidebar-footer'); ?>
-        <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+      <div class="small-6 columns">
+        <small>Visit <a href="https://www.gov.uk/">gov.uk</a></small>
+      </div>
+      <div class="small-6 columns">
+        <?php get_template_part('partials/nav-footer'); ?>
       </div>
     </div>
+
+    <div class="row">
+      <div class="small-12 large-centered columns">
+        <hr class="footer">
+        <small class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> copyright</small>
+      </div>
+    </div>
+
   </footer>
 
   <?php wp_footer(); ?>

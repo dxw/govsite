@@ -1,3 +1,26 @@
+$footer-top-padding: 1.8rem;
+$footer-bottom-padding: 1.8rem;
+
 footer.site-footer {
   background: $jet;
+  padding-top: $footer-top-padding;
+  padding-bottom: $footer-bottom-padding;
+
+  small {
+    color: $white;
+
+    &.copyright {
+      display: block;
+      text-align: center;
+    }
+
+    a {
+      color: $white;
+      &:hover, &:focus {
+        border-bottom: 1px solid $white;
+      }
+    }
+
+  }
+
 }

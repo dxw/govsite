@@ -1,8 +1,7 @@
-aside.banner {
-  background: $secondary-color;
-  padding: $space-medium;
-  @include radius($global-radius);
-
-  h4 {}
+aside {
+  
+  &.panel.banner {
+    
+  }
 
 }

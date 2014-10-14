@@ -2,6 +2,13 @@ p, a, button, .button {
   @include font-size(18);
 }
 
+small {
+  @include font-size(14);
+  a, button, .button {
+    @include font-size(14);
+  }
+}
+
 h1 {
   @include font-size(36);
   a, button, .button {
@@ -39,4 +46,8 @@ h5 {
 
 h6 {
   @include font-size(18);
+}
+
+hr {
+  border-color: $oil;
 }

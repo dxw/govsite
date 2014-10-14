@@ -107,12 +107,20 @@ the_post();
         </div>
 
         <div class="medium-4 column">
+
+          <?php if (get_field('banner_title')) { ?>
           
-          <aside class="sidebar banner">
+            <aside class="sidebar panel banner">
 
-            <h4><?php the_field('banner_title'); ?></h4>
+              <h3><?php the_field('banner_title'); ?></h3>
 
-          </aside>
+              <p><?php the_field('banner_description'); ?></p>
+
+              <a href="<?php the_field('banner_url'); ?>" class="button secondary expand"><?php the_field('banner_url_description'); ?></a>
+
+            </aside>
+
+          <?php } ?>
 
         </div>
 

@@ -27,6 +27,7 @@ require __DIR__ . '/theme/widgets.php';
 require __DIR__ . '/theme/helpers.php';  ## Needs more stuffs
 require __DIR__ . '/theme/pagination.php'; ## TODO: This should be refactored into lib, and be flexibile enough for all projects' needs
 require __DIR__ . '/theme/titles.php';
+require __DIR__ . '/theme/options.php';
 
 
 /*

@@ -1,0 +1,9 @@
+$panel-padding: rem-calc(20) !default;
+
+.panel {
+  &.banner {
+    @include panel($smoke, $panel-padding);
+    border: none;
+    border-top: 5px solid $secondary-color;
+  }
+}

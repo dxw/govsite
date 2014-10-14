@@ -9,12 +9,16 @@
 
   article {
     @include clearfix;
-    margin-bottom: $space-medium*2;
+    margin-bottom: $space-medium;
+
+    &:last-of-type {
+      margin-bottom: $space-medium*2;
+    }
 
     img {
       float: left;
-      margin-top: $space-small/2;
-      margin-right: 4%;
+      margin-top: 12px;
+      margin-right: 3%;
     }
 
     p {
