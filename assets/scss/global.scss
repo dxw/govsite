@@ -43,7 +43,8 @@ $icons: (
   googleplus: "\e600",
   facebook:   "\e601",
   twitter:    "\e602",
-  flickr:     "\e603"
+  flickr:     "\e603",
+  menu:       "\e604"
 );
 
 @mixin icon($position: before, $icon: false, $styles: true) {

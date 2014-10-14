@@ -1,6 +1,6 @@
 <?php if (get_field('profile_1')) { ?>
 
-  <ul class="visible-for-medium-up right social-media">
+  <ul class="right social-media">
 
     <?php if (get_field('profile_1')) { 
       $field1 = get_field_object('profile_1');

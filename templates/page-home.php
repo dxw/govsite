@@ -116,7 +116,7 @@ the_post();
 
               <p><?php the_field('banner_description'); ?></p>
 
-              <a href="<?php the_field('banner_url'); ?>" class="button secondary expand"><?php the_field('banner_url_description'); ?></a>
+              <a href="<?php the_field('banner_url'); ?>" class="button secondary"><?php the_field('banner_url_description'); ?></a>
 
             </aside>
 

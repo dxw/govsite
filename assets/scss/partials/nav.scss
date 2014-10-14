@@ -34,6 +34,46 @@ header.site-header {
       }
     }
 
+    @media #{$small-only} {
+      clear: both;
+      overflow: hidden;
+      max-height: 0;
+
+      &.active {
+        max-height: 15em;
+        ul {
+          float: none !important; // owerwritting Foundation inportant styles
+        }
+        li {
+          display: block;
+          float: none;
+          border-bottom: 1px solid $gainsboro;
+          &:first-child {
+            border-top: 1px solid $gainsboro;
+          }
+        }
+        a {
+          border-top: none;
+          border-left: 5px solid transparent;
+          padding: $space-small/2 $space-small/2 $space-small/2 $space-small;
+          &:hover, &:focus {
+            border-left-color: $primary-color;
+          }
+        }
+        li.current-menu-item,
+        li.current_page_item {
+          a {
+            border-left-color: $logo-color;
+          }
+        }
+      }
+    }
+
+  }
+
+  .nav-toggle {
+    @include font-size(24);
+    @include icon(before, menu);
   }
 
 }

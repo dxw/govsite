@@ -17,18 +17,6 @@
 
   <!--[if lt IE 7]><div class="alert"><?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?></div><![endif]-->
 
-  <!-- <nav class="top-bar" data-topbar>
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="/"><?php bloginfo('name'); ?></a></h1>
-      </li>
-      <li class="toggle-topbar menu-icon">
-        <a href="#">Menu</a>
-      </li>
-    </ul>
-    <?php get_template_part('partials/nav'); ?>
-  </nav> -->
-
   <header class="site-header">
     <div class="row">
       <div class="large-12 column">
@@ -36,6 +24,7 @@
           <div class="medium-12 large-8 columns right">
             <div class="row">
               <div class="small-12 columns">
+                <a href="#headermenu" class="nav-toggle hidden-for-medium-up right"></a>
                 <?php get_template_part('partials/nav'); ?>
               </div>
               <div class="small-12 columns">

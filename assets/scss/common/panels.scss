@@ -5,5 +5,11 @@ $panel-padding: rem-calc(20) !default;
     @include panel($smoke, $panel-padding);
     border: none;
     border-top: 5px solid $secondary-color;
+
+    a {
+      width: 100%;
+      text-align: center;
+    }
+
   }
 }
