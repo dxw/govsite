@@ -13,6 +13,11 @@ ul[class*="block-grid-"] {
       margin-bottom: $space-medium;
     }
 
+    .button {
+      margin-top: $space-medium;
+      margin-bottom: 0;
+    }
+
   }
 
 }

@@ -216,118 +216,6 @@ if(function_exists("register_field_group"))
     'menu_order' => 0,
   ));
 
-  // register_field_group(array (
-  //   'id' => 'acf_social-media',
-  //   'title' => 'Social media',
-  //   'fields' => array (
-  //     array (
-  //       'key' => 'field_54356d3939198',
-  //       'label' => 'Profile 1',
-  //       'name' => 'profile_1',
-  //       'type' => 'select',
-  //       'choices' => array (
-  //         'facebook' => 'Facebook',
-  //         'twitter' => 'Twitter',
-  //         'linkedin' => 'LinkedIn',
-  //         'googleplus' => 'Google+',
-  //         'flickr' => 'Flickr',
-  //         'youtube' => 'YouTube',
-  //       ),
-  //       'default_value' => '',
-  //       'allow_null' => 1,
-  //       'multiple' => 0,
-  //     ),
-  //     array (
-  //       'key' => 'field_54356e0439199',
-  //       'label' => 'Profile 1 URL',
-  //       'name' => 'profile_1_url',
-  //       'type' => 'text',
-  //       'default_value' => '',
-  //       'placeholder' => '',
-  //       'prepend' => '',
-  //       'append' => '',
-  //       'formatting' => 'html',
-  //       'maxlength' => '',
-  //     ),
-  //     array (
-  //       'key' => 'field_54356e0f3919a',
-  //       'label' => 'Profile 2',
-  //       'name' => 'profile_2',
-  //       'type' => 'select',
-  //       'choices' => array (
-  //         'facebook' => 'Facebook',
-  //         'twitter' => 'Twitter',
-  //         'linkedin' => 'LinkedIn',
-  //         'googleplus' => 'Google+',
-  //         'flickr' => 'Flickr',
-  //         'youtube' => 'YouTube',
-  //       ),
-  //       'default_value' => '',
-  //       'allow_null' => 1,
-  //       'multiple' => 0,
-  //     ),
-  //     array (
-  //       'key' => 'field_54356e1b3919b',
-  //       'label' => 'Profile 2 URL',
-  //       'name' => 'profile_2_url',
-  //       'type' => 'text',
-  //       'default_value' => '',
-  //       'placeholder' => '',
-  //       'prepend' => '',
-  //       'append' => '',
-  //       'formatting' => 'html',
-  //       'maxlength' => '',
-  //     ),
-  //     array (
-  //       'key' => 'field_54356e293919c',
-  //       'label' => 'Profile 3',
-  //       'name' => 'profile_3',
-  //       'type' => 'select',
-  //       'choices' => array (
-  //         'facebook' => 'Facebook',
-  //         'twitter' => 'Twitter',
-  //         'linkedin' => 'LinkedIn',
-  //         'googleplus' => 'Google+',
-  //         'flickr' => 'Flickr',
-  //         'youtube' => 'YouTube',
-  //       ),
-  //       'default_value' => '',
-  //       'allow_null' => 1,
-  //       'multiple' => 0,
-  //     ),
-  //     array (
-  //       'key' => 'field_54356e333919d',
-  //       'label' => 'Profile 3 URL',
-  //       'name' => 'profile_3_url',
-  //       'type' => 'text',
-  //       'default_value' => '',
-  //       'placeholder' => '',
-  //       'prepend' => '',
-  //       'append' => '',
-  //       'formatting' => 'html',
-  //       'maxlength' => '',
-  //     ),
-  //   ),
-  //   'location' => array (
-  //     array (
-  //       array (
-  //         'param' => 'page_template',
-  //         'operator' => '==',
-  //         'value' => 'page-home.php',
-  //         'order_no' => 0,
-  //         'group_no' => 0,
-  //       ),
-  //     ),
-  //   ),
-  //   'options' => array (
-  //     'position' => 'side',
-  //     'layout' => 'default',
-  //     'hide_on_screen' => array (
-  //     ),
-  //   ),
-  //   'menu_order' => 0,
-  // ));
-
   register_field_group(array (
     'id' => 'acf_side-banner',
     'title' => 'Side banner',
@@ -393,6 +281,288 @@ if(function_exists("register_field_group"))
     ),
     'options' => array (
       'position' => 'side',
+      'layout' => 'default',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+
+  // Post and page - featured video
+  // Excluding homepegae template
+  register_field_group(array (
+    'id' => 'acf_featured-video',
+    'title' => 'Featured video',
+    'fields' => array (
+      array (
+        'key' => 'field_543e65b4b108d',
+        'label' => 'Show video',
+        'name' => 'show_video',
+        'type' => 'true_false',
+        'instructions' => 'Show featured video instead of featured image?',
+        'message' => '',
+        'default_value' => 0,
+      ),
+      array (
+        'key' => 'field_543e65f0b108e',
+        'label' => 'Featured video URL',
+        'name' => 'featured_video_url',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'post',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'page',
+          'order_no' => 0,
+          'group_no' => 1,
+        ),
+        array (
+          'param' => 'page_template',
+          'operator' => '!=',
+          'value' => 'page-home.php',
+          'order_no' => 1,
+          'group_no' => 1,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'acf_after_title',
+      'layout' => 'default',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+
+  // Post and page - bottom banner
+  // Excluding homepage template
+  register_field_group(array (
+    'id' => 'acf_bottom-banner',
+    'title' => 'Bottom banner',
+    'fields' => array (
+      array (
+        'key' => 'field_543e98e8186c6',
+        'label' => 'Add bottom banner',
+        'name' => 'add_bottom_banner',
+        'type' => 'true_false',
+        'instructions' => 'Banner content can be added in Settings.',
+        'message' => '',
+        'default_value' => 0,
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'post',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'page',
+          'order_no' => 0,
+          'group_no' => 1,
+        ),
+        array (
+          'param' => 'page_template',
+          'operator' => '!=',
+          'value' => 'page-home.php',
+          'order_no' => 1,
+          'group_no' => 1,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'side',
+      'layout' => 'default',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+
+
+  // Two content blocks on pages
+  register_field_group(array (
+    'id' => 'acf_content-blocks',
+    'title' => 'Content blocks',
+    'fields' => array (
+      array (
+        'key' => 'field_543e74bae75df',
+        'label' => 'Blocks with images',
+        'name' => 'blocks_with_images',
+        'type' => 'true_false',
+        'instructions' => 'Include horizontal images?',
+        'message' => '',
+        'default_value' => 0,
+      ),
+      array (
+        'key' => 'field_543e740d941c5',
+        'label' => 'Left block title',
+        'name' => 'left_block_title',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_543e7442941c7',
+        'label' => 'Left block text',
+        'name' => 'left_block_text',
+        'type' => 'wysiwyg',
+        'default_value' => '',
+        'toolbar' => 'full',
+        'media_upload' => 'no',
+      ),
+      array (
+        'key' => 'field_543e7425941c6',
+        'label' => 'Left block image',
+        'name' => 'left_block_image',
+        'type' => 'image',
+        'conditional_logic' => array (
+          'status' => 1,
+          'rules' => array (
+            array (
+              'field' => 'field_543e74bae75df',
+              'operator' => '==',
+              'value' => '1',
+            ),
+          ),
+          'allorany' => 'all',
+        ),
+        'save_format' => 'object',
+        'preview_size' => 'thumbnail',
+        'library' => 'all',
+      ),
+      array (
+        'key' => 'field_543e748eafd9e',
+        'label' => 'Left block call to action',
+        'name' => 'left_block_call_to_action',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_543e749dafd9f',
+        'label' => 'Left block URL',
+        'name' => 'left_block_url',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_543e75a364eaf',
+        'label' => 'Right block title',
+        'name' => 'right_block_title',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_543e75af64eb0',
+        'label' => 'Right block text',
+        'name' => 'right_block_text',
+        'type' => 'wysiwyg',
+        'default_value' => '',
+        'toolbar' => 'full',
+        'media_upload' => 'no',
+      ),
+      array (
+        'key' => 'field_543e75c464eb1',
+        'label' => 'Right block image',
+        'name' => 'right_block_image',
+        'type' => 'image',
+        'conditional_logic' => array (
+          'status' => 1,
+          'rules' => array (
+            array (
+              'field' => 'field_543e74bae75df',
+              'operator' => '==',
+              'value' => '1',
+            ),
+          ),
+          'allorany' => 'all',
+        ),
+        'save_format' => 'object',
+        'preview_size' => 'thumbnail',
+        'library' => 'all',
+      ),
+      array (
+        'key' => 'field_543e75d364eb2',
+        'label' => 'Right block call to action',
+        'name' => 'right_block_call_to_action',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_543e75e464eb3',
+        'label' => 'Right block URL',
+        'name' => 'right_block_url',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'page',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'normal',
       'layout' => 'default',
       'hide_on_screen' => array (
       ),

@@ -84,6 +84,16 @@ $icons: (
   line-height: $lineHeightRem + rem;
 }
 
+// RGBA colours
+
+@mixin alpha-background-color($color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  background-color: $solid-color;
+  background-color: $color;
+}
+
 //
 // Global Foundation Mixins
 //
@@ -286,6 +296,7 @@ $icons: (
 $primary-color: #3a89c9 !default;   // pale light blue
 $secondary-color: #1A8922 !default; // vivid green
 $logo-color: #1b325f !default;      // dark blue
+$banner-color: #00a0b0 !default;    // turquoise blue
 $alert-color: #f04124 !default;     // cinnabar
 $success-color: #43AC6A !default;   // sea-green
 $warning-color: #f08a24 !default;   // carrot

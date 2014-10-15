@@ -1,3 +1,9 @@
+header.page-header {
+  h1 {
+    margin-bottom: $space-medium*2;
+  }
+}
+
 .page-element {
   border-bottom: 1px solid $gainsboro;
   padding-top: $space-medium*2;
@@ -7,7 +13,7 @@
     border-bottom: 0;
   }
 
-  article {
+  article.summary {
     @include clearfix;
     margin-bottom: $space-medium;
 
@@ -23,6 +29,15 @@
 
     p {
       margin-bottom: 0;
+    }
+
+  }
+
+  figure {
+    margin: 0;
+
+    img {
+      border: 10px solid $white;
     }
 
   }

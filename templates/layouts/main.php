@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title><?php bloginfo('name'); ?><?php wp_title('|', true, 'left'); ?></title>
+  <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/templates/assets/img/dxw.png" />
 

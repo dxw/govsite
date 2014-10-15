@@ -1,0 +1,10 @@
+.button-banner {
+  @include button;
+  border: 2px solid $white;
+  background: $white;
+  color: $banner-color;
+  @include font-size(20);
+  &:hover, &:focus {
+    background: $banner-color;
+  }
+}

@@ -1,4 +1,4 @@
-<ul class="right social-media">
+<ul class="show-for-medium-up right social-media">
 
   <li>
     <a href="<?php echo get_option('social-media-one-url-setting'); ?>"></a>

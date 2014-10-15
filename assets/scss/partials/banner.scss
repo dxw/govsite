@@ -1,0 +1,16 @@
+section.banner {
+
+  padding: $space-medium*2 0;
+  background: $banner-color;
+  text-align: center;
+
+  h2 {
+    margin-bottom: $space-medium;
+    color: $white;
+  }
+
+  .button  {
+    margin-bottom: 0;
+  }
+
+}

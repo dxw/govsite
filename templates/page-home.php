@@ -7,7 +7,7 @@ the_post();
 
 <div class="row">
 
-  <div class="large-12 column">
+  <div class="large-12 columns">
 
     <?php
       $content = get_the_content();
@@ -76,12 +76,12 @@ the_post();
 
       <div class="row">
 
-        <div class="medium-8 column">
+        <div class="medium-8 columns">
       
           <?php query_posts( array ( 'posts_per_page' => 4 ) ); ?>
             <?php while (have_posts()) : the_post() ?>
               
-              <article>
+              <article class="summary">
                 <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 
                 <?php get_template_part('partials/entry-meta'); ?>
@@ -106,7 +106,7 @@ the_post();
 
         </div>
 
-        <div class="medium-4 column">
+        <div class="medium-4 columns">
 
           <?php if (get_field('banner_title')) { ?>
           
