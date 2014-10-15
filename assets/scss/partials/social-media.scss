@@ -16,15 +16,23 @@ ul.social-media {
       @include font-size(24);
     }
 
-    &.twitter {
+    // Twitter
+    &[href^="http://twitter.com/"],
+    &[href^="http://www.twitter.com/"],
+    &[href^="https://twitter.com/"],
+    &[href^="https://www.twitter.com/"] {
       background: $twitter-color;
       @include icon(before, twitter);
       &:hover, &:focus {
         background: scale-color($twitter-color, $lightness: -14%);
       }
     }
-
-    &.facebook {
+    
+    // Facebook
+    &[href^="http://facebook.com/"],
+    &[href^="http://www.facebook.com/"],
+    &[href^="https://facebook.com/"],
+    &[href^="https://www.facebook.com/"] {
       background: $facebook-color;
       @include icon(before, facebook);
       &:hover, &:focus {
@@ -32,7 +40,9 @@ ul.social-media {
       }
     }
 
-    &.googleplus {
+    // Google +
+    &[href^="http://plus.google.com/"],
+    &[href^="https://plus.google.com/"] {
       background: $googleplus-color;
       @include icon(before, googleplus);
       &:hover, &:focus {
@@ -40,7 +50,11 @@ ul.social-media {
       }
     }
 
-    &.flickr {
+    // Flickr
+    &[href^="http://flickr.com/"],
+    &[href^="http://www.flickr.com/"],
+    &[href^="https://flickr.com/"],
+    &[href^="https://www.flickr.com/"] {
       background: $flickr-color;
       @include icon(before, flickr);
       &:hover, &:focus {
@@ -48,7 +62,11 @@ ul.social-media {
       }
     }
 
-    &.linkedin {
+    // LinkedIn
+    &[href^="http://linkedin.com/"],
+    &[href^="http://www.linkedin.com/"],
+    &[href^="https://linkedin.com/"],
+    &[href^="https://www.linkedin.com/"] {
       background: $linkedin-color;
       @include icon(before, linkedin);
       &:hover, &:focus {
@@ -56,7 +74,11 @@ ul.social-media {
       }
     }
 
-    &.youtube {
+    // YouTube
+    &[href^="http://youtube.com/"],
+    &[href^="http://www.youtube.com/"],
+    &[href^="https://youtube.com/"],
+    &[href^="https://www.youtube.com/"] {
       background: $youtube-color;
       @include icon(before, youtube);
       &:hover, &:focus {
