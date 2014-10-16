@@ -8,3 +8,9 @@
     background: $banner-color;
   }
 }
+
+input {
+  &.button {
+    -webkit-font-smoothing: $font-smoothing;
+  }
+}

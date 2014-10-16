@@ -1,7 +1,5 @@
 header.page-header {
-  h1 {
-    margin-bottom: $space-medium*2;
-  }
+  margin-bottom: $space-medium*2;
 }
 
 .page-element {
@@ -21,9 +19,9 @@ header.page-header {
       margin-bottom: $space-medium*2;
     }
 
-    img {
+    a img {
       float: left;
-      margin-top: 12px;
+      margin-top: 8px;
       margin-right: 3%;
     }
 
@@ -42,4 +40,8 @@ header.page-header {
 
   }
 
+}
+
+.page-intro {
+  padding-bottom: $space-medium;
 }

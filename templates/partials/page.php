@@ -8,9 +8,9 @@
         <h1><?php the_title(); ?></h1>
       </header>
 
-      <article class="row summary">
+      <article class="row">
 
-        <div class="medium-6 columns">
+        <div class="medium-8 columns">
 
           <?php if ( get_field('show_video') == false ) { ?>
             <figure>
@@ -24,7 +24,7 @@
 
         </div>
 
-        <div class="medium-6 columns">
+        <div class="medium-4 columns">
           
           <?php the_content(); ?>
 

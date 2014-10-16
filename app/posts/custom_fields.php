@@ -288,7 +288,7 @@ if(function_exists("register_field_group"))
     'menu_order' => 0,
   ));
 
-  // Post and page - featured video
+  // Page - featured video
   // Excluding homepegae template
   register_field_group(array (
     'id' => 'acf_featured-video',
@@ -328,13 +328,6 @@ if(function_exists("register_field_group"))
       ),
       array (
         array (
-          'param' => 'post_type',
-          'operator' => '==',
-          'value' => 'page',
-          'order_no' => 0,
-          'group_no' => 1,
-        ),
-        array (
           'param' => 'page_template',
           'operator' => '!=',
           'value' => 'page-home.php',
@@ -351,59 +344,6 @@ if(function_exists("register_field_group"))
     ),
     'menu_order' => 0,
   ));
-
-  // Post and page - bottom banner
-  // Excluding homepage template
-  register_field_group(array (
-    'id' => 'acf_bottom-banner',
-    'title' => 'Bottom banner',
-    'fields' => array (
-      array (
-        'key' => 'field_543e98e8186c6',
-        'label' => 'Add bottom banner',
-        'name' => 'add_bottom_banner',
-        'type' => 'true_false',
-        'instructions' => 'Banner content can be added in Settings.',
-        'message' => '',
-        'default_value' => 0,
-      ),
-    ),
-    'location' => array (
-      array (
-        array (
-          'param' => 'post_type',
-          'operator' => '==',
-          'value' => 'post',
-          'order_no' => 0,
-          'group_no' => 0,
-        ),
-      ),
-      array (
-        array (
-          'param' => 'post_type',
-          'operator' => '==',
-          'value' => 'page',
-          'order_no' => 0,
-          'group_no' => 1,
-        ),
-        array (
-          'param' => 'page_template',
-          'operator' => '!=',
-          'value' => 'page-home.php',
-          'order_no' => 1,
-          'group_no' => 1,
-        ),
-      ),
-    ),
-    'options' => array (
-      'position' => 'side',
-      'layout' => 'default',
-      'hide_on_screen' => array (
-      ),
-    ),
-    'menu_order' => 0,
-  ));
-
 
   // Two content blocks on pages
   register_field_group(array (
@@ -555,14 +495,200 @@ if(function_exists("register_field_group"))
         array (
           'param' => 'post_type',
           'operator' => '==',
+          'value' => 'post',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
           'value' => 'page',
+          'order_no' => 0,
+          'group_no' => 1,
+        ),
+        array (
+          'param' => 'page_template',
+          'operator' => '!=',
+          'value' => 'page-home.php',
+          'order_no' => 1,
+          'group_no' => 1,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'normal',
+      'layout' => 'default',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+
+  // Post and page - bottom banner
+  // Excluding homepage template
+  register_field_group(array (
+    'id' => 'acf_bottom-banner',
+    'title' => 'Bottom banner',
+    'fields' => array (
+      array (
+        'key' => 'field_543e98e8186c6',
+        'label' => 'Add bottom banner',
+        'name' => 'add_bottom_banner',
+        'type' => 'true_false',
+        'instructions' => 'Banner content can be added in Settings.',
+        'message' => '',
+        'default_value' => 0,
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'post',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'page',
+          'order_no' => 0,
+          'group_no' => 1,
+        ),
+        array (
+          'param' => 'page_template',
+          'operator' => '!=',
+          'value' => 'page-home.php',
+          'order_no' => 1,
+          'group_no' => 1,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'side',
+      'layout' => 'default',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+
+  // Post - video with some comments
+  register_field_group(array (
+    'id' => 'acf_video-and-introduction',
+    'title' => 'Video and introduction',
+    'fields' => array (
+      array (
+        'key' => 'field_543fdadc6e9b8',
+        'label' => 'Video URL',
+        'name' => 'video_url',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_543fdb506e9b9',
+        'label' => 'Introduction text',
+        'name' => 'introduction_text',
+        'type' => 'wysiwyg',
+        'default_value' => '',
+        'toolbar' => 'full',
+        'media_upload' => 'no',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'post',
           'order_no' => 0,
           'group_no' => 0,
         ),
       ),
     ),
     'options' => array (
-      'position' => 'normal',
+      'position' => 'acf_after_title',
+      'layout' => 'default',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+
+  // Post - show full width featured image
+  register_field_group(array (
+    'id' => 'acf_full-width-image',
+    'title' => 'Full width image',
+    'fields' => array (
+      array (
+        'key' => 'field_543fdbe0826f8',
+        'label' => 'Show featured image',
+        'name' => 'show_featured_image',
+        'type' => 'true_false',
+        'instructions' => 'Show full width featured image?',
+        'message' => '',
+        'default_value' => 0,
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'post',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'acf_after_title',
+      'layout' => 'default',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+
+  // Post - related content sidebar
+  register_field_group(array (
+    'id' => 'acf_related-content',
+    'title' => 'Related content',
+    'fields' => array (
+      array (
+        'key' => 'field_543ff29221d11',
+        'label' => 'Related content',
+        'name' => 'related_content',
+        'type' => 'wysiwyg',
+        'instructions' => 'Add related content as unordered list',
+        'default_value' => '',
+        'toolbar' => 'basic',
+        'media_upload' => 'no',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'post',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'side',
       'layout' => 'default',
       'hide_on_screen' => array (
       ),

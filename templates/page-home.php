@@ -13,7 +13,7 @@ the_post();
       $content = get_the_content();
       if(!empty($content)) { ?>
 
-      <section class="page-element">
+      <section class="page-element page-intro">
         
         <?php the_content(); ?>
 
@@ -70,13 +70,13 @@ the_post();
 
     <section class="page-element">
 
-      <header>
-        <h1>News</h1>
-      </header>
-
       <div class="row">
 
         <div class="medium-8 columns">
+
+          <header>
+            <h1>News</h1>
+          </header>
       
           <?php query_posts( array ( 'posts_per_page' => 4 ) ); ?>
             <?php while (have_posts()) : the_post() ?>
