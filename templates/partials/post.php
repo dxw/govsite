@@ -2,31 +2,41 @@
 
   <div class="large-12 columns">
 
-    <section class="page-element">
+    
 
       <header class="page-header">
         <h1><?php the_title(); ?></h1>
         <?php get_template_part('partials/entry-meta'); ?>
       </header>
 
-      <?php if( get_field('show_featured_image') == true ) { ?>
+    <?php if( get_field('show_featured_image') == true ) { ?>
+
+      <section class="page-element">
+
         <figure class="featured">
           <?php the_post_thumbnail('full'); ?>
         </figure>
-      <?php } ?>
+        
+      </section>
 
-    </section>
+    <?php } ?>
 
-    <?php if( get_field('video_url') ) { ?>
+    <?php if( get_field('introduction_text') ) { ?>
 
       <section class="page-element">
 
         <div class="row">
 
           <div class="medium-8 columns">
-            <div class="flex-video">
-              <?php _e( wp_oembed_get( get_field('video_url') ) ); ?>
-            </div>
+            <?php if ( get_field('display_video') == false ) { ?>
+              <figure>
+                <?php the_post_thumbnail('large'); ?>
+              </figure>
+            <?php } else { ?>
+              <div class="flex-video">
+                <?php _e( wp_oembed_get( get_field('video_url') ) ); ?>
+              </div>
+            <?php } ?>
           </div>
 
           <div class="medium-4 columns">

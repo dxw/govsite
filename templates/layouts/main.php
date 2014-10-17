@@ -45,19 +45,33 @@
   <footer class="site-footer">
 
     <div class="row">
-      <div class="small-6 columns">
-        <small>Visit <a href="https://www.gov.uk/">gov.uk</a></small>
-      </div>
-      <div class="small-6 columns">
+      <div class="small-12 large-centered columns">
         <?php get_template_part('partials/nav-footer'); ?>
       </div>
     </div>
 
     <div class="row">
-      <div class="small-12 large-centered columns">
+
+      <div class="large-12 columns">
+
         <hr class="footer">
-        <small class="copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> copyright</small>
+
+        <div class="row">
+
+          <div class="small-6 columns">
+            <small>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> copyright</small>
+          </div>
+
+          <div class="small-6 columns">
+            <?php if ( get_option('footer-link-text-setting') ) { ?>
+              <small class="right"><?php echo get_option('footer-link-text-setting'); ?> <a href="<?php echo get_option('footer-link-url-setting'); ?>"><?php echo get_option('footer-link-cta-setting'); ?></a></small>
+            <?php } ?>
+          </div>
+
+        </div>
+
       </div>
+
     </div>
 
   </footer>

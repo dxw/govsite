@@ -6,21 +6,21 @@ footer.site-footer {
   padding-top: $footer-top-padding;
   padding-bottom: $footer-bottom-padding;
 
+  ul.menu {
+    width: auto;
+    display: inline-block;
+  }
+
+  a {
+    color: $white;
+    border-bottom: 1px solid transparent;
+    &:hover, &:focus {
+      border-bottom-color: $white;
+    }
+  }
+
   small {
     color: $white;
-
-    &.copyright {
-      display: block;
-      text-align: center;
-    }
-
-    a {
-      color: $white;
-      &:hover, &:focus {
-        border-bottom: 1px solid $white;
-      }
-    }
-
   }
 
 }

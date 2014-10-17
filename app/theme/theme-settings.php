@@ -4,7 +4,7 @@ add_action( 'admin_menu', 'my_admin_menu' );
 
 function my_admin_menu() {
   add_options_page( 'Social media', 'Social media', 'manage_options', 'social-media', 'social_media_options' );
-  add_options_page( 'Bottom banner', 'Bottom banner', 'manage_options', 'bottom-banner', 'bottom_banner_options' );
+  add_options_page( 'Footer link', 'Footer link', 'manage_options', 'footer-link', 'footer_link_options' );
 }
 
 add_action( 'admin_init', 'my_admin_init' );
@@ -15,17 +15,23 @@ function my_admin_init() {
   register_setting( 'social-media', 'social-media-one-url-setting' );
   register_setting( 'social-media', 'social-media-two-url-setting' );
   register_setting( 'social-media', 'social-media-three-url-setting' );
+  register_setting( 'social-media', 'social-media-four-url-setting' );
+  register_setting( 'social-media', 'social-media-five-url-setting' );
+  register_setting( 'social-media', 'social-media-six-url-setting' );
   add_settings_field( 'first-profile-url', 'First profile URL', 'first_profile_url_callback', 'social-media', 'header' );
   add_settings_field( 'second-profile-url', 'Second profile URL', 'second_profile_url_callback', 'social-media', 'header' );
   add_settings_field( 'third-profile-url', 'Third profile URL', 'third_profile_url_callback', 'social-media', 'header' );
+  add_settings_field( 'fourth-profile-url', 'Fourth profile URL', 'fourth_profile_url_callback', 'social-media', 'header' );
+  add_settings_field( 'fifth-profile-url', 'Fifth profile URL', 'fifth_profile_url_callback', 'social-media', 'header' );
+  add_settings_field( 'sixth-profile-url', 'Sixth profile URL', 'sixth_profile_url_callback', 'social-media', 'header' );
 
-  add_settings_section( 'header', 'Instructions', 'header_banner_callback', 'bottom-banner' );
-  register_setting( 'bottom-banner', 'bottom-banner-text-setting' );
-  register_setting( 'bottom-banner', 'bottom-banner-cta-setting' );
-  register_setting( 'bottom-banner', 'bottom-banner-url-setting' );
-  add_settings_field( 'banner-text', 'Banner text', 'banner_text_callback', 'bottom-banner', 'header' );
-  add_settings_field( 'banner-cta', 'Banner call to action', 'banner_cta_callback', 'bottom-banner', 'header' );
-  add_settings_field( 'banner-url', 'Banner URL', 'banner_url_callback', 'bottom-banner', 'header' );
+  add_settings_section( 'header', 'Instructions', 'header_footer_link_callback', 'footer-link' );
+  register_setting( 'footer-link', 'footer-link-text-setting' );
+  register_setting( 'footer-link', 'footer-link-cta-setting' );
+  register_setting( 'footer-link', 'footer-link-url-setting' );
+  add_settings_field( 'footer-text', 'Footer text', 'footer_text_callback', 'footer-link', 'header' );
+  add_settings_field( 'footer-cta', 'Footer call to action', 'footer_cta_callback', 'footer-link', 'header' );
+  add_settings_field( 'footer-url', 'Footer URL', 'footer_url_callback', 'footer-link', 'header' );
 
 }
 
@@ -50,6 +56,21 @@ function third_profile_url_callback() {
   echo "<input type='text' name='social-media-three-url-setting' value='$thirdurlsetting' size='50' />";
 }
 
+function fourth_profile_url_callback() {
+  $fourthurlsetting = esc_attr( get_option( 'social-media-four-url-setting' ) );
+  echo "<input type='text' name='social-media-four-url-setting' value='$fourthurlsetting' size='50' />";
+}
+
+function fifth_profile_url_callback() {
+  $fifthurlsetting = esc_attr( get_option( 'social-media-five-url-setting' ) );
+  echo "<input type='text' name='social-media-five-url-setting' value='$fifthurlsetting' size='50' />";
+}
+
+function sixth_profile_url_callback() {
+  $sixthurlsetting = esc_attr( get_option( 'social-media-six-url-setting' ) );
+  echo "<input type='text' name='social-media-six-url-setting' value='$sixth' size='50' />";
+}
+
 function social_media_options() {
   ?>
   <div class="wrap">
@@ -63,34 +84,34 @@ function social_media_options() {
   <?php
 }
 
-// Bottom banner page functions
+// Footer link
 
-function header_banner_callback() {
-  echo 'Add content to your bottom banner.';
+function header_footer_link_callback() {
+  echo 'Add additional link to your site footer.';
 }
 
-function banner_text_callback() {
-  $bannertextsetting = esc_attr( get_option( 'bottom-banner-text-setting' ) );
-  echo "<input type='text' name='bottom-banner-text-setting' value='$bannertextsetting' size='50' />";
+function footer_text_callback() {
+  $footertextsetting = esc_attr( get_option( 'footer-link-text-setting' ) );
+  echo "<input type='text' name='footer-link-text-setting' value='$footertextsetting' size='50' />";
 }
 
-function banner_cta_callback() {
-  $bannerctasetting = esc_attr( get_option( 'bottom-banner-cta-setting' ) );
-  echo "<input type='text' name='bottom-banner-cta-setting' value='$bannerctasetting' size='50' />";
+function footer_cta_callback() {
+  $footerctasetting = esc_attr( get_option( 'footer-link-cta-setting' ) );
+  echo "<input type='text' name='footer-link-cta-setting' value='$footerctasetting' size='50' />";
 }
 
-function banner_url_callback() {
-  $bannerurlsetting = esc_attr( get_option( 'bottom-banner-url-setting' ) );
-  echo "<input type='text' name='bottom-banner-url-setting' value='$bannerurlsetting' size='50' />";
+function footer_url_callback() {
+  $footerurlsetting = esc_attr( get_option( 'footer-link-url-setting' ) );
+  echo "<input type='text' name='footer-link-url-setting' value='$footerurlsetting' size='50' />";
 }
 
-function bottom_banner_options() {
+function footer_link_options() {
   ?>
   <div class="wrap">
-    <h2>Bottom banner</h2>
+    <h2>Footer link</h2>
     <form action="options.php" method="POST">
-      <?php settings_fields( 'bottom-banner' ); ?>
-      <?php do_settings_sections( 'bottom-banner' ); ?>
+      <?php settings_fields( 'footer-link' ); ?>
+      <?php do_settings_sections( 'footer-link' ); ?>
       <?php submit_button(); ?>
     </form>
   </div>

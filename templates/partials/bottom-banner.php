@@ -1,10 +1,10 @@
-<?php if ( get_field('add_bottom_banner') == true ) { ?>
+<?php if ( get_field('banner_text') ) { ?>
   
   <section class="banner">
     <div class="row">
       <div class="large-12 columns">
-        <h2><?php echo get_option('bottom-banner-text-setting'); ?></h2>
-        <a href="<?php echo get_option('bottom-banner-url-setting'); ?>" class="button-banner"><?php echo get_option('bottom-banner-cta-setting'); ?></a>
+        <h2><?php the_field('banner_text'); ?></h2>
+        <a href="<?php the_field('banner_url'); ?>" class="button-banner"><?php the_field('banner_call_to_action'); ?></a>
       </div>
     </div>
   </section>

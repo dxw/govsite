@@ -533,13 +533,40 @@ if(function_exists("register_field_group"))
     'title' => 'Bottom banner',
     'fields' => array (
       array (
-        'key' => 'field_543e98e8186c6',
-        'label' => 'Add bottom banner',
-        'name' => 'add_bottom_banner',
-        'type' => 'true_false',
-        'instructions' => 'Banner content can be added in Settings.',
-        'message' => '',
-        'default_value' => 0,
+        'key' => 'field_54412e08fcaf0',
+        'label' => 'Banner text',
+        'name' => 'banner_text',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_54412e16fcaf1',
+        'label' => 'Banner call to action',
+        'name' => 'banner_call_to_action',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_54412e22fcaf2',
+        'label' => 'Banner URL',
+        'name' => 'banner_url',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
       ),
     ),
     'location' => array (
@@ -580,9 +607,18 @@ if(function_exists("register_field_group"))
 
   // Post - video with some comments
   register_field_group(array (
-    'id' => 'acf_video-and-introduction',
-    'title' => 'Video and introduction',
+    'id' => 'acf_videoimage-and-introduction',
+    'title' => 'Video/image and introduction',
     'fields' => array (
+      array (
+        'key' => 'field_5441444c2f780',
+        'label' => 'Display video',
+        'name' => 'display_video',
+        'type' => 'true_false',
+        'instructions' => 'Display video instead of featured image?',
+        'message' => '',
+        'default_value' => 0,
+      ),
       array (
         'key' => 'field_543fdadc6e9b8',
         'label' => 'Video URL',
