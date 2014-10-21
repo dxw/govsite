@@ -5,25 +5,33 @@ the_post();
 
 ?>
 
+<?php
+  $content = get_the_content();
+  if(!empty($content)) { ?>
+
+    <section class="page-intro banner">
+
+      <div class="row">
+
+        <div class="large-9 columns">
+
+          <?php the_content(); ?>
+
+          <?php if (get_field('main_button_url')) { ?>
+            <a href="<?php the_field('main_button_url'); ?>" title="<?php the_field('main_button_description'); ?>" class="button-banner"><?php the_field('main_button_description'); ?></a>
+          <?php } ?>
+
+        </div>
+
+      </div>
+
+    </section>
+
+<?php } ?>
+
 <div class="row">
 
   <div class="large-12 columns">
-
-    <?php
-      $content = get_the_content();
-      if(!empty($content)) { ?>
-
-      <section class="page-element page-intro">
-        
-        <?php the_content(); ?>
-
-        <?php if (get_field('main_button_url')) { ?>
-          <a href="<?php the_field('main_button_url'); ?>" title="<?php the_field('main_button_description'); ?>" class="button"><?php the_field('main_button_description'); ?></a>
-        <?php } ?>
-
-      </section>
-
-    <?php } ?>
 
     <?php if (get_field('image_1')) {
 

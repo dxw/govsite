@@ -38,6 +38,7 @@
 @import "common/block-grid";
 @import "common/thumbs";
 @import "common/panels";
+@import "common/forms";
 
 // Partials
 @import "partials/nav";
@@ -47,6 +48,7 @@
 @import "partials/post";
 @import "partials/entry-meta";
 @import "partials/banner";
+@import "partials/comment";
 
 // Templates
 @import "templates/archive";

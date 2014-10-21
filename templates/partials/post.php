@@ -2,12 +2,10 @@
 
   <div class="large-12 columns">
 
-    
-
-      <header class="page-header">
-        <h1><?php the_title(); ?></h1>
-        <?php get_template_part('partials/entry-meta'); ?>
-      </header>
+    <header class="page-header">
+      <h1><?php the_title(); ?></h1>
+      <?php get_template_part('partials/entry-meta'); ?>
+    </header>
 
     <?php if( get_field('show_featured_image') == true ) { ?>
 
@@ -40,7 +38,11 @@
           </div>
 
           <div class="medium-4 columns">
-            <?php echo get_field('introduction_text'); ?>
+
+            <article class="main-content">
+              <?php echo get_field('introduction_text'); ?>
+            </article>
+
           </div>
           
         </div>
@@ -59,10 +61,14 @@
 
         <?php if (get_field('related_content')) { ?>
 
-          <aside class="medium-4 columns sidebar">
-            <h3>Related content</h3>
-            <?php echo get_field('related_content'); ?>
-          </aside>
+          <div class="medium-4 columns">
+
+            <aside class="sidebar panel banner">
+              <h3>Related content</h3>
+              <?php echo get_field('related_content'); ?>
+            </aside>
+
+          </div>
 
         <?php } ?>
 

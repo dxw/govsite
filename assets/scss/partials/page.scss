@@ -1,5 +1,7 @@
+// most of these elements are also used for posts
+
 header.page-header {
-  margin-bottom: $space-medium*2;
+  margin-top: $space-medium*2;
 }
 
 .page-element {
@@ -40,8 +42,9 @@ header.page-header {
 
   }
 
-}
+  .main-content {
+    border-top: 5px solid $banner-color;
+    padding-top: $space-medium;
+  }
 
-.page-intro {
-  padding-bottom: $space-medium;
 }

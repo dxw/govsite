@@ -2,11 +2,11 @@
 
   <div class="large-12 columns">
 
-    <section class="page-element">
+    <header class="page-header">
+      <h1><?php the_title(); ?></h1>
+    </header>
 
-      <header class="page-header">
-        <h1><?php the_title(); ?></h1>
-      </header>
+    <section class="page-element">
 
       <article class="row">
 
@@ -25,8 +25,10 @@
         </div>
 
         <div class="medium-4 columns">
-          
-          <?php the_content(); ?>
+
+          <article class="main-content">
+            <?php the_content(); ?>
+          </article>
 
         </div>
 

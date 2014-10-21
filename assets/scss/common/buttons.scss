@@ -12,5 +12,6 @@
 input {
   &.button {
     -webkit-font-smoothing: $font-smoothing;
+    -moz-osx-font-smoothing: grayscale;
   }
 }

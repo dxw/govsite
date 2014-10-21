@@ -48,6 +48,20 @@ h6 {
   @include font-size(18);
 }
 
-hr {
+strong, b {
+  font-weight: 700;
+}
+
+hr.footer {
   border-color: $oil;
+}
+
+.vcard {
+  margin-bottom: $space-small;
+  border: none;
+  padding: 0;
+  .fn {
+    font-weight: 700;
+    font-style: normal;
+  }
 }

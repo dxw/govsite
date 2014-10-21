@@ -1,20 +1,18 @@
+<div class="row">
 
-<?php
-  if (post_password_required()) { // TODO: Put me somewhere else
-    return;
-  }
+  <div class="large-8 columns">
 
-  if (have_comments()) : ?>
+    <?php if (post_password_required()) {
+      return;
+    }
 
-  <div class="row">
+    if (have_comments()) : ?>
 
-    <div class="large-8 columns">
-
-      <section id="comments" class="page-element">
-        <h3><?php printf(_n('One Response to &ldquo;%2$s&rdquo;', '%1$s Responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'roots'), number_format_i18n(get_comments_number()), get_the_title()); ?></h3>
+      <section id="comments" class="comments">
+        <h3><?php printf(_n('One response to &ldquo;%2$s&rdquo;', '%1$s comments', get_comments_number(), 'roots'), number_format_i18n(get_comments_number()), get_the_title()); ?></h3>
 
         <ol class="media-list">
-          <?php wp_list_comments(array('walker' => new Roots_Walker_Comment)); // TODO: What does this walker do, do we need it? How do we make sure this pulls through the comment partial? ?>
+          <?php wp_list_comments(array('walker' => new Walker_Comment())); // TODO: What does this walker do, do we need it? How do we make sure this pulls through the comment partial? ?>
         </ol>
 
         <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : ?>
@@ -30,11 +28,12 @@
         </nav>
         <?php endif; ?>
       </section><!-- /#comments -->
-
-    </div>
+        
+    <?php endif; ?>
 
   </div>
-<?php endif; ?>
+
+</div>
 
 <?php if (comments_open()) : ?>
   <?php get_template_part('partials/comment-form'); ?>

@@ -1,0 +1,25 @@
+aside.sidebar {
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+
+    li {
+      margin-top: $space-mini*2;
+      @include icon(before, next);
+
+      &:before {
+        display: inline-block;
+        margin-right: $space-small;
+        color: $secondary-color;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+    }
+
+  }
+
+}

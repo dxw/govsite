@@ -3,14 +3,18 @@ section.banner {
   padding: $space-medium*2 0;
   background: $banner-color;
   text-align: center;
+  color: $white;
 
-  h2 {
-    margin-bottom: $space-medium;
+  h1, h2, h3, h4, h5, h6 {
     color: $white;
   }
 
-  .button  {
-    margin-bottom: 0;
+  h2 {
+    margin-bottom: $space-medium;
   }
 
+}
+
+section.page-intro {
+  text-align: left;
 }

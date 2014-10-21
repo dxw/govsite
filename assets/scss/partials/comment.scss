@@ -1,0 +1,54 @@
+.comments {
+
+  ol.media-list,
+  ul.children {
+    list-style: none;
+  }
+
+  ol.media-list {
+    margin-left: 0;
+  }
+
+  ul.children {
+    margin-left: $space-medium*2;
+  }
+
+  .comment-author {
+    float: left;
+    .says {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  .comment-meta {
+    float: right;
+    margin-bottom: $space-small;
+    a {
+      @include font-size(14);
+    }
+    a.comment-edit-link {
+      border-left: 1px solid $base;
+      padding-left: $space-small;
+    }
+  }
+
+  p {
+    clear: both;
+  }
+
+}
+
+.comment-form {
+  margin-bottom: $space-medium*2;
+
+  p.cancel-comment-reply,
+  form {
+    margin-bottom: 0;
+  }
+
+  p.cancel-comment-reply {
+    padding-bottom: $space-small;
+  }
+
+}
