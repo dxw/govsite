@@ -98,6 +98,52 @@ $icons: (
   background-color: $color;
 }
 
+// Triangle arrow
+
+@mixin arrow($width: 10px, $direction: up, $top: 0, $left: 50%, $color: red) {
+  
+  width: 0;
+  content: '';
+  position: absolute;
+  
+  // Right
+  @if $direction == right {
+    top: $top;
+    left: $left;
+    border-top: $width solid transparent;
+    border-bottom: $width solid transparent;
+    border-left: $width solid $color;
+  }
+
+  // Left
+  @if $direction == left {
+    top: $top;
+    left: $left;
+    border-top: $width solid transparent;
+    border-bottom: $width solid transparent;
+    border-right: $width solid $color;
+  }
+
+  // Up
+  @if $direction == up {
+    top: $top;
+    left: $left;
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+    border-bottom: $width solid $color;
+  }
+
+  // Down
+  @if $direction == down {
+    top: $top;
+    left: $left;
+    border-left: $width solid transparent;
+    border-right: $width solid transparent;
+    border-top: $width solid $color;
+  }
+
+}
+
 //
 // Global Foundation Mixins
 //

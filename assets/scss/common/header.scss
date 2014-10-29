@@ -3,6 +3,7 @@ header.site-header {
   $header-top-margin: 1.8rem;
   $header-bottom-margin: 1.8rem;
 
+  border-top: 10px solid $logo-color;
   border-bottom: 1px solid $white-smoke;
   background: $white;
 
@@ -11,9 +12,10 @@ header.site-header {
     margin-bottom: $header-bottom-margin;
     font-family: $font-family-sans-serif;
     font-weight: 700;
-
+    
     @media #{$small-only} {
-      margin-top: 0;
+      margin-top: $space-small/2;
+      margin-bottom: $space-small;
     }
 
     a {
