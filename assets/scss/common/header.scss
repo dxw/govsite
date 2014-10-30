@@ -1,21 +1,21 @@
 header.site-header {
 
-  $header-top-margin: 1.8rem;
-  $header-bottom-margin: 1.8rem;
+  $header-top-margin: $space-small*2;
+  $header-bottom-margin: $space-small*2;
 
   border-top: 10px solid $logo-color;
   border-bottom: 1px solid $white-smoke;
   background: $white;
 
   h1 {
-    margin-top: $header-top-margin;
-    margin-bottom: $header-bottom-margin;
+    margin-top: $space-small/2;
+    margin-bottom: $space-small;
     font-family: $font-family-sans-serif;
     font-weight: 700;
     
-    @media #{$small-only} {
-      margin-top: $space-small/2;
-      margin-bottom: $space-small;
+    @media #{$medium-up} {
+      margin-top: $header-top-margin;
+      margin-bottom: $header-bottom-margin;      
     }
 
     a {

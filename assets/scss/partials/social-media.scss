@@ -1,13 +1,8 @@
 ul.social-media {
 
   @include inline-list;
-  float: left;
+  float: right;
   margin-left: $space-small;
-  
-  @media #{$large-up} {
-    float: right;
-  }
-
 
   > li {
     margin-left: 1px;
@@ -15,21 +10,12 @@ ul.social-media {
 
   a {
 
-    padding: $space-small/2;
+    padding: $space-small;
     color: $white;
     line-height: 1;
 
-    @media #{$large-up} {
-      padding: $space-small;
-    }
-
     &:before {
-      @include font-size(18);
-
-      @media #{$large-up} {
-        @include font-size(24);
-      }
-
+      @include font-size(24);
     }
 
     // Twitter

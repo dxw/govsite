@@ -11,7 +11,6 @@ header.site-header {
       @include inline-list;
 
       @media #{$medium-only} {
-        margin-top: $space-medium;
         margin-left: 0;
         > li {
           margin-left: $space-small;
@@ -20,26 +19,22 @@ header.site-header {
 
     }
 
-    li {
-      @include font-size(18);
-
-      @media #{$medium-only} {
-        margin-bottom: $space-small;
-      }
-
-    }
-
     a {
       background: $silver;
       padding: $space-small;
       color: $body-font-color;
+      @include font-size(18);
       @include single-transition(border-top, 300ms, ease-in);
       &:hover, &:focus {
         background: $primary-color;
         color: $white;
       }
 
-      @media #{$large-up} {
+      @media #{$medium-only} {
+        @include font-size(16);
+      }
+
+      @media #{$medium-up} {
         position: relative;
         background: transparent;
         padding: $space-medium $space-small/2 0 $space-small/2;
@@ -60,13 +55,14 @@ header.site-header {
           background: scale-color($logo-color, $lightness: -14%);
         }
 
-        @media #{$large-up} {
+        @media #{$medium-up} {
           background: transparent;
           color: $logo-color;
           &:before {
             @include arrow(10px, down, 0, 35%, $logo-color);
           }
           &:hover, &:focus {
+            background: transparent;
             color: scale-color($logo-color, $lightness: -14%);
           }
         }
