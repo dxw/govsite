@@ -13,7 +13,7 @@ the_post();
 
       <div class="row">
 
-        <div class="large-8 columns">
+        <div class="large-12 columns">
 
           <?php the_content(); ?>
 

@@ -7,6 +7,14 @@
 
   ol.media-list {
     margin-left: 0;
+    li.comment {
+      margin-bottom: $space-small*2;
+      border-bottom: 1px solid $gainsboro;
+      ul li {
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+    }
   }
 
   ul.children {
@@ -35,6 +43,11 @@
 
   p {
     clear: both;
+  }
+
+  .comment-reply-link {
+    @include button();
+    padding: $space-small $space-small*2;
   }
 
 }
