@@ -11,19 +11,12 @@
       </hgroup>
     </header>
 
-    <div class="row">
-
-      <div class="medium-8 columns">
-        <?php if (have_posts()) : ?>
-          <?php while (have_posts()) : the_post(); ?>
-            <?php get_template_part('partials/article-list-item'); ?>
-          <?php endwhile; ?>
-        <?php endif; ?>
-      </div>
-
-      <div class="medium-4 columns">
-      </div>
-
+    <div>
+      <?php if (have_posts()) : ?>
+        <?php while (have_posts()) : the_post(); ?>
+          <?php get_template_part('partials/article-list-item'); ?>
+        <?php endwhile; ?>
+      <?php endif; ?>
     </div>
 
     <?php get_template_part('partials/pager') ?>

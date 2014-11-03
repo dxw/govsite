@@ -1,0 +1,44 @@
+.pager {
+  @include clearfix;
+  margin: $space-small*4 0;
+  text-align: center;
+
+  .button {
+    margin-bottom: 0;
+    @include font-size(18);
+  }
+
+  .pagination {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  ul {
+    @include inline-list;
+    margin: 0;
+  }
+
+  li {
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      border: 1px solid $smoke;
+      @include radius($global-radius);
+      background: $white;
+      padding: $space-small $space-medium;
+    }
+
+    &.active {
+      a {
+        background: $smoke;
+        border-color: $gainsboro;
+        color: $steel;
+      }
+    }
+
+  }
+
+}

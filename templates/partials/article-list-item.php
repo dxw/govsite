@@ -7,14 +7,16 @@
 
   <div class="entry">
     <?php if(has_post_thumbnail()) :
-      the_post_thumbnail('large');
+      the_post_thumbnail('medium');
      endif; ?>
     <?php if (has_excerpt()) { 
       the_excerpt();
     } else { ?>
-      <p><?php trim_content(35); ?></p>
+      <p><?php trim_content(50); ?></p>
     <?php } ?>
     <a href="<?php the_permalink(); ?>" class="button">Read more</a>
   </div>
 
 </article>
+
+<hr>
