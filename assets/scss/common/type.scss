@@ -65,3 +65,35 @@ hr.footer {
     font-style: normal;
   }
 }
+
+blockquote {
+  margin: 1.25rem;
+  border-left: none;
+  //padding: 1.25rem;
+  // border-top: 2px dashed $monsoon;
+  // border-bottom: 2px dashed $monsoon;
+  padding: 0;
+  background-image: url('#{$imagePath}/bracket-black.png)');
+
+  // @media #{$large-up} {
+  //   margin: 1.25rem 1.25rem 1.25rem -2rem;
+  // }
+
+  // @media #{$xlarge-up} {
+  //   margin: 1.25rem 0 1.25rem -10rem;
+  // }
+
+  p {
+    color: $black;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  cite {
+    margin-top: $space-small/2;
+    color: $monsoon;
+    @include font-size(18);
+  }
+
+}

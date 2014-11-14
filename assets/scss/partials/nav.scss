@@ -20,13 +20,13 @@ header.site-header {
     }
 
     a {
-      background: $silver;
+      background: $primary-color;
       padding: $space-small;
-      color: $body-font-color;
+      color: $white;
       @include font-size(18);
       @include single-transition(border-top, 300ms, ease-in);
       &:hover, &:focus {
-        background: $primary-color;
+        background: scale-color($primary-color, $lightness: -14%);;
         color: $white;
       }
 
@@ -38,6 +38,7 @@ header.site-header {
         position: relative;
         background: transparent;
         padding: $space-medium $space-small/2 0 $space-small/2;
+        color: $body-font-color;
         &:hover, &:focus {
           background: transparent;
           color: $primary-color;

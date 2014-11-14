@@ -3,26 +3,29 @@
   margin: $space-small*4 0;
   text-align: center;
 
-  .button {
-    margin-bottom: 0;
-    @include font-size(18);
-  }
-
   .pagination {
     display: inline-block;
     margin: 0 auto;
   }
 
+  .btn-pagination {
+    margin-top: 13px; //to align the buttons to the middle of .pager container
+  }
+
   ul {
     @include inline-list;
     margin: 0;
+    
+    > li {
+      margin-left: $space-small;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
   }
 
   li {
-
-    &:first-child {
-      margin-left: 0;
-    }
 
     a {
       border: 1px solid $smoke;
@@ -36,6 +39,7 @@
         background: $smoke;
         border-color: $gainsboro;
         color: $steel;
+        cursor: default;
       }
     }
 

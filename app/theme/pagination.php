@@ -50,7 +50,7 @@ function pagination($q = null, $mode = null) {
       if ($mode) {
         $uri = add_query_arg(['mode' => $mode], $uri);
       }
-      printf( '<div class="previous btn-pagination left"><a href="%s" class="button small radius">&laquo; Previous</a></div>', $uri);
+      printf( '<div class="previous btn-pagination left"><a href="%s">&laquo; Previous</a></div>', $uri);
     }
 
     // next page
@@ -60,7 +60,7 @@ function pagination($q = null, $mode = null) {
       if ($mode) {
         $uri = add_query_arg(['mode' => $mode], $uri);
       }
-      printf( '<div class="next btn-pagination right"><a href="%s" class="button small radius">Next &raquo;</a></div>', $uri);
+      printf( '<div class="next btn-pagination right"><a href="%s">Next &raquo;</a></div>', $uri);
     }
 
     // Restore $wp_query
