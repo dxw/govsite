@@ -14,43 +14,25 @@ header.page-header {
 
   }
 
+  hgroup {
+    h1 {
+
+      @media #{$large-up} {
+        width: 100%;
+        float: none;
+      }
+
+    }
+  }
+
   ul.entry-meta {
 
     @media #{$large-up} {
       width: 20%;
       float: right;
       margin-top: 17px;
-      color: $white;
       li {
-        height: 30px;
         float: right;
-        display: block;
-        position: relative;
-        margin-right: 18px;
-        background: $jumbo;
-        padding: $space-small/2;
-        &:before {
-          width: 0;
-          height: 0;
-          content: '';
-          position: absolute;
-          top: 0;
-          left: -18px;
-          border-style: solid;
-          border-width: 0 0 30px 18px;
-          border-color: transparent transparent $jumbo transparent;
-        }
-        &:after {
-          width: 0;
-          height: 0;
-          content: '';
-          position: absolute;
-          top: 0;
-          right: -30px;
-          border-style: solid;
-          border-width: 18px 30px 0 0;
-          border-color: $jumbo transparent transparent transparent;
-        }
       }
     }
 
