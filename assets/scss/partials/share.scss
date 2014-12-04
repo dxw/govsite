@@ -1,0 +1,85 @@
+.share {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 1.25rem;
+
+  ul {
+    list-style: none;
+    margin: 0;
+
+    @media #{$large-up} {
+      position: fixed;
+      top: 280px;
+      left: 0;
+    }
+
+    li {
+      float: left;
+      display: inline-block;
+      margin-right: $space-small/2;
+
+      @media #{$large-up} {
+        display: block;
+        float: none;
+        margin-right: 0;
+        margin-top: $space-small;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+    }
+  }
+
+  a {
+    width: 35px;
+    height: 35px;
+    display: block;
+    position: relative;
+    @include radius(50%);
+    padding: $space-small/2;
+    color: $white;
+    text-align: center;
+
+    @media #{$large-up} {
+      @include side-radius(right, 10px);
+      @include side-radius(left, 0);
+    }
+
+    &.facebook {
+      background: $facebook-color;
+      @include box-shadow(0, 2px, 0, 0, darken($facebook-color, 15%));
+      @include icon(before, facebook);
+
+      &:hover, &:focus {
+        top: 2px;
+        background: darken($facebook-color, 10%);
+        @include remove-box-shadow(none);
+      }
+    }
+
+    &.twitter {
+      background: $twitter-color;
+      @include box-shadow(0, 2px, 0, 0, darken($twitter-color, 15%));
+      @include icon(before, twitter);
+
+      &:hover, &:focus {
+        top: 2px;
+        background: darken($twitter-color, 10%);
+        @include remove-box-shadow(none);
+      }
+    }
+
+    &.mail {
+      background: $mail-color;
+      @include icon(before, envelope);
+      @include box-shadow(0, 2px, 0, 0, darken($mail-color, 15%));
+
+      &:hover, &:focus {
+        top: 2px;
+        background: darken($mail-color, 10%);
+        @include remove-box-shadow(none);
+      }
+    }
+  }
+}

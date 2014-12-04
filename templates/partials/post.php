@@ -56,7 +56,12 @@
       <div class="row">
 
         <div class="medium-8 columns">
-          <?php the_content(); ?>
+          <?php 
+
+            the_content();
+            get_template_part('partials/share');
+
+          ?>
         </div>
 
         <?php if (get_field('related_content')) { ?>

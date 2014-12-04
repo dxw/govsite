@@ -438,52 +438,52 @@ th {
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003480}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003503}}
 meta.foundation-version {
   font-family: "/5.4.5/";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003484}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003507}}
 meta.foundation-mq-small {
   font-family: "/only screen/";
   width: 0em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003489}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003512}}
 meta.foundation-mq-medium {
   font-family: "/only screen and (min-width:40.063em)/";
   width: 40.063em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003494}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003517}}
 meta.foundation-mq-large {
   font-family: "/only screen and (min-width:64.063em)/";
   width: 64.063em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003499}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003522}}
 meta.foundation-mq-xlarge {
   font-family: "/only screen and (min-width:90.063em)/";
   width: 90.063em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003504}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003527}}
 meta.foundation-mq-xxlarge {
   font-family: "/only screen and (min-width:120.063em)/";
   width: 120.063em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003509}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003532}}
 meta.foundation-data-attribute-namespace {
   font-family: false;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003516}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003539}}
 html, body {
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003519}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003542}}
 *,
 *:before,
 *:after {
@@ -492,13 +492,13 @@ html, body {
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003525}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003548}}
 html,
 body {
   font-size: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003529}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003552}}
 body {
   background: #fff;
   color: #222;
@@ -513,23 +513,23 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003543}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003566}}
 a:hover {
   cursor: pointer;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003546}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003569}}
 img {
   max-width: 100%;
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003548}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003571}}
 img {
   -ms-interpolation-mode: bicubic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003552}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003575}}
 #map_canvas img,
 #map_canvas embed,
 #map_canvas object,
@@ -539,50 +539,50 @@ img {
   max-width: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003559}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003582}}
 .left {
   float: left !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003560}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003583}}
 .right {
   float: right !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003295}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003317}}
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003296}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003318}}
 .clearfix:after {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003562}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003585}}
 .hide {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003568}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003591}}
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003571}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003594}}
 img {
   display: inline-block;
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003581}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003604}}
 textarea {
   height: auto;
   min-height: 50px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003584}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\00003607}}
 select {
   width: 100%;
 }
@@ -12065,7 +12065,7 @@ aside.sidebar ul {
 aside.sidebar ul li {
   margin-top: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000360}}
 aside.sidebar ul li:before {
   content: "";
   speak: none;
@@ -12420,7 +12420,7 @@ header.site-header .nav-toggle {
   line-height: 40px;
   line-height: 2.976rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000360}}
 header.site-header .nav-toggle:before {
   content: "";
   speak: none;
@@ -12509,7 +12509,7 @@ ul.social-media a:before {
 ul.social-media a[href^="http://twitter.com/"], ul.social-media a[href^="http://www.twitter.com/"], ul.social-media a[href^="https://twitter.com/"], ul.social-media a[href^="https://www.twitter.com/"] {
   background: #55acee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000360}}
 ul.social-media a[href^="http://twitter.com/"]:before, ul.social-media a[href^="http://www.twitter.com/"]:before, ul.social-media a[href^="https://twitter.com/"]:before, ul.social-media a[href^="https://www.twitter.com/"]:before {
   content: "";
   speak: none;
@@ -12528,7 +12528,7 @@ ul.social-media a[href^="http://twitter.com/"]:hover, ul.social-media a[href^="h
 ul.social-media a[href^="http://facebook.com/"], ul.social-media a[href^="http://www.facebook.com/"], ul.social-media a[href^="https://facebook.com/"], ul.social-media a[href^="https://www.facebook.com/"] {
   background: #3b5998;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000360}}
 ul.social-media a[href^="http://facebook.com/"]:before, ul.social-media a[href^="http://www.facebook.com/"]:before, ul.social-media a[href^="https://facebook.com/"]:before, ul.social-media a[href^="https://www.facebook.com/"]:before {
   content: "";
   speak: none;
@@ -12547,7 +12547,7 @@ ul.social-media a[href^="http://facebook.com/"]:hover, ul.social-media a[href^="
 ul.social-media a[href^="http://plus.google.com/"], ul.social-media a[href^="https://plus.google.com/"] {
   background: #dd4b39;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000360}}
 ul.social-media a[href^="http://plus.google.com/"]:before, ul.social-media a[href^="https://plus.google.com/"]:before {
   content: "";
   speak: none;
@@ -12566,7 +12566,7 @@ ul.social-media a[href^="http://plus.google.com/"]:hover, ul.social-media a[href
 ul.social-media a[href^="http://flickr.com/"], ul.social-media a[href^="http://www.flickr.com/"], ul.social-media a[href^="https://flickr.com/"], ul.social-media a[href^="https://www.flickr.com/"] {
   background: #ff0084;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000360}}
 ul.social-media a[href^="http://flickr.com/"]:before, ul.social-media a[href^="http://www.flickr.com/"]:before, ul.social-media a[href^="https://flickr.com/"]:before, ul.social-media a[href^="https://www.flickr.com/"]:before {
   content: "";
   speak: none;
@@ -12585,7 +12585,7 @@ ul.social-media a[href^="http://flickr.com/"]:hover, ul.social-media a[href^="ht
 ul.social-media a[href^="http://linkedin.com/"], ul.social-media a[href^="http://www.linkedin.com/"], ul.social-media a[href^="https://linkedin.com/"], ul.social-media a[href^="https://www.linkedin.com/"] {
   background: #0976b4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000360}}
 ul.social-media a[href^="http://linkedin.com/"]:before, ul.social-media a[href^="http://www.linkedin.com/"]:before, ul.social-media a[href^="https://linkedin.com/"]:before, ul.social-media a[href^="https://www.linkedin.com/"]:before {
   content: "";
   speak: none;
@@ -12604,7 +12604,7 @@ ul.social-media a[href^="http://linkedin.com/"]:hover, ul.social-media a[href^="
 ul.social-media a[href^="http://youtube.com/"], ul.social-media a[href^="http://www.youtube.com/"], ul.social-media a[href^="https://youtube.com/"], ul.social-media a[href^="https://www.youtube.com/"] {
   background: #e52d27;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000360}}
 ul.social-media a[href^="http://youtube.com/"]:before, ul.social-media a[href^="http://www.youtube.com/"]:before, ul.social-media a[href^="https://youtube.com/"]:before, ul.social-media a[href^="https://www.youtube.com/"]:before {
   content: "";
   speak: none;
@@ -12618,6 +12618,147 @@ ul.social-media a[href^="http://youtube.com/"]:before, ul.social-media a[href^="
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/social-media\.scss}line{font-family:\0000386}}
 ul.social-media a[href^="http://youtube.com/"]:hover, ul.social-media a[href^="http://youtube.com/"]:focus, ul.social-media a[href^="http://www.youtube.com/"]:hover, ul.social-media a[href^="http://www.youtube.com/"]:focus, ul.social-media a[href^="https://youtube.com/"]:hover, ul.social-media a[href^="https://youtube.com/"]:focus, ul.social-media a[href^="https://www.youtube.com/"]:hover, ul.social-media a[href^="https://www.youtube.com/"]:focus {
   background: #ce1e19;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\000031}}
+.share {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 1.25rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\000036}}
+.share ul {
+  list-style: none;
+  margin: 0;
+}
+@media only screen and (min-width: 64.063em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\000036}}
+  .share ul {
+    position: fixed;
+    top: 280px;
+    left: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\0000316}}
+.share ul li {
+  float: left;
+  display: inline-block;
+  margin-right: 5px;
+}
+@media only screen and (min-width: 64.063em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\0000316}}
+  .share ul li {
+    display: block;
+    float: none;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\0000326}}
+  .share ul li:first-child {
+    margin-top: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\0000334}}
+.share a {
+  width: 35px;
+  height: 35px;
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  padding: 5px;
+  color: #FFFFFF;
+  text-align: center;
+}
+@media only screen and (min-width: 64.063em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\0000334}}
+  .share a {
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\0000349}}
+.share a.facebook {
+  background: #3b5998;
+  -webkit-box-shadow: 0 2px 0 0 #263961;
+  -moz-box-shadow: 0 2px 0 0 #263961;
+  box-shadow: 0 2px 0 0 #263961;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000360}}
+.share a.facebook:before {
+  content: "";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'icomoon';
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\0000354}}
+.share a.facebook:hover, .share a.facebook:focus {
+  top: 2px;
+  background: #2d4373;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\0000361}}
+.share a.twitter {
+  background: #55acee;
+  -webkit-box-shadow: 0 2px 0 0 #1689e0;
+  -moz-box-shadow: 0 2px 0 0 #1689e0;
+  box-shadow: 0 2px 0 0 #1689e0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000360}}
+.share a.twitter:before {
+  content: "";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'icomoon';
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\0000366}}
+.share a.twitter:hover, .share a.twitter:focus {
+  top: 2px;
+  background: #2795e9;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\0000373}}
+.share a.mail {
+  background: #1b325f;
+  -webkit-box-shadow: 0 2px 0 0 #0a1323;
+  -moz-box-shadow: 0 2px 0 0 #0a1323;
+  box-shadow: 0 2px 0 0 #0a1323;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000360}}
+.share a.mail:before {
+  content: "";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'icomoon';
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\0000378}}
+.share a.mail:hover, .share a.mail:focus {
+  top: 2px;
+  background: #101d37;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/page\.scss}line{font-family:\000033}}
@@ -12747,7 +12888,7 @@ ul.entry-meta time span {
   margin-right: 3px;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/global\.scss}line{font-family:\0000360}}
 ul.entry-meta time span:before {
   content: "";
   speak: none;
@@ -12955,6 +13096,41 @@ section.page-intro {
   border-color: #DDDDDD;
   color: #666666;
   cursor: default;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/wp-gallery\.scss}line{font-family:\000033}}
+.gallery {
+  margin-bottom: 0 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/wp-gallery\.scss}line{font-family:\000036}}
+.gallery .gallery-item {
+  width: 24% !important;
+  margin-top: 0 !important;
+  margin-left: 1%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/wp-gallery\.scss}line{font-family:\0000310}}
+.gallery .gallery-item:first-child {
+  margin-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/wp-gallery\.scss}line{font-family:\0000315}}
+.gallery .gallery-icon {
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/wp-gallery\.scss}line{font-family:\0000319}}
+.gallery img {
+  width: 100%;
+  border: 3px solid #222222 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/wp-gallery\.scss}line{font-family:\0000324}}
+.gallery .gallery-caption {
+  margin-bottom: 0;
+  background: #222222;
+  padding: 5px 5px 10px 5px;
+  font-size: 14px;
+  font-size: 0.868rem;
+  line-height: 22px;
+  line-height: 1.302rem;
+  color: #FFFFFF;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/templates\/archive\.scss}line{font-family:\000033}}

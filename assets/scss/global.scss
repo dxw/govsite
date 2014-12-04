@@ -46,6 +46,7 @@ $icons: (
   twitter:    "\e602",
   flickr:     "\e603",
   calendar:   "\f133",
+  envelope:   "\f0e0",
   menu:       "\e604",
   previous:   "\e607",
   next:       "\e608"
@@ -143,6 +144,27 @@ $icons: (
     border-top: $width solid $color;
   }
 
+}
+
+// Box shadow
+
+@mixin box-shadow($top, $left, $blur, $size, $color, $inset: false) {
+  @if $inset {
+      -webkit-box-shadow:inset $top $left $blur $size $color;
+      -moz-box-shadow:inset $top $left $blur $size $color;
+      box-shadow:inset $top $left $blur $size $color;
+  } @else {
+      -webkit-box-shadow: $top $left $blur $size $color;
+      -moz-box-shadow: $top $left $blur $size $color;
+      box-shadow: $top $left $blur $size $color;
+  }
+}
+// EXAMPLE: @include box-shadow(1px,1px,1px,0, #fff, true); */
+
+@mixin remove-box-shadow($argument) {
+  -webkit-box-shadow: $argument;
+  -moz-box-shadow: $argument;
+  box-shadow: $argument;
 }
 
 //
@@ -359,6 +381,7 @@ $flickr-color: #ff0084;
 $linkedin-color: #0976b4;
 $twitter-color: #55acee;
 $youtube-color: #e52d27;
+$mail-color: $logo-color;
 
 $white         : #FFFFFF !default;
 $ghost         : #FAFAFA !default;
