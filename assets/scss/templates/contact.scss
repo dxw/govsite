@@ -1,0 +1,38 @@
+aside.sidebar-content {
+  border-top: 5px solid $logo-color;
+  padding-top: $space-medium;
+
+  address {
+    font-style: normal;
+    @include icon(before, location);
+  }
+
+  .contact-link {
+    display: block;
+
+    &.phone {
+      @include icon(before, phone);
+    }
+    &.email {
+      @include icon(before, envelope);
+    }
+  }
+
+  address,
+  a.contact-link {
+    position: relative;
+    // margin-bottom: $space-medium;
+    // border-bottom: 1px solid $gainsboro;
+    padding-left: $space-large;
+    padding-bottom: $space-medium;
+    @include font-size(16);
+
+    &:before {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      font-size: 20px;
+      color: $logo-color;
+    }
+  }
+}

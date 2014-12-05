@@ -714,4 +714,102 @@ if(function_exists("register_field_group"))
     'menu_order' => 0,
   ));
 
+  // Contact page template - map
+  register_field_group(array (
+    'id' => 'acf_location',
+    'title' => 'Location',
+    'fields' => array (
+      array (
+        'key' => 'field_5481c4c36cfd7',
+        'label' => 'Google Maps URL',
+        'name' => 'google_maps_url',
+        'type' => 'text',
+        'instructions' => 'Paste the iframe src URL',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'page_template',
+          'operator' => '==',
+          'value' => 'page-contact.php',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'acf_after_title',
+      'layout' => 'default',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+
+  // Contact page template - contact details
+  register_field_group(array (
+    'id' => 'acf_contact-details',
+    'title' => 'Contact details',
+    'fields' => array (
+      array (
+        'key' => 'field_5481ccc154188',
+        'label' => 'Address',
+        'name' => 'address',
+        'type' => 'textarea',
+        'default_value' => '',
+        'placeholder' => '',
+        'maxlength' => '',
+        'rows' => '',
+        'formatting' => 'br',
+      ),
+      array (
+        'key' => 'field_5481cce354189',
+        'label' => 'Phone number',
+        'name' => 'phone_number',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'html',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_5481ccf45418a',
+        'label' => 'Email address',
+        'name' => 'email_address',
+        'type' => 'email',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'page_template',
+          'operator' => '==',
+          'value' => 'page-contact.php',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'side',
+      'layout' => 'default',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+
 }
