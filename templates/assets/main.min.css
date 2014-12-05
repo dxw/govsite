@@ -12635,7 +12635,7 @@ ul.social-media a[href^="http://youtube.com/"]:hover, ul.social-media a[href^="h
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\000036}}
   .share ul {
     position: fixed;
-    top: 280px;
+    top: 290px;
     left: 0;
   }
 }
@@ -12651,7 +12651,7 @@ ul.social-media a[href^="http://youtube.com/"]:hover, ul.social-media a[href^="h
     display: block;
     float: none;
     margin-right: 0;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/share\.scss}line{font-family:\0000326}}
   .share ul li:first-child {

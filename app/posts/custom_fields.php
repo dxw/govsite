@@ -288,8 +288,7 @@ if(function_exists("register_field_group"))
     'menu_order' => 0,
   ));
 
-  // Page - featured video
-  // Excluding homepegae template
+  // Campaign page template - featured video
   register_field_group(array (
     'id' => 'acf_featured-video',
     'title' => 'Featured video',
@@ -319,20 +318,11 @@ if(function_exists("register_field_group"))
     'location' => array (
       array (
         array (
-          'param' => 'post_type',
+          'param' => 'page_template',
           'operator' => '==',
-          'value' => 'post',
+          'value' => 'page-campaign.php',
           'order_no' => 0,
           'group_no' => 0,
-        ),
-      ),
-      array (
-        array (
-          'param' => 'page_template',
-          'operator' => '!=',
-          'value' => 'page-home.php',
-          'order_no' => 1,
-          'group_no' => 1,
         ),
       ),
     ),
@@ -345,7 +335,7 @@ if(function_exists("register_field_group"))
     'menu_order' => 0,
   ));
 
-  // Two content blocks on pages
+  // Two content blocks on campaign page template
   register_field_group(array (
     'id' => 'acf_content-blocks',
     'title' => 'Content blocks',
@@ -526,8 +516,7 @@ if(function_exists("register_field_group"))
     'menu_order' => 0,
   ));
 
-  // Post and page - bottom banner
-  // Excluding homepage template
+  // Post and campaign page template - bottom banner
   register_field_group(array (
     'id' => 'acf_bottom-banner',
     'title' => 'Bottom banner',
@@ -581,17 +570,10 @@ if(function_exists("register_field_group"))
       ),
       array (
         array (
-          'param' => 'post_type',
-          'operator' => '==',
-          'value' => 'page',
-          'order_no' => 0,
-          'group_no' => 1,
-        ),
-        array (
           'param' => 'page_template',
-          'operator' => '!=',
-          'value' => 'page-home.php',
-          'order_no' => 1,
+          'operator' => '==',
+          'value' => 'page-campaign.php',
+          'order_no' => 0,
           'group_no' => 1,
         ),
       ),

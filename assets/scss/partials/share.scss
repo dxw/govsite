@@ -9,7 +9,7 @@
 
     @media #{$large-up} {
       position: fixed;
-      top: 280px;
+      top: 290px;
       left: 0;
     }
 
@@ -22,7 +22,7 @@
         display: block;
         float: none;
         margin-right: 0;
-        margin-top: $space-small;
+        margin-top: $space-small/2;
         &:first-child {
           margin-top: 0;
         }
@@ -43,7 +43,7 @@
 
     @media #{$large-up} {
       @include side-radius(right, 10px);
-      @include side-radius(left, 0);
+      @include side-radius(left, 0 );
     }
 
     &.facebook {
