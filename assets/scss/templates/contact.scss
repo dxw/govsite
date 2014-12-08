@@ -21,8 +21,6 @@ aside.sidebar-content {
   address,
   a.contact-link {
     position: relative;
-    // margin-bottom: $space-medium;
-    // border-bottom: 1px solid $gainsboro;
     padding-left: $space-large;
     padding-bottom: $space-medium;
     @include font-size(16);

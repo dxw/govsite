@@ -43,32 +43,32 @@ function header_social_media_callback() {
 
 function first_profile_url_callback() {
   $firsturlsetting = esc_attr( get_option( 'social-media-one-url-setting' ) );
-  echo "<input type='text' name='social-media-one-url-setting' value='$firsturlsetting' size='50' />";
+  echo "<input type='text' name='social-media-one-url-setting' value='$firsturlsetting' size='50'>";
 }
 
 function second_profile_url_callback() {
   $secondurlsetting = esc_attr( get_option( 'social-media-two-url-setting' ) );
-  echo "<input type='text' name='social-media-two-url-setting' value='$secondurlsetting' size='50' />";
+  echo "<input type='text' name='social-media-two-url-setting' value='$secondurlsetting' size='50'>";
 }
 
 function third_profile_url_callback() {
   $thirdurlsetting = esc_attr( get_option( 'social-media-three-url-setting' ) );
-  echo "<input type='text' name='social-media-three-url-setting' value='$thirdurlsetting' size='50' />";
+  echo "<input type='text' name='social-media-three-url-setting' value='$thirdurlsetting' size='50'>";
 }
 
 function fourth_profile_url_callback() {
   $fourthurlsetting = esc_attr( get_option( 'social-media-four-url-setting' ) );
-  echo "<input type='text' name='social-media-four-url-setting' value='$fourthurlsetting' size='50' />";
+  echo "<input type='text' name='social-media-four-url-setting' value='$fourthurlsetting' size='50'>";
 }
 
 function fifth_profile_url_callback() {
   $fifthurlsetting = esc_attr( get_option( 'social-media-five-url-setting' ) );
-  echo "<input type='text' name='social-media-five-url-setting' value='$fifthurlsetting' size='50' />";
+  echo "<input type='text' name='social-media-five-url-setting' value='$fifthurlsetting' size='50'>";
 }
 
 function sixth_profile_url_callback() {
   $sixthurlsetting = esc_attr( get_option( 'social-media-six-url-setting' ) );
-  echo "<input type='text' name='social-media-six-url-setting' value='$sixth' size='50' />";
+  echo "<input type='text' name='social-media-six-url-setting' value='$sixthurlsetting' size='50'>";
 }
 
 function social_media_options() {
