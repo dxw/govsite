@@ -1,4 +1,4 @@
-<ul class="show-for-medium-up social-media">
+<ul class="social-media">
 
   <?php if ( get_option('social-media-one-url-setting') ) { ?>
     <li>

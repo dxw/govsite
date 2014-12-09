@@ -1,25 +1,43 @@
-$footer-top-padding: 1.8rem;
-$footer-bottom-padding: 1.8rem;
-
 footer.site-footer {
-  background: $jet;
-  padding-top: $footer-top-padding;
-  padding-bottom: $footer-bottom-padding;
+
+  .navigation {
+    background: $jet;
+    padding: $space-small*2 0 $space-medium 0;
+
+    a {
+      color: $white;
+      border-bottom: 1px solid transparent;
+
+      &:hover, &:focus {
+        border-bottom-color: $white;
+      }
+    }
+
+    small {
+      text-align: right;
+
+      @media #{$small-only} {
+        text-align: left;
+      }
+    }
+  }
+
+  .credits {
+    background: darken($jet, 5%);
+
+    small {
+      padding: $space-small 0;
+      @include font-size(12);
+    }
+  }
 
   ul.menu {
     width: auto;
     display: inline-block;
   }
 
-  a {
-    color: $white;
-    border-bottom: 1px solid transparent;
-    &:hover, &:focus {
-      border-bottom-color: $white;
-    }
-  }
-
   small {
+    display: block;
     color: $white;
   }
 

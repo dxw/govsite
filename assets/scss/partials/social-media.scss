@@ -2,20 +2,25 @@ ul.social-media {
 
   @include inline-list;
   float: right;
-  margin-left: $space-small;
+  margin: 0;
 
   > li {
-    margin-left: 1px;
+    margin-left: 0;
   }
 
   a {
-
-    padding: $space-small;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: block;
     color: $white;
     line-height: 1;
 
     &:before {
-      @include font-size(24);
+      position: absolute;
+      top: 8px;
+      left: 10px;
+      @include font-size(22);
     }
 
     // Twitter
@@ -23,11 +28,8 @@ ul.social-media {
     &[href^="http://www.twitter.com/"],
     &[href^="https://twitter.com/"],
     &[href^="https://www.twitter.com/"] {
-      background: $twitter-color;
+      @include link-background($twitter-color);
       @include icon(before, twitter);
-      &:hover, &:focus {
-        background: scale-color($twitter-color, $lightness: -14%);
-      }
     }
     
     // Facebook
@@ -35,21 +37,15 @@ ul.social-media {
     &[href^="http://www.facebook.com/"],
     &[href^="https://facebook.com/"],
     &[href^="https://www.facebook.com/"] {
-      background: $facebook-color;
+      @include link-background($facebook-color);
       @include icon(before, facebook);
-      &:hover, &:focus {
-        background: scale-color($facebook-color, $lightness: -14%);
-      }
     }
 
     // Google +
     &[href^="http://plus.google.com/"],
     &[href^="https://plus.google.com/"] {
-      background: $googleplus-color;
+      @include link-background($googleplus-color);
       @include icon(before, googleplus);
-      &:hover, &:focus {
-        background: scale-color($googleplus-color, $lightness: -14%);
-      }
     }
 
     // Flickr
@@ -57,11 +53,8 @@ ul.social-media {
     &[href^="http://www.flickr.com/"],
     &[href^="https://flickr.com/"],
     &[href^="https://www.flickr.com/"] {
-      background: $flickr-color;
+      @include link-background($flickr-color);
       @include icon(before, flickr);
-      &:hover, &:focus {
-        background: scale-color($flickr-color, $lightness: -14%);
-      }
     }
 
     // LinkedIn
@@ -69,11 +62,8 @@ ul.social-media {
     &[href^="http://www.linkedin.com/"],
     &[href^="https://linkedin.com/"],
     &[href^="https://www.linkedin.com/"] {
-      background: $linkedin-color;
+      @include link-background($linkedin-color);
       @include icon(before, linkedin);
-      &:hover, &:focus {
-        background: scale-color($linkedin-color, $lightness: -14%);
-      }
     }
 
     // YouTube
@@ -81,11 +71,8 @@ ul.social-media {
     &[href^="http://www.youtube.com/"],
     &[href^="https://youtube.com/"],
     &[href^="https://www.youtube.com/"] {
-      background: $youtube-color;
+      @include link-background($youtube-color);
       @include icon(before, youtube);
-      &:hover, &:focus {
-        background: scale-color($youtube-color, $lightness: -14%);
-      }
     }
 
   }

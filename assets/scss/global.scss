@@ -171,6 +171,22 @@ $icons: (
   box-shadow: $argument;
 }
 
+// Background and link colours
+
+@mixin link-background($color) {
+  background: $color;
+  &:hover, &:focus {
+    background: darken($color, 14%);
+  }
+}
+
+@mixin link-color($color) {
+  color: $color;
+  &:hover, &:focus {
+    color: darken($color, 14%);
+  }
+}
+
 //
 // Global Foundation Mixins
 //
