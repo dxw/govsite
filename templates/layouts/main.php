@@ -37,6 +37,8 @@
     </div>
   </header>
 
+  <?php get_template_part('partials/header-search'); ?>
+
   <?php w_requested_template(); ?>
 
   <footer class="site-footer">

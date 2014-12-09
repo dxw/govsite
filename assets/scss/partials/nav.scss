@@ -6,6 +6,14 @@ header.site-header {
       float: right;
     }
 
+    .menu-primary-navigation-container {
+
+      @media #{$medium-up} {
+        float: right;
+      }
+
+    }
+
     ul {
 
       @include inline-list;
@@ -17,32 +25,32 @@ header.site-header {
         }
       }
 
-    }
-
-    a {
-      background: $primary-color;
-      padding: $space-small;
-      color: $white;
-      @include font-size(18);
-      @include single-transition(border-top, 300ms, ease-in);
-      &:hover, &:focus {
-        background: scale-color($primary-color, $lightness: -14%);;
+      a {
+        background: $primary-color;
+        padding: $space-small;
         color: $white;
-      }
-
-      @media #{$medium-only} {
-        @include font-size(16);
-      }
-
-      @media #{$medium-up} {
-        position: relative;
-        background: transparent;
-        padding: $space-medium $space-small/2 0 $space-small/2;
-        color: $body-font-color;
+        @include font-size(18);
+        @include single-transition(border-top, 300ms, ease-in);
         &:hover, &:focus {
-          background: transparent;
-          color: $primary-color;
+          background: scale-color($primary-color, $lightness: -14%);;
+          color: $white;
         }
+
+        @media #{$medium-only} {
+          @include font-size(16);
+        }
+
+        @media #{$medium-up} {
+          position: relative;
+          background: transparent;
+          padding: $space-medium $space-small/2 0 $space-small/2;
+          color: $body-font-color;
+          &:hover, &:focus {
+            background: transparent;
+            color: $primary-color;
+          }
+        }
+
       }
 
     }
@@ -69,6 +77,23 @@ header.site-header {
         }
 
       }
+    }
+
+    .button-search {
+      @include font-size(30);
+      @include icon(before, search);
+      color: $body-font-color;
+
+      &:hover, &:focus {
+        color: $primary-color;
+      }
+
+      @media #{$medium-up} {
+        float: right;
+        margin-top: $space-small;
+        margin-left: $space-medium*2;
+      }
+
     }
 
     @media #{$small-only} {
