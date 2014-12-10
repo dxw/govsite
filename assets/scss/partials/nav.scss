@@ -82,11 +82,18 @@ header.site-header {
     .button-search {
       margin-top: $space-small;
       margin-left: $space-small*2;
+      background: transparent;
+      padding: 0;
       @include font-size(25);
       @include icon(before, search);
       color: $body-font-color;
 
       &:hover, &:focus {
+        color: $primary-color;
+      }
+
+      &.opened {
+        @include icon(before, close);
         color: $primary-color;
       }
 

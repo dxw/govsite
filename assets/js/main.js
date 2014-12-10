@@ -17,11 +17,19 @@ jQuery(function ($) {
     var $searchicon = $('.header-search .icon-search'),
     $searchfield = $('.header-search input');
 
-    $searchfield.blur(function(){
+    $searchfield.blur(function() {
         $searchicon.removeClass('focus');
     });
     $searchfield.focus(function() {        
         $searchicon.addClass('focus');
+    });
+
+    var $headersearch = $('#headermenu .button-search'),
+    $searchbanner = $('.header-search');
+
+    $headersearch.click(function() {
+        $searchbanner.slideToggle('fast');
+        $headersearch.toggleClass('opened');
     });
 
 });
