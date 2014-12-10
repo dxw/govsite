@@ -5,7 +5,7 @@
   color: $banner-color;
   @include font-size(20);
   &:hover, &:focus {
-    background: $banner-color;
+    background: darken($banner-color, 10%);
   }
 }
 
@@ -16,7 +16,7 @@
   padding: $space-small;
   color: $logo-color;
   &:hover, &:focus {
-    background: $logo-color;
+    background: darken($logo-color, 10%);
   }
 }
 

@@ -1,30 +1,38 @@
-ul.entry-meta {
-  @include inline-list;
+.entry-meta {
+  width: 100%;
+  display: inline-block;
   margin-bottom: $space-small;
   color: $jumbo;
   @include font-size(14);
 
-  > li {
-    margin-left: 28px;
+  time {
+    float: left;
+    display: inline-block;
   }
 
-  time {
-    display: block;
-    padding-top: 5px;
-    span {
-      width: 16px;
-      display: inline-block;
-      position: relative;
-      margin-right: 3px;
-      text-align: center;
-      @include icon(before, calendar);
-      &:before {
-        position: absolute;
-        top: -5px;
-        left: -3px;
-        font-size: 24px;
-        color: $base;
-      }
+  &.date {
+    width: auto;
+    float: right;
+
+    time {
+      float: none;
+      display: block;
+      padding-top: $space-small*2;
+    }
+  }
+
+  .post-categories {
+    @include inline-list;
+    float: left;
+    display: inline-block;
+    margin: 0 0 0 $space-small;
+
+    > li {
+      margin-left: 0;
+    }
+
+    a {
+      @include font-size(14);
     }
   }
 }

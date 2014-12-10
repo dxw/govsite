@@ -17,12 +17,17 @@ add_action('wp_footer', function() {
 <?php
 });
 
-// Function to trim page content
-function trim_content($characters) {
-  $content = get_the_content();
-  $trimmed_content = wp_trim_words( $content, $characters, ' ...' );
-  echo $trimmed_content;
+// Excerpt length
+function custom_excerpt_length( $length ) {
+  return 25;
 }
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+// Excerpt more
+function new_excerpt_more( $more ) {
+  return ' ...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
 // Featured images in posts and pages
 add_theme_support( 'post-thumbnails' );

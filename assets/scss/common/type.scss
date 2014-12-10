@@ -3,6 +3,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+*:focus {
+  outline: 0;
+}
+
 p, a, button, .button {
   @include font-size(18);
 }

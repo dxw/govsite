@@ -1,4 +1,4 @@
-.archive {
+.archive, .search {
 
   article {
     clear: both;
@@ -14,13 +14,13 @@
       @media #{$medium-up} {
         width: 20%;
         margin-right: 3%;
-        margin-bottom: $space-small*4;
+        margin-bottom: $space-medium*2;
       }
 
     }
 
     .button {
-      margin-bottom: $space-medium;
+      margin-bottom: 0;
     }
 
   }

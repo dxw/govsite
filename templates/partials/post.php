@@ -4,7 +4,7 @@
 
     <header class="page-header">
       <h1><?php the_title(); ?></h1>
-      <?php get_template_part('partials/entry-meta'); ?>
+      <?php get_template_part('partials/date'); ?>
     </header>
 
     <?php if( get_field('show_featured_image') == true ) { ?>

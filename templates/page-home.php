@@ -98,11 +98,7 @@ the_post();
                   <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
                 <?php } ?>
 
-                <?php if (has_excerpt()) { 
-                  the_excerpt();
-                } else { ?>
-                  <p><?php trim_content(25); ?></p>
-                <?php } ?>
+                <?php the_excerpt(); ?>
               </article>
               
             <?php endwhile; ?>
