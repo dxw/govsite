@@ -80,7 +80,9 @@ header.site-header {
     }
 
     .button-search {
-      @include font-size(30);
+      margin-top: $space-small;
+      margin-left: $space-small*2;
+      @include font-size(25);
       @include icon(before, search);
       color: $body-font-color;
 
@@ -90,8 +92,10 @@ header.site-header {
 
       @media #{$medium-up} {
         float: right;
-        margin-top: $space-small;
+      }
+      @media #{$large-up} {
         margin-left: $space-medium*2;
+        @include font-size(30);
       }
 
     }

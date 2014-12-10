@@ -13,4 +13,15 @@ jQuery(function ($) {
         return false;
     });
 
+    // Search
+    var $searchicon = $('.header-search .icon-search'),
+    $searchfield = $('.header-search input');
+
+    $searchfield.blur(function(){
+        $searchicon.removeClass('focus');
+    });
+    $searchfield.focus(function() {        
+        $searchicon.addClass('focus');
+    });
+
 });

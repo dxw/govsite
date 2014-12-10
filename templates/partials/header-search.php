@@ -1,7 +1,5 @@
 <section class="header-search">
   <div class="row">
-    <div class="large-12 columns">
-      dsss
-    </div>
+    <?php get_template_part('partials/search-form'); ?>
   </div>
 </section>

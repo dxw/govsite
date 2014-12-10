@@ -21,11 +21,11 @@
     <div class="row">
       <div class="large-12 column">
         <div class="row">
-          <div class="small-12 medium-5 large-4 columns">
+          <div class="small-12 medium-4 columns">
             <h1 class="left"><a href="/"><?php bloginfo('name'); ?></a></h1>
             <a href="#headermenu" class="nav-toggle hidden-for-medium-up right"></a>
           </div>
-          <div class="small-12 medium-7 large-8 columns">
+          <div class="small-12 medium-8 columns">
             <div class="row">
               <div class="medium-12 columns">
                 <?php get_template_part('partials/nav'); ?>

@@ -1,3 +1,8 @@
+html {
+  -webkit-font-smoothing: $font-smoothing;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 p, a, button, .button {
   @include font-size(18);
 }

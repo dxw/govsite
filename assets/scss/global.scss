@@ -105,6 +105,14 @@ $icons: (
   background-color: $color;
 }
 
+// Opacity
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
 // Triangle arrow
 
 @mixin arrow($width: 10px, $direction: up, $top: 0, $left: 50%, $color: red) {
