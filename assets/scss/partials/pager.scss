@@ -1,6 +1,6 @@
 .pager {
   @include clearfix;
-  margin: $space-small*4 0;
+  margin-bottom: $space-small*4;
   border-top: 1px solid $gainsboro;
   padding-top: $space-small*4;
   text-align: center;

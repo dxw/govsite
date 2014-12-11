@@ -8,7 +8,7 @@
       </hgroup>
     </header>
 
-    <div>
+    <section class="page-element">
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
           <?php get_template_part('partials/article-list-item'); ?>
@@ -16,7 +16,7 @@
       <?php else: ?>
         <p>No results found. Search again?</p>
       <?php endif; ?>
-    </div>
+    </section>
 
     <?php get_template_part('partials/pager') ?>
 

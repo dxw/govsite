@@ -1,5 +1,5 @@
 .post-summary {
-
+  @include clearfix;
   border-top: 1px solid $gainsboro;
 
   header {
