@@ -1,12 +1,19 @@
 .entry-meta {
   width: 100%;
   display: inline-block;
-  color: $jumbo;
+  color: $base;
   @include font-size(14);
 
   time {
     float: left;
     display: inline-block;
+    margin-right: $space-small/2;
+    color: $jumbo;
+    &:after {
+      content: "|";
+      padding-left: $space-small/2;
+      color: $base;
+    }
   }
 
   &.date {
@@ -21,10 +28,8 @@
   }
 
   .post-categories {
-    @include inline-list;
     float: left;
     display: inline-block;
-    margin: 0 0 0 $space-small;
 
     > li {
       margin-left: 0;
