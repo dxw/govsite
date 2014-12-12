@@ -4,7 +4,6 @@ header.site-header {
   $header-bottom-margin: $space-small*2;
 
   border-top: 10px solid $logo-color;
-  border-bottom: 1px solid $white-smoke;
   background: $white;
 
   h1 {
@@ -24,9 +23,9 @@ header.site-header {
     }
 
     img {
-      max-width: 260px;
+      max-width: 200px;
       @media #{$small-only} {
-        max-width: 220px;
+        max-width: 180px;
       }
     }
 

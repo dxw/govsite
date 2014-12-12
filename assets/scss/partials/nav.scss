@@ -15,14 +15,15 @@ header.site-header {
     }
 
     ul {
-
       @include inline-list;
+      margin: 0;
 
-      @media #{$medium-only} {
+      @media #{$small-only} {
+        margin-bottom: $space-small*2;
+      }
+
+      > li {
         margin-left: 0;
-        > li {
-          margin-left: $space-small;
-        }
       }
 
       a {
@@ -43,7 +44,7 @@ header.site-header {
         @media #{$medium-up} {
           position: relative;
           background: transparent;
-          padding: $space-medium $space-small/2 0 $space-small/2;
+          padding: 38px $space-medium;
           color: $body-font-color;
           &:hover, &:focus {
             background: transparent;
@@ -80,8 +81,8 @@ header.site-header {
     }
 
     .button-search {
-      margin-top: $space-small;
-      margin-left: $space-small*2;
+      margin-top: 30px;
+      margin-left: $space-medium;
       background: transparent;
       padding: 0;
       @include font-size(25);
@@ -101,7 +102,6 @@ header.site-header {
         float: right;
       }
       @media #{$large-up} {
-        margin-left: $space-medium*2;
         @include font-size(30);
       }
 

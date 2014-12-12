@@ -19,19 +19,15 @@
 
   <header class="site-header">
     <div class="row">
-      <div class="large-12 column">
+      <div class="small-12 medium-4 columns">
+        <?php $logo = get_option('logo-setting'); ?>
+        <h1 class="left"><a href="/" title="<?php bloginfo('name'); ?>"><img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?> logo"></a></h1>
+        <a href="#headermenu" class="nav-toggle hidden-for-medium-up right"></a>
+      </div>
+      <div class="small-12 medium-8 columns">
         <div class="row">
-          <div class="small-12 medium-4 columns">
-            <?php $logo = get_option('logo-setting'); ?>
-            <h1 class="left"><a href="/" title="<?php bloginfo('name'); ?>"><img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?> logo"></a></h1>
-            <a href="#headermenu" class="nav-toggle hidden-for-medium-up right"></a>
-          </div>
-          <div class="small-12 medium-8 columns">
-            <div class="row">
-              <div class="medium-12 columns">
-                <?php get_template_part('partials/nav'); ?>
-              </div>
-            </div>
+          <div class="medium-12 columns">
+            <?php get_template_part('partials/nav'); ?>
           </div>
         </div>
       </div>
