@@ -1,6 +1,6 @@
 <?php
 
-return; // remove return if you'd like to use expoxted ACFs 
+//return; // remove return if you'd like to use expoxted ACFs 
 
 if(function_exists("register_field_group"))
 {
