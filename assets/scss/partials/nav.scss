@@ -127,7 +127,7 @@ header.site-header {
   }
 
   .nav-toggle {
-    margin-top: $space-medium;
+    margin-top: $space-small/2;
     @include font-size(32);
     @include icon(before, menu);
   }

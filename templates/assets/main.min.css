@@ -12017,29 +12017,34 @@ header.site-header {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/common\/header\.scss}line{font-family:\0000310}}
 header.site-header h1 {
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
-@media only screen and (min-width: 40.063em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/common\/header\.scss}line{font-family:\0000310}}
-  header.site-header h1 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/common\/header\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/common\/header\.scss}line{font-family:\0000316}}
 header.site-header h1 a {
+  display: block;
   font-size: 50px;
   font-size: 3.1rem;
   line-height: 58px;
   line-height: 4.65rem;
+  line-height: 1;
   color: #1b325f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/common\/header\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/common\/header\.scss}line{font-family:\0000321}}
 header.site-header h1 a:hover, header.site-header h1 a:focus {
   color: #172b52;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/common\/header\.scss}line{font-family:\0000326}}
+header.site-header h1 img {
+  max-width: 260px;
+}
+@media only screen and (max-width: 40em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/common\/header\.scss}line{font-family:\0000326}}
+  header.site-header h1 img {
+    max-width: 220px;
+  }
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/common\/footer\.scss}line{font-family:\000033}}
@@ -12553,7 +12558,7 @@ header.site-header nav .button-search.opened:before {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/nav\.scss}line{font-family:\00003129}}
 header.site-header .nav-toggle {
-  margin-top: 15px;
+  margin-top: 5px;
   font-size: 32px;
   font-size: 1.984rem;
   line-height: 40px;
@@ -13410,6 +13415,11 @@ section.page-intro {
 .header-search button {
   width: 100%;
   display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/search\.scss}line{font-family:\0000386}}
+body.search-no-results .page-element {
+  min-height: 200px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/templates\/archive\.scss}line{font-family:\000033}}

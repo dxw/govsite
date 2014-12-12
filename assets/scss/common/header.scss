@@ -8,21 +8,25 @@ header.site-header {
   background: $white;
 
   h1 {
-    margin-top: $space-small/2;
-    margin-bottom: $space-small;
+    margin-top: $header-top-margin;
+    margin-bottom: $header-bottom-margin;
     font-family: $font-family-sans-serif;
     font-weight: 700;
-    
-    @media #{$medium-up} {
-      margin-top: $header-top-margin;
-      margin-bottom: $header-bottom-margin;      
-    }
 
     a {
+      display: block;
       @include font-size(50);
+      line-height: 1;
       color: $logo-color;
       &:hover, &:focus {
         color: scale-color($logo-color, $lightness: -14%);
+      }
+    }
+
+    img {
+      max-width: 260px;
+      @media #{$small-only} {
+        max-width: 220px;
       }
     }
 

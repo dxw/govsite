@@ -81,3 +81,9 @@
     display: inline-block;
   }
 }
+
+body.search-no-results {
+  .page-element {
+    min-height: 200px;
+  }
+}

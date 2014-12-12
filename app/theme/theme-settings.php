@@ -3,6 +3,7 @@
 add_action( 'admin_menu', 'my_admin_menu' );
 
 function my_admin_menu() {
+  add_options_page( 'Logo', 'Logo', 'manage_options', 'logo', 'logo_options' );
   add_options_page( 'Social media', 'Social media', 'manage_options', 'social-media', 'social_media_options' );
   add_options_page( 'Footer link', 'Footer link', 'manage_options', 'footer-link', 'footer_link_options' );
 }
@@ -10,6 +11,10 @@ function my_admin_menu() {
 add_action( 'admin_init', 'my_admin_init' );
 
 function my_admin_init() {
+
+  add_settings_section( 'header', 'Instructions', 'header_logo_callback', 'logo' );
+  register_setting( 'logo', 'logo-setting' );
+  add_settings_field( 'logo-image', 'Logo image URL', 'logo_image_callback', 'logo', 'header' );
 
   add_settings_section( 'header', 'Instructions', 'header_social_media_callback', 'social-media' );
   register_setting( 'social-media', 'social-media-one-url-setting' );
@@ -33,6 +38,29 @@ function my_admin_init() {
   add_settings_field( 'footer-cta', 'Footer call to action', 'footer_cta_callback', 'footer-link', 'header' );
   add_settings_field( 'footer-url', 'Footer URL', 'footer_url_callback', 'footer-link', 'header' );
 
+}
+
+// Logo
+function header_logo_callback() {
+  echo 'Preferably PNG with either transparent of white background, at least 260px wide.';
+}
+
+function logo_image_callback() {
+  $logosetting = esc_attr( get_option( 'logo-setting' ) );
+  echo "<input type='text' name='logo-setting' value='$logosetting' size='50'>";
+}
+
+function logo_options() {
+  ?>
+  <div class="wrap">
+    <h2>Logo</h2>
+    <form action="options.php" method="POST">
+      <?php settings_fields( 'logo' ); ?>
+      <?php do_settings_sections( 'logo' ); ?>
+      <?php submit_button(); ?>
+    </form>
+  </div>
+  <?php
 }
 
 // Social media page functions
