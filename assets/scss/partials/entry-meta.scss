@@ -1,6 +1,7 @@
 .entry-meta {
   width: 100%;
   display: inline-block;
+  margin-bottom: $space-small;
   color: $base;
   @include font-size(14);
 
@@ -23,7 +24,7 @@
     time {
       float: none;
       display: block;
-      padding-top: $space-small*2;
+      padding-top: $space-small;
     }
   }
 

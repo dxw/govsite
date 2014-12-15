@@ -1,0 +1,15 @@
+img {
+  &.alignleft, &.alignright {
+    @include thumb;
+    @include single-transition(all,$thumb-transition-speed,ease-out);
+    margin-bottom: $space-small;
+  }
+  &.alignleft {
+    float: left;
+    margin-right: $space-medium;
+  }
+  &.alignright {
+    float: right;
+    margin-left: $space-medium;
+  }
+}

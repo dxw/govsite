@@ -6,6 +6,7 @@
 
     h1 {
       margin-top: $space-medium;
+      line-height: 1;
 
       a {
         @include font-size(30);

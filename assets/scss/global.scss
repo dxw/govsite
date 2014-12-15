@@ -88,12 +88,9 @@ $icons: (
 @mixin font-size( $sizeValue: 12 ) {
   $pxValue: $sizeValue;
   $remValue: ($sizeValue * 0.062);
-  $lineHeightPx: ($pxValue + 8); 
-  $lineHeightRem: ($pxValue * 0.093); 
   font-size: $pxValue + px; 
   font-size: $remValue + rem; 
-  line-height: $lineHeightPx + px; 
-  line-height: $lineHeightRem + rem;
+  line-height: 1.5;
 }
 
 // RGBA colours
