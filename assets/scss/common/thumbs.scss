@@ -30,3 +30,9 @@ $thumb-border-color-hover: $gainsboro;
     }
   }
 }
+
+ul.featured {
+  img.th {
+    max-height: 150px;
+  }
+}

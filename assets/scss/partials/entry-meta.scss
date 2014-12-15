@@ -24,7 +24,11 @@
     time {
       float: none;
       display: block;
+      margin-right: 0;
       padding-top: $space-small;
+      &:after {
+        display: none;
+      }
     }
   }
 

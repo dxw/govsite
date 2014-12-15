@@ -12250,6 +12250,11 @@ ul[class*="block-grid-"] li .button {
   border-radius: 3px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/common\/thumbs\.scss}line{font-family:\0000335}}
+ul.featured img.th {
+  max-height: 150px;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/common\/panels\.scss}line{font-family:\000034}}
 .panel.banner {
   border-style: solid;
@@ -13015,7 +13020,7 @@ header.page-header {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/post\.scss}line{font-family:\000037}}
 .post-summary header h1 {
-  margin-top: 15px;
+  margin-top: 20px;
   line-height: 1;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/post\.scss}line{font-family:\0000311}}
@@ -13065,18 +13070,23 @@ header.page-header {
 .entry-meta.date time {
   float: none;
   display: block;
+  margin-right: 0;
   padding-top: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/entry-meta\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/entry-meta\.scss}line{font-family:\0000329}}
+.entry-meta.date time:after {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/entry-meta\.scss}line{font-family:\0000335}}
 .entry-meta .post-categories {
   float: left;
   display: inline-block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/entry-meta\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/entry-meta\.scss}line{font-family:\0000339}}
 .entry-meta .post-categories > li {
   margin-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/entry-meta\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/entry-meta\.scss}line{font-family:\0000343}}
 .entry-meta .post-categories a {
   font-size: 14px;
   font-size: 0.868rem;

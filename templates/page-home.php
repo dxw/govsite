@@ -35,13 +35,13 @@ the_post();
 
     <?php if (get_field('image_1')) {
 
-      $size = 'medium';
+      $size = 'full';
 
     ?>
 
       <section class="page-element">
 
-        <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
+        <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3 featured">
 
           <li>
             <?php
