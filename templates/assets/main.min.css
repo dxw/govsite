@@ -13432,14 +13432,10 @@ body.search-no-results .page-element {
   margin-bottom: 40px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/templates\/archive\.scss}line{font-family:\000037}}
-.archive article:last-child, .search article:last-child {
-  margin-bottom: 10px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/templates\/archive\.scss}line{font-family:\0000311}}
 .archive article h1.entry-title, .search article h1.entry-title {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/templates\/archive\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/templates\/archive\.scss}line{font-family:\0000311}}
 .archive article img, .search article img {
   max-width: 30%;
   float: left;
@@ -13447,13 +13443,13 @@ body.search-no-results .page-element {
   margin-right: 5%;
 }
 @media only screen and (min-width: 40.063em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/templates\/archive\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/templates\/archive\.scss}line{font-family:\0000311}}
   .archive article img, .search article img {
     width: 20%;
     margin-right: 3%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/templates\/archive\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/templates\/archive\.scss}line{font-family:\0000324}}
 .archive article .button, .search article .button {
   margin-bottom: 0;
 }
