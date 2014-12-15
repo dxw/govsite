@@ -12638,7 +12638,7 @@ ul.social-media > li > * {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/social-media\.scss}line{font-family:\000037}}
 ul.social-media > li {
-  margin-left: 0;
+  margin-left: 1px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/magda\/sites\/wp-theme\/wp-content\/themes\/whippet-theme\/assets\/scss\/partials\/social-media\.scss}line{font-family:\0000311}}
 ul.social-media a {
