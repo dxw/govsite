@@ -17,9 +17,12 @@ $thumb-border-color-hover: $gainsboro;
   }
 }
 
+ul[class*="block-grid-"] li img {
+  @include thumb($thumb-border-width);
+}
+
 ul.featured {
   img.th {
     max-height: 150px;
-    @include thumb($thumb-border-width);
   }
 }

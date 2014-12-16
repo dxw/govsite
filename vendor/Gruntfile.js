@@ -23,7 +23,7 @@ module.exports = function (grunt) {
               style: 'expanded',
               sourcemap: 'auto',
               trace: true,
-              debugInfo: true,
+              debugInfo: false,
               lineNumbers: true
             },
             files: {

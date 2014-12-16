@@ -6,12 +6,23 @@
 <head>
   <meta charset="utf-8">
   <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/templates/assets/img/dxw.png" />
 
   <?php wp_head(); ?>
 
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
+
+  <!--[if lt IE 9]>
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/ie8.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    <script src="http://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+    <script src="http://html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+  <![endif]-->
+
 </head>
 <body <?php body_class(); ?>>
 
@@ -67,5 +78,10 @@
   </footer>
 
   <?php wp_footer(); ?>
+
+  <!--[if lt IE 9]>
+    <script src="https://raw.githubusercontent.com/chuckcarpenter/REM-unit-polyfill/master/js/rem.min.js"></script>
+  <![endif]-->
+
 </body>
 </html>
