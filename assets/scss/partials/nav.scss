@@ -69,7 +69,7 @@ header.site-header {
           background: transparent;
           color: $primary-color;
           &:before {
-            @include arrow(10px, down, 0, 35%, $logo-color);
+            @include arrow(10px, down, 0, 45%, $logo-color);
           }
           &:hover, &:focus {
             background: transparent;

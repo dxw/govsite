@@ -2,10 +2,10 @@
   @include button;
   border: 2px solid $white;
   background: $white;
-  color: $banner-color;
+  color: $secondary-color;
   @include font-size(20);
   &:hover, &:focus {
-    background: darken($banner-color, 10%);
+    background: darken($secondary-color, 10%);
   }
 }
 

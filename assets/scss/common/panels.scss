@@ -1,19 +1,5 @@
-$panel-padding: rem-calc(20) !default;
-
 .panel {
   &.banner {
-    @include panel($smoke, $panel-padding);
-    border: none;
-    border-top: 5px solid $secondary-color;
-
-    h1, h2, h3, h4, h5, h6 {
-      line-height: 1.2;
-    }
-
-    a {
-      width: 100%;
-      text-align: center;
-    }
-
+    @include panel-styles($secondary-color);
   }
 }

@@ -194,6 +194,25 @@ $icons: (
   }
 }
 
+// Foundation panels
+
+@mixin panel-styles($border-color) {
+  $panel-padding: rem-calc(20) !default;
+
+  @include panel($smoke, $panel-padding);
+  border: none;
+  border-top: 5px solid $border-color;
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+  }
+
+  a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 //
 // Global Foundation Mixins
 //
@@ -394,9 +413,8 @@ $icons: (
 
 // We use these as default colors throughout
 $primary-color: #3a89c9 !default;   // pale light blue
-$secondary-color: #1A8922 !default; // vivid green
+$secondary-color: #00a0b0 !default; // turquoise blue
 $logo-color: #1b325f !default;      // dark blue
-$banner-color: #00a0b0 !default;    // turquoise blue
 $alert-color: #f04124 !default;     // cinnabar
 $success-color: #43AC6A !default;   // sea-green
 $warning-color: #f08a24 !default;   // carrot

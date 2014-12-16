@@ -11,15 +11,29 @@
       </hgroup>
     </header>
 
-    <div>
-      <?php if (have_posts()) : ?>
-        <?php while (have_posts()) : the_post(); ?>
-          <?php get_template_part('partials/article-list-item'); ?>
-        <?php endwhile; ?>
-      <?php endif; ?>
-    </div>
+    <div class="row">
 
-    <?php get_template_part('partials/pager') ?>
+      <div class="medium-8 columns">
+
+        <?php if (have_posts()) : ?>
+          <?php while (have_posts()) : the_post(); ?>
+            <?php get_template_part('partials/article-list-item'); ?>
+          <?php endwhile; ?>
+        <?php endif; ?>
+
+        <?php get_template_part('partials/pager') ?>
+
+      </div>
+
+      <aside class="medium-4 columns sidebar">
+
+        <?php if ( is_category() || is_tag() ) {
+          dynamic_sidebar('sidebar-primary');
+        } ?>
+
+      </aside>
+
+    </div>
 
   </div>
 

@@ -22,4 +22,8 @@ aside.sidebar {
 
   }
 
+  section.widget {
+    @include panel-styles($secondary-color);
+  }
+
 }
