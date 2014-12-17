@@ -438,76 +438,76 @@ th {
   padding: 0;
 }
 
-/* line 548, ../../assets/scss/global.scss */
+/* line 549, ../../assets/scss/global.scss */
 meta.foundation-version {
   font-family: "/5.5.0/";
 }
 
-/* line 552, ../../assets/scss/global.scss */
+/* line 553, ../../assets/scss/global.scss */
 meta.foundation-mq-small {
   font-family: "/only screen/";
   width: 0;
 }
 
-/* line 557, ../../assets/scss/global.scss */
+/* line 558, ../../assets/scss/global.scss */
 meta.foundation-mq-small-only {
   font-family: "/only screen and (max-width: 40em)/";
   width: 0;
 }
 
-/* line 562, ../../assets/scss/global.scss */
+/* line 563, ../../assets/scss/global.scss */
 meta.foundation-mq-medium {
   font-family: "/only screen and (min-width:40.063em)/";
   width: 40.063em;
 }
 
-/* line 567, ../../assets/scss/global.scss */
+/* line 568, ../../assets/scss/global.scss */
 meta.foundation-mq-medium-only {
   font-family: "/only screen and (min-width:40.063em) and (max-width:64em)/";
   width: 40.063em;
 }
 
-/* line 572, ../../assets/scss/global.scss */
+/* line 573, ../../assets/scss/global.scss */
 meta.foundation-mq-large {
   font-family: "/only screen and (min-width:64.063em)/";
   width: 64.063em;
 }
 
-/* line 577, ../../assets/scss/global.scss */
+/* line 578, ../../assets/scss/global.scss */
 meta.foundation-mq-large-only {
   font-family: "/only screen and (min-width:64.063em) and (max-width:90em)/";
   width: 64.063em;
 }
 
-/* line 582, ../../assets/scss/global.scss */
+/* line 583, ../../assets/scss/global.scss */
 meta.foundation-mq-xlarge {
   font-family: "/only screen and (min-width:90.063em)/";
   width: 90.063em;
 }
 
-/* line 587, ../../assets/scss/global.scss */
+/* line 588, ../../assets/scss/global.scss */
 meta.foundation-mq-xlarge-only {
   font-family: "/only screen and (min-width:90.063em) and (max-width:120em)/";
   width: 90.063em;
 }
 
-/* line 592, ../../assets/scss/global.scss */
+/* line 593, ../../assets/scss/global.scss */
 meta.foundation-mq-xxlarge {
   font-family: "/only screen and (min-width:120.063em)/";
   width: 120.063em;
 }
 
-/* line 597, ../../assets/scss/global.scss */
+/* line 598, ../../assets/scss/global.scss */
 meta.foundation-data-attribute-namespace {
   font-family: false;
 }
 
-/* line 604, ../../assets/scss/global.scss */
+/* line 605, ../../assets/scss/global.scss */
 html, body {
   height: 100%;
 }
 
-/* line 607, ../../assets/scss/global.scss */
+/* line 608, ../../assets/scss/global.scss */
 *,
 *:before,
 *:after {
@@ -516,13 +516,13 @@ html, body {
   box-sizing: border-box;
 }
 
-/* line 613, ../../assets/scss/global.scss */
+/* line 614, ../../assets/scss/global.scss */
 html,
 body {
   font-size: 100%;
 }
 
-/* line 617, ../../assets/scss/global.scss */
+/* line 618, ../../assets/scss/global.scss */
 body {
   background: #fff;
   color: #222;
@@ -536,23 +536,23 @@ body {
   cursor: auto;
 }
 
-/* line 630, ../../assets/scss/global.scss */
+/* line 631, ../../assets/scss/global.scss */
 a:hover {
   cursor: pointer;
 }
 
-/* line 633, ../../assets/scss/global.scss */
+/* line 634, ../../assets/scss/global.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 635, ../../assets/scss/global.scss */
+/* line 636, ../../assets/scss/global.scss */
 img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 639, ../../assets/scss/global.scss */
+/* line 640, ../../assets/scss/global.scss */
 #map_canvas img,
 #map_canvas embed,
 #map_canvas object,
@@ -562,56 +562,56 @@ img {
   max-width: none !important;
 }
 
-/* line 646, ../../assets/scss/global.scss */
+/* line 647, ../../assets/scss/global.scss */
 .left {
   float: left !important;
 }
 
-/* line 647, ../../assets/scss/global.scss */
+/* line 648, ../../assets/scss/global.scss */
 .right {
   float: right !important;
 }
 
-/* line 363, ../../assets/scss/global.scss */
+/* line 364, ../../assets/scss/global.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
 }
-/* line 364, ../../assets/scss/global.scss */
+/* line 365, ../../assets/scss/global.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 651, ../../assets/scss/global.scss */
+/* line 652, ../../assets/scss/global.scss */
 .hide {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 657, ../../assets/scss/global.scss */
+/* line 658, ../../assets/scss/global.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 663, ../../assets/scss/global.scss */
+/* line 664, ../../assets/scss/global.scss */
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 666, ../../assets/scss/global.scss */
+/* line 667, ../../assets/scss/global.scss */
 img {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 676, ../../assets/scss/global.scss */
+/* line 677, ../../assets/scss/global.scss */
 textarea {
   height: auto;
   min-height: 50px;
 }
 
-/* line 679, ../../assets/scss/global.scss */
+/* line 680, ../../assets/scss/global.scss */
 select {
   width: 100%;
 }
@@ -3186,7 +3186,7 @@ th.hide-for-touch {
   font-size: 0.6875rem;
   line-height: 0.6875rem;
   text-transform: uppercase;
-  color: #3a89c9;
+  color: #2e69ac;
 }
 /* line 68, ../../vendor/bower_components/foundation/scss/foundation/components/_breadcrumbs.scss */
 .breadcrumbs > *:hover a, .breadcrumbs > *:focus a {
@@ -3194,7 +3194,7 @@ th.hide-for-touch {
 }
 /* line 70, ../../vendor/bower_components/foundation/scss/foundation/components/_breadcrumbs.scss */
 .breadcrumbs > * a {
-  color: #3a89c9;
+  color: #2e69ac;
 }
 /* line 75, ../../vendor/bower_components/foundation/scss/foundation/components/_breadcrumbs.scss */
 .breadcrumbs > *.current {
@@ -3265,14 +3265,14 @@ button, .button {
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
   font-size: 1rem;
-  background-color: #3a89c9;
-  border-color: #2d6ea3;
+  background-color: #2e69ac;
+  border-color: #25548a;
   color: #FFFFFF;
   transition: background-color 300ms ease-out;
 }
 /* line 161, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button:hover, button:focus, .button:hover, .button:focus {
-  background-color: #2d6ea3;
+  background-color: #25548a;
 }
 /* line 167, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button:hover, button:focus, .button:hover, .button:focus {
@@ -3398,8 +3398,8 @@ button.round, .button.round {
 }
 /* line 240, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled, button[disabled], .button.disabled, .button[disabled] {
-  background-color: #3a89c9;
-  border-color: #2d6ea3;
+  background-color: #2e69ac;
+  border-color: #25548a;
   color: #FFFFFF;
   cursor: default;
   opacity: 0.7;
@@ -3407,7 +3407,7 @@ button.disabled, button[disabled], .button.disabled, .button[disabled] {
 }
 /* line 161, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #2d6ea3;
+  background-color: #25548a;
 }
 /* line 167, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
@@ -3415,7 +3415,7 @@ button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[dis
 }
 /* line 178, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #3a89c9;
+  background-color: #2e69ac;
 }
 /* line 241, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
@@ -4096,14 +4096,14 @@ ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus, ul.p
 }
 /* line 68, ../../vendor/bower_components/foundation/scss/foundation/components/_pagination.scss */
 ul.pagination li.current a, ul.pagination li.current button {
-  background: #3a89c9;
+  background: #2e69ac;
   color: #FFFFFF;
   font-weight: bold;
   cursor: default;
 }
 /* line 74, ../../vendor/bower_components/foundation/scss/foundation/components/_pagination.scss */
 ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.pagination li.current button:hover, ul.pagination li.current button:focus {
-  background: #3a89c9;
+  background: #2e69ac;
 }
 /* line 136, ../../vendor/bower_components/foundation/scss/foundation/components/_pagination.scss */
 ul.pagination li {
@@ -4195,7 +4195,7 @@ table tr td {
 }
 /* line 48, ../../vendor/bower_components/foundation/scss/foundation/components/_thumbs.scss */
 .th:hover, .th:focus {
-  box-shadow: 0 0 6px 1px rgba(58, 137, 201, 0.5);
+  box-shadow: 0 0 6px 1px rgba(46, 105, 172, 0.5);
 }
 /* line 63, ../../vendor/bower_components/foundation/scss/foundation/components/_thumbs.scss */
 .th.radius {
@@ -4460,13 +4460,13 @@ td {
 /* Default Link Styles */
 /* line 217, ../../vendor/bower_components/foundation/scss/foundation/components/_type.scss */
 a {
-  color: #3a89c9;
+  color: #2e69ac;
   text-decoration: none;
   line-height: inherit;
 }
 /* line 222, ../../vendor/bower_components/foundation/scss/foundation/components/_type.scss */
 a:hover, a:focus {
-  color: #3076af;
+  color: #285a94;
 }
 /* line 230, ../../vendor/bower_components/foundation/scss/foundation/components/_type.scss */
 a img {
@@ -4917,18 +4917,18 @@ blockquote p {
 /* line 75, ../../vendor/bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li a:not(.button) {
   display: block;
-  color: #3a89c9;
+  color: #2e69ac;
   margin: 0;
   padding: 0.4375rem 0.875rem;
 }
 /* line 80, ../../vendor/bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
   background: rgba(0, 0, 0, 0.025);
-  color: #75acd9;
+  color: #5e95d4;
 }
 /* line 87, ../../vendor/bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li.active > a:first-child:not(.button) {
-  color: #75acd9;
+  color: #5e95d4;
   font-weight: normal;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
@@ -4942,7 +4942,7 @@ blockquote p {
 }
 /* line 101, ../../vendor/bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li.heading {
-  color: #3a89c9;
+  color: #2e69ac;
   font-size: 0.875rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -4993,7 +4993,7 @@ blockquote p {
 .sub-nav li.active a {
   border-radius: 3px;
   font-weight: normal;
-  background: #3a89c9;
+  background: #2e69ac;
   padding: 0.1875rem 1rem;
   cursor: default;
   color: #FFFFFF;
@@ -5002,7 +5002,7 @@ blockquote p {
 .sub-nav dt.active a:hover,
 .sub-nav dd.active a:hover,
 .sub-nav li.active a:hover {
-  background: #3076af;
+  background: #285a94;
 }
 
 /* line 112, ../../vendor/bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -5228,13 +5228,13 @@ meta.foundation-mq-topbar {
   font-size: 0.8125rem;
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
-  background-color: #3a89c9;
-  border-color: #2d6ea3;
+  background-color: #2e69ac;
+  border-color: #25548a;
   color: #FFFFFF;
 }
 /* line 161, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
-  background-color: #2d6ea3;
+  background-color: #25548a;
 }
 /* line 167, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
@@ -5301,13 +5301,13 @@ meta.foundation-mq-topbar {
   font-size: 0.8125rem;
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
-  background-color: #3a89c9;
-  border-color: #2d6ea3;
+  background-color: #2e69ac;
+  border-color: #25548a;
   color: #FFFFFF;
 }
 /* line 161, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
-  background-color: #2d6ea3;
+  background-color: #25548a;
 }
 /* line 167, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
@@ -5377,12 +5377,12 @@ meta.foundation-mq-topbar {
 }
 /* line 361, ../../vendor/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li.active > a {
-  background: #3a89c9;
+  background: #2e69ac;
   color: #FFFFFF;
 }
 /* line 364, ../../vendor/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li.active > a:hover {
-  background: #3076af;
+  background: #285a94;
   color: #FFFFFF;
 }
 /* line 372, ../../vendor/bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -5582,11 +5582,11 @@ meta.foundation-mq-topbar {
     padding: 0 0.9375rem;
     line-height: 2.8125rem;
     color: #FFFFFF;
-    background: #3a89c9;
+    background: #2e69ac;
   }
   /* line 527, ../../vendor/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-    background: #3076af;
+    background: #285a94;
     color: #FFFFFF;
   }
   /* line 537, ../../vendor/bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -5725,7 +5725,7 @@ meta.foundation-mq-topbar {
   }
   /* line 670, ../../vendor/bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:active > a {
-    background: #3a89c9;
+    background: #2e69ac;
     color: #FFFFFF;
   }
   /* line 678, ../../vendor/bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -5785,10 +5785,10 @@ meta.foundation-mq-topbar {
 .panel.callout {
   border-style: solid;
   border-width: 1px;
-  border-color: #c8def0;
+  border-color: #c6daf0;
   margin-bottom: 1.25rem;
   padding: 1.25rem;
-  background: #f3f8fc;
+  background: #f1f6fb;
   color: #333333;
 }
 /* line 55, ../../vendor/bower_components/foundation/scss/foundation/components/_panels.scss */
@@ -5814,11 +5814,11 @@ meta.foundation-mq-topbar {
 }
 /* line 84, ../../vendor/bower_components/foundation/scss/foundation/components/_panels.scss */
 .panel.callout a:not(.button) {
-  color: #3a89c9;
+  color: #2e69ac;
 }
 /* line 87, ../../vendor/bower_components/foundation/scss/foundation/components/_panels.scss */
 .panel.callout a:not(.button):hover, .panel.callout a:not(.button):focus {
-  color: #3076af;
+  color: #285a94;
 }
 /* line 94, ../../vendor/bower_components/foundation/scss/foundation/components/_panels.scss */
 .panel.radius {
@@ -6103,7 +6103,9 @@ aside.sidebar ul {
 }
 /* line 7, ../../assets/scss/common/sidebar.scss */
 aside.sidebar ul li {
-  margin-top: 4px;
+  position: relative;
+  margin: 5px 0 0 25px;
+  padding: 0;
 }
 /* line 66, ../../assets/scss/global.scss */
 aside.sidebar ul li:before {
@@ -6116,17 +6118,20 @@ aside.sidebar ul li:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 11, ../../assets/scss/common/sidebar.scss */
+/* line 13, ../../assets/scss/common/sidebar.scss */
 aside.sidebar ul li:before {
+  position: absolute;
+  top: 4px;
+  left: -25px;
   display: inline-block;
   margin-right: 10px;
   color: #00a0b0;
 }
-/* line 17, ../../assets/scss/common/sidebar.scss */
+/* line 22, ../../assets/scss/common/sidebar.scss */
 aside.sidebar ul li:first-child {
   margin-top: 0;
 }
-/* line 25, ../../assets/scss/common/sidebar.scss */
+/* line 31, ../../assets/scss/common/sidebar.scss */
 aside.sidebar section.widget {
   border-style: solid;
   border-width: 1px;
@@ -6135,6 +6140,7 @@ aside.sidebar section.widget {
   padding: 1.25rem;
   background: #EEEEEE;
   color: #333333;
+  margin-bottom: 30px;
   border: none;
   border-top: 5px solid #00a0b0;
 }
@@ -6159,14 +6165,46 @@ aside.sidebar section.widget h1, aside.sidebar section.widget h2, aside.sidebar 
 aside.sidebar section.widget h1.subheader, aside.sidebar section.widget h2.subheader, aside.sidebar section.widget h3.subheader, aside.sidebar section.widget h4.subheader, aside.sidebar section.widget h5.subheader, aside.sidebar section.widget h6.subheader {
   line-height: 1.4;
 }
-/* line 206, ../../assets/scss/global.scss */
+/* line 207, ../../assets/scss/global.scss */
 aside.sidebar section.widget h1, aside.sidebar section.widget h2, aside.sidebar section.widget h3, aside.sidebar section.widget h4, aside.sidebar section.widget h5, aside.sidebar section.widget h6 {
   line-height: 1.2;
 }
-/* line 210, ../../assets/scss/global.scss */
+/* line 211, ../../assets/scss/global.scss */
 aside.sidebar section.widget a {
   width: 100%;
   text-align: center;
+}
+/* line 34, ../../assets/scss/common/sidebar.scss */
+aside.sidebar section.widget .post-date, aside.sidebar section.widget .rss-date {
+  display: block;
+  font-size: 14px;
+  font-size: 0.868rem;
+  line-height: 1.5;
+}
+/* line 39, ../../assets/scss/common/sidebar.scss */
+aside.sidebar section.widget a.rsswidget img {
+  display: none;
+  visibility: hidden;
+}
+/* line 48, ../../assets/scss/common/sidebar.scss */
+aside.sidebar #calendar_wrap caption {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-size: 0.992rem;
+  line-height: 1.5;
+  font-weight: normal;
+  text-align: left;
+}
+/* line 55, ../../assets/scss/common/sidebar.scss */
+aside.sidebar #calendar_wrap table, aside.sidebar #calendar_wrap a {
+  font-size: 14px;
+  font-size: 0.868rem;
+  line-height: 1.5;
+}
+/* line 59, ../../assets/scss/common/sidebar.scss */
+aside.sidebar #calendar_wrap table {
+  margin-bottom: 0;
+  border-color: #FFFFFF;
 }
 
 /* line 1, ../../assets/scss/common/buttons.scss */
@@ -6189,8 +6227,8 @@ aside.sidebar section.widget a {
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
   font-size: 1rem;
-  background-color: #3a89c9;
-  border-color: #2d6ea3;
+  background-color: #2e69ac;
+  border-color: #25548a;
   color: #FFFFFF;
   transition: background-color 300ms ease-out;
   border: 2px solid #FFFFFF;
@@ -6202,7 +6240,7 @@ aside.sidebar section.widget a {
 }
 /* line 161, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .button-banner:hover, .button-banner:focus {
-  background-color: #2d6ea3;
+  background-color: #25548a;
 }
 /* line 167, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .button-banner:hover, .button-banner:focus {
@@ -6233,8 +6271,8 @@ aside.sidebar section.widget a {
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
   font-size: 1rem;
-  background-color: #3a89c9;
-  border-color: #2d6ea3;
+  background-color: #2e69ac;
+  border-color: #25548a;
   color: #FFFFFF;
   transition: background-color 300ms ease-out;
   border: 2px solid #FFFFFF;
@@ -6244,7 +6282,7 @@ aside.sidebar section.widget a {
 }
 /* line 161, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .button-search-form:hover, .button-search-form:focus {
-  background-color: #2d6ea3;
+  background-color: #25548a;
 }
 /* line 167, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .button-search-form:hover, .button-search-form:focus {
@@ -6319,6 +6357,7 @@ ul.featured img.th {
   padding: 1.25rem;
   background: #EEEEEE;
   color: #333333;
+  margin-bottom: 30px;
   border: none;
   border-top: 5px solid #00a0b0;
 }
@@ -6343,11 +6382,11 @@ ul.featured img.th {
 .panel.banner h1.subheader, .panel.banner h2.subheader, .panel.banner h3.subheader, .panel.banner h4.subheader, .panel.banner h5.subheader, .panel.banner h6.subheader {
   line-height: 1.4;
 }
-/* line 206, ../../assets/scss/global.scss */
+/* line 207, ../../assets/scss/global.scss */
 .panel.banner h1, .panel.banner h2, .panel.banner h3, .panel.banner h4, .panel.banner h5, .panel.banner h6 {
   line-height: 1.2;
 }
-/* line 210, ../../assets/scss/global.scss */
+/* line 211, ../../assets/scss/global.scss */
 .panel.banner a {
   width: 100%;
   text-align: center;
@@ -6396,6 +6435,47 @@ input[type="color"]:focus,
 textarea:focus {
   box-shadow: none;
   background: #FFFFFF;
+}
+
+/* line 29, ../../assets/scss/common/forms.scss */
+form.searchform {
+  width: 100%;
+  display: inline-block;
+}
+/* line 32, ../../assets/scss/common/forms.scss */
+form.searchform label {
+  margin-bottom: 10px;
+}
+/* line 35, ../../assets/scss/common/forms.scss */
+form.searchform input[type="text"] {
+  width: 70%;
+  height: 40px;
+  float: left;
+  margin-bottom: 0;
+  border: none;
+  padding: 0.5rem;
+  font-size: 14px;
+  font-size: 0.868rem;
+  line-height: 1.5;
+}
+/* line 44, ../../assets/scss/common/forms.scss */
+form.searchform input[type="submit"] {
+  width: 30%;
+  height: 40px;
+  float: left;
+  border: none;
+  background: #2e69ac;
+  padding: 0.5rem;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-size: 0.992rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 55, ../../assets/scss/common/forms.scss */
+form.searchform input[type="submit"]:hover, form.searchform input[type="submit"]:focus {
+  background: #235084;
 }
 
 /* line 1, ../../assets/scss/common/flex-video.scss */
@@ -6474,7 +6554,7 @@ header.site-header nav ul > li {
 }
 /* line 29, ../../assets/scss/partials/nav.scss */
 header.site-header nav ul a {
-  background: #3a89c9;
+  background: #2e69ac;
   padding: 10px;
   color: #FFFFFF;
   font-size: 18px;
@@ -6484,7 +6564,7 @@ header.site-header nav ul a {
 }
 /* line 35, ../../assets/scss/partials/nav.scss */
 header.site-header nav ul a:hover, header.site-header nav ul a:focus {
-  background: #3076af;
+  background: #285a94;
   color: #FFFFFF;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
@@ -6506,7 +6586,7 @@ header.site-header nav ul a:hover, header.site-header nav ul a:focus {
   /* line 49, ../../assets/scss/partials/nav.scss */
   header.site-header nav ul a:hover, header.site-header nav ul a:focus {
     background: transparent;
-    color: #3a89c9;
+    color: #2e69ac;
   }
 }
 /* line 61, ../../assets/scss/partials/nav.scss */
@@ -6526,7 +6606,7 @@ header.site-header nav li.current_page_item a:focus {
   header.site-header nav li.current-menu-item a,
   header.site-header nav li.current_page_item a {
     background: transparent;
-    color: #3a89c9;
+    color: #2e69ac;
   }
   /* line 71, ../../assets/scss/partials/nav.scss */
   header.site-header nav li.current-menu-item a:before,
@@ -6545,7 +6625,7 @@ header.site-header nav li.current_page_item a:focus {
   header.site-header nav li.current_page_item a:hover,
   header.site-header nav li.current_page_item a:focus {
     background: transparent;
-    color: #3076af;
+    color: #285a94;
   }
 }
 /* line 83, ../../assets/scss/partials/nav.scss */
@@ -6572,11 +6652,11 @@ header.site-header nav .button-search:before {
 }
 /* line 92, ../../assets/scss/partials/nav.scss */
 header.site-header nav .button-search:hover, header.site-header nav .button-search:focus {
-  color: #3a89c9;
+  color: #2e69ac;
 }
 /* line 96, ../../assets/scss/partials/nav.scss */
 header.site-header nav .button-search.opened {
-  color: #3a89c9;
+  color: #2e69ac;
 }
 /* line 66, ../../assets/scss/global.scss */
 header.site-header nav .button-search.opened:before {
@@ -7243,15 +7323,15 @@ section.page-intro {
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
   font-size: 1rem;
-  background-color: #3a89c9;
-  border-color: #2d6ea3;
+  background-color: #2e69ac;
+  border-color: #25548a;
   color: #FFFFFF;
   transition: background-color 300ms ease-out;
   padding: 10px 20px;
 }
 /* line 161, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .comments .comment-reply-link:hover, .comments .comment-reply-link:focus {
-  background-color: #2d6ea3;
+  background-color: #25548a;
 }
 /* line 167, ../../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .comments .comment-reply-link:hover, .comments .comment-reply-link:focus {

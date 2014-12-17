@@ -26,6 +26,34 @@ textarea {
   }
 }
 
-form.wpcf-7 {
-  
+form.searchform {
+  width: 100%;
+  display: inline-block;
+  label {
+    margin-bottom: $space-small;
+  }
+  input[type="text"] {
+    width: 70%;
+    height: 40px;
+    float: left;
+    margin-bottom: 0;
+    border: none;
+    padding: 0.5rem;
+    @include font-size(14);
+  }
+  input[type="submit"] {
+    width: 30%;
+    height: 40px;
+    float: left;
+    border: none;
+    background: $primary-color;
+    padding: 0.5rem;
+    color: $white;
+    @include font-size(16);
+    -webkit-font-smoothing: $font-smoothing;
+    -moz-osx-font-smoothing: grayscale;
+    &:hover, &:focus {
+      background: darken($primary-color, 10%);
+    }
+  }
 }

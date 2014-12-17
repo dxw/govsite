@@ -200,6 +200,7 @@ $icons: (
   $panel-padding: rem-calc(20) !default;
 
   @include panel($smoke, $panel-padding);
+  margin-bottom: $space-medium*2;
   border: none;
   border-top: 5px solid $border-color;
 
@@ -412,7 +413,7 @@ $icons: (
 }
 
 // We use these as default colors throughout
-$primary-color: #3a89c9 !default;   // pale light blue
+$primary-color: #2e69ac !default;   // blue
 $secondary-color: #00a0b0 !default; // turquoise blue
 $logo-color: #1b325f !default;      // dark blue
 $alert-color: #f04124 !default;     // cinnabar

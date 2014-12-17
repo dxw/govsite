@@ -5,10 +5,15 @@ aside.sidebar {
     margin-left: 0;
 
     li {
-      margin-top: $space-mini*2;
+      position: relative;
+      margin: $space-small/2 0 0 $space-large;
+      padding: 0;
       @include icon(before, next);
 
       &:before {
+        position: absolute;
+        top: 4px;
+        left: -25px;
         display: inline-block;
         margin-right: $space-small;
         color: $secondary-color;
@@ -22,8 +27,39 @@ aside.sidebar {
 
   }
 
+  // WP widgets
   section.widget {
     @include panel-styles($secondary-color);
+
+    .post-date, .rss-date {
+      display: block;
+      @include font-size(14);
+    }
+
+    a.rsswidget img {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  // Calendar widget
+  #calendar_wrap {
+
+    caption {
+      margin-bottom: $space-medium;
+      @include font-size(16);
+      font-weight: normal;
+      text-align: left;
+    }
+
+    table, a {
+      @include font-size(14);
+    }
+
+    table {
+      margin-bottom: 0;
+      border-color: $white;
+    }
   }
 
 }
