@@ -1,12 +1,14 @@
 header.site-header {
 
   nav {
+    width: 100%;
+    display: inline-block;
 
     @media #{$medium-only} {
       float: right;
     }
 
-    .menu-primary-navigation-container {
+    div {
 
       @media #{$medium-up} {
         float: right;
@@ -69,7 +71,7 @@ header.site-header {
           background: transparent;
           color: $primary-color;
           &:before {
-            @include arrow(10px, down, 0, 45%, $logo-color);
+            @include arrow(10px, down, 0, 40%, $logo-color);
           }
           &:hover, &:focus {
             background: transparent;

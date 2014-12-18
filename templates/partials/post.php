@@ -25,7 +25,7 @@
 
         <div class="row">
 
-          <div class="medium-8 columns">
+          <div class="medium-8 large-8 columns">
             <?php if ( get_field('display_video') == false ) { ?>
               <figure>
                 <?php the_post_thumbnail('large'); ?>
@@ -37,7 +37,7 @@
             <?php } ?>
           </div>
 
-          <div class="medium-4 columns">
+          <div class="medium-4 large-4 columns">
 
             <article class="main-content">
               <?php echo get_field('introduction_text'); ?>
@@ -55,7 +55,7 @@
 
       <div class="row">
 
-        <div class="medium-8 columns">
+        <div class="medium-8 large-8 columns">
           <?php 
 
             the_content();
@@ -66,7 +66,7 @@
 
         <?php if (get_field('related_content')) { ?>
 
-          <div class="medium-4 columns">
+          <div class="medium-4 large-4 columns">
 
             <aside class="sidebar panel banner">
               <h3>Related content</h3>

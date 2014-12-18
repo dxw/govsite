@@ -15,7 +15,6 @@
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
 
   <!--[if lt IE 9]>
-    <link href="<?php echo get_template_directory_uri(); ?>/assets/ie8.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
     <script src="http://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
@@ -26,18 +25,20 @@
 </head>
 <body <?php body_class(); ?>>
 
-  <!--[if lt IE 8]><div class="alert"><?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?></div><![endif]-->
+  <!--[if lt IE 8]>
+    <div class="alert-box alert"><?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?></div>
+  <![endif]-->
 
   <header class="site-header">
     <div class="row">
-      <div class="small-12 medium-4 columns">
+      <div class="small-12 medium-4 large-4 columns">
         <?php $logo = get_option('logo-setting'); ?>
         <h1 class="left"><a href="/" title="<?php bloginfo('name'); ?>"><img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?> logo"></a></h1>
         <a href="#headermenu" class="nav-toggle hidden-for-medium-up right"></a>
       </div>
-      <div class="small-12 medium-8 columns">
+      <div class="small-12 medium-8 large-8 columns">
         <div class="row">
-          <div class="medium-12 columns">
+          <div class="medium-12 large-12 columns">
             <?php get_template_part('partials/nav'); ?>
           </div>
         </div>
@@ -53,10 +54,10 @@
 
     <section class="navigation">
       <div class="row">
-        <div class="medium-6 columns">
+        <div class="medium-6 large-6 columns">
           <?php get_template_part('partials/nav-footer'); ?>
         </div>
-        <div class="medium-6 columns">
+        <div class="medium-6 large-6 columns">
           <?php if ( get_option('footer-link-text-setting') ) { ?>
             <small><?php echo get_option('footer-link-text-setting'); ?> <a href="<?php echo get_option('footer-link-url-setting'); ?>"><?php echo get_option('footer-link-cta-setting'); ?></a></small>
           <?php } ?>
@@ -66,10 +67,10 @@
 
     <section class="credits">
       <div class="row">
-        <div class="small-6 columns">
+        <div class="small-6 large-6 columns">
           <small>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> copyright</small>
         </div>
-        <div class="medium-6 columns show-for-medium-up">
+        <div class="medium-6 large-6 columns show-for-medium-up">
           <?php get_template_part('partials/social-media'); ?>
         </div>
       </div>
@@ -78,10 +79,6 @@
   </footer>
 
   <?php wp_footer(); ?>
-
-  <!--[if lt IE 9]>
-    <script src="https://raw.githubusercontent.com/chuckcarpenter/REM-unit-polyfill/master/js/rem.min.js"></script>
-  <![endif]-->
 
 </body>
 </html>

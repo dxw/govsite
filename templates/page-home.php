@@ -80,7 +80,7 @@ the_post();
 
       <div class="row">
 
-        <div class="medium-8 columns">
+        <div class="medium-8 large-8 columns">
 
           <header>
             <h1>News</h1>
@@ -110,7 +110,7 @@ the_post();
 
         </div>
 
-        <div class="medium-4 columns">
+        <div class="medium-4 large-4 columns">
 
           <?php if (get_field('banner_title')) { ?>
           

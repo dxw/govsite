@@ -1,0 +1,7 @@
+.alert-box {
+  a {
+    @include font-size(13);
+    color: $white;
+    border-bottom: 1px solid $white;
+  }
+}

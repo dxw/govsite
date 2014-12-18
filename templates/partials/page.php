@@ -10,7 +10,7 @@
 
       <article class="row">
 
-        <div class="medium-8 columns">
+        <div class="medium-8 large-8 columns">
 
           <?php if ( has_post_thumbnail() ) { ?>
             <figure>

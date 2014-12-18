@@ -17,7 +17,7 @@ the_post();
 
       <article class="row">
 
-        <div class="medium-8 columns">
+        <div class="medium-8 large-8 columns">
 
           <?php if ( get_field('show_video') == false ) { ?>
             <figure>
@@ -31,7 +31,7 @@ the_post();
 
         </div>
 
-        <div class="medium-4 columns">
+        <div class="medium-4 large-4 columns">
 
           <article class="main-content">
             <?php the_content(); ?>

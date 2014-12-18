@@ -1,7 +1,12 @@
+button, .button {
+  padding: $space-small $space-small*2;
+}
+
 .button-banner {
   @include button;
   border: 2px solid $white;
   background: $white;
+  padding: $space-medium $space-small*2;
   color: $secondary-color;
   @include font-size(20);
   &:hover, &:focus {

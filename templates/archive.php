@@ -13,7 +13,7 @@
 
     <div class="row">
 
-      <div class="medium-8 columns">
+      <div class="medium-8 large-8 columns">
 
         <?php if (have_posts()) : ?>
           <?php while (have_posts()) : the_post(); ?>
@@ -25,7 +25,7 @@
 
       </div>
 
-      <aside class="medium-4 columns sidebar">
+      <aside class="medium-4 large-4 columns sidebar">
 
         <?php if ( is_category() || is_tag() ) {
           dynamic_sidebar('sidebar-primary');

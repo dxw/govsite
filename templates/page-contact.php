@@ -23,13 +23,13 @@ the_post();
 
       <article class="row">
 
-        <div class="medium-8 columns">
+        <div class="medium-8 large-8 columns">
 
          <?php the_content(); ?>
 
         </div>
 
-        <div class="medium-4 columns">
+        <div class="medium-4 large-4 columns">
 
           <?php if ( get_field('phone_number') || get_field('email_address') || get_field('address') ) { ?>
           
