@@ -3,9 +3,9 @@
   <div class="large-12 columns">
 
     <header class="page-header">
-      <hgroup>
+      <div class="header-group">
         <h1>You have searched for <strong><?php the_search_query(); ?></strong></h1>
-      </hgroup>
+      </div>
     </header>
 
     <section class="page-element">

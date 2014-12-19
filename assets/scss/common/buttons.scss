@@ -4,24 +4,24 @@ button, .button {
 
 .button-banner {
   @include button;
-  border: 2px solid $white;
   background: $white;
   padding: $space-medium $space-small*2;
   color: $secondary-color;
   @include font-size(20);
   &:hover, &:focus {
-    background: darken($secondary-color, 10%);
+    background: $white;
+    color: darken($secondary-color, 10%);
   }
 }
 
 .button-search-form {
   @include button;
-  border: 2px solid $white;
   background: $white;
   padding: $space-small;
   color: $logo-color;
   &:hover, &:focus {
-    background: darken($logo-color, 10%);
+    background: $white;
+    color: darken($logo-color, 10%);
   }
 }
 

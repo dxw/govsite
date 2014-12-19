@@ -14,7 +14,7 @@ header.page-header {
 
   }
 
-  hgroup {
+  div.header-group {
     h1 {
 
       @media #{$large-up} {
@@ -51,9 +51,13 @@ header.page-header {
   article.summary {
     @include clearfix;
     margin-bottom: $space-medium;
+    border-bottom: 1px solid $gainsboro;
+    padding-bottom: $space-small*2;
 
     &:last-of-type {
       margin-bottom: $space-medium*2;
+      border-bottom: none;
+      padding-bottom: 0;
     }
 
     a img {

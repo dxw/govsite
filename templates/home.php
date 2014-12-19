@@ -1,9 +1,9 @@
 <div class="row">
   <header class="large-12 column">
-    <hgroup>
+    <div class="header-group">
       <h1><?php echo bloginfo('name'); ?></h1>
       <h2><?php echo bloginfo('description'); ?></h2>
-    </hgroup>
+    </div>
   </header>
 
   <?php if (have_posts()) : ?>

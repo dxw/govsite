@@ -49,6 +49,7 @@ the_post();
               $thumb1 = $image1['sizes'][ $size ];
             ?>
             <a class="image" href="<?php the_field('url_1'); ?>"><img class="th" src="<?php echo $thumb1; ?>" alt="<?php echo $image1['alt']; ?>"></a>
+            <h4><a href="<?php the_field('url_1'); ?>"><?php the_field('title_1'); ?></a></h4>
             <p><?php the_field('description_1'); ?> <a href="<?php the_field('url_1'); ?>">Read more &raquo;</a></p>
           </li>
 
@@ -58,6 +59,7 @@ the_post();
               $thumb2 = $image2['sizes'][ $size ];
             ?>
             <a class="image" href="<?php the_field('url_2'); ?>"><img class="th" src="<?php echo $thumb2; ?>" alt="<?php echo $image2['alt']; ?>"></a>
+            <h4><a href="<?php the_field('url_2'); ?>"><?php the_field('title_2'); ?></a></h4>
             <p><?php the_field('description_2'); ?> <a href="<?php the_field('url_2'); ?>">Read more &raquo;</a></p>
           </li>
 
@@ -67,6 +69,7 @@ the_post();
               $thumb3 = $image3['sizes'][ $size ];
             ?>
             <a class="image" href="<?php the_field('url_3'); ?>"><img class="th" src="<?php echo $thumb3; ?>" alt="<?php echo $image3['alt']; ?>"></a>
+            <h4><a href="<?php the_field('url_3'); ?>"><?php the_field('title_3'); ?></a></h4>
             <p><?php the_field('description_3'); ?> <a href="<?php the_field('url_3'); ?>">Read more &raquo;</a></p>
           </li>
 

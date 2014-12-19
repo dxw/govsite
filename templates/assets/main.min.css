@@ -6312,7 +6312,6 @@ button, .button {
   border-color: #25548a;
   color: #FFFFFF;
   transition: background-color 300ms ease-out;
-  border: 2px solid #FFFFFF;
   background: #FFFFFF;
   padding: 15px 20px;
   color: #00a0b0;
@@ -6328,9 +6327,10 @@ button, .button {
 .button-banner:hover, .button-banner:focus {
   color: #FFFFFF;
 }
-/* line 12, ../../assets/scss/common/buttons.scss */
+/* line 11, ../../assets/scss/common/buttons.scss */
 .button-banner:hover, .button-banner:focus {
-  background: #00727d;
+  background: #FFFFFF;
+  color: #00727d;
 }
 
 /* line 17, ../../assets/scss/common/buttons.scss */
@@ -6357,7 +6357,6 @@ button, .button {
   border-color: #25548a;
   color: #FFFFFF;
   transition: background-color 300ms ease-out;
-  border: 2px solid #FFFFFF;
   background: #FFFFFF;
   padding: 10px;
   color: #1b325f;
@@ -6370,9 +6369,10 @@ button, .button {
 .button-search-form:hover, .button-search-form:focus {
   color: #FFFFFF;
 }
-/* line 23, ../../assets/scss/common/buttons.scss */
+/* line 22, ../../assets/scss/common/buttons.scss */
 .button-search-form:hover, .button-search-form:focus {
-  background: #101d37;
+  background: #FFFFFF;
+  color: #101d37;
 }
 
 /* line 29, ../../assets/scss/common/buttons.scss */
@@ -7168,7 +7168,7 @@ header.page-header {
 }
 @media only screen and (min-width: 64.063em) {
   /* line 18, ../../assets/scss/partials/page.scss */
-  header.page-header hgroup h1 {
+  header.page-header div.header-group h1 {
     width: 100%;
     float: none;
   }
@@ -7199,6 +7199,8 @@ header.page-header {
 /* line 51, ../../assets/scss/partials/page.scss */
 .page-element article.summary {
   margin-bottom: 15px;
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 20px;
 }
 /* line 172, ../../vendor/bower_components/foundation/scss/foundation/components/_global.scss */
 .page-element article.summary:before, .page-element article.summary:after {
@@ -7209,29 +7211,31 @@ header.page-header {
 .page-element article.summary:after {
   clear: both;
 }
-/* line 55, ../../assets/scss/partials/page.scss */
+/* line 57, ../../assets/scss/partials/page.scss */
 .page-element article.summary:last-of-type {
   margin-bottom: 30px;
+  border-bottom: none;
+  padding-bottom: 0;
 }
-/* line 59, ../../assets/scss/partials/page.scss */
+/* line 63, ../../assets/scss/partials/page.scss */
 .page-element article.summary a img {
   float: left;
   margin-top: 8px;
   margin-right: 3%;
 }
-/* line 65, ../../assets/scss/partials/page.scss */
+/* line 69, ../../assets/scss/partials/page.scss */
 .page-element article.summary p {
   margin-bottom: 0;
 }
-/* line 71, ../../assets/scss/partials/page.scss */
+/* line 75, ../../assets/scss/partials/page.scss */
 .page-element figure {
   margin: 0;
 }
-/* line 74, ../../assets/scss/partials/page.scss */
+/* line 78, ../../assets/scss/partials/page.scss */
 .page-element figure img {
   border: 10px solid #FFFFFF;
 }
-/* line 80, ../../assets/scss/partials/page.scss */
+/* line 84, ../../assets/scss/partials/page.scss */
 .page-element .main-content {
   border-top: 5px solid #00a0b0;
   padding-top: 15px;
