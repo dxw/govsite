@@ -44,32 +44,32 @@ the_post();
         <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3 featured">
 
           <li>
+            <h3><?php the_field('title_1'); ?></h3>
             <?php
               $image1 = get_field('image_1');
               $thumb1 = $image1['sizes'][ $size ];
             ?>
             <a class="image" href="<?php the_field('url_1'); ?>"><img class="th" src="<?php echo $thumb1; ?>" alt="<?php echo $image1['alt']; ?>"></a>
-            <h4><a href="<?php the_field('url_1'); ?>"><?php the_field('title_1'); ?></a></h4>
             <p><?php the_field('description_1'); ?> <a href="<?php the_field('url_1'); ?>">Read more &raquo;</a></p>
           </li>
 
           <li>
+            <h3><?php the_field('title_2'); ?></h3>
             <?php
               $image2 = get_field('image_2');
               $thumb2 = $image2['sizes'][ $size ];
             ?>
             <a class="image" href="<?php the_field('url_2'); ?>"><img class="th" src="<?php echo $thumb2; ?>" alt="<?php echo $image2['alt']; ?>"></a>
-            <h4><a href="<?php the_field('url_2'); ?>"><?php the_field('title_2'); ?></a></h4>
             <p><?php the_field('description_2'); ?> <a href="<?php the_field('url_2'); ?>">Read more &raquo;</a></p>
           </li>
 
           <li>
+            <h3><?php the_field('title_3'); ?></h3>
             <?php
               $image3 = get_field('image_3');
               $thumb3 = $image3['sizes'][ $size ];
             ?>
             <a class="image" href="<?php the_field('url_3'); ?>"><img class="th" src="<?php echo $thumb3; ?>" alt="<?php echo $image3['alt']; ?>"></a>
-            <h4><a href="<?php the_field('url_3'); ?>"><?php the_field('title_3'); ?></a></h4>
             <p><?php the_field('description_3'); ?> <a href="<?php the_field('url_3'); ?>">Read more &raquo;</a></p>
           </li>
 
@@ -91,18 +91,36 @@ the_post();
       
           <?php query_posts( array ( 'posts_per_page' => 4 ) ); ?>
             <?php while (have_posts()) : the_post() ?>
-              
-              <article <?php post_class('summary'); ?>>
-                <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 
-                <?php get_template_part('partials/entry-meta'); ?>
+              <?php if ( is_sticky() ) { ?>
 
-                <?php if ( has_post_thumbnail() ) { ?>
-                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-                <?php } ?>
+                <article <?php post_class('summary'); ?>>
+                  <?php if ( has_post_thumbnail() ) { ?>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
+                  <?php } ?>
 
-                <?php the_excerpt(); ?>
-              </article>
+                  <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+
+                  <?php get_template_part('partials/entry-meta'); ?>
+
+                  <?php the_excerpt(); ?>
+                </article>
+
+              <?php } else { ?>
+                
+                <article <?php post_class('summary'); ?>>
+                  <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+
+                  <?php get_template_part('partials/entry-meta'); ?>
+
+                  <?php if ( has_post_thumbnail() ) { ?>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+                  <?php } ?>
+
+                  <?php the_excerpt(); ?>
+                </article>
+
+              <?php } ?>
               
             <?php endwhile; ?>
           <?php wp_reset_query(); ?>

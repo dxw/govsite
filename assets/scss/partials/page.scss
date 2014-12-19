@@ -71,10 +71,12 @@ header.page-header {
     }
 
     &.sticky {
-      border-left: 5px solid $black;
       border-bottom: 0;
       background: $jet;
       padding: $space-medium $space-small*2 $space-small*2 $space-small*2;
+      img {
+        margin-bottom: $space-small;
+      }
       h4 {
         margin-top: 0;
         a {

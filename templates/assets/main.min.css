@@ -7229,44 +7229,47 @@ header.page-header {
 }
 /* line 73, ../../assets/scss/partials/page.scss */
 .page-element article.summary.sticky {
-  border-left: 5px solid #000000;
   border-bottom: 0;
   background: #222222;
   padding: 15px 20px 20px 20px;
 }
-/* line 78, ../../assets/scss/partials/page.scss */
+/* line 77, ../../assets/scss/partials/page.scss */
+.page-element article.summary.sticky img {
+  margin-bottom: 10px;
+}
+/* line 80, ../../assets/scss/partials/page.scss */
 .page-element article.summary.sticky h4 {
   margin-top: 0;
 }
-/* line 80, ../../assets/scss/partials/page.scss */
+/* line 82, ../../assets/scss/partials/page.scss */
 .page-element article.summary.sticky h4 a {
   font-weight: bold;
 }
-/* line 84, ../../assets/scss/partials/page.scss */
+/* line 86, ../../assets/scss/partials/page.scss */
 .page-element article.summary.sticky a {
   color: #FFFFFF;
 }
-/* line 86, ../../assets/scss/partials/page.scss */
+/* line 88, ../../assets/scss/partials/page.scss */
 .page-element article.summary.sticky a:hover, .page-element article.summary.sticky a:focus {
   color: #CCCCCC;
 }
-/* line 90, ../../assets/scss/partials/page.scss */
+/* line 92, ../../assets/scss/partials/page.scss */
 .page-element article.summary.sticky time {
   color: #CCCCCC;
 }
-/* line 93, ../../assets/scss/partials/page.scss */
+/* line 95, ../../assets/scss/partials/page.scss */
 .page-element article.summary.sticky p {
   color: #CCCCCC;
 }
-/* line 100, ../../assets/scss/partials/page.scss */
+/* line 102, ../../assets/scss/partials/page.scss */
 .page-element figure {
   margin: 0;
 }
-/* line 103, ../../assets/scss/partials/page.scss */
+/* line 105, ../../assets/scss/partials/page.scss */
 .page-element figure img {
   border: 10px solid #FFFFFF;
 }
-/* line 109, ../../assets/scss/partials/page.scss */
+/* line 111, ../../assets/scss/partials/page.scss */
 .page-element .main-content {
   border-top: 5px solid #00a0b0;
   padding-top: 15px;
