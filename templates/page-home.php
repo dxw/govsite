@@ -92,7 +92,7 @@ the_post();
           <?php query_posts( array ( 'posts_per_page' => 4 ) ); ?>
             <?php while (have_posts()) : the_post() ?>
               
-              <article class="summary">
+              <article <?php post_class('summary'); ?>>
                 <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 
                 <?php get_template_part('partials/entry-meta'); ?>

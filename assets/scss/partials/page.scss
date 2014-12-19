@@ -70,6 +70,31 @@ header.page-header {
       margin-bottom: 0;
     }
 
+    &.sticky {
+      border-left: 5px solid $black;
+      border-bottom: 0;
+      background: $jet;
+      padding: $space-medium $space-small*2 $space-small*2 $space-small*2;
+      h4 {
+        margin-top: 0;
+        a {
+          font-weight: bold;
+        }
+      }
+      a {
+        color: $white;
+        &:hover, &:focus {
+          color: $iron;
+        }
+      }
+      time {
+        color: $iron;
+      }
+      p {
+        color: $iron;
+      }
+    }
+
   }
 
   figure {
