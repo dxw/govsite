@@ -70,6 +70,22 @@ header.page-header {
       margin-bottom: 0;
     }
 
+    span.icon {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      position: absolute;
+      top: 5px;
+      background: $primary-color;
+      @include icon(before, lock);
+      color: $white;
+      &:before {
+        position: absolute;
+        top: 6px;
+        left: 7px;
+      }
+    }
+
     &.sticky {
       border-bottom: 0;
       background: $jet;
@@ -94,6 +110,17 @@ header.page-header {
       }
       p {
         color: $iron;
+      }
+    }
+
+    &.status-private,
+    &.post-password-required {
+      header {
+        position: relative;
+        h4 {
+          display: inline-block;
+          margin-left: $space-small*4;
+        }
       }
     }
 
