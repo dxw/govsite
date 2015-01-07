@@ -23,7 +23,7 @@ module.exports = function (grunt) {
               style: 'expanded',
               sourcemap: 'auto',
               trace: true,
-              debugInfo: false,
+              debugInfo: false, // This should stay FALSE because debug code breaks older versions of IE
               lineNumbers: true
             },
             files: {
