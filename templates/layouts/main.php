@@ -48,7 +48,9 @@
 
   <?php get_template_part('partials/header-search'); ?>
 
-  <?php w_requested_template(); ?>
+  <main role="main">
+    <?php w_requested_template(); ?>
+  </main>
 
   <footer class="site-footer">
 

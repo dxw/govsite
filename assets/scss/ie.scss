@@ -128,6 +128,34 @@
 
 /* IE7 */
 
+.lt-ie8 .column, .lt-ie8 .columns { margin-left: 15px; padding: 0; }
+
+.lt-ie8 .site-header h1 { margin-top: $space-medium*2; }
+
+.lt-ie8 .site-header .medium-4 { margin-right: 50px; }
+
+.lt-ie8 header.site-header nav { width: 100%; }
+.lt-ie8 header.site-header nav ul a { padding: 15px; }
+.lt-ie8 header.site-header form.searchform {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  div {
+    float: right;
+  }
+  input#s {
+    width: 200px;
+    height: 18px;
+    border: 1px solid $gainsboro;
+  }
+  input#searchsubmit {
+    width: 100px;
+    text-align: center;
+  }
+}
+
+.lt-ie8 .page-element .medium-8,
+.lt-ie8 .archive main .medium-8 { margin-right: 50px; }
+
 .lt-ie8 .page-element { display: block; clear: both; }
 
 .lt-ie8 ul.large-block-grid-2,
@@ -142,26 +170,13 @@
 
 .lt-ie8 .alert-box { padding: 10px 15px; font-size: 13px; }
 
+.lt-ie8 .page-element,
+.lt-ie8 .page-element article.summary { width: 100%; clear: both; }
+.lt-ie8 .page-element article.summary span.icon { margin-left: -40px; background: $primary-color url('#{$imagePath}/ie/padlock.png') no-repeat 0 0 }
+
 .lt-ie8 .panel.banner a { width: auto; }
 
 .lt-ie8 form.searchform input[type="text"] { width: 60%; height: 20px; padding: 10px; }
-
-.lt-ie8 .header-search {
-  display: block;
-  .search-field {
-    .icon-search {
-      width: 30px;
-      height: 30px;
-      float: left;
-      display: inline-block;
-      background: url('#{$imagePath}/ie/search.png') no-repeat 0 0;
-    }
-    input {
-      float: left;
-      margin-left: 15px;
-    }
-  }
-}
 
 .lt-ie8 aside.sidebar ul { list-style-image: url('#{$imagePath}/ie/list-bullet.png'); }
 

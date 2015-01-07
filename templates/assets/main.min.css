@@ -8212,103 +8212,151 @@ aside.sidebar-content a.contact-link:before {
 
 /* IE7 */
 /* line 131, ../../assets/scss/ie.scss */
+.lt-ie8 .column, .lt-ie8 .columns {
+  margin-left: 15px;
+  padding: 0;
+}
+
+/* line 133, ../../assets/scss/ie.scss */
+.lt-ie8 .site-header h1 {
+  margin-top: 30px;
+}
+
+/* line 135, ../../assets/scss/ie.scss */
+.lt-ie8 .site-header .medium-4 {
+  margin-right: 50px;
+}
+
+/* line 137, ../../assets/scss/ie.scss */
+.lt-ie8 header.site-header nav {
+  width: 100%;
+}
+
+/* line 138, ../../assets/scss/ie.scss */
+.lt-ie8 header.site-header nav ul a {
+  padding: 15px;
+}
+
+/* line 139, ../../assets/scss/ie.scss */
+.lt-ie8 header.site-header form.searchform {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+/* line 142, ../../assets/scss/ie.scss */
+.lt-ie8 header.site-header form.searchform div {
+  float: right;
+}
+/* line 145, ../../assets/scss/ie.scss */
+.lt-ie8 header.site-header form.searchform input#s {
+  width: 200px;
+  height: 18px;
+  border: 1px solid #DDDDDD;
+}
+/* line 150, ../../assets/scss/ie.scss */
+.lt-ie8 header.site-header form.searchform input#searchsubmit {
+  width: 100px;
+  text-align: center;
+}
+
+/* line 156, ../../assets/scss/ie.scss */
+.lt-ie8 .page-element .medium-8,
+.lt-ie8 .archive main .medium-8 {
+  margin-right: 50px;
+}
+
+/* line 159, ../../assets/scss/ie.scss */
 .lt-ie8 .page-element {
   display: block;
   clear: both;
 }
 
-/* line 133, ../../assets/scss/ie.scss */
+/* line 161, ../../assets/scss/ie.scss */
 .lt-ie8 ul.large-block-grid-2,
 .lt-ie8 ul.large-block-grid-3 {
   display: block;
   clear: both;
 }
 
-/* line 136, ../../assets/scss/ie.scss */
+/* line 164, ../../assets/scss/ie.scss */
 .lt-ie8 ul.large-block-grid-2 li {
   width: 48%;
   margin-left: 2%;
 }
 
-/* line 137, ../../assets/scss/ie.scss */
+/* line 165, ../../assets/scss/ie.scss */
 .lt-ie8 ul.large-block-grid-2 li:first-child {
   margin-left: 0;
 }
 
-/* line 139, ../../assets/scss/ie.scss */
+/* line 167, ../../assets/scss/ie.scss */
 .lt-ie8 ul.large-block-grid-3 {
   display: block;
   clear: both;
 }
 
-/* line 140, ../../assets/scss/ie.scss */
+/* line 168, ../../assets/scss/ie.scss */
 .lt-ie8 ul.large-block-grid-3 li {
   width: 30%;
   margin-left: 2%;
 }
 
-/* line 141, ../../assets/scss/ie.scss */
+/* line 169, ../../assets/scss/ie.scss */
 .lt-ie8 ul.large-block-grid-3 li:first-child {
   margin-left: 0;
 }
 
-/* line 143, ../../assets/scss/ie.scss */
+/* line 171, ../../assets/scss/ie.scss */
 .lt-ie8 .alert-box {
   padding: 10px 15px;
   font-size: 13px;
 }
 
-/* line 145, ../../assets/scss/ie.scss */
+/* line 173, ../../assets/scss/ie.scss */
+.lt-ie8 .page-element,
+.lt-ie8 .page-element article.summary {
+  width: 100%;
+  clear: both;
+}
+
+/* line 175, ../../assets/scss/ie.scss */
+.lt-ie8 .page-element article.summary span.icon {
+  margin-left: -40px;
+  background: #2e69ac url("../assets/img/ie/padlock.png") no-repeat 0 0;
+}
+
+/* line 177, ../../assets/scss/ie.scss */
 .lt-ie8 .panel.banner a {
   width: auto;
 }
 
-/* line 147, ../../assets/scss/ie.scss */
+/* line 179, ../../assets/scss/ie.scss */
 .lt-ie8 form.searchform input[type="text"] {
   width: 60%;
   height: 20px;
   padding: 10px;
 }
 
-/* line 149, ../../assets/scss/ie.scss */
-.lt-ie8 .header-search {
-  display: block;
-}
-/* line 152, ../../assets/scss/ie.scss */
-.lt-ie8 .header-search .search-field .icon-search {
-  width: 30px;
-  height: 30px;
-  float: left;
-  display: inline-block;
-  background: url("../assets/img/ie/search.png") no-repeat 0 0;
-}
-/* line 159, ../../assets/scss/ie.scss */
-.lt-ie8 .header-search .search-field input {
-  float: left;
-  margin-left: 15px;
-}
-
-/* line 166, ../../assets/scss/ie.scss */
+/* line 181, ../../assets/scss/ie.scss */
 .lt-ie8 aside.sidebar ul {
   list-style-image: url("../assets/img/ie/list-bullet.png");
 }
 
-/* line 168, ../../assets/scss/ie.scss */
+/* line 183, ../../assets/scss/ie.scss */
 .lt-ie8 aside.sidebar-content address {
   background: url("../assets/img/ie/pin.png") no-repeat 0 0;
 }
 
-/* line 169, ../../assets/scss/ie.scss */
+/* line 184, ../../assets/scss/ie.scss */
 .lt-ie8 aside.sidebar-content .contact-link.phone {
   background: url("../assets/img/ie/phone.png") no-repeat 0 0;
 }
 
-/* line 170, ../../assets/scss/ie.scss */
+/* line 185, ../../assets/scss/ie.scss */
 .lt-ie8 aside.sidebar-content .contact-link.email {
   background: url("../assets/img/ie/envelope.png") no-repeat 0 0;
 }
 
-/* line 172, ../../assets/scss/ie.scss */
+/* line 187, ../../assets/scss/ie.scss */
 .lt-ie8 input[type="text"],
 .lt-ie8 input[type="password"],
 .lt-ie8 input[type="date"],
@@ -8327,17 +8375,17 @@ aside.sidebar-content a.contact-link:before {
   padding: 10px;
 }
 
-/* line 188, ../../assets/scss/ie.scss */
+/* line 203, ../../assets/scss/ie.scss */
 .lt-ie8 .share a.facebook {
   background: #3b5998 url("../assets/img/ie/facebook.png") no-repeat 5px 5px;
 }
 
-/* line 189, ../../assets/scss/ie.scss */
+/* line 204, ../../assets/scss/ie.scss */
 .lt-ie8 .share a.twitter {
   background: #55acee url("../assets/img/ie/twitter.png") no-repeat 5px 5px;
 }
 
-/* line 190, ../../assets/scss/ie.scss */
+/* line 205, ../../assets/scss/ie.scss */
 .lt-ie8 .share a.mail {
   background: #1b325f url("../assets/img/ie/email.png") no-repeat 5px 5px;
 }
