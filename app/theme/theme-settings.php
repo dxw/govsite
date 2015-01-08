@@ -17,18 +17,11 @@ function my_admin_init() {
   add_settings_field( 'logo-image', 'Logo image URL', 'logo_image_callback', 'logo', 'header' );
 
   add_settings_section( 'header', 'Instructions', 'header_social_media_callback', 'social-media' );
-  register_setting( 'social-media', 'social-media-one-url-setting' );
-  register_setting( 'social-media', 'social-media-two-url-setting' );
-  register_setting( 'social-media', 'social-media-three-url-setting' );
-  register_setting( 'social-media', 'social-media-four-url-setting' );
-  register_setting( 'social-media', 'social-media-five-url-setting' );
-  register_setting( 'social-media', 'social-media-six-url-setting' );
-  add_settings_field( 'first-profile-url', 'First profile URL', 'first_profile_url_callback', 'social-media', 'header' );
-  add_settings_field( 'second-profile-url', 'Second profile URL', 'second_profile_url_callback', 'social-media', 'header' );
-  add_settings_field( 'third-profile-url', 'Third profile URL', 'third_profile_url_callback', 'social-media', 'header' );
-  add_settings_field( 'fourth-profile-url', 'Fourth profile URL', 'fourth_profile_url_callback', 'social-media', 'header' );
-  add_settings_field( 'fifth-profile-url', 'Fifth profile URL', 'fifth_profile_url_callback', 'social-media', 'header' );
-  add_settings_field( 'sixth-profile-url', 'Sixth profile URL', 'sixth_profile_url_callback', 'social-media', 'header' );
+
+  for ($i = 0; $i < 6; $i++) {
+    register_setting( 'social-media', 'social-media-'.$i.'-url-setting' );
+    add_settings_field( 'profile-url-'.$i, 'Profile URL '.($i+1), function () use ($i) { profile_url_callback($i); }, 'social-media', 'header' );
+  }
 
   add_settings_section( 'header', 'Instructions', 'header_footer_link_callback', 'footer-link' );
   register_setting( 'footer-link', 'footer-link-text-setting' );
@@ -69,34 +62,9 @@ function header_social_media_callback() {
   echo 'Choose social media profiles for your site. We support <strong>Facebook</strong>, <strong>Flickr</strong>, <strong>Google+</strong>, <strong>LinkedIn</strong>, <strong>Twitter</strong> and <strong>YouTube</strong> icons.';
 }
 
-function first_profile_url_callback() {
-  $firsturlsetting = esc_attr( get_option( 'social-media-one-url-setting' ) );
-  echo "<input type='text' name='social-media-one-url-setting' value='$firsturlsetting' size='50'>";
-}
-
-function second_profile_url_callback() {
-  $secondurlsetting = esc_attr( get_option( 'social-media-two-url-setting' ) );
-  echo "<input type='text' name='social-media-two-url-setting' value='$secondurlsetting' size='50'>";
-}
-
-function third_profile_url_callback() {
-  $thirdurlsetting = esc_attr( get_option( 'social-media-three-url-setting' ) );
-  echo "<input type='text' name='social-media-three-url-setting' value='$thirdurlsetting' size='50'>";
-}
-
-function fourth_profile_url_callback() {
-  $fourthurlsetting = esc_attr( get_option( 'social-media-four-url-setting' ) );
-  echo "<input type='text' name='social-media-four-url-setting' value='$fourthurlsetting' size='50'>";
-}
-
-function fifth_profile_url_callback() {
-  $fifthurlsetting = esc_attr( get_option( 'social-media-five-url-setting' ) );
-  echo "<input type='text' name='social-media-five-url-setting' value='$fifthurlsetting' size='50'>";
-}
-
-function sixth_profile_url_callback() {
-  $sixthurlsetting = esc_attr( get_option( 'social-media-six-url-setting' ) );
-  echo "<input type='text' name='social-media-six-url-setting' value='$sixthurlsetting' size='50'>";
+function profile_url_callback($i) {
+  $urlsetting = get_option( 'social-media-'.$i.'-url-setting' );
+  echo '<input type="text" name="social-media-'.esc_attr($i).'-url-setting" value="'.esc_attr($urlsetting).'" size="50">';
 }
 
 function social_media_options() {
