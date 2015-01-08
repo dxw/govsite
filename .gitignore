@@ -1,4 +1,5 @@
 vendor/node_modules
 vendor/.grunt
 vendor/bower_components
-.npm-debug.log
+vendor/npm-debug.log
+npm-debug.log

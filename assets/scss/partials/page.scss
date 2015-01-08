@@ -48,84 +48,6 @@ header.page-header {
     border-bottom: 0;
   }
 
-  article.summary {
-    @include clearfix;
-    margin-bottom: $space-medium;
-    border-bottom: 1px solid $gainsboro;
-    padding-bottom: $space-small*2;
-
-    &:last-of-type {
-      margin-bottom: $space-medium*2;
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    a img {
-      float: left;
-      margin-top: 8px;
-      margin-right: 3%;
-    }
-
-    p {
-      margin-bottom: 0;
-    }
-
-    span.icon {
-      width: 30px;
-      height: 30px;
-      display: inline-block;
-      position: absolute;
-      top: 5px;
-      background: $primary-color;
-      @include icon(before, lock);
-      color: $white;
-      &:before {
-        position: absolute;
-        top: 6px;
-        left: 7px;
-      }
-    }
-
-    &.sticky {
-      border-bottom: 0;
-      background: $jet;
-      padding: $space-medium $space-small*2 $space-small*2 $space-small*2;
-      img {
-        margin-bottom: $space-small;
-      }
-      h4 {
-        margin-top: 0;
-        a {
-          font-weight: bold;
-        }
-      }
-      a {
-        color: $white;
-        &:hover, &:focus {
-          color: $iron;
-        }
-      }
-      time {
-        color: $iron;
-      }
-      p {
-        color: $iron;
-      }
-    }
-
-    &.status-private,
-    &.post-password-required {
-      header {
-        position: relative;
-        h4 {
-          display: inline-block;
-          margin-left: $space-small*4;
-        }
-      }
-    }
-
-  }
-
   figure {
     margin: 0;
 
@@ -138,6 +60,85 @@ header.page-header {
   .main-content {
     border-top: 5px solid $secondary-color;
     padding-top: $space-medium;
+  }
+
+}
+
+article.summary,
+article.post-summary {
+  @include clearfix;
+  margin-bottom: $space-medium;
+  border-bottom: 1px solid $gainsboro;
+  padding-bottom: $space-small*2;
+
+  &:last-of-type {
+    margin-bottom: $space-medium*2;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  a img {
+    float: left;
+    margin-top: 8px;
+    margin-right: 3%;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  span.icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    background: $primary-color;
+    @include icon(before, lock);
+    color: $white;
+    &:before {
+      position: absolute;
+      top: 6px;
+      left: 7px;
+    }
+  }
+
+  &.sticky {
+    border-bottom: 0;
+    background: $jet;
+    padding: $space-medium $space-small*2 $space-small*2 $space-small*2;
+    img {
+      margin-bottom: $space-small;
+    }
+    h4 {
+      margin-top: 0;
+      a {
+        font-weight: bold;
+      }
+    }
+    a {
+      color: $white;
+      &:hover, &:focus {
+        color: $iron;
+      }
+    }
+    time {
+      color: $iron;
+    }
+    p {
+      color: $iron;
+    }
+  }
+
+  &.status-private,
+  &.post-password-required {
+    header {
+      position: relative;
+      h1, h4 {
+        display: inline-block;
+        margin-left: $space-small*4;
+      }
+    }
   }
 
 }

@@ -172,7 +172,9 @@
 
 .lt-ie8 .page-element,
 .lt-ie8 .page-element article.summary { width: 100%; clear: both; }
-.lt-ie8 .page-element article.summary span.icon { margin-left: -40px; background: $primary-color url('#{$imagePath}/ie/padlock.png') no-repeat 0 0 }
+
+.lt-ie8 article.summary span.icon,
+.lt-ie8 article.post-summary span.icon { margin-left: -40px; background: $primary-color url('#{$imagePath}/ie/padlock.png') no-repeat 0 0 }
 
 .lt-ie8 .panel.banner a { width: auto; }
 

@@ -1,24 +1,15 @@
 .post-summary {
   @include clearfix;
-  border-top: 1px solid $gainsboro;
 
   header {
 
     h1 {
-      margin-top: $space-small*2;
+      margin-top: 0;
       line-height: 1;
 
       a {
         @include font-size(30);
       }
-    }
-  }
-
-  &:first-child {
-    border-top: none;
-
-    header h1 {
-      margin-top: 0;
     }
   }
 

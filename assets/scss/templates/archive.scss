@@ -1,8 +1,6 @@
 .archive, .search {
 
   article {
-    clear: both;
-    margin-bottom: $space-small*4;
 
     h1.entry-title {
       margin-bottom: $space-small;
@@ -19,6 +17,10 @@
         margin-right: 3%;
       }
 
+    }
+
+    p {
+      margin-bottom: $space-small*2;
     }
 
     .button {
