@@ -7437,53 +7437,52 @@ article.post-summary span.icon:before {
 /* line 106, ../../assets/scss/partials/page.scss */
 article.summary.sticky,
 article.post-summary.sticky {
-  border-bottom: 0;
-  background: #222222;
-  padding: 15px 20px 20px 20px;
+  position: relative;
+  border-bottom: 3px solid #DDDDDD;
+  background: #EEEEEE;
+  padding: 10px 20px 20px 20px;
 }
-/* line 110, ../../assets/scss/partials/page.scss */
-article.summary.sticky img,
-article.post-summary.sticky img {
-  margin-bottom: 10px;
-}
-/* line 113, ../../assets/scss/partials/page.scss */
+/* line 111, ../../assets/scss/partials/page.scss */
 article.summary.sticky h4,
 article.post-summary.sticky h4 {
   margin-top: 0;
 }
-/* line 115, ../../assets/scss/partials/page.scss */
+/* line 113, ../../assets/scss/partials/page.scss */
 article.summary.sticky h4 a,
 article.post-summary.sticky h4 a {
-  font-weight: bold;
+  font-size: 28px;
+  font-size: 1.736rem;
+  line-height: 1.5;
 }
-/* line 119, ../../assets/scss/partials/page.scss */
-article.summary.sticky a,
-article.post-summary.sticky a {
-  color: #FFFFFF;
+/* line 118, ../../assets/scss/partials/page.scss */
+article.summary.sticky a img,
+article.post-summary.sticky a img {
+  border: 5px solid #FFFFFF;
+  transition: all 300ms ease-out;
 }
 /* line 121, ../../assets/scss/partials/page.scss */
-article.summary.sticky a:hover, article.summary.sticky a:focus,
-article.post-summary.sticky a:hover,
-article.post-summary.sticky a:focus {
-  color: #CCCCCC;
+article.summary.sticky a img:hover, article.summary.sticky a img:focus,
+article.post-summary.sticky a img:hover,
+article.post-summary.sticky a img:focus {
+  border-color: #DDDDDD;
 }
-/* line 125, ../../assets/scss/partials/page.scss */
+/* line 126, ../../assets/scss/partials/page.scss */
 article.summary.sticky time,
 article.post-summary.sticky time {
   color: #CCCCCC;
 }
-/* line 128, ../../assets/scss/partials/page.scss */
+/* line 129, ../../assets/scss/partials/page.scss */
 article.summary.sticky p,
 article.post-summary.sticky p {
   color: #CCCCCC;
 }
-/* line 135, ../../assets/scss/partials/page.scss */
+/* line 136, ../../assets/scss/partials/page.scss */
 article.summary.status-private header, article.summary.post-password-required header,
 article.post-summary.status-private header,
 article.post-summary.post-password-required header {
   position: relative;
 }
-/* line 137, ../../assets/scss/partials/page.scss */
+/* line 138, ../../assets/scss/partials/page.scss */
 article.summary.status-private header h1, article.summary.status-private header h4, article.summary.post-password-required header h1, article.summary.post-password-required header h4,
 article.post-summary.status-private header h1,
 article.post-summary.status-private header h4,

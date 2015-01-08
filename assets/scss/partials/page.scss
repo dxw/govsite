@@ -104,22 +104,23 @@ article.post-summary {
   }
 
   &.sticky {
-    border-bottom: 0;
-    background: $jet;
-    padding: $space-medium $space-small*2 $space-small*2 $space-small*2;
-    img {
-      margin-bottom: $space-small;
-    }
+    position: relative;
+    border-bottom: 3px solid $gainsboro;
+    background: $smoke;
+    padding: $space-small $space-small*2 $space-small*2 $space-small*2;
     h4 {
       margin-top: 0;
       a {
-        font-weight: bold;
+        @include font-size(28);
       }
     }
     a {
-      color: $white;
-      &:hover, &:focus {
-        color: $iron;
+      img {
+        border: 5px solid $white;
+        @include single-transition();
+        &:hover, &:focus {
+          border-color: $gainsboro;
+        }
       }
     }
     time {

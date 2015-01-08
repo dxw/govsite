@@ -92,18 +92,11 @@ the_post();
           <?php query_posts( array ( 'posts_per_page' => 4 ) ); ?>
             <?php while (have_posts()) : the_post() ?>
 
-              <?php if ( is_sticky() ) { ?>
+              <?php if ( is_sticky() ) {
 
-                <article <?php post_class('summary'); ?>>
-                  <?php if ( has_post_thumbnail() ) { ?>
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
-                  <?php } ?>
+                get_template_part('partials/news-item');
 
-                  <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-
-                  <?php get_template_part('partials/entry-meta'); ?>
-
-                  <?php the_excerpt(); ?>
+                  the_excerpt(); ?>
                 </article>
 
               <?php } elseif ( get_post_status() == 'private' || post_password_required() ) { ?>
@@ -123,21 +116,11 @@ the_post();
                   <?php the_excerpt(); ?>
                 </article>
 
-              <?php } else { ?>
-                
-                <article <?php post_class('summary'); ?>>
-                  <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+              <?php } else {
 
-                  <?php get_template_part('partials/entry-meta'); ?>
+                get_template_part('partials/news-item');
 
-                  <?php if ( has_post_thumbnail() ) { ?>
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-                  <?php } ?>
-
-                  <?php the_excerpt(); ?>
-                </article>
-
-              <?php } ?>
+              } ?>
               
             <?php endwhile; ?>
           <?php wp_reset_query(); ?>
