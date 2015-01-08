@@ -3,9 +3,9 @@
 add_action( 'admin_menu', 'my_admin_menu' );
 
 function my_admin_menu() {
-  add_options_page( 'Logo', 'Logo', 'manage_options', 'logo', 'logo_options' );
-  add_options_page( 'Social media', 'Social media', 'manage_options', 'social-media', 'social_media_options' );
-  add_options_page( 'Footer link', 'Footer link', 'manage_options', 'footer-link', 'footer_link_options' );
+  add_theme_page( 'Logo', 'Logo', 'manage_options', 'logo', 'logo_options' );
+  add_theme_page( 'Social media', 'Social media', 'manage_options', 'social-media', 'social_media_options' );
+  add_theme_page( 'Footer link', 'Footer link', 'manage_options', 'footer-link', 'footer_link_options' );
 }
 
 add_action( 'admin_init', 'my_admin_init' );
