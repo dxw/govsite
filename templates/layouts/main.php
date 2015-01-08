@@ -54,6 +54,8 @@
 
   <footer class="site-footer">
 
+    <?php //get_template_part('partials/social-media'); ?>
+
     <section class="navigation">
       <div class="row">
         <div class="medium-6 large-6 columns">
@@ -72,7 +74,7 @@
         <div class="small-6 large-6 columns">
           <small>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> copyright</small>
         </div>
-        <div class="medium-6 large-6 columns show-for-medium-up">
+        <div class="medium-6 large-6 columns ">
           <?php get_template_part('partials/social-media'); ?>
         </div>
       </div>

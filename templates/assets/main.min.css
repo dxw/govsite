@@ -8376,18 +8376,62 @@ aside.sidebar-content a.contact-link:before {
 }
 
 /* line 203, ../../assets/scss/ie.scss */
-.lt-ie8 .share a.facebook {
-  background: #3b5998 url("../assets/img/ie/facebook.png") no-repeat 5px 5px;
+.lt-ie8 .share a {
+  padding: 0;
 }
-
-/* line 204, ../../assets/scss/ie.scss */
-.lt-ie8 .share a.twitter {
-  background: #55acee url("../assets/img/ie/twitter.png") no-repeat 5px 5px;
-}
-
 /* line 205, ../../assets/scss/ie.scss */
+.lt-ie8 .share a.facebook {
+  background: #3b5998 url("../assets/img/ie/social-icons-sprite.png") no-repeat 0 -35px;
+}
+/* line 206, ../../assets/scss/ie.scss */
+.lt-ie8 .share a.twitter {
+  background: #55acee url("../assets/img/ie/social-icons-sprite.png") no-repeat 0 0;
+}
+/* line 207, ../../assets/scss/ie.scss */
 .lt-ie8 .share a.mail {
-  background: #1b325f url("../assets/img/ie/email.png") no-repeat 5px 5px;
+  background: #1b325f url("../assets/img/ie/social-icons-sprite.png") no-repeat 0 -210px;
+}
+
+/* line 210, ../../assets/scss/ie.scss */
+.lt-ie8 ul.social-media a {
+  width: 35px;
+  height: 35px;
+  background-image: url("../assets/img/ie/social-icons-sprite.png");
+  background-repeat: no-repeat;
+}
+/* line 215, ../../assets/scss/ie.scss */
+.lt-ie8 ul.social-media a:hover, .lt-ie8 ul.social-media a:focus {
+  background-image: url("../assets/img/ie/social-icons-sprite.png");
+}
+/* line 219, ../../assets/scss/ie.scss */
+.lt-ie8 ul.social-media a[href^="http://twitter.com/"], .lt-ie8 ul.social-media a[href^="http://www.twitter.com/"], .lt-ie8 ul.social-media a[href^="https://twitter.com/"], .lt-ie8 ul.social-media a[href^="https://www.twitter.com/"] {
+  background-position: 0 0;
+}
+/* line 226, ../../assets/scss/ie.scss */
+.lt-ie8 ul.social-media a[href^="http://facebook.com/"], .lt-ie8 ul.social-media a[href^="http://www.facebook.com/"], .lt-ie8 ul.social-media a[href^="https://facebook.com/"], .lt-ie8 ul.social-media a[href^="https://www.facebook.com/"] {
+  background-position: 0 -35px;
+}
+/* line 233, ../../assets/scss/ie.scss */
+.lt-ie8 ul.social-media a[href^="http://plus.google.com/"], .lt-ie8 ul.social-media a[href^="https://plus.google.com/"] {
+  background-position: 0 -70px;
+}
+/* line 238, ../../assets/scss/ie.scss */
+.lt-ie8 ul.social-media a[href^="http://linkedin.com/"], .lt-ie8 ul.social-media a[href^="http://www.linkedin.com/"], .lt-ie8 ul.social-media a[href^="https://linkedin.com/"], .lt-ie8 ul.social-media a[href^="https://www.linkedin.com/"] {
+  background-position: 0 -105px;
+}
+/* line 245, ../../assets/scss/ie.scss */
+.lt-ie8 ul.social-media a[href^="http://flickr.com/"], .lt-ie8 ul.social-media a[href^="http://www.flickr.com/"], .lt-ie8 ul.social-media a[href^="https://flickr.com/"], .lt-ie8 ul.social-media a[href^="https://www.flickr.com/"] {
+  background-position: 0 -140px;
+}
+/* line 252, ../../assets/scss/ie.scss */
+.lt-ie8 ul.social-media a[href^="http://youtube.com/"], .lt-ie8 ul.social-media a[href^="http://www.youtube.com/"], .lt-ie8 ul.social-media a[href^="https://youtube.com/"], .lt-ie8 ul.social-media a[href^="https://www.youtube.com/"] {
+  background-position: 0 -175px;
+}
+
+/* line 260, ../../assets/scss/ie.scss */
+.lt-ie8 footer .credits .show-for-medium-up {
+  display: inline-block;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=main.min.css.map */

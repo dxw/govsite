@@ -200,6 +200,61 @@
 .lt-ie8 input[type="color"],
 .lt-ie8 textarea { padding: 10px; }
 
-.lt-ie8 .share a.facebook { background: $facebook-color url('#{$imagePath}/ie/facebook.png') no-repeat 5px 5px; }
-.lt-ie8 .share a.twitter { background: $twitter-color url('#{$imagePath}/ie/twitter.png') no-repeat 5px 5px; }
-.lt-ie8 .share a.mail { background: $logo-color url('#{$imagePath}/ie/email.png') no-repeat 5px 5px; }
+.lt-ie8 .share a {
+  padding: 0;
+  &.facebook { background: $facebook-color url('#{$imagePath}/ie/social-icons-sprite.png') no-repeat 0 -35px; }
+  &.twitter { background: $twitter-color url('#{$imagePath}/ie/social-icons-sprite.png') no-repeat 0 0; }
+  &.mail { background: $logo-color url('#{$imagePath}/ie/social-icons-sprite.png') no-repeat 0 -210px; }
+}
+
+.lt-ie8 ul.social-media a {
+  width: 35px;
+  height: 35px;
+  background-image: url('#{$imagePath}/ie/social-icons-sprite.png');
+  background-repeat: no-repeat;
+  &:hover, &:focus {
+    background-image: url('#{$imagePath}/ie/social-icons-sprite.png');
+  }
+  // Twitter
+  &[href^="http://twitter.com/"],
+  &[href^="http://www.twitter.com/"],
+  &[href^="https://twitter.com/"],
+  &[href^="https://www.twitter.com/"] {
+    background-position: 0 0;
+  }
+  // Facebook
+  &[href^="http://facebook.com/"],
+  &[href^="http://www.facebook.com/"],
+  &[href^="https://facebook.com/"],
+  &[href^="https://www.facebook.com/"] {
+    background-position: 0 -35px;
+  }
+  // Google +
+  &[href^="http://plus.google.com/"],
+  &[href^="https://plus.google.com/"] {
+    background-position: 0 -70px;
+  }
+  // LinkedIn
+  &[href^="http://linkedin.com/"],
+  &[href^="http://www.linkedin.com/"],
+  &[href^="https://linkedin.com/"],
+  &[href^="https://www.linkedin.com/"] {
+    background-position: 0 -105px;
+  }
+  // Flickr
+  &[href^="http://flickr.com/"],
+  &[href^="http://www.flickr.com/"],
+  &[href^="https://flickr.com/"],
+  &[href^="https://www.flickr.com/"] {
+    background-position: 0 -140px;
+  }
+  // YouTube
+  &[href^="http://youtube.com/"],
+  &[href^="http://www.youtube.com/"],
+  &[href^="https://youtube.com/"],
+  &[href^="https://www.youtube.com/"] {
+    background-position: 0 -175px;
+  }
+}
+
+.lt-ie8 footer .credits .show-for-medium-up { display: inline-block; visibility: visible; }
