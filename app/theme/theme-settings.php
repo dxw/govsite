@@ -1,9 +1,44 @@
 <?php 
 
 add_action( 'admin_menu', function () {
-  add_theme_page( 'Logo', 'Logo', 'manage_options', 'logo', 'logo_options' );
-  add_theme_page( 'Social media', 'Social media', 'manage_options', 'social-media', 'social_media_options' );
-  add_theme_page( 'Footer link', 'Footer link', 'manage_options', 'footer-link', 'footer_link_options' );
+  add_theme_page( 'Logo', 'Logo', 'manage_options', 'logo', function () {
+    ?>
+    <div class="wrap">
+      <h2>Logo</h2>
+      <form action="options.php" method="POST">
+        <?php settings_fields( 'logo' ); ?>
+        <?php do_settings_sections( 'logo' ); ?>
+        <?php submit_button(); ?>
+      </form>
+    </div>
+    <?php
+  });
+
+  add_theme_page( 'Social media', 'Social media', 'manage_options', 'social-media', function () {
+    ?>
+    <div class="wrap">
+      <h2>Social media</h2>
+      <form action="options.php" method="POST">
+        <?php settings_fields( 'social-media' ); ?>
+        <?php do_settings_sections( 'social-media' ); ?>
+        <?php submit_button(); ?>
+      </form>
+    </div>
+    <?php
+  });
+
+  add_theme_page( 'Footer link', 'Footer link', 'manage_options', 'footer-link', function () {
+    ?>
+    <div class="wrap">
+      <h2>Footer link</h2>
+      <form action="options.php" method="POST">
+        <?php settings_fields( 'footer-link' ); ?>
+        <?php do_settings_sections( 'footer-link' ); ?>
+        <?php submit_button(); ?>
+      </form>
+    </div>
+    <?php
+  });
 });
 
 add_action( 'admin_init', function () {
@@ -39,19 +74,6 @@ function logo_image_callback() {
   echo "<input type='text' name='logo-setting' value='$logosetting' size='50'>";
 }
 
-function logo_options() {
-  ?>
-  <div class="wrap">
-    <h2>Logo</h2>
-    <form action="options.php" method="POST">
-      <?php settings_fields( 'logo' ); ?>
-      <?php do_settings_sections( 'logo' ); ?>
-      <?php submit_button(); ?>
-    </form>
-  </div>
-  <?php
-}
-
 // Social media page functions
 
 function header_social_media_callback() {
@@ -61,19 +83,6 @@ function header_social_media_callback() {
 function profile_url_callback($i) {
   $urlsetting = get_option( 'social-media-'.$i.'-url-setting' );
   echo '<input type="text" name="social-media-'.esc_attr($i).'-url-setting" value="'.esc_attr($urlsetting).'" size="50">';
-}
-
-function social_media_options() {
-  ?>
-  <div class="wrap">
-    <h2>Social media</h2>
-    <form action="options.php" method="POST">
-      <?php settings_fields( 'social-media' ); ?>
-      <?php do_settings_sections( 'social-media' ); ?>
-      <?php submit_button(); ?>
-    </form>
-  </div>
-  <?php
 }
 
 // Footer link
@@ -95,17 +104,4 @@ function footer_cta_callback() {
 function footer_url_callback() {
   $footerurlsetting = esc_attr( get_option( 'footer-link-url-setting' ) );
   echo "<input type='text' name='footer-link-url-setting' value='$footerurlsetting' size='50' />";
-}
-
-function footer_link_options() {
-  ?>
-  <div class="wrap">
-    <h2>Footer link</h2>
-    <form action="options.php" method="POST">
-      <?php settings_fields( 'footer-link' ); ?>
-      <?php do_settings_sections( 'footer-link' ); ?>
-      <?php submit_button(); ?>
-    </form>
-  </div>
-  <?php
 }
