@@ -1,44 +1,35 @@
 <?php 
 
 add_action( 'admin_menu', function () {
-  add_theme_page( 'Logo', 'Logo', 'manage_options', 'logo', function () {
-    ?>
-    <div class="wrap">
-      <h2>Logo</h2>
-      <form action="options.php" method="POST">
-        <?php settings_fields( 'logo' ); ?>
-        <?php do_settings_sections( 'logo' ); ?>
-        <?php submit_button(); ?>
-      </form>
-    </div>
-    <?php
-  });
+  $pages = [
+    (object)[
+      'slug' => 'logo',
+      'title' => 'Logo',
+    ],
+    (object)[
+      'slug' => 'social-media',
+      'title' => 'Social media',
+    ],
+    (object)[
+      'slug' => 'footer-link',
+      'title' => 'Footer link',
+    ],
+  ];
 
-  add_theme_page( 'Social media', 'Social media', 'manage_options', 'social-media', function () {
-    ?>
-    <div class="wrap">
-      <h2>Social media</h2>
-      <form action="options.php" method="POST">
-        <?php settings_fields( 'social-media' ); ?>
-        <?php do_settings_sections( 'social-media' ); ?>
-        <?php submit_button(); ?>
-      </form>
-    </div>
-    <?php
-  });
-
-  add_theme_page( 'Footer link', 'Footer link', 'manage_options', 'footer-link', function () {
-    ?>
-    <div class="wrap">
-      <h2>Footer link</h2>
-      <form action="options.php" method="POST">
-        <?php settings_fields( 'footer-link' ); ?>
-        <?php do_settings_sections( 'footer-link' ); ?>
-        <?php submit_button(); ?>
-      </form>
-    </div>
-    <?php
-  });
+  foreach ($pages as $page) {
+    add_theme_page($page->title, $page->title, 'manage_options', $page->slug, function () use ($page) {
+      ?>
+      <div class="wrap">
+        <h2><?php echo esc_html($page->title) ?></h2>
+        <form action="options.php" method="POST">
+          <?php settings_fields($page->slug) ?>
+          <?php do_settings_sections($page->slug) ?>
+          <?php submit_button() ?>
+        </form>
+      </div>
+      <?php
+    });
+  }
 });
 
 add_action( 'admin_init', function () {
