@@ -9,7 +9,7 @@ add_action('wp_enqueue_scripts', function () {
    *  You can/should enqueue a script here only if it is a widely used library that is required by a plugin (or is likely to be later)
    **/
 
-  // We need to register our own jQuery, because WP is on jQuery 2.x which breaks support for IE 6-8.
+  // We need to register our own jQuery, because WP is on jQuery 2.x (no it isn't) which breaks support for IE 6-8.
   // This will not affect admin pages
   // This will break any plugin that requires a feature/behaviour in jQuery 2.x which is missing/different in jQuery 1.10.x
 
@@ -26,4 +26,8 @@ add_action('wp_enqueue_scripts', function () {
   wp_enqueue_script('main', $uri . '/build/main.min.js', array('jquery', 'modernizr'), '', true);
 
   wp_enqueue_style ('main', $uri . '/build/main.min.css');
+});
+
+add_action('admin_enqueue_scripts', function () {
+  wp_enqueue_script('admin',      get_template_directory_uri() . '/../assets/js/admin.js', ['jquery'], '', true);
 });
