@@ -114,6 +114,9 @@ article.post-summary {
         @include font-size(28);
       }
     }
+    img {
+      margin-bottom: $space-small;
+    }
     a {
       img {
         border: 5px solid $white;

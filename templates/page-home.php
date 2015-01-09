@@ -47,7 +47,7 @@ the_post();
             <h3><?php the_field('title_1'); ?></h3>
             <?php
               $image1 = get_field('image_1');
-              $thumb1 = $image1['sizes'][ $size ];
+              $thumb1 = $image1['sizes'][$size];
             ?>
             <a class="image" href="<?php the_field('url_1'); ?>"><img class="th" src="<?php echo $thumb1; ?>" alt="<?php echo $image1['alt']; ?>"></a>
             <p><?php the_field('description_1'); ?> <a href="<?php the_field('url_1'); ?>">Read more &raquo;</a></p>
@@ -57,7 +57,7 @@ the_post();
             <h3><?php the_field('title_2'); ?></h3>
             <?php
               $image2 = get_field('image_2');
-              $thumb2 = $image2['sizes'][ $size ];
+              $thumb2 = $image2['sizes'][$size];
             ?>
             <a class="image" href="<?php the_field('url_2'); ?>"><img class="th" src="<?php echo $thumb2; ?>" alt="<?php echo $image2['alt']; ?>"></a>
             <p><?php the_field('description_2'); ?> <a href="<?php the_field('url_2'); ?>">Read more &raquo;</a></p>
@@ -67,7 +67,7 @@ the_post();
             <h3><?php the_field('title_3'); ?></h3>
             <?php
               $image3 = get_field('image_3');
-              $thumb3 = $image3['sizes'][ $size ];
+              $thumb3 = $image3['sizes'][$size];
             ?>
             <a class="image" href="<?php the_field('url_3'); ?>"><img class="th" src="<?php echo $thumb3; ?>" alt="<?php echo $image3['alt']; ?>"></a>
             <p><?php the_field('description_3'); ?> <a href="<?php the_field('url_3'); ?>">Read more &raquo;</a></p>
@@ -94,7 +94,7 @@ the_post();
 
               <?php if ( is_sticky() ) {
 
-                get_template_part('partials/news-item');
+                get_template_part('partials/featured-news-item');
 
                   the_excerpt(); ?>
                 </article>

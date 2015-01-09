@@ -7454,35 +7454,40 @@ article.post-summary.sticky h4 a {
   font-size: 1.736rem;
   line-height: 1.5;
 }
-/* line 118, ../../assets/scss/partials/page.scss */
+/* line 117, ../../assets/scss/partials/page.scss */
+article.summary.sticky img,
+article.post-summary.sticky img {
+  margin-bottom: 10px;
+}
+/* line 121, ../../assets/scss/partials/page.scss */
 article.summary.sticky a img,
 article.post-summary.sticky a img {
   border: 5px solid #FFFFFF;
   transition: all 300ms ease-out;
 }
-/* line 121, ../../assets/scss/partials/page.scss */
+/* line 124, ../../assets/scss/partials/page.scss */
 article.summary.sticky a img:hover, article.summary.sticky a img:focus,
 article.post-summary.sticky a img:hover,
 article.post-summary.sticky a img:focus {
   border-color: #DDDDDD;
 }
-/* line 126, ../../assets/scss/partials/page.scss */
+/* line 129, ../../assets/scss/partials/page.scss */
 article.summary.sticky time,
 article.post-summary.sticky time {
   color: #CCCCCC;
 }
-/* line 129, ../../assets/scss/partials/page.scss */
+/* line 132, ../../assets/scss/partials/page.scss */
 article.summary.sticky p,
 article.post-summary.sticky p {
   color: #CCCCCC;
 }
-/* line 136, ../../assets/scss/partials/page.scss */
+/* line 139, ../../assets/scss/partials/page.scss */
 article.summary.status-private header, article.summary.post-password-required header,
 article.post-summary.status-private header,
 article.post-summary.post-password-required header {
   position: relative;
 }
-/* line 138, ../../assets/scss/partials/page.scss */
+/* line 141, ../../assets/scss/partials/page.scss */
 article.summary.status-private header h1, article.summary.status-private header h4, article.summary.post-password-required header h1, article.summary.post-password-required header h4,
 article.post-summary.status-private header h1,
 article.post-summary.status-private header h4,
