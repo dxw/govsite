@@ -1,4 +1,5 @@
 .comments {
+  clear: both;
 
   ol.media-list,
   ul.children {
@@ -53,6 +54,7 @@
 }
 
 .comment-form {
+  clear: both;
   margin-bottom: $space-medium*2;
 
   p.cancel-comment-reply,

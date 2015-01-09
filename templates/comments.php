@@ -8,6 +8,8 @@
 
     if (have_comments()) : ?>
 
+      <button type="button" class="button right comment-scroll">Comment</button>
+
       <section id="comments" class="comments">
         <h3><?php printf(_n('One response to &ldquo;%2$s&rdquo;', '%1$s comments', get_comments_number(), 'roots'), number_format_i18n(get_comments_number()), get_the_title()); ?></h3>
 

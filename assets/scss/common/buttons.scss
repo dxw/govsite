@@ -2,6 +2,9 @@ button, .button {
   padding: $space-small $space-small*2;
   &:visited {
     color: $white;
+    &:hover, &:focus {
+      color: $white;
+    }
   }
 }
 
@@ -17,6 +20,9 @@ button, .button {
   }
   &:visited {
     color: $secondary-color;
+    &:hover, &:focus {
+      color: darken($secondary-color, 15%);
+    }
   }
 }
 
@@ -31,10 +37,13 @@ button, .button {
   }
   &:visited {
     color: $logo-color;
+    &:hover, &:focus {
+      color: darken($logo-color, 15%);
+    }
   }
 }
 
-input {
+input, button {
   &.button {
     -webkit-font-smoothing: $font-smoothing;
     -moz-osx-font-smoothing: grayscale;

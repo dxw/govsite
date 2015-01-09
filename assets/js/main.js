@@ -65,4 +65,11 @@ jQuery(function ($) {
         $headersearch.toggleClass('opened');
     });
 
+    // Scroll to commnets
+    $('button.comment-scroll').click(function(){
+        $('html, body').animate({
+            scrollTop: $("#comment-form").offset().top
+        }, 1500);
+    });
+
 });

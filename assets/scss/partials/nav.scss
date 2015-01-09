@@ -35,7 +35,7 @@ header.site-header {
         @include font-size(18);
         @include single-transition(border-top, 300ms, ease-in);
         &:hover, &:focus {
-          background: scale-color($primary-color, $lightness: -14%);;
+          background: scale-color($primary-color, $lightness: -14%);
           color: $white;
         }
 

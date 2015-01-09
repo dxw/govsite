@@ -106,7 +106,7 @@ the_post();
                   <?php the_excerpt(); ?>
                 </article>
 
-              <?php } elseif ( get_post_status ( $ID ) == 'private' || post_password_required() ) { ?>
+              <?php } elseif ( get_post_status() == 'private' || post_password_required() ) { ?>
                 
                 <article <?php post_class('summary'); ?>>
                   <header>

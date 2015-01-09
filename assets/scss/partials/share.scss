@@ -3,6 +3,11 @@
   display: inline-block;
   margin-bottom: 1.25rem;
 
+  @media #{$large-up} {
+    display: block;
+    margin-bottom: 0;
+  }
+
   ul {
     list-style: none;
     margin: 0;

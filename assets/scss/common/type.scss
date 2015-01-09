@@ -60,6 +60,9 @@ h6 {
 a {
   &:visited {
     color: $visited-color;
+    &:hover, &:focus {
+      color: scale-color($visited-color, $lightness: -20%);
+    }
   }
 }
 
