@@ -1,15 +1,45 @@
-img {
-  &.alignleft, &.alignright {
+img, .wp-caption {
+
+  &.alignleft, &.alignright, &.aligncenter, &.alignnone {
     @include thumb;
     @include single-transition(all,$thumb-transition-speed,ease-out);
     margin-bottom: $space-small;
   }
+
   &.alignleft {
     float: left;
-    margin-right: $space-medium;
+    margin-right: $space-small*2;
   }
+
   &.alignright {
     float: right;
-    margin-left: $space-medium;
+    margin-left: $space-small*2;
+  }
+
+  &.aligncenter {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .wp-caption-text {
+    margin-bottom: 0;
+    background: $smoke;
+    padding-top: $space-small;
+    text-align: center;
+    @include single-transition(all,$thumb-transition-speed,ease-out);
+  }
+
+  &:hover, &:focus {
+    .wp-caption-text {
+      background: $gainsboro;
+    }
+  }
+
+}
+
+.wp-caption {
+  &.alignleft, &.alignright, &.aligncenter, &.alignnone {
+    margin-bottom: $space-small*2;
   }
 }

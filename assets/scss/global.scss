@@ -54,6 +54,7 @@ $icons: (
   search:     "\e609",
   close:      "\e60b",
   lock:       "\e60a",
+  quoteleft:  "\f10d",
 
   previous:   "\e607",
   next:       "\e608"
@@ -417,6 +418,7 @@ $icons: (
 $primary-color: #2e69ac !default;   // blue
 $secondary-color: #00a0b0 !default; // turquoise blue
 $logo-color: #1b325f !default;      // dark blue
+$visited-color: #551a8b !default;   // purple
 $alert-color: #f04124 !default;     // cinnabar
 $success-color: #43AC6A !default;   // sea-green
 $warning-color: #f08a24 !default;   // carrot

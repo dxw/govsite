@@ -1,5 +1,8 @@
 button, .button {
   padding: $space-small $space-small*2;
+  &:visited {
+    color: $white;
+  }
 }
 
 .button-banner {
@@ -10,7 +13,10 @@ button, .button {
   @include font-size(20);
   &:hover, &:focus {
     background: $white;
-    color: darken($secondary-color, 10%);
+    color: darken($secondary-color, 15%);
+  }
+  &:visited {
+    color: $secondary-color;
   }
 }
 
@@ -21,7 +27,10 @@ button, .button {
   color: $logo-color;
   &:hover, &:focus {
     background: $white;
-    color: darken($logo-color, 10%);
+    color: darken($logo-color, 15%);
+  }
+  &:visited {
+    color: $logo-color;
   }
 }
 

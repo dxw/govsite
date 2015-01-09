@@ -168,6 +168,22 @@
 .lt-ie8 ul.large-block-grid-3 li { width: 30%; margin-left: 2%; }
 .lt-ie8 ul.large-block-grid-3 li:first-child { margin-left: 0; }
 
+.lt-ie8 blockquote { background: url('#{$imagePath}/ie/quote-left.png') no-repeat top left; }
+
+.lt-ie8 ul, .lt-ie8 ol {
+  margin-bottom: $space-small*2;
+  margin-left: 30px;
+  .lt-ie8 ul, .lt-ie8 ol {
+    margin-left: 60px;
+  }
+}
+
+.lt-ie8 dl {
+  margin-bottom: $space-small*2;
+  dt { margin-bottom: $space-small/2; }
+  dd { margin-bottom: $space-small; }
+}
+
 .lt-ie8 .alert-box { padding: 10px 15px; font-size: 13px; }
 
 .lt-ie8 .page-element,
@@ -208,6 +224,8 @@
   &.twitter { background: $twitter-color url('#{$imagePath}/ie/social-icons-sprite.png') no-repeat 0 0; }
   &.mail { background: $logo-color url('#{$imagePath}/ie/social-icons-sprite.png') no-repeat 0 -210px; }
 }
+
+.lt-ie8 .share ul, .lt-ie8 ul.social-media { margin: 0; }
 
 .lt-ie8 ul.social-media a {
   width: 35px;
