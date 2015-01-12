@@ -6,6 +6,7 @@ ul.social-media {
   > li {
     float: left;
     margin-left: 1px;
+    margin-bottom: 0;
   }
 
   a {
@@ -21,6 +22,12 @@ ul.social-media {
       top: 8px;
       left: 10px;
       @include font-size(22);
+    }
+
+    &:visited {
+      &:hover, &:focus {
+        color: $white;
+      }
     }
 
     // Twitter
