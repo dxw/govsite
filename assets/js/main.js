@@ -69,7 +69,7 @@ jQuery(function ($) {
     $('button.comment-scroll').click(function(){
         $('html, body').animate({
             scrollTop: $("#comment-form").offset().top
-        }, 1500);
+        }, 1000);
     });
 
 });

@@ -6692,48 +6692,56 @@ img .wp-caption-text, .wp-caption .wp-caption-text {
   background: #EEEEEE;
   padding-top: 10px;
   text-align: center;
+  font-size: 16px;
+  font-size: 0.992rem;
+  line-height: 1.5;
   transition: all 200ms ease-out;
 }
-/* line 36, ../../assets/scss/common/wordpress.scss */
+/* line 37, ../../assets/scss/common/wordpress.scss */
 img:hover .wp-caption-text, img:focus .wp-caption-text, .wp-caption:hover .wp-caption-text, .wp-caption:focus .wp-caption-text {
   background: #DDDDDD;
 }
 
-/* line 44, ../../assets/scss/common/wordpress.scss */
+/* line 45, ../../assets/scss/common/wordpress.scss */
 .wp-caption.alignleft, .wp-caption.alignright, .wp-caption.aligncenter, .wp-caption.alignnone {
   margin-bottom: 20px;
 }
 
-/* line 52, ../../assets/scss/common/wordpress.scss */
+/* line 53, ../../assets/scss/common/wordpress.scss */
 .gallery {
   margin-bottom: 0 !important;
 }
-/* line 55, ../../assets/scss/common/wordpress.scss */
+/* line 56, ../../assets/scss/common/wordpress.scss */
 .gallery .gallery-item {
   margin-top: 0 !important;
+  border-bottom: 3px solid #DDDDDD;
 }
-/* line 57, ../../assets/scss/common/wordpress.scss */
+/* line 59, ../../assets/scss/common/wordpress.scss */
 .gallery .gallery-item:first-child {
   margin-left: 0;
 }
-/* line 62, ../../assets/scss/common/wordpress.scss */
+/* line 64, ../../assets/scss/common/wordpress.scss */
 .gallery .gallery-icon {
   margin-bottom: 0;
 }
-/* line 66, ../../assets/scss/common/wordpress.scss */
+/* line 68, ../../assets/scss/common/wordpress.scss */
 .gallery img {
   width: 100%;
-  border: 3px solid #222222 !important;
+  border: 5px solid #EEEEEE !important;
+  transition: all 200ms ease-out;
 }
-/* line 71, ../../assets/scss/common/wordpress.scss */
+/* line 72, ../../assets/scss/common/wordpress.scss */
+.gallery img:hover, .gallery img:focus {
+  border-color: #DDDDDD !important;
+}
+/* line 77, ../../assets/scss/common/wordpress.scss */
 .gallery .gallery-caption {
   margin-bottom: 0;
-  background: #222222;
-  padding: 5px 5px 10px 5px;
-  font-size: 14px;
-  font-size: 0.868rem;
+  background: #EEEEEE;
+  padding: 5px 10px 10px 10px;
+  font-size: 16px;
+  font-size: 0.992rem;
   line-height: 1.5;
-  color: #FFFFFF;
 }
 
 /* line 3, ../../assets/scss/partials/nav.scss */

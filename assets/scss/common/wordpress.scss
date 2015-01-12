@@ -29,6 +29,7 @@ img, .wp-caption {
     background: $smoke;
     padding-top: $space-small;
     text-align: center;
+    @include font-size(16);
     @include single-transition(all,$thumb-transition-speed,ease-out);
   }
 
@@ -54,6 +55,7 @@ img, .wp-caption {
 
   .gallery-item {
     margin-top: 0 !important; //overwriting WP styles
+    border-bottom: 3px solid $gainsboro;
     &:first-child {
       margin-left: 0;
     }
@@ -65,14 +67,17 @@ img, .wp-caption {
 
   img {
     width: 100%;
-    border: 3px solid $jet !important; //overwriting WP styles
+    border: 5px solid $smoke !important; //overwriting WP styles
+    @include single-transition(all,$thumb-transition-speed,ease-out);
+    &:hover, &:focus {
+      border-color: $gainsboro !important;
+    }
   }
 
   .gallery-caption {
     margin-bottom: 0;
-    background: $jet;
-    padding: $space-small/2 $space-small/2 $space-small $space-small/2;
-    @include font-size(14);
-    color: $white;
+    background: $smoke;
+    padding: $space-small/2 $space-small $space-small $space-small;
+    @include font-size(16);
   }
 }
