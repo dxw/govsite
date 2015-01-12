@@ -115,7 +115,9 @@ article.post-summary {
       }
     }
     img {
-      margin-bottom: $space-small;
+      max-width: 100%;
+      float: none;
+      margin: $space-small 0;
     }
     a {
       img {
@@ -125,12 +127,6 @@ article.post-summary {
           border-color: $gainsboro;
         }
       }
-    }
-    time {
-      color: $iron;
-    }
-    p {
-      color: $iron;
     }
   }
 

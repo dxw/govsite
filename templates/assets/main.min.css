@@ -7457,37 +7457,29 @@ article.post-summary.sticky h4 a {
 /* line 117, ../../assets/scss/partials/page.scss */
 article.summary.sticky img,
 article.post-summary.sticky img {
-  margin-bottom: 10px;
+  max-width: 100%;
+  float: none;
+  margin: 10px 0;
 }
-/* line 121, ../../assets/scss/partials/page.scss */
+/* line 123, ../../assets/scss/partials/page.scss */
 article.summary.sticky a img,
 article.post-summary.sticky a img {
   border: 5px solid #FFFFFF;
   transition: all 300ms ease-out;
 }
-/* line 124, ../../assets/scss/partials/page.scss */
+/* line 126, ../../assets/scss/partials/page.scss */
 article.summary.sticky a img:hover, article.summary.sticky a img:focus,
 article.post-summary.sticky a img:hover,
 article.post-summary.sticky a img:focus {
   border-color: #DDDDDD;
 }
-/* line 129, ../../assets/scss/partials/page.scss */
-article.summary.sticky time,
-article.post-summary.sticky time {
-  color: #CCCCCC;
-}
-/* line 132, ../../assets/scss/partials/page.scss */
-article.summary.sticky p,
-article.post-summary.sticky p {
-  color: #CCCCCC;
-}
-/* line 139, ../../assets/scss/partials/page.scss */
+/* line 135, ../../assets/scss/partials/page.scss */
 article.summary.status-private header, article.summary.post-password-required header,
 article.post-summary.status-private header,
 article.post-summary.post-password-required header {
   position: relative;
 }
-/* line 141, ../../assets/scss/partials/page.scss */
+/* line 137, ../../assets/scss/partials/page.scss */
 article.summary.status-private header h1, article.summary.status-private header h4, article.summary.post-password-required header h1, article.summary.post-password-required header h4,
 article.post-summary.status-private header h1,
 article.post-summary.status-private header h4,
@@ -7892,11 +7884,11 @@ body.search-no-results .page-element {
 }
 
 /* line 5, ../../assets/scss/templates/archive.scss */
-.archive article h1.entry-title, .search article h1.entry-title {
+.archive article.post-summary h1.entry-title, .search article.post-summary h1.entry-title {
   margin-bottom: 10px;
 }
 /* line 9, ../../assets/scss/templates/archive.scss */
-.archive article img, .search article img {
+.archive article.post-summary img, .search article.post-summary img {
   max-width: 30%;
   float: left;
   margin-top: 8px;
@@ -7904,18 +7896,28 @@ body.search-no-results .page-element {
 }
 @media only screen and (min-width: 40.063em) {
   /* line 9, ../../assets/scss/templates/archive.scss */
-  .archive article img, .search article img {
+  .archive article.post-summary img, .search article.post-summary img {
     width: 20%;
     margin-right: 3%;
   }
 }
 /* line 22, ../../assets/scss/templates/archive.scss */
-.archive article p, .search article p {
+.archive article.post-summary p, .search article.post-summary p {
   margin-bottom: 20px;
 }
 /* line 26, ../../assets/scss/templates/archive.scss */
-.archive article .button, .search article .button {
+.archive article.post-summary .button, .search article.post-summary .button {
   margin-bottom: 0;
+}
+/* line 36, ../../assets/scss/templates/archive.scss */
+.archive article.sticky header h1, .search article.sticky header h1 {
+  line-height: 1;
+}
+/* line 38, ../../assets/scss/templates/archive.scss */
+.archive article.sticky header h1 a, .search article.sticky header h1 a {
+  font-size: 30px;
+  font-size: 1.86rem;
+  line-height: 1.5;
 }
 
 /* line 1, ../../assets/scss/templates/contact.scss */

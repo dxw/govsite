@@ -30,7 +30,7 @@ global $wp_query;
 
           <?php while (have_posts()) : ?>
             <?php the_post() ?>
-            <?php get_template_part('partials/article-list-item') ?>
+            <?php get_template_part('partials/sticky-item') ?>
           <?php endwhile; ?>
         <?php endif ?>
 

@@ -96,10 +96,7 @@ the_post();
 
                 get_template_part('partials/featured-news-item');
 
-                  the_excerpt(); ?>
-                </article>
-
-              <?php } elseif ( get_post_status() == 'private' || post_password_required() ) { ?>
+              } elseif ( get_post_status() == 'private' || post_password_required() ) { ?>
                 
                 <article <?php post_class('summary'); ?>>
                   <header>

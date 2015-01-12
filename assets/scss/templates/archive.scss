@@ -1,6 +1,6 @@
 .archive, .search {
 
-  article {
+  article.post-summary {
 
     h1.entry-title {
       margin-bottom: $space-small;
@@ -27,6 +27,19 @@
       margin-bottom: 0;
     }
 
+  }
+
+  article.sticky {
+
+    header {
+
+      h1 {
+        line-height: 1;
+        a {
+          @include font-size(30);
+        }
+      }
+    }
   }
 
 }
