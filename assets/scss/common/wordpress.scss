@@ -55,7 +55,6 @@ img, .wp-caption {
 
   .gallery-item {
     margin-top: 0 !important; //overwriting WP styles
-    border-bottom: 3px solid $gainsboro;
     &:first-child {
       margin-left: 0;
     }
@@ -76,6 +75,7 @@ img, .wp-caption {
 
   .gallery-caption {
     margin-bottom: 0;
+    border-bottom: 3px solid $gainsboro;
     background: $smoke;
     padding: $space-small/2 $space-small $space-small $space-small;
     @include font-size(16);
