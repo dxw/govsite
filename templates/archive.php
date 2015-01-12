@@ -15,11 +15,32 @@
 
       <div class="medium-8 large-8 columns">
 
-        <?php if (have_posts()) : ?>
-          <?php while (have_posts()) : the_post(); ?>
-            <?php get_template_part('partials/article-list-item'); ?>
-          <?php endwhile; ?>
-        <?php endif; ?>
+        <?php
+        global $wp_query;
+        $q = $wp_query->query;
+        $q['ignore_sticky_posts'] = true;
+        $q['post__in'] = get_option('sticky_posts');
+        $q['posts_per_page'] = -1;
+        query_posts($q);
+        ?>
+
+        <?php while (have_posts()) : ?>
+          <?php the_post() ?>
+          <?php get_template_part('partials/article-list-item') ?>
+        <?php endwhile; ?>
+
+        <?php
+        wp_reset_query();
+        $q = $wp_query->query;
+        $q['ignore_sticky_posts'] = true;
+        $q['post__not_in'] = get_option('sticky_posts');
+        query_posts($q);
+        ?>
+
+        <?php while (have_posts()) : ?>
+          <?php the_post() ?>
+          <?php get_template_part('partials/article-list-item') ?>
+        <?php endwhile; ?>
 
         <?php get_template_part('partials/pager') ?>
 
