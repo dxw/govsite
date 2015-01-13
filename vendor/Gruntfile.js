@@ -27,7 +27,7 @@ module.exports = function (grunt) {
               lineNumbers: true
             },
             files: {
-              '../templates/assets/main.min.css': '../assets/scss/main.scss'
+              '../build/main.min.css': '../assets/scss/main.scss'
             }
           },
 
@@ -37,7 +37,7 @@ module.exports = function (grunt) {
               sourcemap: 'none'
             },
             files: {
-              '../templates/assets/main.min.css': '../assets/scss/main.scss'
+              '../build/main.min.css': '../assets/scss/main.scss'
             }
           }
         },
@@ -50,14 +50,14 @@ module.exports = function (grunt) {
                    preserveComments: 'none'
                },
                files: {
-                   '../templates/assets/main.min.js': [
+                   '../build/main.min.js': [
                        '../assets/js/plugins/*.js',
                        '../assets/js/main.js'
                    ],
-                   '../templates/assets/lib/modernizr.min.js': [
+                   '../build/lib/modernizr.min.js': [
                        'bower_components/foundation/js/vendor/modernizr.js'
                    ],
-                    '../templates/assets/lib/jquery.min.js': [
+                    '../build/lib/jquery.min.js': [
                        'bower_components/foundation/js/vendor/jquery.js'
                    ]
                }
@@ -70,14 +70,14 @@ module.exports = function (grunt) {
                    sourceMap: true
                },
                files: {
-                   '../templates/assets/main.min.js': [
+                   '../build/main.min.js': [
                        '../assets/js/plugins/*.js',
                        '../assets/js/main.js'
                    ],
-                   '../templates/assets/lib/modernizr.min.js': [
+                   '../build/lib/modernizr.min.js': [
                        'bower_components/foundation/js/vendor/modernizr.js'
                    ],
-                    '../templates/assets/lib/jquery.min.js': [
+                    '../build/lib/jquery.min.js': [
                        'bower_components/foundation/js/vendor/jquery.js'
                    ]
                }
@@ -87,11 +87,11 @@ module.exports = function (grunt) {
         img: {
             dist1: {
                 src: ['../assets/img/*'],
-                dest: '../templates/assets/img'
+                dest: '../build/img'
             },
             dist2: {
                 src: ['../assets/img/ie/*'],
-                dest: '../templates/assets/img/ie'
+                dest: '../build/img/ie'
             },
         },
 
@@ -108,7 +108,7 @@ module.exports = function (grunt) {
 
         // TODO: because Grunt's working dir is vendor, clean refuses to do this unless you say --force
         // I am not specifying force option here, because dragons
-        clean: ['../templates/assets/*'],
+        clean: ['../build/*'],
 
         /*phpmd: {
           '': 'development',
