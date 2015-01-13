@@ -6742,36 +6742,37 @@ img:hover .wp-caption-text, img:focus .wp-caption-text, .wp-caption:hover .wp-ca
 
 /* line 53, ../assets/scss/common/wordpress.scss */
 .gallery {
-  margin-bottom: 0 !important;
-}
-/* line 56, ../assets/scss/common/wordpress.scss */
-.gallery .gallery-item {
-  margin-top: 0 !important;
+  margin-bottom: 20px !important;
+  border-bottom: 3px solid #DDDDDD;
+  background: #EEEEEE;
 }
 /* line 58, ../assets/scss/common/wordpress.scss */
+.gallery .gallery-item {
+  margin-top: 0 !important;
+  margin-bottom: 10px;
+}
+/* line 61, ../assets/scss/common/wordpress.scss */
 .gallery .gallery-item:first-child {
   margin-left: 0;
 }
-/* line 63, ../assets/scss/common/wordpress.scss */
+/* line 66, ../assets/scss/common/wordpress.scss */
 .gallery .gallery-icon {
   margin-bottom: 0;
 }
-/* line 67, ../assets/scss/common/wordpress.scss */
+/* line 70, ../assets/scss/common/wordpress.scss */
 .gallery img {
   width: 100%;
   border: 5px solid #EEEEEE !important;
   transition: all 200ms ease-out;
 }
-/* line 71, ../assets/scss/common/wordpress.scss */
+/* line 74, ../assets/scss/common/wordpress.scss */
 .gallery img:hover, .gallery img:focus {
   border-color: #DDDDDD !important;
 }
-/* line 76, ../assets/scss/common/wordpress.scss */
+/* line 79, ../assets/scss/common/wordpress.scss */
 .gallery .gallery-caption {
   margin-bottom: 0;
-  border-bottom: 3px solid #DDDDDD;
-  background: #EEEEEE;
-  padding: 5px 10px 10px 10px;
+  padding: 5px 10px;
   font-size: 16px;
   font-size: 0.992rem;
   line-height: 1.5;
@@ -7402,9 +7403,9 @@ header.page-header {
 /* line 67, ../assets/scss/partials/page.scss */
 article.summary,
 article.post-summary {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   border-bottom: 1px solid #DDDDDD;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 /* line 172, ../vendor/bower_components/foundation/scss/foundation/components/_global.scss */
 article.summary:before, article.summary:after,

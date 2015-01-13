@@ -67,9 +67,9 @@ header.page-header {
 article.summary,
 article.post-summary {
   @include clearfix;
-  margin-bottom: $space-medium;
+  margin-bottom: $space-large;
   border-bottom: 1px solid $gainsboro;
-  padding-bottom: $space-small*2;
+  padding-bottom: $space-medium*2;
 
   &:last-of-type {
     margin-bottom: $space-medium*2;

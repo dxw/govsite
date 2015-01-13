@@ -51,10 +51,13 @@ img, .wp-caption {
 // I had to use a lot of !important here because Wordpress very usefully styles gallery using element ID and not CLASS...
 
 .gallery {
-  margin-bottom: 0 !important; //overwriting WP styles
+  margin-bottom: $space-small*2 !important; //overwriting WP 
+  border-bottom: 3px solid $gainsboro;
+  background: $smoke;
 
   .gallery-item {
     margin-top: 0 !important; //overwriting WP styles
+    margin-bottom: $space-small;
     &:first-child {
       margin-left: 0;
     }
@@ -75,9 +78,7 @@ img, .wp-caption {
 
   .gallery-caption {
     margin-bottom: 0;
-    border-bottom: 3px solid $gainsboro;
-    background: $smoke;
-    padding: $space-small/2 $space-small $space-small $space-small;
+    padding: $space-small/2 $space-small;
     @include font-size(16);
   }
 }

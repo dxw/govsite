@@ -8,9 +8,5 @@
 
   <?php get_template_part('partials/search-breadcrumbs'); ?>
 
-  <?php if ( has_post_thumbnail() ) { ?>
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-  <?php } ?>
-
   <?php the_excerpt(); ?>
 </article>
