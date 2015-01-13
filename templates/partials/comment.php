@@ -1,8 +1,12 @@
-<?php echo get_avatar($comment, $size = '64') ?>
 <div class="media-body">
-  <h4 class="media-heading"><?php echo get_comment_author_link() ?></h4>
-  <time datetime="<?php echo get_comment_date('c') ?>"><a href="<?php echo htmlspecialchars(get_comment_link($comment->comment_ID)) ?>"><?php printf(__('%1$s', 'roots'), get_comment_date(),  get_comment_time()) ?></a></time>
-  <?php edit_comment_link(__('(Edit)', 'roots'), '', '') ?>
+  <div class="comment-author vcard">
+    <?php echo get_avatar($comment, $size = 32) ?>
+    <span class="fn"><?php echo get_comment_author_link() ?></span>
+  </div>
+  <div class="comment-meta">
+    <time datetime="<?php echo get_comment_date('c') ?>"><a href="<?php echo htmlspecialchars(get_comment_link($comment->comment_ID)) ?>"><?php printf(__('%1$s at %2$s', 'roots'), get_comment_date(),  get_comment_time()) ?></a></time>
+    <?php edit_comment_link(__('(Edit)', 'roots'), '', '') ?>
+  </div>
 
   <?php if ($comment->comment_approved == '0') : ?>
     <div class="alert alert-info">
