@@ -85,10 +85,14 @@ module.exports = function (grunt) {
        },
 
         img: {
-            dist: {
-                src: '../assets/img',
+            dist1: {
+                src: ['../assets/img/*'],
                 dest: '../templates/assets/img'
-            }
+            },
+            dist2: {
+                src: ['../assets/img/ie/*'],
+                dest: '../templates/assets/img/ie'
+            },
         },
 
         _watch: {
