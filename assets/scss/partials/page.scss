@@ -87,6 +87,11 @@ article.post-summary {
     margin-bottom: 0;
   }
 
+  header {
+    position: relative;
+  }
+
+  // password protected or private posts
   span.icon {
     width: 30px;
     height: 30px;
@@ -100,6 +105,12 @@ article.post-summary {
       position: absolute;
       top: 6px;
       left: 7px;
+    }
+
+    + h1,
+    + h4 {
+      display: inline-block;
+      margin-left: $space-small*4;
     }
   }
 
@@ -126,17 +137,6 @@ article.post-summary {
         &:hover, &:focus {
           border-color: $gainsboro;
         }
-      }
-    }
-  }
-
-  &.status-private,
-  &.post-password-required {
-    header {
-      position: relative;
-      h1, h4 {
-        display: inline-block;
-        margin-left: $space-small*4;
       }
     }
   }

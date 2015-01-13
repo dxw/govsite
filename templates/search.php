@@ -1,6 +1,6 @@
 <div class="row">
 
-  <div class="large-12 columns">
+  <div class="large-9 columns">
 
     <header class="page-header">
       <div class="header-group">
@@ -11,7 +11,7 @@
     <section class="page-element">
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
-          <?php get_template_part('partials/article-list-item'); ?>
+          <?php get_template_part('partials/search-item'); ?>
         <?php endwhile; ?>
       <?php else: ?>
         <p>No results found. Search again?</p>

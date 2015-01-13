@@ -277,4 +277,17 @@
   }
 }
 
+.lt-ie8 ul.breadcrumbs {
+  margin-left: 0; 
+  li {
+    margin-right: $space-small;
+    background: url('#{$imagePath}/ie/breadcrumbs-divider.png') no-repeat 0 6px;
+    padding-left: $space-medium;
+    &:first-child {
+      background: transparent;
+      padding-left: 0;
+    }
+  }
+}
+
 .lt-ie8 footer .credits .show-for-medium-up { display: inline-block; visibility: visible; }

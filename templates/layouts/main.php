@@ -54,8 +54,6 @@
 
   <footer class="site-footer">
 
-    <?php //get_template_part('partials/social-media'); ?>
-
     <section class="navigation">
       <div class="row">
         <div class="medium-6 large-6 columns">
