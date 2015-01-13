@@ -39,7 +39,7 @@ class Roots_Walker_Comment extends Walker_Comment {
       return;
     }
     // Close ".media-body" <div> located in templates/comment.php, and then the comment's <li>
-    echo "</div></li>\n";
+    echo "</li>\n";
   }
 }
 
