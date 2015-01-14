@@ -72,7 +72,7 @@
         <div class="small-6 large-6 columns">
           <small>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> copyright</small>
         </div>
-        <div class="medium-6 large-6 columns ">
+        <div class="medium-6 large-6 columns show-for-medium-up">
           <?php get_template_part('partials/social-media'); ?>
         </div>
       </div>

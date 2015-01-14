@@ -9,7 +9,7 @@
   </div>
 
   <?php if ($comment->comment_approved == '0') : ?>
-    <div class="alert alert-info">
+    <div class="alert-box">
       <?php _e('Your comment is awaiting moderation.', 'roots') ?>
     </div>
   <?php endif ?>

@@ -3294,13 +3294,13 @@ button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button
 }
 /* line 224, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.success, .button.success {
-  background-color: #43AC6A;
-  border-color: #368a55;
+  background-color: #87d37c;
+  border-color: #59c24a;
   color: #FFFFFF;
 }
 /* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
-  background-color: #368a55;
+  background-color: #59c24a;
 }
 /* line 167, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
@@ -3308,13 +3308,13 @@ button.success:hover, button.success:focus, .button.success:hover, .button.succe
 }
 /* line 225, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.alert, .button.alert {
-  background-color: #f04124;
-  border-color: #cf2a0e;
+  background-color: #cf000f;
+  border-color: #a6000c;
   color: #FFFFFF;
 }
 /* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
-  background-color: #cf2a0e;
+  background-color: #a6000c;
 }
 /* line 167, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
@@ -3322,13 +3322,13 @@ button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus
 }
 /* line 226, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.warning, .button.warning {
-  background-color: #f08a24;
-  border-color: #cf6e0e;
+  background-color: #f5ab35;
+  border-color: #e3900b;
   color: #FFFFFF;
 }
 /* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.warning:hover, button.warning:focus, .button.warning:hover, .button.warning:focus {
-  background-color: #cf6e0e;
+  background-color: #e3900b;
 }
 /* line 167, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.warning:hover, button.warning:focus, .button.warning:hover, .button.warning:focus {
@@ -3336,13 +3336,13 @@ button.warning:hover, button.warning:focus, .button.warning:hover, .button.warni
 }
 /* line 227, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.info, .button.info {
-  background-color: #a0d3e8;
-  border-color: #61b6d9;
+  background-color: #89c4f4;
+  border-color: #43a1ee;
   color: #333333;
 }
 /* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.info:hover, button.info:focus, .button.info:hover, .button.info:focus {
-  background-color: #61b6d9;
+  background-color: #43a1ee;
 }
 /* line 167, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.info:hover, button.info:focus, .button.info:hover, .button.info:focus {
@@ -3440,8 +3440,8 @@ button.disabled.secondary:hover, button.disabled.secondary:focus, button[disable
 }
 /* line 242, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
-  background-color: #43AC6A;
-  border-color: #368a55;
+  background-color: #87d37c;
+  border-color: #59c24a;
   color: #FFFFFF;
   cursor: default;
   opacity: 0.7;
@@ -3449,7 +3449,7 @@ button.disabled.success, button[disabled].success, .button.disabled.success, .bu
 }
 /* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
-  background-color: #368a55;
+  background-color: #59c24a;
 }
 /* line 167, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
@@ -3457,12 +3457,12 @@ button.disabled.success:hover, button.disabled.success:focus, button[disabled].s
 }
 /* line 178, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
-  background-color: #43AC6A;
+  background-color: #87d37c;
 }
 /* line 243, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[disabled].alert {
-  background-color: #f04124;
-  border-color: #cf2a0e;
+  background-color: #cf000f;
+  border-color: #a6000c;
   color: #FFFFFF;
   cursor: default;
   opacity: 0.7;
@@ -3470,7 +3470,7 @@ button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[d
 }
 /* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
-  background-color: #cf2a0e;
+  background-color: #a6000c;
 }
 /* line 167, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
@@ -3478,12 +3478,12 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
 }
 /* line 178, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
-  background-color: #f04124;
+  background-color: #cf000f;
 }
 /* line 244, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.warning, button[disabled].warning, .button.disabled.warning, .button[disabled].warning {
-  background-color: #f08a24;
-  border-color: #cf6e0e;
+  background-color: #f5ab35;
+  border-color: #e3900b;
   color: #FFFFFF;
   cursor: default;
   opacity: 0.7;
@@ -3491,7 +3491,7 @@ button.disabled.warning, button[disabled].warning, .button.disabled.warning, .bu
 }
 /* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.warning:hover, button.disabled.warning:focus, button[disabled].warning:hover, button[disabled].warning:focus, .button.disabled.warning:hover, .button.disabled.warning:focus, .button[disabled].warning:hover, .button[disabled].warning:focus {
-  background-color: #cf6e0e;
+  background-color: #e3900b;
 }
 /* line 167, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.warning:hover, button.disabled.warning:focus, button[disabled].warning:hover, button[disabled].warning:focus, .button.disabled.warning:hover, .button.disabled.warning:focus, .button[disabled].warning:hover, .button[disabled].warning:focus {
@@ -3499,12 +3499,12 @@ button.disabled.warning:hover, button.disabled.warning:focus, button[disabled].w
 }
 /* line 178, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.warning:hover, button.disabled.warning:focus, button[disabled].warning:hover, button[disabled].warning:focus, .button.disabled.warning:hover, .button.disabled.warning:focus, .button[disabled].warning:hover, .button[disabled].warning:focus {
-  background-color: #f08a24;
+  background-color: #f5ab35;
 }
 /* line 245, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.info, button[disabled].info, .button.disabled.info, .button[disabled].info {
-  background-color: #a0d3e8;
-  border-color: #61b6d9;
+  background-color: #89c4f4;
+  border-color: #43a1ee;
   color: #333333;
   cursor: default;
   opacity: 0.7;
@@ -3512,7 +3512,7 @@ button.disabled.info, button[disabled].info, .button.disabled.info, .button[disa
 }
 /* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.info:hover, button.disabled.info:focus, button[disabled].info:hover, button[disabled].info:focus, .button.disabled.info:hover, .button.disabled.info:focus, .button[disabled].info:hover, .button[disabled].info:focus {
-  background-color: #61b6d9;
+  background-color: #43a1ee;
 }
 /* line 167, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.info:hover, button.disabled.info:focus, button[disabled].info:hover, button[disabled].info:focus, .button.disabled.info:hover, .button.disabled.info:focus, .button[disabled].info:hover, .button[disabled].info:focus {
@@ -3520,7 +3520,7 @@ button.disabled.info:hover, button.disabled.info:focus, button[disabled].info:ho
 }
 /* line 178, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.disabled.info:hover, button.disabled.info:focus, button[disabled].info:hover, button[disabled].info:focus, .button.disabled.info:hover, .button.disabled.info:focus, .button[disabled].info:hover, .button[disabled].info:focus {
-  background-color: #a0d3e8;
+  background-color: #89c4f4;
 }
 
 /* line 250, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
@@ -3956,7 +3956,7 @@ fieldset legend {
   font-size: 0.75rem;
   font-weight: normal;
   font-style: italic;
-  background: #f04124;
+  background: #cf000f;
   color: #FFFFFF;
 }
 /* line 517, ../vendor/bower_components/foundation/scss/foundation/components/_forms.scss */
@@ -3973,7 +3973,7 @@ span.error, small.error {
   font-size: 0.75rem;
   font-weight: normal;
   font-style: italic;
-  background: #f04124;
+  background: #cf000f;
   color: #FFFFFF;
 }
 
@@ -3991,7 +3991,7 @@ span.error, small.error {
 /* line 536, ../vendor/bower_components/foundation/scss/foundation/components/_forms.scss */
 .error label,
 .error label.error {
-  color: #f04124;
+  color: #cf000f;
 }
 /* line 541, ../vendor/bower_components/foundation/scss/foundation/components/_forms.scss */
 .error small.error {
@@ -4002,7 +4002,7 @@ span.error, small.error {
   font-size: 0.75rem;
   font-weight: normal;
   font-style: italic;
-  background: #f04124;
+  background: #cf000f;
   color: #FFFFFF;
 }
 /* line 546, ../vendor/bower_components/foundation/scss/foundation/components/_forms.scss */
@@ -4030,7 +4030,7 @@ select.error {
 
 /* line 568, ../vendor/bower_components/foundation/scss/foundation/components/_forms.scss */
 label.error {
-  color: #f04124;
+  color: #cf000f;
 }
 
 /* line 53, ../vendor/bower_components/foundation/scss/foundation/components/_inline-lists.scss */
@@ -5256,13 +5256,13 @@ meta.foundation-mq-topbar {
 }
 /* line 334, ../vendor/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button.success {
-  background-color: #43AC6A;
-  border-color: #368a55;
+  background-color: #87d37c;
+  border-color: #59c24a;
   color: #FFFFFF;
 }
 /* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.button.success:focus {
-  background-color: #368a55;
+  background-color: #59c24a;
 }
 /* line 167, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.button.success:focus {
@@ -5270,13 +5270,13 @@ meta.foundation-mq-topbar {
 }
 /* line 335, ../vendor/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button.alert {
-  background-color: #f04124;
-  border-color: #cf2a0e;
+  background-color: #cf000f;
+  border-color: #a6000c;
   color: #FFFFFF;
 }
 /* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
-  background-color: #cf2a0e;
+  background-color: #a6000c;
 }
 /* line 167, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
@@ -5284,13 +5284,13 @@ meta.foundation-mq-topbar {
 }
 /* line 336, ../vendor/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button.warning {
-  background-color: #f08a24;
-  border-color: #cf6e0e;
+  background-color: #f5ab35;
+  border-color: #e3900b;
   color: #FFFFFF;
 }
 /* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > a.button.warning:hover, .top-bar-section ul li > a.button.warning:focus {
-  background-color: #cf6e0e;
+  background-color: #e3900b;
 }
 /* line 167, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > a.button.warning:hover, .top-bar-section ul li > a.button.warning:focus {
@@ -5329,13 +5329,13 @@ meta.foundation-mq-topbar {
 }
 /* line 346, ../vendor/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > button.success {
-  background-color: #43AC6A;
-  border-color: #368a55;
+  background-color: #87d37c;
+  border-color: #59c24a;
   color: #FFFFFF;
 }
 /* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > button.success:hover, .top-bar-section ul li > button.success:focus {
-  background-color: #368a55;
+  background-color: #59c24a;
 }
 /* line 167, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > button.success:hover, .top-bar-section ul li > button.success:focus {
@@ -5343,13 +5343,13 @@ meta.foundation-mq-topbar {
 }
 /* line 347, ../vendor/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > button.alert {
-  background-color: #f04124;
-  border-color: #cf2a0e;
+  background-color: #cf000f;
+  border-color: #a6000c;
   color: #FFFFFF;
 }
 /* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > button.alert:hover, .top-bar-section ul li > button.alert:focus {
-  background-color: #cf2a0e;
+  background-color: #a6000c;
 }
 /* line 167, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > button.alert:hover, .top-bar-section ul li > button.alert:focus {
@@ -5357,13 +5357,13 @@ meta.foundation-mq-topbar {
 }
 /* line 348, ../vendor/bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > button.warning {
-  background-color: #f08a24;
-  border-color: #cf6e0e;
+  background-color: #f5ab35;
+  border-color: #e3900b;
   color: #FFFFFF;
 }
 /* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > button.warning:hover, .top-bar-section ul li > button.warning:focus {
-  background-color: #cf6e0e;
+  background-color: #e3900b;
 }
 /* line 167, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .top-bar-section ul li > button.warning:hover, .top-bar-section ul li > button.warning:focus {
@@ -5791,14 +5791,14 @@ meta.foundation-mq-topbar {
 }
 /* line 120, ../vendor/bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
 .alert-box.success {
-  background-color: #43AC6A;
-  border-color: #3a945b;
+  background-color: #87d37c;
+  border-color: #67c759;
   color: #FFFFFF;
 }
 /* line 121, ../vendor/bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
 .alert-box.alert {
-  background-color: #f04124;
-  border-color: #de2d0f;
+  background-color: #cf000f;
+  border-color: #b2000d;
   color: #FFFFFF;
 }
 /* line 122, ../vendor/bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
@@ -5809,14 +5809,14 @@ meta.foundation-mq-topbar {
 }
 /* line 123, ../vendor/bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
 .alert-box.warning {
-  background-color: #f08a24;
-  border-color: #de770f;
+  background-color: #f5ab35;
+  border-color: #f39a0d;
   color: #FFFFFF;
 }
 /* line 124, ../vendor/bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
 .alert-box.info {
-  background-color: #a0d3e8;
-  border-color: #74bfdd;
+  background-color: #89c4f4;
+  border-color: #58acef;
   color: #00363c;
 }
 /* line 125, ../vendor/bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
@@ -6646,13 +6646,35 @@ form.searchform input[type="submit"]:hover, form.searchform input[type="submit"]
   margin-bottom: 0;
 }
 
-/* line 2, ../assets/scss/common/alert-boxes.scss */
+/* line 1, ../assets/scss/common/alert-boxes.scss */
+.alert-box {
+  background-color: #89c4f4;
+  border-color: #72b8f2;
+  color: #222;
+}
+/* line 7, ../assets/scss/common/alert-boxes.scss */
 .alert-box a {
-  font-size: 13px;
-  font-size: 0.806rem;
+  font-size: 14px;
+  font-size: 0.868rem;
   line-height: 1.5;
+  color: #222;
+  border-bottom: 1px solid #222;
+}
+/* line 13, ../assets/scss/common/alert-boxes.scss */
+.alert-box.alert {
+  background-color: #cf000f;
+  border-color: #b5000d;
+  color: #FFFFFF;
+}
+/* line 17, ../assets/scss/common/alert-boxes.scss */
+.alert-box.alert a {
   color: #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
+}
+/* line 23, ../assets/scss/common/alert-boxes.scss */
+.alert-box.success {
+  background-color: #87d37c;
+  border-color: #76cd69;
 }
 
 /* line 1, ../assets/scss/common/breadcrumbs.scss */
@@ -7076,11 +7098,11 @@ ul.social-media a:before {
   font-size: 1.364rem;
   line-height: 1.5;
 }
-/* line 28, ../assets/scss/partials/social-media.scss */
-ul.social-media a:visited:hover, ul.social-media a:visited:focus {
+/* line 27, ../assets/scss/partials/social-media.scss */
+ul.social-media a:visited {
   color: #FFFFFF;
 }
-/* line 34, ../assets/scss/partials/social-media.scss */
+/* line 32, ../assets/scss/partials/social-media.scss */
 ul.social-media a[href^="http://twitter.com/"], ul.social-media a[href^="http://www.twitter.com/"], ul.social-media a[href^="https://twitter.com/"], ul.social-media a[href^="https://www.twitter.com/"] {
   background: #55acee;
 }
@@ -7099,7 +7121,7 @@ ul.social-media a[href^="http://twitter.com/"]:before, ul.social-media a[href^="
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 43, ../assets/scss/partials/social-media.scss */
+/* line 41, ../assets/scss/partials/social-media.scss */
 ul.social-media a[href^="http://facebook.com/"], ul.social-media a[href^="http://www.facebook.com/"], ul.social-media a[href^="https://facebook.com/"], ul.social-media a[href^="https://www.facebook.com/"] {
   background: #3b5998;
 }
@@ -7118,7 +7140,7 @@ ul.social-media a[href^="http://facebook.com/"]:before, ul.social-media a[href^=
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 52, ../assets/scss/partials/social-media.scss */
+/* line 50, ../assets/scss/partials/social-media.scss */
 ul.social-media a[href^="http://plus.google.com/"], ul.social-media a[href^="https://plus.google.com/"] {
   background: #dd4b39;
 }
@@ -7137,7 +7159,7 @@ ul.social-media a[href^="http://plus.google.com/"]:before, ul.social-media a[hre
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 59, ../assets/scss/partials/social-media.scss */
+/* line 57, ../assets/scss/partials/social-media.scss */
 ul.social-media a[href^="http://flickr.com/"], ul.social-media a[href^="http://www.flickr.com/"], ul.social-media a[href^="https://flickr.com/"], ul.social-media a[href^="https://www.flickr.com/"] {
   background: #ff0084;
 }
@@ -7156,7 +7178,7 @@ ul.social-media a[href^="http://flickr.com/"]:before, ul.social-media a[href^="h
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 68, ../assets/scss/partials/social-media.scss */
+/* line 66, ../assets/scss/partials/social-media.scss */
 ul.social-media a[href^="http://linkedin.com/"], ul.social-media a[href^="http://www.linkedin.com/"], ul.social-media a[href^="https://linkedin.com/"], ul.social-media a[href^="https://www.linkedin.com/"] {
   background: #0976b4;
 }
@@ -7175,7 +7197,7 @@ ul.social-media a[href^="http://linkedin.com/"]:before, ul.social-media a[href^=
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 77, ../assets/scss/partials/social-media.scss */
+/* line 75, ../assets/scss/partials/social-media.scss */
 ul.social-media a[href^="http://youtube.com/"], ul.social-media a[href^="http://www.youtube.com/"], ul.social-media a[href^="https://youtube.com/"], ul.social-media a[href^="https://www.youtube.com/"] {
   background: #e52d27;
 }
@@ -7246,7 +7268,6 @@ ul.social-media a[href^="http://youtube.com/"]:before, ul.social-media a[href^="
   height: 35px;
   display: block;
   position: relative;
-  border-radius: 50%;
   padding: 5px;
   color: #FFFFFF;
   text-align: center;
@@ -7264,7 +7285,11 @@ ul.social-media a[href^="http://youtube.com/"]:before, ul.social-media a[href^="
     border-top-left-radius: 0;
   }
 }
-/* line 54, ../assets/scss/partials/share.scss */
+/* line 53, ../assets/scss/partials/share.scss */
+.share a:visited {
+  color: #FFFFFF;
+}
+/* line 57, ../assets/scss/partials/share.scss */
 .share a.facebook {
   background: #3b5998;
   -webkit-box-shadow: 0 2px 0 0 #263961;
@@ -7282,7 +7307,7 @@ ul.social-media a[href^="http://youtube.com/"]:before, ul.social-media a[href^="
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 59, ../assets/scss/partials/share.scss */
+/* line 62, ../assets/scss/partials/share.scss */
 .share a.facebook:hover, .share a.facebook:focus {
   top: 2px;
   background: #2d4373;
@@ -7290,7 +7315,7 @@ ul.social-media a[href^="http://youtube.com/"]:before, ul.social-media a[href^="
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 66, ../assets/scss/partials/share.scss */
+/* line 69, ../assets/scss/partials/share.scss */
 .share a.twitter {
   background: #55acee;
   -webkit-box-shadow: 0 2px 0 0 #1689e0;
@@ -7308,7 +7333,7 @@ ul.social-media a[href^="http://youtube.com/"]:before, ul.social-media a[href^="
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 71, ../assets/scss/partials/share.scss */
+/* line 74, ../assets/scss/partials/share.scss */
 .share a.twitter:hover, .share a.twitter:focus {
   top: 2px;
   background: #2795e9;
@@ -7316,7 +7341,7 @@ ul.social-media a[href^="http://youtube.com/"]:before, ul.social-media a[href^="
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 78, ../assets/scss/partials/share.scss */
+/* line 81, ../assets/scss/partials/share.scss */
 .share a.mail {
   background: #1b325f;
   -webkit-box-shadow: 0 2px 0 0 #0a1323;
@@ -7334,7 +7359,7 @@ ul.social-media a[href^="http://youtube.com/"]:before, ul.social-media a[href^="
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 83, ../assets/scss/partials/share.scss */
+/* line 86, ../assets/scss/partials/share.scss */
 .share a.mail:hover, .share a.mail:focus {
   top: 2px;
   background: #101d37;
@@ -7633,48 +7658,65 @@ section.page-intro {
 }
 /* line 11, ../assets/scss/partials/comment.scss */
 .comments ol.media-list li.comment {
-  margin-bottom: 20px;
-  border-bottom: 1px solid #DDDDDD;
+  clear: both;
+  margin-bottom: 30px;
 }
 /* line 14, ../assets/scss/partials/comment.scss */
+.comments ol.media-list li.comment ul {
+  margin-top: 20px;
+  margin-left: 20px;
+  list-style: none;
+}
+/* line 19, ../assets/scss/partials/comment.scss */
 .comments ol.media-list li.comment ul li {
   margin-bottom: 0;
   border-bottom: none;
 }
-/* line 21, ../assets/scss/partials/comment.scss */
+/* line 27, ../assets/scss/partials/comment.scss */
 .comments ul.children {
   margin-left: 30px;
 }
-/* line 25, ../assets/scss/partials/comment.scss */
+/* line 31, ../assets/scss/partials/comment.scss */
 .comments .comment-author {
   float: left;
 }
-/* line 27, ../assets/scss/partials/comment.scss */
+/* line 33, ../assets/scss/partials/comment.scss */
 .comments .comment-author .says {
   display: none;
   visibility: hidden;
 }
-/* line 33, ../assets/scss/partials/comment.scss */
+/* line 39, ../assets/scss/partials/comment.scss */
 .comments .comment-meta {
   float: right;
   margin-bottom: 10px;
 }
-/* line 36, ../assets/scss/partials/comment.scss */
+/* line 42, ../assets/scss/partials/comment.scss */
 .comments .comment-meta a {
   font-size: 14px;
   font-size: 0.868rem;
   line-height: 1.5;
 }
-/* line 39, ../assets/scss/partials/comment.scss */
-.comments .comment-meta a.comment-edit-link {
-  border-left: 1px solid #AAAAAA;
-  padding-left: 10px;
-}
 /* line 45, ../assets/scss/partials/comment.scss */
-.comments p {
-  clear: both;
+.comments .comment-meta a.comment-edit-link {
+  padding-left: 5px;
 }
-/* line 49, ../assets/scss/partials/comment.scss */
+/* line 50, ../assets/scss/partials/comment.scss */
+.comments .alert-box {
+  clear: both;
+  margin-bottom: 10px;
+}
+/* line 55, ../assets/scss/partials/comment.scss */
+.comments .comment-text {
+  clear: both;
+  border-top: 3px solid #DDDDDD;
+  background: #EFEFEF;
+  padding: 20px;
+}
+/* line 61, ../assets/scss/partials/comment.scss */
+.comments .comment-text p:last-child {
+  margin-bottom: 0;
+}
+/* line 67, ../assets/scss/partials/comment.scss */
 .comments .comment-reply-link {
   border-style: solid;
   border-width: 0;
@@ -7698,7 +7740,9 @@ section.page-intro {
   border-color: #25548a;
   color: #FFFFFF;
   transition: background-color 300ms ease-out;
-  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 10px 15px;
 }
 /* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .comments .comment-reply-link:hover, .comments .comment-reply-link:focus {
@@ -7709,17 +7753,17 @@ section.page-intro {
   color: #FFFFFF;
 }
 
-/* line 56, ../assets/scss/partials/comment.scss */
+/* line 76, ../assets/scss/partials/comment.scss */
 .comment-form {
   clear: both;
   margin-bottom: 30px;
 }
-/* line 60, ../assets/scss/partials/comment.scss */
+/* line 80, ../assets/scss/partials/comment.scss */
 .comment-form p.cancel-comment-reply,
 .comment-form form {
   margin-bottom: 0;
 }
-/* line 65, ../assets/scss/partials/comment.scss */
+/* line 85, ../assets/scss/partials/comment.scss */
 .comment-form p.cancel-comment-reply {
   padding-bottom: 10px;
 }

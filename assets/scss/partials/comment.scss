@@ -9,11 +9,17 @@
   ol.media-list {
     margin-left: 0;
     li.comment {
-      margin-bottom: $space-small*2;
-      border-bottom: 1px solid $gainsboro;
-      ul li {
-        margin-bottom: 0;
-        border-bottom: none;
+      clear:both;
+      margin-bottom: $space-medium*2;
+      ul {
+        // list of replies
+        margin-top: $space-small*2;
+        margin-left: $space-small*2;
+        list-style: none;
+        li {
+          margin-bottom: 0;
+          border-bottom: none;
+        }
       }
     }
   }
@@ -37,18 +43,32 @@
       @include font-size(14);
     }
     a.comment-edit-link {
-      border-left: 1px solid $base;
-      padding-left: $space-small;
+      padding-left: $space-small/2;
     }
   }
 
-  p {
+  .alert-box {
     clear: both;
+    margin-bottom: $space-small;
+  }
+
+  .comment-text {
+    clear: both;
+    border-top: 3px solid $gainsboro;
+    background: $silver;
+    padding: $space-small*2;
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .comment-reply-link {
     @include button();
-    padding: $space-small $space-small*2;
+    margin-top: $space-small;
+    margin-bottom: 0;
+    padding: $space-small $space-medium;
   }
 
 }

@@ -1,6 +1,6 @@
 <div class="row">
 
-  <div class="large-8 columns"> 
+  <div id="respond" class="large-8 columns"> 
 
     <?php global $current_user; ?>
 

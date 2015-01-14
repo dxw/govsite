@@ -41,7 +41,6 @@
     height: 35px;
     display: block;
     position: relative;
-    @include radius(50%);
     padding: $space-small/2;
     color: $white;
     text-align: center;
@@ -49,6 +48,10 @@
     @media #{$large-up} {
       @include side-radius(right, 10px);
       @include side-radius(left, 0 );
+    }
+
+    &:visited {
+      color: $white;
     }
 
     &.facebook {

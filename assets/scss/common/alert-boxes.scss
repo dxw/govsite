@@ -1,7 +1,28 @@
 .alert-box {
+
+  background-color: $info-color;
+  border-color: darken($info-color, 5%);
+  color: $body-font-color;
+
   a {
-    @include font-size(13);
-    color: $white;
-    border-bottom: 1px solid $white;
+    @include font-size(14);
+    color: $body-font-color;
+    border-bottom: 1px solid $body-font-color;
   }
+
+  &.alert {
+    background-color: $alert-color;
+    border-color: darken($alert-color, 5%);
+    color: $white;
+    a {
+      color: $white;
+      border-bottom: 1px solid $white;
+    }
+  }
+
+  &.success {
+    background-color: $success-color;
+    border-color: darken($success-color, 5%);
+  }
+
 }
