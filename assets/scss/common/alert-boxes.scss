@@ -5,7 +5,7 @@
   color: $body-font-color;
 
   a {
-    @include font-size(14);
+    @include font-size(13);
     color: $body-font-color;
     border-bottom: 1px solid $body-font-color;
   }

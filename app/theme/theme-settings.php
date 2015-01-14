@@ -3,6 +3,10 @@
 add_action('admin_menu', function () {
   $pages = [
     (object)[
+      'slug' => 'google-analytics',
+      'title' => 'Google Analytics',
+    ],
+    (object)[
       'slug' => 'logo',
       'title' => 'Logo',
     ],
@@ -33,6 +37,16 @@ add_action('admin_menu', function () {
 });
 
 add_action('admin_init', function () {
+
+  // Google Analytics
+
+  add_settings_section('header', 'Instructions', function () {
+    echo 'Add Google Analytics tracking ID to your site. The tracking ID is a string, such as "UA-000000-01"';
+  }, 'google-analytics');
+  register_setting('google-analytics', 'ga-setting');
+  add_settings_field('tracking-id', 'Tracking ID', function () {
+    echo '<input type="text" name="ga-setting" value="'.esc_attr(get_option('ga-setting')).'" size="50">';
+  }, 'google-analytics', 'header');
 
   // Logo
 

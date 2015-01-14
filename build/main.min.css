@@ -6654,8 +6654,8 @@ form.searchform input[type="submit"]:hover, form.searchform input[type="submit"]
 }
 /* line 7, ../assets/scss/common/alert-boxes.scss */
 .alert-box a {
-  font-size: 14px;
-  font-size: 0.868rem;
+  font-size: 13px;
+  font-size: 0.806rem;
   line-height: 1.5;
   color: #222;
   border-bottom: 1px solid #222;
