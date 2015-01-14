@@ -30,6 +30,7 @@ require __DIR__ . '/theme/titles.php';
 require __DIR__ . '/theme/theme-settings.php';
 require __DIR__ . '/theme/breadcrumbs.php';
 require __DIR__ . '/theme/admin.php';
+require __DIR__ . '/theme/logo.php';
 
 
 /*
