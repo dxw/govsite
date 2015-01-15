@@ -1,0 +1,11 @@
+@import url('../build/main.min.css');
+
+body#tinymce {
+  padding: 20px;
+}
+
+.wp-caption-dd  {
+  background: #eee;
+  padding-top: 10px;
+  font-size: 16px;
+}

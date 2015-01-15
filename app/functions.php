@@ -29,6 +29,7 @@ require __DIR__ . '/theme/pagination.php'; ## TODO: This should be refactored in
 require __DIR__ . '/theme/titles.php';
 require __DIR__ . '/theme/theme-settings.php';
 require __DIR__ . '/theme/breadcrumbs.php';
+require __DIR__ . '/theme/admin.php';
 
 
 /*
