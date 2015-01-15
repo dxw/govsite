@@ -1,7 +1,7 @@
 @import url('../build/main.min.css');
 
 body#tinymce {
-  padding: 20px;
+  padding: 20px !important;
 }
 
 .wp-caption-dd  {
