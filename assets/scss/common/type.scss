@@ -7,7 +7,7 @@ html {
   outline: 0;
 }
 
-p, a, button, .button {
+p, a, button, .button, ul, ol, dl {
   @include font-size(18);
 }
 

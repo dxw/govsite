@@ -1,0 +1,19 @@
+.error-image {
+  display: block;
+  position: relative;
+  padding-top: 67px;
+  padding-left: 62px;
+  @include font-size(60);
+  @include icon(before, search2);
+  color: $aluminum;
+  font-weight: bold;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include font-size(270);
+    line-height: 1;
+    color: $iron;
+    text-shadow: darken($iron, 5%) 1px 1px 0;
+  }
+}
