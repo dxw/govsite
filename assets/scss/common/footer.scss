@@ -6,6 +6,7 @@ footer.site-footer {
 
     a {
       color: $white;
+      @include font-size(14);
       border-bottom: 1px solid transparent;
 
       &:hover, &:focus {
@@ -13,8 +14,11 @@ footer.site-footer {
       }
     }
 
-    small {
+    p {
+      margin: 0;
       text-align: right;
+      color: $white;
+      @include font-size(14);
 
       @media #{$small-only} {
         text-align: left;
@@ -27,7 +31,6 @@ footer.site-footer {
 
     small {
       padding: $space-small 0;
-      @include font-size(12);
     }
   }
 
@@ -39,6 +42,7 @@ footer.site-footer {
   small {
     display: block;
     color: $white;
+    @include font-size(12);
   }
 
 }

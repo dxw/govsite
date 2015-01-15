@@ -502,11 +502,6 @@ meta.foundation-data-attribute-namespace {
   font-family: false;
 }
 
-/* line 599, ../assets/scss/global.scss */
-html, body {
-  height: 100%;
-}
-
 /* line 602, ../assets/scss/global.scss */
 *,
 *:before,
@@ -6139,6 +6134,12 @@ dl dd {
   margin-left: 25px;
 }
 
+/* line 159, ../assets/scss/common/type.scss */
+span.accessibility {
+  display: none;
+  visibility: hidden;
+}
+
 /* line 1, ../assets/scss/common/common.scss */
 body {
   position: static;
@@ -6190,42 +6191,50 @@ footer.site-footer .navigation {
 /* line 7, ../assets/scss/common/footer.scss */
 footer.site-footer .navigation a {
   color: #FFFFFF;
+  font-size: 14px;
+  font-size: 0.868rem;
+  line-height: 1.5;
   border-bottom: 1px solid transparent;
 }
-/* line 11, ../assets/scss/common/footer.scss */
+/* line 12, ../assets/scss/common/footer.scss */
 footer.site-footer .navigation a:hover, footer.site-footer .navigation a:focus {
   border-bottom-color: #FFFFFF;
 }
-/* line 16, ../assets/scss/common/footer.scss */
-footer.site-footer .navigation small {
+/* line 17, ../assets/scss/common/footer.scss */
+footer.site-footer .navigation p {
+  margin: 0;
   text-align: right;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-size: 0.868rem;
+  line-height: 1.5;
 }
 @media only screen and (max-width: 40em) {
-  /* line 16, ../assets/scss/common/footer.scss */
-  footer.site-footer .navigation small {
+  /* line 17, ../assets/scss/common/footer.scss */
+  footer.site-footer .navigation p {
     text-align: left;
   }
 }
-/* line 25, ../assets/scss/common/footer.scss */
+/* line 29, ../assets/scss/common/footer.scss */
 footer.site-footer .credits {
   background: #151515;
 }
-/* line 28, ../assets/scss/common/footer.scss */
+/* line 32, ../assets/scss/common/footer.scss */
 footer.site-footer .credits small {
   padding: 10px 0;
-  font-size: 12px;
-  font-size: 0.744rem;
-  line-height: 1.5;
 }
-/* line 34, ../assets/scss/common/footer.scss */
+/* line 37, ../assets/scss/common/footer.scss */
 footer.site-footer ul.menu {
   width: auto;
   display: inline-block;
 }
-/* line 39, ../assets/scss/common/footer.scss */
+/* line 42, ../assets/scss/common/footer.scss */
 footer.site-footer small {
   display: block;
   color: #FFFFFF;
+  font-size: 12px;
+  font-size: 0.744rem;
+  line-height: 1.5;
 }
 
 /* line 3, ../assets/scss/common/sidebar.scss */

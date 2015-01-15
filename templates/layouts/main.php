@@ -34,7 +34,7 @@
       <div class="small-12 medium-4 large-4 columns">
         <?php $logo = get_option('logo-setting'); ?>
         <h1 class="left"><a href="/" title="<?php bloginfo('name'); ?>"><img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?> logo"></a></h1>
-        <a href="#headermenu" class="nav-toggle hidden-for-medium-up right"></a>
+        <a href="#headermenu" class="nav-toggle hidden-for-medium-up right"><span class="accessibility">Menu</span></a>
       </div>
       <div class="small-12 medium-8 large-8 columns">
         <div class="row">
@@ -48,9 +48,7 @@
 
   <?php get_template_part('partials/header-search'); ?>
 
-  <main role="main">
-    <?php w_requested_template(); ?>
-  </main>
+  <?php w_requested_template(); ?>
 
   <footer class="site-footer">
 
@@ -61,7 +59,7 @@
         </div>
         <div class="medium-6 large-6 columns">
           <?php if ( get_option('footer-link-text-setting') ) { ?>
-            <small><?php echo get_option('footer-link-text-setting'); ?> <a href="<?php echo get_option('footer-link-url-setting'); ?>"><?php echo get_option('footer-link-cta-setting'); ?></a></small>
+            <p><?php echo get_option('footer-link-text-setting'); ?> <a href="<?php echo get_option('footer-link-url-setting'); ?>"><?php echo get_option('footer-link-cta-setting'); ?></a></p>
           <?php } ?>
         </div>
       </div>
