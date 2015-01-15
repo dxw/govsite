@@ -11,8 +11,7 @@ add_action('admin_init', function () {
   add_settings_field('logo-image', 'Logo image URL', function () {
     echo '<input type="text" name="logo-setting" value="'.esc_attr(get_option('logo-setting')).'" size="50">';
   }, 'logo', 'header');
-});
 
-add_action('admin_enqueue_scripts', function () {
-  wp_enqueue_script('media-editor');
+  // Add media scripts
+  wp_enqueue_media();
 });
