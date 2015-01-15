@@ -1,5 +1,9 @@
 @import url('../build/main.min.css');
 
+html, body {
+  height: auto;
+}
+
 body#tinymce {
   padding: 20px !important;
 }
