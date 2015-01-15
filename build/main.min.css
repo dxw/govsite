@@ -8090,7 +8090,17 @@ aside.sidebar-content a.contact-link:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 10, ../assets/scss/templates/404.scss */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* line 1, ../assets/scss/templates/404.scss */
+  .error-image {
+    padding-top: 49px;
+    padding-left: 45px;
+    font-size: 55px;
+    font-size: 3.41rem;
+    line-height: 1.5;
+  }
+}
+/* line 18, ../assets/scss/templates/404.scss */
 .error-image:before {
   position: absolute;
   top: 0;
@@ -8101,6 +8111,15 @@ aside.sidebar-content a.contact-link:before {
   line-height: 1;
   color: #CCCCCC;
   text-shadow: #bfbfbf 1px 1px 0;
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* line 18, ../assets/scss/templates/404.scss */
+  .error-image:before {
+    font-size: 220px;
+    font-size: 13.64rem;
+    line-height: 1.5;
+    line-height: 1;
+  }
 }
 
 /* The Grid ---------------------- */
