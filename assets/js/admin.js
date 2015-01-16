@@ -3,9 +3,11 @@ jQuery(function ($) {
 
     // Logo
 
-    $('input[name="logo-setting"]').after(
-        '<button id="logo-select-button">Select Image</button>'
-    )
+    var logoSetting = $('input[name="logo-setting"]')
+        
+    logoSetting.after('<button id="logo-select-button">Select Image</button>')
+
+    logoSetting.addClass('hidden')
 
     // http://wordpress.stackexchange.com/questions/172383/how-to-get-an-image-url-from-media-library/172384
 
@@ -34,7 +36,7 @@ jQuery(function ($) {
         frame.on( 'select', function() {
             // Grab the selected attachment.
             var attachment = frame.state().get('selection').first().toJSON()
-            $('[name="logo-setting"]').val(attachment.url)
+            logoSetting.val(attachment.url)
         })
 
         frame.open()
