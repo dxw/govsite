@@ -4,10 +4,24 @@ jQuery(function ($) {
     // Logo
 
     var logoSetting = $('input[name="logo-setting"]')
-        
-    logoSetting.after('<button id="logo-select-button">Select Image</button>')
 
+    var displayCurrentLogo = function () {
+        // Avoid XSS:
+        // - By using document.createElement instead of $().html('<img src="'+xyz+'">)
+        // - By checking the URL starts with / or https?://
+
+        if (logoSetting.val().match(/^(\/|https?:\/\/)/)) {
+            var img = document.createElement('img')
+            $(img).attr('src', logoSetting.val())
+            $('#logo-img').html(img)
+        }
+    }
+
+    logoSetting.after('<div id="logo-img"></div>')
+    logoSetting.after('<button id="logo-select-button">Select Image</button>')
     logoSetting.addClass('hidden')
+
+    displayCurrentLogo()
 
     // http://wordpress.stackexchange.com/questions/172383/how-to-get-an-image-url-from-media-library/172384
 
@@ -37,6 +51,7 @@ jQuery(function ($) {
             // Grab the selected attachment.
             var attachment = frame.state().get('selection').first().toJSON()
             logoSetting.val(attachment.url)
+            displayCurrentLogo()
         })
 
         frame.open()
