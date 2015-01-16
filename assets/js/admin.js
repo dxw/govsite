@@ -13,11 +13,12 @@ jQuery(function ($) {
         if (logoSetting.val().match(/^(\/|https?:\/\/)/)) {
             var img = document.createElement('img')
             $(img).attr('src', logoSetting.val())
+            $(img).attr('style', 'max-width: 100%')
             $('#logo-img').html(img)
         }
     }
 
-    logoSetting.after('<div id="logo-img"></div>')
+    logoSetting.after('<div id="logo-img" style="width: 200px; margin-top: 20px;"></div>')
     logoSetting.after('<button id="logo-select-button">Select Image</button>')
     logoSetting.addClass('hidden')
 
