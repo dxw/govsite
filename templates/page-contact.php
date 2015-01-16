@@ -15,49 +15,53 @@ the_post();
 
   <div class="large-12 columns">
 
-    <header class="page-header">
-      <h1><?php the_title(); ?></h1>
-    </header>
+    <main id="content" role="main">
 
-    <section class="page-element">
+      <header class="page-header">
+        <h1><?php the_title(); ?></h1>
+      </header>
 
-      <article class="row">
+      <section class="page-element">
 
-        <div class="medium-8 large-8 columns">
+        <article class="row">
 
-         <?php the_content(); ?>
+          <div class="medium-8 large-8 columns">
 
-        </div>
+           <?php the_content(); ?>
 
-        <div class="medium-4 large-4 columns">
+          </div>
 
-          <?php if ( get_field('phone_number') || get_field('email_address') || get_field('address') ) { ?>
-          
-            <aside class="sidebar sidebar-content">
+          <div class="medium-4 large-4 columns">
 
-              <h3>Contact details</h3>
-              
-              <?php if ( get_field('address') ) { ?>
-                <address><?php the_field('address'); ?></address>
-              <?php } ?>
+            <?php if ( get_field('phone_number') || get_field('email_address') || get_field('address') ) { ?>
+            
+              <aside class="sidebar sidebar-content">
 
-              <?php if ( get_field('phone_number') ) { ?>
-                <a class="contact-link phone"><?php the_field('phone_number'); ?></a>
-              <?php } ?>
+                <h3>Contact details</h3>
+                
+                <?php if ( get_field('address') ) { ?>
+                  <address><?php the_field('address'); ?></address>
+                <?php } ?>
 
-              <?php if ( get_field('email_address') ) { ?>
-                <a class="contact-link email"><?php the_field('email_address'); ?></a>
-              <?php } ?>
+                <?php if ( get_field('phone_number') ) { ?>
+                  <a class="contact-link phone"><?php the_field('phone_number'); ?></a>
+                <?php } ?>
 
-            </aside>
+                <?php if ( get_field('email_address') ) { ?>
+                  <a class="contact-link email"><?php the_field('email_address'); ?></a>
+                <?php } ?>
 
-          <?php } ?>
+              </aside>
 
-        </div>
+            <?php } ?>
 
-      </article>
+          </div>
 
-    </section>
+        </article>
+
+      </section>
+
+    </main>
 
   </div>
 

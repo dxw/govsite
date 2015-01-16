@@ -2,84 +2,88 @@
 
   <div class="large-12 columns">
 
-    <header class="page-header">
-      <h1><?php the_title(); ?></h1>
-      <?php get_template_part('partials/date'); ?>
-    </header>
+    <main id="content" role="main">
 
-    <?php if( get_field('show_featured_image') == true ) { ?>
+      <header class="page-header">
+        <h1><?php the_title(); ?></h1>
+        <?php get_template_part('partials/date'); ?>
+      </header>
 
-      <section class="page-element">
+      <?php if( get_field('show_featured_image') == true ) { ?>
 
-        <figure class="featured">
-          <?php the_post_thumbnail('full'); ?>
-        </figure>
-        
-      </section>
+        <section class="page-element">
 
-    <?php } ?>
+          <figure class="featured">
+            <?php the_post_thumbnail('full'); ?>
+          </figure>
+          
+        </section>
 
-    <?php if( get_field('introduction_text') ) { ?>
+      <?php } ?>
+
+      <?php if( get_field('introduction_text') ) { ?>
+
+        <section class="page-element">
+
+          <div class="row">
+
+            <div class="medium-8 large-8 columns">
+              <?php if ( get_field('display_video') == false ) { ?>
+                <figure>
+                  <?php the_post_thumbnail('large'); ?>
+                </figure>
+              <?php } else { ?>
+                <div class="flex-video">
+                  <?php _e( wp_oembed_get( get_field('video_url') ) ); ?>
+                </div>
+              <?php } ?>
+            </div>
+
+            <div class="medium-4 large-4 columns">
+
+              <article class="main-content">
+                <?php echo get_field('introduction_text'); ?>
+              </article>
+
+            </div>
+            
+          </div>
+
+        </section>
+
+      <?php } ?>
 
       <section class="page-element">
 
         <div class="row">
 
           <div class="medium-8 large-8 columns">
-            <?php if ( get_field('display_video') == false ) { ?>
-              <figure>
-                <?php the_post_thumbnail('large'); ?>
-              </figure>
-            <?php } else { ?>
-              <div class="flex-video">
-                <?php _e( wp_oembed_get( get_field('video_url') ) ); ?>
-              </div>
-            <?php } ?>
+            <?php 
+
+              the_content();
+              get_template_part('partials/share');
+
+            ?>
           </div>
 
-          <div class="medium-4 large-4 columns">
+          <?php if (get_field('related_content')) { ?>
 
-            <article class="main-content">
-              <?php echo get_field('introduction_text'); ?>
-            </article>
+            <div class="medium-4 large-4 columns">
 
-          </div>
-          
+              <aside class="sidebar panel banner">
+                <h3>Related content</h3>
+                <?php echo get_field('related_content'); ?>
+              </aside>
+
+            </div>
+
+          <?php } ?>
+
         </div>
 
       </section>
 
-    <?php } ?>
-
-    <section class="page-element">
-
-      <div class="row">
-
-        <div class="medium-8 large-8 columns">
-          <?php 
-
-            the_content();
-            get_template_part('partials/share');
-
-          ?>
-        </div>
-
-        <?php if (get_field('related_content')) { ?>
-
-          <div class="medium-4 large-4 columns">
-
-            <aside class="sidebar panel banner">
-              <h3>Related content</h3>
-              <?php echo get_field('related_content'); ?>
-            </aside>
-
-          </div>
-
-        <?php } ?>
-
-      </div>
-
-    </section>
+    </main>
 
   </div>
 
