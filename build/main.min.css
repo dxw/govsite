@@ -7664,7 +7664,7 @@ section.page-intro {
 /* line 14, ../assets/scss/partials/comment.scss */
 .comments ol.media-list li.comment ul {
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 30px;
   list-style: none;
 }
 /* line 19, ../assets/scss/partials/comment.scss */
