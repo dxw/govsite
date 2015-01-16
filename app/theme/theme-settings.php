@@ -1,11 +1,9 @@
 <?php 
 
+// APPEARANCE PAGES
+
 add_action('admin_menu', function () {
   $pages = [
-    (object)[
-      'slug' => 'google-analytics',
-      'title' => 'Google Analytics',
-    ],
     (object)[
       'slug' => 'logo',
       'title' => 'Logo',
@@ -22,6 +20,32 @@ add_action('admin_menu', function () {
 
   foreach ($pages as $page) {
     add_theme_page($page->title, $page->title, 'manage_options', $page->slug, function () use ($page) {
+      ?>
+      <div class="wrap">
+        <h2><?php echo esc_html($page->title) ?></h2>
+        <form action="options.php" method="POST">
+          <?php settings_fields($page->slug) ?>
+          <?php do_settings_sections($page->slug) ?>
+          <?php submit_button() ?>
+        </form>
+      </div>
+      <?php
+    });
+  }
+});
+
+// SETTINGS PAGES
+
+add_action('admin_menu', function () {
+  $pages = [
+    (object)[
+      'slug' => 'google-analytics',
+      'title' => 'Google Analytics',
+    ],
+  ];
+
+  foreach ($pages as $page) {
+    add_OPTIONS_page($page->title, $page->title, 'manage_options', $page->slug, function () use ($page) {
       ?>
       <div class="wrap">
         <h2><?php echo esc_html($page->title) ?></h2>
