@@ -18,7 +18,7 @@ jQuery(function ($) {
         }
     }
 
-    logoSetting.after('<div id="logo-img" style="width: 200px; margin-top: 20px;"></div>')
+    logoSetting.after('<div id="logo-img" style="width: 260px; margin-top: 20px;"></div>')
     logoSetting.after('<button id="logo-select-button">Select Image</button>')
     logoSetting.addClass('hidden')
 
