@@ -1,5 +1,5 @@
 <nav id="headermenu" role="navigation">
-  <button type="button" class="button-search show-for-medium-up"></button>
+  <button type="button" class="button-search show-for-medium-up"><span class="accessibility">Search</span></button>
   <?php
     if (has_nav_menu('header')) :
       wp_nav_menu(array('theme_location' => 'header'));

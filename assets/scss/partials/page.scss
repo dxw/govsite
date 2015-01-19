@@ -91,29 +91,6 @@ article.post-summary {
     position: relative;
   }
 
-  // password protected or private posts
-  span.icon {
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    position: absolute;
-    top: 5px;
-    background: $primary-color;
-    @include icon(before, lock);
-    color: $white;
-    &:before {
-      position: absolute;
-      top: 6px;
-      left: 7px;
-    }
-
-    + h1,
-    + h4 {
-      display: inline-block;
-      margin-left: $space-small*4;
-    }
-  }
-
   &.sticky {
     position: relative;
     border-bottom: 3px solid $gainsboro;
@@ -139,6 +116,38 @@ article.post-summary {
         }
       }
     }
+  }
+
+  &.post-password-required,
+  &.status-private {
+
+    h2, h4 {
+      position: relative;
+      display: table;
+      margin-top: 0;
+      padding-left: $space-small*4;
+      @include icon(before, lock);
+      &:before {
+        width: 30px;
+        height: 30px;
+        display: table-cell;
+        position: absolute;
+        top: 2px;
+        left: 0;
+        background: $primary-color;
+        color: $white;
+        @include font-size(18);
+        text-align: center;
+        vertical-align: middle;
+      }
+    }
+
+    h2 {
+      &:before {
+        top: 7px;
+      }
+    }
+
   }
 
 }

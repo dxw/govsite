@@ -596,7 +596,7 @@ $cursor-text-value: text !default;
   @if $include-html-global-classes {
 
     // Must be 100% for off canvas to work
-    html, body { height: 100%; }
+    //html, body { height: 100%; } // I commented it out because it was adding a blank stripe underneath the footer
 
     // Set box-sizing globally to handle padding and border widths
     *,

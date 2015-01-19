@@ -189,8 +189,23 @@
 .lt-ie8 .page-element,
 .lt-ie8 .page-element article.summary { width: 100%; clear: both; }
 
-.lt-ie8 article.summary span.icon,
-.lt-ie8 article.post-summary span.icon { margin-left: -40px; background: $primary-color url('#{$imagePath}/ie/padlock.png') no-repeat 0 0 }
+.lt-ie8 article.summary,
+.lt-ie8 article.post-summary {
+  &.post-password-required,
+  &.status-private {
+    h2, h4 {
+      position: static;
+      display: inline-block;
+      background: transparent;
+      background-image: url('#{$imagePath}/ie/padlock.png');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+    h2 {
+      background-position: 0 7px;
+    }
+  }
+}
 
 .lt-ie8 .panel.banner a { width: auto; }
 
@@ -295,5 +310,7 @@
   min-height: 200px;
   background: url('#{$imagePath}/ie/search-large.png') no-repeat 32px 30px;
 }
+
+.lt-ie8 footer nav ul { margin-left: 0; }
 
 .lt-ie8 .show-for-medium-up { display: inline-block !important; visibility: visible; } // display elements hidden using Foundation visibility classes

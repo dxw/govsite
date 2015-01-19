@@ -1,5 +1,9 @@
 aside.sidebar {
 
+  .panel {
+    @include panel-styles($secondary-color);
+  }
+
   ul {
     list-style: none;
     margin-left: 0;

@@ -9,7 +9,7 @@ the_post();
   $content = get_the_content();
   if(!empty($content)) { ?>
 
-    <section class="page-intro banner">
+    <div class="page-intro banner">
 
       <div class="row">
 
@@ -25,7 +25,7 @@ the_post();
 
       </div>
 
-    </section>
+    </div>
 
 <?php } ?>
 
@@ -39,116 +39,117 @@ the_post();
 
     ?>
 
-      <section class="page-element">
+      <div class="page-element">
 
         <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3 featured">
 
           <li>
-            <h3><?php the_field('title_1'); ?></h3>
-            <?php
-              $image1 = get_field('image_1');
-              $thumb1 = $image1['sizes'][$size];
-            ?>
-            <a class="image" href="<?php the_field('url_1'); ?>"><img class="th" src="<?php echo $thumb1; ?>" alt="<?php echo $image1['alt']; ?>"></a>
-            <p><?php the_field('description_1'); ?> <a href="<?php the_field('url_1'); ?>">Read more &raquo;</a></p>
+            <article>
+              <h3><?php the_field('title_1'); ?></h3>
+              <?php
+                $image1 = get_field('image_1');
+                $thumb1 = $image1['sizes'][$size];
+              ?>
+              <a class="image" href="<?php the_field('url_1'); ?>"><img class="th" src="<?php echo $thumb1; ?>" alt="<?php echo $image1['alt']; ?>"></a>
+              <p><?php the_field('description_1'); ?> <a href="<?php the_field('url_1'); ?>">Read more &raquo;</a></p>
+            </article>
           </li>
 
           <li>
-            <h3><?php the_field('title_2'); ?></h3>
-            <?php
-              $image2 = get_field('image_2');
-              $thumb2 = $image2['sizes'][$size];
-            ?>
-            <a class="image" href="<?php the_field('url_2'); ?>"><img class="th" src="<?php echo $thumb2; ?>" alt="<?php echo $image2['alt']; ?>"></a>
-            <p><?php the_field('description_2'); ?> <a href="<?php the_field('url_2'); ?>">Read more &raquo;</a></p>
+            <article>
+              <h3><?php the_field('title_2'); ?></h3>
+              <?php
+                $image2 = get_field('image_2');
+                $thumb2 = $image2['sizes'][$size];
+              ?>
+              <a class="image" href="<?php the_field('url_2'); ?>"><img class="th" src="<?php echo $thumb2; ?>" alt="<?php echo $image2['alt']; ?>"></a>
+              <p><?php the_field('description_2'); ?> <a href="<?php the_field('url_2'); ?>">Read more &raquo;</a></p>
+            </article>
           </li>
 
           <li>
-            <h3><?php the_field('title_3'); ?></h3>
-            <?php
-              $image3 = get_field('image_3');
-              $thumb3 = $image3['sizes'][$size];
-            ?>
-            <a class="image" href="<?php the_field('url_3'); ?>"><img class="th" src="<?php echo $thumb3; ?>" alt="<?php echo $image3['alt']; ?>"></a>
-            <p><?php the_field('description_3'); ?> <a href="<?php the_field('url_3'); ?>">Read more &raquo;</a></p>
+            <article>
+              <h3><?php the_field('title_3'); ?></h3>
+              <?php
+                $image3 = get_field('image_3');
+                $thumb3 = $image3['sizes'][$size];
+              ?>
+              <a class="image" href="<?php the_field('url_3'); ?>"><img class="th" src="<?php echo $thumb3; ?>" alt="<?php echo $image3['alt']; ?>"></a>
+              <p><?php the_field('description_3'); ?> <a href="<?php the_field('url_3'); ?>">Read more &raquo;</a></p>
+            </article>
           </li>
 
         </ul>
 
-      </section>
+      </div>
 
     <?php } ?>
 
-    <section class="page-element">
+    <div class="page-element row">
 
-      <div class="row">
+      <section class="medium-8 large-8 columns">
 
-        <div class="medium-8 large-8 columns">
+        <header>
+          <h1>News</h1>
+        </header>
+    
+        <?php query_posts( array ( 'posts_per_page' => 4 ) ); ?>
+          <?php while (have_posts()) : the_post() ?>
 
-          <header>
-            <h1>News</h1>
-          </header>
-      
-          <?php query_posts( array ( 'posts_per_page' => 4 ) ); ?>
-            <?php while (have_posts()) : the_post() ?>
+            <?php if ( is_sticky() ) {
 
-              <?php if ( is_sticky() ) {
+              get_template_part('partials/featured-news-item');
 
-                get_template_part('partials/featured-news-item');
-
-              } elseif ( get_post_status() == 'private' || post_password_required() ) { ?>
-                
-                <article <?php post_class('summary'); ?>>
-                  <header>
-                    <span class="icon"></span>
-                    <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                  </header>
-
-                  <?php get_template_part('partials/entry-meta'); ?>
-
-                  <?php if ( has_post_thumbnail() ) { ?>
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-                  <?php } ?>
-
-                  <?php the_excerpt(); ?>
-                </article>
-
-              <?php } else {
-
-                get_template_part('partials/news-item');
-
-              } ?>
+            } elseif ( get_post_status() == 'private' || post_password_required() ) { ?>
               
-            <?php endwhile; ?>
-          <?php wp_reset_query(); ?>
+              <article <?php post_class('summary'); ?>>
+                <header>
+                  <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                </header>
 
-          <?php if (get_field('news_page_url')) { ?>
-            <a href="<?php the_field('news_page_url'); ?>" class="button">More news</a>
-          <?php } ?>
+                <?php get_template_part('partials/entry-meta'); ?>
 
-        </div>
+                <?php if ( has_post_thumbnail() ) { ?>
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
+                <?php } ?>
 
-        <div class="medium-4 large-4 columns">
+                <?php the_excerpt(); ?>
+              </article>
 
-          <?php if (get_field('banner_title')) { ?>
-          
-            <aside class="sidebar panel banner">
+            <?php } else {
 
-              <h3><?php the_field('banner_title'); ?></h3>
+              get_template_part('partials/news-item');
 
-              <p><?php the_field('banner_description'); ?></p>
+            } ?>
+            
+          <?php endwhile; ?>
+        <?php wp_reset_query(); ?>
 
-              <a href="<?php the_field('banner_url'); ?>" class="button secondary"><?php the_field('banner_url_description'); ?></a>
+        <?php if (get_field('news_page_url')) { ?>
+          <a href="<?php the_field('news_page_url'); ?>" class="button">More news</a>
+        <?php } ?>
 
-            </aside>
+      </section>
 
-          <?php } ?>
+      <aside class="medium-4 large-4 columns sidebar">
 
-        </div>
+        <?php if (get_field('banner_title')) { ?>
+        
+          <section class="panel">
 
-      </div>
+            <h3><?php the_field('banner_title'); ?></h3>
 
-    </section>
+            <p><?php the_field('banner_description'); ?></p>
+
+            <a href="<?php the_field('banner_url'); ?>" class="button secondary"><?php the_field('banner_url_description'); ?></a>
+
+          </section>
+
+        <?php } ?>
+
+      </aside>
+
+    </div>
 
   </div>
 

@@ -15,13 +15,13 @@ the_post();
 
   <div class="large-12 columns">
 
-    <header class="page-header">
-      <h1><?php the_title(); ?></h1>
-    </header>
+    <main id="content" role="main">
 
-    <section class="page-element">
+      <header class="page-header">
+        <h1><?php the_title(); ?></h1>
+      </header>
 
-      <article class="row">
+      <div class="page-element row">
 
         <div class="medium-8 large-8 columns">
 
@@ -29,11 +29,11 @@ the_post();
 
         </div>
 
-        <div class="medium-4 large-4 columns">
+        <aside class="medium-4 large-4 columns sidebar">
 
           <?php if ( get_field('phone_number') || get_field('email_address') || get_field('address') ) { ?>
           
-            <aside class="sidebar sidebar-content">
+            <section class="sidebar-content">
 
               <h3>Contact details</h3>
               
@@ -49,15 +49,15 @@ the_post();
                 <a class="contact-link email"><?php the_field('email_address'); ?></a>
               <?php } ?>
 
-            </aside>
+            </section>
 
           <?php } ?>
 
-        </div>
+        </aside>
 
-      </article>
+      </div>
 
-    </section>
+    </main>
 
   </div>
 

@@ -79,7 +79,18 @@ add_action('admin_init', function () {
   }, 'social-media');
 
   for ($i = 0; $i < 6; $i++) {
+    register_setting('social-media', 'social-media-'.$i.'-name-setting');
     register_setting('social-media', 'social-media-'.$i.'-url-setting');
+    add_settings_field('name-'.$i, 'Name '.($i+1), function () use ($i) {
+      $options = get_option( 'social-media-'.$i.'-name-setting' );
+      $items = array("Facebook", "Flickr", "Google+", "LinkedIn", "Twitter", "YouTube");
+      echo '<select id="dropdown" name="social-media-'.$i.'-name-setting[dropdown]">';
+        foreach($items as $item) {
+          $selected = ($options['dropdown']==$item) ? 'selected="selected"' : '';
+          echo "<option value='$item' $selected>$item</option>";
+        }
+      echo '</select>';
+    }, 'social-media', 'header');
     add_settings_field('profile-url-'.$i, 'Profile URL '.($i+1), function () use ($i) {
       $urlsetting = get_option('social-media-'.$i.'-url-setting');
       echo '<input type="text" name="social-media-'.esc_attr($i).'-url-setting" value="'.esc_attr($urlsetting).'" size="50">';
