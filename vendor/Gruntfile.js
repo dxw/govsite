@@ -27,7 +27,8 @@ module.exports = function (grunt) {
               lineNumbers: true
             },
             files: {
-              '../build/main.min.css': '../assets/scss/main.scss'
+              '../build/main.min.css': '../assets/scss/main.scss',
+              '../build/admin.min.css': '../assets/scss/admin.scss'
             }
           },
 
@@ -37,7 +38,8 @@ module.exports = function (grunt) {
               sourcemap: 'none'
             },
             files: {
-              '../build/main.min.css': '../assets/scss/main.scss'
+              '../build/main.min.css': '../assets/scss/main.scss',
+              '../build/admin.min.css': '../assets/scss/admin.scss'
             }
           }
         },

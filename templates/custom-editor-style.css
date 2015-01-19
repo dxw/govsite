@@ -1,8 +1,4 @@
-@import url('../build/main.min.css');
-
-html, body {
-  height: auto;
-}
+@import url('../build/admin.min.css');
 
 body#tinymce {
   padding: 20px !important;
