@@ -121,7 +121,7 @@ article.post-summary {
   &.post-password-required,
   &.status-private {
 
-    h1, h4 {
+    h2, h4 {
       position: relative;
       display: table;
       margin-top: 0;
@@ -142,7 +142,7 @@ article.post-summary {
       }
     }
 
-    h1 {
+    h2 {
       &:before {
         top: 7px;
       }

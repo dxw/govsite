@@ -15,7 +15,7 @@
 
         <div class="large-8 medium-8 columns">
 
-          <section class="page-element">
+          <div class="page-element">
             <ul>
               <li>We might have removed the page.</li>
               <li>The link you clicked might be old.</li>
@@ -25,13 +25,13 @@
               Try retyping the URL again  or use search in the header to find what you're looking for.
             </p>
             <a href="/" class="button">Return to homepage</a>
-          </section>
+          </div>
 
         </div>
 
-        <div class="large-4 medium-4 columns show-for-medium-up">
+        <aside class="large-4 medium-4 columns show-for-medium-up">
           <span class="error-image">404</span>
-        </div>
+        </aside>
 
       </div>
 

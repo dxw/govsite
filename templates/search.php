@@ -10,7 +10,7 @@
         </div>
       </header>
 
-      <section class="page-element">
+      <div class="page-element">
         <?php if (have_posts()) : ?>
           <?php while (have_posts()) : the_post(); ?>
             <?php get_template_part('partials/search-item'); ?>
@@ -18,7 +18,7 @@
         <?php else: ?>
           <p>No results found. Search again?</p>
         <?php endif; ?>
-      </section>
+      </div>
 
       <?php get_template_part('partials/pager') ?>
 

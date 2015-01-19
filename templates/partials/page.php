@@ -8,12 +8,11 @@
         <h1><?php the_title(); ?></h1>
       </header>
 
-      <section class="page-element">
+      <div class="page-element row">
 
-        <article class="row">
+        <div class="medium-8 large-8 columns">
 
-          <div class="medium-8 large-8 columns">
-
+          <article>
             <?php if ( has_post_thumbnail() ) { ?>
               <figure>
                 <?php the_post_thumbnail('large'); ?>
@@ -21,12 +20,11 @@
             <?php } ?>
 
            <?php the_content(); ?>
+         </article>
 
-          </div>
+        </div>        
 
-        </article>
-
-      </section>
+      </div>
 
     </main>
 
