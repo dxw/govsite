@@ -35,7 +35,9 @@ the_post();
           
             <section class="sidebar-content">
 
-              <h3>Contact details</h3>
+              <header>
+                <h3>Contact details</h3>
+              </header>
               
               <?php if ( get_field('address') ) { ?>
                 <address><?php the_field('address'); ?></address>

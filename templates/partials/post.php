@@ -65,7 +65,9 @@
           <aside class="medium-4 large-4 columns sidebar">
 
             <section class="panel">
-              <h3>Related content</h3>
+              <header>
+                <h3>Related content</h3>
+              </header>
               <?php echo get_field('related_content'); ?>
             </section>
 

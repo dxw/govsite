@@ -45,7 +45,9 @@ the_post();
 
           <li>
             <article>
-              <h3><?php the_field('title_1'); ?></h3>
+              <header>
+                <h3><?php the_field('title_1'); ?></h3>
+              </header>
               <?php
                 $image1 = get_field('image_1');
                 $thumb1 = $image1['sizes'][$size];
@@ -57,7 +59,9 @@ the_post();
 
           <li>
             <article>
-              <h3><?php the_field('title_2'); ?></h3>
+              <header>
+                <h3><?php the_field('title_2'); ?></h3>
+              </header>
               <?php
                 $image2 = get_field('image_2');
                 $thumb2 = $image2['sizes'][$size];
@@ -69,7 +73,9 @@ the_post();
 
           <li>
             <article>
-              <h3><?php the_field('title_3'); ?></h3>
+              <header>
+                <h3><?php the_field('title_3'); ?></h3>
+              </header>
               <?php
                 $image3 = get_field('image_3');
                 $thumb3 = $image3['sizes'][$size];
@@ -137,7 +143,9 @@ the_post();
         
           <section class="panel">
 
-            <h3><?php the_field('banner_title'); ?></h3>
+            <header>
+              <h3><?php the_field('banner_title'); ?></h3>
+            <header>
 
             <p><?php the_field('banner_description'); ?></p>
 

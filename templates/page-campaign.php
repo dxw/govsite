@@ -59,7 +59,9 @@ the_post();
                 $thumb1 = $image1['sizes'][ $size ];
               ?>
 
-              <h3><?php the_field('left_block_title') ?></h3>
+              <header>
+                <h3><?php the_field('left_block_title') ?></h3>
+              </header>
 
               <?php if ( get_field('blocks_with_images') == true ) { ?>
                 <a class="image" href="<?php the_field('left_block_url'); ?>"><img class="th" src="<?php echo $thumb1; ?>" alt="<?php echo $image1['alt']; ?>"></a>
@@ -80,7 +82,9 @@ the_post();
                 $thumb2 = $image2['sizes'][ $size ];
               ?>
 
-              <h3><?php the_field('right_block_title') ?></h3>
+              <header>
+                <h3><?php the_field('right_block_title') ?></h3>
+              </header>
 
               <?php if ( get_field('blocks_with_images') == true ) { ?>
                 <a class="image" href="<?php the_field('right_block_url'); ?>"><img class="th" src="<?php echo $thumb2; ?>" alt="<?php echo $image2['alt']; ?>"></a>

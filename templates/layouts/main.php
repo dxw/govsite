@@ -33,7 +33,7 @@
     <div class="row">
       <div class="small-12 medium-4 large-4 columns">
         <?php $logo = get_option('logo-setting'); ?>
-        <h1 class="left"><a href="/" title="<?php bloginfo('name'); ?>"><img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?> logo"></a></h1>
+        <a href="/" title="<?php bloginfo('name'); ?>" class="left logo"><img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?> logo"></a>
         <a href="#headermenu" class="nav-toggle hidden-for-medium-up right"><span class="accessibility">Menu</span></a>
       </div>
       <div class="small-12 medium-8 large-8 columns">

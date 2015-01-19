@@ -21,7 +21,7 @@ header.site-header {
       margin: 0;
 
       @media #{$small-only} {
-        margin-bottom: $space-small*2;
+        margin-bottom: $space-small;
       }
 
       > li {
@@ -132,6 +132,9 @@ header.site-header {
     margin-top: $space-small/2;
     @include font-size(32);
     @include icon(before, menu);
+    &:visited {
+      color: $primary-color;
+    }
   }
 
 }

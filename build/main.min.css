@@ -6153,32 +6153,28 @@ header.site-header {
   background: #FFFFFF;
 }
 /* line 10, ../assets/scss/common/header.scss */
-header.site-header h1 {
+header.site-header a.logo {
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 700;
-}
-/* line 16, ../assets/scss/common/header.scss */
-header.site-header h1 a {
-  display: block;
   font-size: 50px;
   font-size: 3.1rem;
   line-height: 1.5;
   line-height: 1;
   color: #1b325f;
 }
-/* line 21, ../assets/scss/common/header.scss */
-header.site-header h1 a:hover, header.site-header h1 a:focus {
+/* line 18, ../assets/scss/common/header.scss */
+header.site-header a.logo:hover, header.site-header a.logo:focus {
   color: #172b52;
 }
-/* line 26, ../assets/scss/common/header.scss */
-header.site-header h1 img {
+/* line 22, ../assets/scss/common/header.scss */
+header.site-header a.logo img {
   max-width: 200px;
 }
 @media only screen and (max-width: 40em) {
-  /* line 26, ../assets/scss/common/header.scss */
-  header.site-header h1 img {
+  /* line 22, ../assets/scss/common/header.scss */
+  header.site-header a.logo img {
     max-width: 180px;
   }
 }
@@ -6849,7 +6845,7 @@ header.site-header nav ul > li > * {
 @media only screen and (max-width: 40em) {
   /* line 19, ../assets/scss/partials/nav.scss */
   header.site-header nav ul {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 /* line 27, ../assets/scss/partials/nav.scss */
@@ -7025,6 +7021,10 @@ header.site-header .nav-toggle:before {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+/* line 135, ../assets/scss/partials/nav.scss */
+header.site-header .nav-toggle:visited {
+  color: #2e69ac;
 }
 
 /* line 5, ../assets/scss/partials/nav-footer.scss */
