@@ -24,12 +24,14 @@ function govsite_theme_settings_admin_menu() {
   );
 
   foreach ($pages as $page) {
-    global $page;
+    global $govsite_theme_settings_admin_menu_theme_page_page;
+    $govsite_theme_settings_admin_menu_theme_page_page = $page;
     add_theme_page($page->title, $page->title, 'manage_options', $page->slug, 'govsite_theme_settings_admin_menu_theme_page');
   }
 }
 function govsite_theme_settings_admin_menu_theme_page() {
-  global $page;
+  global $govsite_theme_settings_admin_menu_theme_page_page;
+  $page = $govsite_theme_settings_admin_menu_theme_page_page;
   ?>
   <div class="wrap">
     <h2><?php echo esc_html($page->title) ?></h2>
@@ -54,12 +56,14 @@ function govsite_theme_settings_admin_menu2() {
   );
 
   foreach ($pages as $page) {
-    global $page;
+    global $govsite_theme_settings_admin_menu2_options_page_page;
+    $govsite_theme_settings_admin_menu2_options_page_page = $page;
     add_options_page($page->title, $page->title, 'manage_options', $page->slug, 'govsite_theme_settings_admin_menu2_options_page');
   }
 }
 function govsite_theme_settings_admin_menu2_options_page() {
-  global $page;
+  global $govsite_theme_settings_admin_menu2_options_page_page;
+  $page = $govsite_theme_settings_admin_menu2_options_page_page;
   ?>
   <div class="wrap">
     <h2><?php echo esc_html($page->title) ?></h2>
@@ -86,7 +90,8 @@ function govsite_theme_settings_admin_init() {
   add_settings_section('header', 'Instructions', 'govsite_theme_settings_admin_init_social_media_header', 'social-media');
 
   for ($i = 0; $i < 6; $i++) {
-    global $i;
+    global $govsite_theme_settings_admin_init_social_media_header_i;
+    $govsite_theme_settings_admin_init_social_media_header_i = $i;
     register_setting('social-media', 'social-media-'.$i.'-name-setting');
     register_setting('social-media', 'social-media-'.$i.'-url-setting');
     add_settings_field('name-'.$i, 'Name '.($i+1), 'govsite_theme_settings_admin_init_social_media_i_name', 'social-media', 'header');
@@ -117,7 +122,8 @@ function govsite_theme_settings_admin_init_social_media_header() {
   echo 'Choose social media profiles for your site. We support <strong>Facebook</strong>, <strong>Flickr</strong>, <strong>Google+</strong>, <strong>LinkedIn</strong>, <strong>Twitter</strong> and <strong>YouTube</strong> icons.';
 }
 function govsite_theme_settings_admin_init_social_media_i_name() {
-  global $i;
+  global $govsite_theme_settings_admin_init_social_media_header_i;
+  $i = $govsite_theme_settings_admin_init_social_media_header_i;
   $options = get_option( 'social-media-'.$i.'-name-setting' );
   $items = array("Facebook", "Flickr", "Google+", "LinkedIn", "Twitter", "YouTube");
   echo '<select id="dropdown" name="social-media-'.$i.'-name-setting[dropdown]">';
@@ -128,7 +134,8 @@ function govsite_theme_settings_admin_init_social_media_i_name() {
   echo '</select>';
 }
 function govsite_theme_settings_admin_init_social_media_i_url() {
-  global $i;
+  global $govsite_theme_settings_admin_init_social_media_header_i;
+  $i = $govsite_theme_settings_admin_init_social_media_header_i;
   $urlsetting = get_option('social-media-'.$i.'-url-setting');
   echo '<input type="text" name="social-media-'.esc_attr($i).'-url-setting" value="'.esc_attr($urlsetting).'" size="50">';
 }
