@@ -1,7 +1,8 @@
 <?php
 
 // Google Analytics
-add_action('wp_footer', function() {
+add_action('wp_footer', 'govsite_helpers_wp_footer');
+function govsite_helpers_wp_footer() {
   ?>
   <?php if ($url = get_option('ga-setting')) { ?>
     <script>
@@ -16,7 +17,7 @@ add_action('wp_footer', function() {
     </script>
   <?php } ?>
 <?php
-});
+}
 
 // Excerpt length
 function custom_excerpt_length( $length ) {

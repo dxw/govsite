@@ -1,6 +1,7 @@
 <?php
 
-add_action('wp_enqueue_scripts', function () {
+add_action('wp_enqueue_scripts', 'govsite_scripts_wp_enqueue_scripts');
+function govsite_scripts_wp_enqueue_scripts() {
   /**
    *  Do not add javascript to your theme here, unless you're sure you should.
    *
@@ -23,8 +24,9 @@ add_action('wp_enqueue_scripts', function () {
   wp_enqueue_script('main', get_stylesheet_directory_uri() . '/../build/main.min.js', array('jquery', 'modernizr'), '', true);
 
   wp_enqueue_style ('main', get_stylesheet_directory_uri() . '/../build/main.min.css');
-});
+}
 
-add_action('admin_enqueue_scripts', function () {
-  wp_enqueue_script('admin', get_template_directory_uri() . '/../assets/js/admin.js', ['jquery'], '', true);
-});
+add_action('admin_enqueue_scripts', 'govsite_scripts_admin_enqueue_scripts');
+function govsite_scripts_admin_enqueue_scripts() {
+  wp_enqueue_script('admin', get_template_directory_uri() . '/../assets/js/admin.js', array('jquery'), '', true);
+}

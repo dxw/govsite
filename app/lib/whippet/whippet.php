@@ -4,6 +4,6 @@
 //
 //
 
-require __DIR__ . '/layout.php';
-require __DIR__ . '/template_tags.php';
+require dirname(__FILE__) . '/layout.php';
+require dirname(__FILE__) . '/template_tags.php';
 

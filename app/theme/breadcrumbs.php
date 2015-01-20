@@ -1,25 +1,25 @@
 <?php
 
 function the_breadcrumbs($main_query = true) {
-  $bc = new Breadcrumbs(get_the_ID(), $main_query, [
-    'post' => [
+  $bc = new Breadcrumbs(get_the_ID(), $main_query, array(
+    'post' => array(
       'hide-post-type' => true,
       'use-term-as-ancestor' => 'category',
-    ],
-    'page' => [
+    ),
+    'page' => array(
       'hide-post-type' => true,
-    ],
-    'attachment' => [
+    ),
+    'attachment' => array(
       'hide-post-type' => true,
       'force-hierarchical' => true,
-    ],
-    'announcement' => [
+    ),
+    'announcement' => array(
       'use-term-as-ancestor' => 'announcement-type',
-    ],
-    'publication' => [
+    ),
+    'publication' => array(
       'use-term-as-ancestor' => 'subject',
-    ],
-  ]);
+    ),
+  ));
   echo $bc->getHTML();
 }
 
@@ -31,52 +31,52 @@ class Breadcrumbs {
     $post_type = get_post_type($this->postId);
     $_post_type = get_post_type_object($post_type);
 
-    $this->trailIds = [];
+    $this->trailIds = array();
 
     // Handle archive pages
     if ($this->mainQuery && is_search()) {
 
-      $this->trailIds[] = [
+      $this->trailIds[] = array(
         'type' => 'link',
         'href' => '#',
         'text' => 'Search results for "'.esc_html(get_search_query()).'"',
-      ];
+      );
 
     } elseif ($this->mainQuery && is_post_type_archive()) {
 
       $t = get_post_type_object(get_query_var('post_type'));
-      $this->trailIds[] = [
+      $this->trailIds[] = array(
         'type' => 'link',
         'href' => '#',
         'text' => $t->labels->name,
-      ];
+      );
 
     } elseif ($this->mainQuery && is_tax() || is_tag() || is_category()) {
 
       $obj = get_queried_object();
 
-      $this->trailIds[] = [
+      $this->trailIds[] = array(
         'type' => 'link',
         'href' => '#',
         'text' => $obj->name,
-      ];
+      );
 
     } elseif ($this->mainQuery && is_archive()) {
 
-      $this->trailIds[] = [
+      $this->trailIds[] = array(
         'type' => 'link',
         'href' => '#',
         'text' => 'Archives',
-      ];
+      );
 
     } else {
       // Handle single posts
 
       // Add this post
-      $this->trailIds[] = [
+      $this->trailIds[] = array(
         'type' => 'post',
         'id' => $post_id,
-      ];
+      );
 
       // Add the ancestors (or a term)
       if (isset($type_config[$post_type]['use-term-as-ancestor'])) {
@@ -89,11 +89,11 @@ class Breadcrumbs {
           $link = get_term_link($term->term_id, $tax);
 
           if (!is_wp_error($link)) {
-            $this->trailIds[] = [
+            $this->trailIds[] = array(
               'type' => 'link',
               'href' => $link,
               'text' => $term->name,
-            ];
+            );
           }
         }
       } elseif ((isset($type_config[$post_type]['force-hierarchical']) && $type_config[$post_type]['force-hierarchical']) || (is_object($_post_type) && $_post_type->hierarchical)) {
@@ -102,23 +102,23 @@ class Breadcrumbs {
 
       // Add the post type if it's not on the exclusion list
       if (!(isset($type_config[$post_type]['hide-post-type']) && $type_config[$post_type]['hide-post-type'])) {
-        $this->trailIds[] = [
+        $this->trailIds[] = array(
           'type' => 'post_type',
           'slug' => $post_type,
-        ];
+        );
       }
     }
 
     // Add the site name
-    $this->trailIds[] = [
+    $this->trailIds[] = array(
       'type' => 'link',
       'href' => get_bloginfo('url'),
       'text' => get_bloginfo('name'),
-    ];
+    );
   }
 
   function getHTML() {
-    $items = [];
+    $items = array();
 
     for ($i = count($this->trailIds)-1 ; $i >= 0 ; $i--) {
       $item = $this->trailIds[$i];
@@ -151,7 +151,7 @@ class Breadcrumbs {
   }
 
   function getAncestors($post_id) {
-    $a = [];
+    $a = array();
 
     while (true) {
       $parent = (int)wp_get_post_parent_id($post_id);
@@ -159,10 +159,10 @@ class Breadcrumbs {
         break;
       }
       $post_id = $parent;
-      $a[] = [
+      $a[] = array(
         'type' => 'post',
         'id' => $post_id,
-      ];
+      );
     }
 
     return $a;
