@@ -52,7 +52,7 @@
 
   <footer class="site-footer">
 
-    <section class="navigation">
+    <div class="navigation">
       <div class="row">
         <div class="medium-6 large-6 columns">
           <?php get_template_part('partials/nav-footer'); ?>
@@ -63,9 +63,9 @@
           <?php } ?>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="credits">
+    <div class="credits">
       <div class="row">
         <div class="small-6 large-6 columns">
           <small>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> copyright</small>
@@ -74,7 +74,7 @@
           <?php get_template_part('partials/social-media'); ?>
         </div>
       </div>
-    </section>
+    </div>
 
   </footer>
 
