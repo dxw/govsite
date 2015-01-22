@@ -7004,15 +7004,22 @@ header.site-header nav .button-search.opened:before {
     float: none;
   }
 }
-/* line 131, ../assets/scss/partials/nav.scss */
-header.site-header .nav-toggle {
+@media only screen and (min-width: 40.063em) {
+  /* line 131, ../assets/scss/partials/nav.scss */
+  header.site-header .toggle-container {
+    display: none;
+    visibility: hidden;
+  }
+}
+/* line 138, ../assets/scss/partials/nav.scss */
+header.site-header .toggle-container .nav-toggle {
   margin-top: 5px;
   font-size: 32px;
   font-size: 1.984rem;
   line-height: 1.5;
 }
 /* line 69, ../assets/scss/global.scss */
-header.site-header .nav-toggle:before {
+header.site-header .toggle-container .nav-toggle:before {
   content: "";
   speak: none;
   font-style: normal;
@@ -7022,8 +7029,8 @@ header.site-header .nav-toggle:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 135, ../assets/scss/partials/nav.scss */
-header.site-header .nav-toggle:visited {
+/* line 142, ../assets/scss/partials/nav.scss */
+header.site-header .toggle-container .nav-toggle:visited {
   color: #2e69ac;
 }
 

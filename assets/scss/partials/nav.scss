@@ -128,13 +128,22 @@ header.site-header {
 
   }
 
-  .nav-toggle {
-    margin-top: $space-small/2;
-    @include font-size(32);
-    @include icon(before, menu);
-    &:visited {
-      color: $primary-color;
+  .toggle-container {
+
+    @media #{$medium-up} {
+      display: none;
+      visibility: hidden;
     }
+
+    .nav-toggle {
+      margin-top: $space-small/2;
+      @include font-size(32);
+      @include icon(before, menu);
+      &:visited {
+        color: $primary-color;
+      }
+    }
+
   }
 
 }
