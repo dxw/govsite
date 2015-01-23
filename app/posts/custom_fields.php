@@ -729,7 +729,7 @@ if(function_exists("register_field_group"))
       ),
     ),
     'options' => array (
-      'position' => 'side',
+      'position' => 'normal',
       'layout' => 'default',
       'hide_on_screen' => array (
       ),
