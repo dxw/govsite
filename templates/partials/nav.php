@@ -8,7 +8,7 @@
 </nav>
 
 <!--[if lt IE 8]>
-  <form role="search" method="get" id="searchform" class="searchform" action="http://baklava.local:8000/">
+  <form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url('/'); ?>">
     <div>
       <label class="screen-reader-text hidden-for-small-only hidden-for-medium-up" for="s">Search for:</label>
       <input type="text" value="<?php if (is_search()) { echo get_search_query(); } ?>" name="s" id="s">
