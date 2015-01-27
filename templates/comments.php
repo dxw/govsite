@@ -1,12 +1,12 @@
-<div class="row">
-
-  <div class="large-8 columns">
-
     <?php if (post_password_required()) {
       return;
     }
 
     if (have_comments()) : ?>
+
+<div class="row">
+
+  <div class="large-8 columns">
 
       <button type="button" class="button right comment-scroll">Comment</button>
 
@@ -31,11 +31,11 @@
         <?php endif; ?>
       </section><!-- /#comments -->
         
-    <?php endif; ?>
-
   </div>
 
 </div>
+
+<?php endif; ?>
 
 <?php if (comments_open()) : ?>
   <?php get_template_part('partials/comment-form'); ?>
