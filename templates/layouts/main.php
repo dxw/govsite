@@ -12,8 +12,6 @@
 
   <?php wp_head(); ?>
 
-  <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
-
   <!--[if lt IE 9]>
     <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
