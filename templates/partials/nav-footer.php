@@ -6,5 +6,5 @@
         'theme_location' => 'footer',
         'depth' => 1
         ));
-endif;?>
+    endif;?>
 </nav>

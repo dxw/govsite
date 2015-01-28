@@ -1,8 +1,8 @@
-    o<?php if (post_password_required()) {
-      return;
-    }
+<?php if (post_password_required()) {
+  return;
+}
 
-    if (have_comments()) : ?>
+  if (have_comments()) : ?>
 
     <div class="row">
 
@@ -22,18 +22,19 @@
             <ul class="pager">
               <?php if (get_previous_comments_link()) : ?>
               <li class="previous"><?php previous_comments_link(__('&larr; Older comments', 'roots')); ?></li>
-            <?php endif; ?>
-            <?php if (get_next_comments_link()) : ?>
-            <li class="next"><?php next_comments_link(__('Newer comments &rarr;', 'roots')); ?></li>
-          <?php endif; ?>
-        </ul>
-      </nav>
-    <?php endif; ?>
-  </section><!-- /#comments -->
+                <?php endif; ?>
+                <?php if (get_next_comments_link()) : ?>
+                <li class="next"><?php next_comments_link(__('Newer comments &rarr;', 'roots')); ?></li>
+              <?php endif; ?>
+            </ul>
+          </nav>
 
-</div>
+        </section><!-- /#comments -->
 
-</div>
+      </div>
+
+    </div>
+  <?php endif; ?>
 
 <?php endif; ?>
 
