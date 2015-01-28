@@ -1,8 +1,11 @@
-<nav id="headermenu" role="navigation">
+<nav id="headermenu" class="headermenu" role="navigation">
   <button type="button" class="button-search show-for-medium-up"><span class="accessibility">Search</span></button>
   <?php
     if (has_nav_menu('header')) :
-      wp_nav_menu(array('theme_location' => 'header'));
+      wp_nav_menu(array(
+        'theme_location' => 'header',
+        'depth' => 2
+        ));
     endif;
   ?>
 </nav>

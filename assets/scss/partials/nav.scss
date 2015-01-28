@@ -18,6 +18,7 @@ header.site-header {
 
     ul {
       @include inline-list;
+      overflow: visible;
       margin: 0;
 
       @media #{$small-only} {
@@ -60,7 +61,7 @@ header.site-header {
 
     li.current-menu-item,
     li.current_page_item {
-      a {
+      > a {
         background: $logo-color;
         color: $white;
         &:hover, &:focus {
@@ -145,5 +146,51 @@ header.site-header {
     }
 
   }
+
+  .menu-item-has-children {
+    position: relative;
+  }
+
+  .sub-menu {
+    background: $primary-color;
+    position: absolute;
+    left: -9999px;
+    z-index: 10;
+    padding-top: 3px;
+
+    &:before {
+      @include arrow(10px, up, -10px, 25%, $primary-color);
+    }
+
+      li {
+        position: relative;
+        width: 100%;
+        margin: 0;
+
+        a {
+          display: block;
+          background: $primary-color;
+          color: $white;
+          white-space: nowrap;
+          padding: 10px 40px 10px 10px;
+
+          &:hover {
+            background: $secondary-color;
+            color: $white;
+          }
+
+        }
+      }
+
+  }
+
+  .hover > .sub-menu {
+    left: 0;
+    top: 90px;
+  }
+
+
+
+
 
 }

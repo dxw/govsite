@@ -37,14 +37,14 @@ jQuery(function ($) {
     });
 
     // Toggle navigation
-    var $menu = $('#headermenu'),
-    $menulink = $('.nav-toggle');
+    // var $menu = $('#headermenu'),
+    // $menulink = $('.nav-toggle');
 
-    $menulink.click(function() {
-        $menulink.toggleClass('active');
-        $menu.toggleClass('active');
-        return false;
-    });
+    // $menulink.click(function() {
+    //     $menulink.toggleClass('active');
+    //     $menu.toggleClass('active');
+    //     return false;
+    // });
 
     // Search
     var $searchicon = $('.header-search .icon-search'),
@@ -71,5 +71,56 @@ jQuery(function ($) {
             scrollTop: $("#comment-form").offset().top
         }, 1000);
     });
+
+    // Resonsive nav
+    var ww = document.body.clientWidth;
+
+    $(document).ready(function() {
+      $(".menu li a").each(function() {
+        if ($(this).next().length > 0) {
+          $(this).addClass("parent");
+        }
+      });
+
+      $(".nav-toggle").click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass("active");
+        $(".headermenu").toggleClass("active");
+        $(".menu").toggle();
+      });
+      adjustMenu();
+    });
+
+    $(window).bind('resize orientationchange', function() {
+      ww = document.body.clientWidth;
+      adjustMenu();
+    });
+
+    var adjustMenu = function() {
+      if (ww < 768) {
+        $(".nav-toggle").css("display", "block");
+        if (!$(".nav-toggle").hasClass("active")) {
+          $(".menu").hide();
+        } else {
+          $(".menu").show();
+        }
+        $(".menu li").unbind('mouseenter mouseleave');
+        $(".menu li a.parent").unbind('click');
+        $(".menu li .more").unbind('click').bind('click', function() {
+
+          $(this).parent("li").toggleClass("hover");
+        });
+      } 
+      else if (ww >= 768) {
+        $(".nav-toggle").css("display", "none");
+        $(".menu").show();
+        $(".menu li").removeClass("hover");
+        $(".menu li a").unbind('click');
+        $(".menu li").unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function() {
+          $(this).toggleClass('hover');
+        });
+      }
+    };
+
 
 });
