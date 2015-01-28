@@ -94,7 +94,7 @@ module.exports = function (grunt) {
             dist2: {
                 src: ['../assets/img/ie/*'],
                 dest: '../build/img/ie'
-            },
+            }
         },
 
         _watch: {
