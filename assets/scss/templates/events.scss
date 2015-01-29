@@ -1,0 +1,84 @@
+// List of events
+
+#tribe-bar-form {
+  background: $white;
+
+  label {
+    text-transform: none;
+    font-weight: normal;
+    @include font-size(14);
+    color: $body-font-color;
+  }
+
+  input {
+    &[type="text"] {
+      border-bottom: 1px solid $gainsboro;
+      font-weight: normal;
+      @include font-size(18);
+    }
+  }
+
+  // Placeholder text colour
+  *::-webkit-input-placeholder {
+    color: $base;
+    font-style: normal;
+  }
+  *::-moz-placeholder {
+    color: $base;
+    font-style: normal;
+  }
+  *:-ms-input-placeholder {
+    color: $base;
+    font-style: normal;
+  }
+
+  .tribe-bar-date-filter,
+  .tribe-bar-search-filter,
+  .tribe-bar-geoloc-filter,
+  .tribe-bar-submit {
+    padding-bottom: 13px;
+  }
+
+  .tribe-bar-submit {
+
+    input[type=submit] {
+      @include button;
+      margin-bottom: 0;
+    }
+
+  }
+
+}
+
+h2.tribe-events-page-title {
+  font-weight: normal;
+}
+
+.tribe-events-user-recurrence-toggle {
+  input[type=checkbox] {
+    margin-right: $space-small;
+  }
+}
+
+.tribe-events-list-separator-month {
+  margin: $space-large 0;
+  border-top: 5px solid #1b325f;
+  padding: 0;
+  text-align: left;
+  &:after {
+    border-bottom: none;
+  }
+  span {
+    background: $logo-color;
+    padding: $space-small;
+    font-weight: normal;
+    @include font-size(20);
+    color: $white;
+  }
+}
+
+.tribe-events-list .vevent.hentry h2 {
+  @include font-size(28);
+  font-weight: normal;
+}
+

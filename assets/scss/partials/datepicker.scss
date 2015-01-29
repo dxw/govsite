@@ -1,0 +1,29 @@
+.datepicker {
+
+  td, th {
+    background: $white;
+    border-radius: 0;
+    @include font-size(13);
+  }
+
+  td {
+    border-top: none;
+  }
+
+  table {
+    border: none;
+    tr {
+      td {
+        &.active.active {
+          background: $primary-color;
+          color: $white;
+          &:hover, &:focus {
+            background: darken($primary-color, 15%);
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+}

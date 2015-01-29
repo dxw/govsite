@@ -14,8 +14,18 @@
 
 if ( !defined('ABSPATH') ) { die('-1'); } ?>
 
-<div id="tribe-events-pg-template">
-  <?php tribe_events_before_html(); ?>
-  <?php tribe_get_view(); ?>
-  <?php tribe_events_after_html(); ?>
-</div> <!-- #tribe-events-pg-template -->
+<div class="row">
+
+  <div class="large-12 columns">
+
+    <div id="tribe-events-pg-template" class="page-element">
+
+      <?php tribe_events_before_html(); ?>
+      <?php tribe_get_view(); ?>
+      <?php tribe_events_after_html(); ?>
+
+    </div>
+
+  </div>
+
+</div>
