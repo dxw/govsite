@@ -14,7 +14,7 @@
 
   <!--[if lt IE 9]>
     <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
-    <script src="<?php bloginfo('template_directory'); ?>/assets/js/ie/browser-support.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/../assets/js/ie/browser-support.js"></script>
   <![endif]-->
 
 </head>

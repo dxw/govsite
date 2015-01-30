@@ -314,3 +314,8 @@
 .lt-ie8 footer nav ul { margin-left: 0; }
 
 .lt-ie8 .show-for-medium-up { display: inline-block !important; visibility: visible; } // display elements hidden using Foundation visibility classes
+
+// Hides topbar dropdown from shit browsers
+.lt-ie8 .top-bar-section .dropdown {
+  display: none;
+}

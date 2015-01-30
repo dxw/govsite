@@ -9236,4 +9236,9 @@ ul.tribe-events-sub-nav a,
   visibility: visible;
 }
 
+/* line 319, ../assets/scss/ie.scss */
+.lt-ie8 .top-bar-section .dropdown {
+  display: none;
+}
+
 /*# sourceMappingURL=main.min.css.map */
