@@ -32,7 +32,7 @@
       <div class="small-12 medium-4 large-4 columns">
         <?php $logo = get_option('logo-setting'); ?>
         <a href="/" title="<?php bloginfo('name'); ?>" class="left logo"><img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?> logo"></a>
-        <div class="toggle-container hidden-for-medium-up right">
+        <div class="toggle-container toggle-topbar hidden-for-medium-up right">
           <a href="#headermenu" class="nav-toggle"><span class="accessibility">Menu</span></a>
         </div>
       </div>
