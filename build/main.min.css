@@ -8794,4 +8794,9 @@ section.sidebar-content a.contact-link:before {
   visibility: visible;
 }
 
+/* line 319, ../assets/scss/ie.scss */
+.lt-ie8 .dropdown {
+  display: none;
+}
+
 /*# sourceMappingURL=main.min.css.map */
