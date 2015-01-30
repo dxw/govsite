@@ -1,4 +1,4 @@
-// List of events
+// default events list template
 
 // Filters bar
 #tribe-bar-form {
@@ -45,6 +45,7 @@
     input[type=submit] {
       @include button;
       margin-bottom: 0;
+      padding: $space-small $space-small*2;
       text-transform: none;
     }
 
@@ -107,40 +108,46 @@ h2.tribe-events-page-title {
   }
 }
 
-.tribe-events-list .time-details,
-.tribe-events-list .tribe-events-venue-details {
-  &:before {
+.tribe-events-list {
+
+  .time-details,
+  .tribe-events-venue-details {
+    &:before {
+      margin-right: $space-small/2;
+      color: $steel;
+    }
+  }
+
+  .time-details {
+    margin-bottom: $space-small;
+    padding: 0;
+    @include icon(before, calendar);
+  }
+
+  .tribe-events-venue-details {
+    margin-top: 0;
+    border-top: none;
+    padding: 0;
+    font-style: normal;
+    @include icon(before, location);
+    .fn {
+      font-weight: normal;
+    }
+  }
+
+}
+
+.tribe-events-event-meta {
+
+  address.tribe-events-address {
     margin-right: $space-small/2;
-    color: $steel;
+    font-style: normal;
   }
+
 }
 
-.tribe-events-list .time-details {
-  margin-bottom: $space-small;
-  padding: 0;
-  @include icon(before, calendar);
-}
-
-.tribe-events-list .tribe-events-venue-details {
-  margin-top: 0;
-  border-top: none;
-  padding: 0;
-  @include icon(before, location);
-  .fn {
-    font-weight: normal;
-  }
-}
-
-.tribe-events-list .tribe-events-venue-details,
-.tribe-events-event-meta address.tribe-events-address {
-  font-style: normal;
-}
-
-.tribe-events-event-meta address.tribe-events-address {
-  margin-right: $space-small/2;
-}
-
-.tribe-events-list .tribe-events-loop .tribe-events-event-meta {
+.tribe-events-list .tribe-events-loop .tribe-events-event-meta,
+.single-tribe_events .tribe-events-schedule {
   .recurringinfo,
   .event-is-recurring {
     display: inline;
@@ -166,12 +173,14 @@ ul.tribe-events-sub-nav a,
 .tribe-events-button,
 #tribe-events .tribe-events-button {
   @include button;
+  padding: $space-small $space-small*2;
   text-transform: none;
   letter-spacing: normal;
 }
 
 .tribe-events-nav-previous a,
-.tribe-events-nav-next a {
+.tribe-events-nav-next a,
+.tribe-events-back a {
   &:visited {
     color: $primary-color;
     &:hover, &:focus {
@@ -220,4 +229,70 @@ ul.tribe-events-sub-nav a,
   @include font-size(18);
   text-transform: none;
   text-align: left;
+}
+
+// Single event template
+
+.single-tribe_events h2.tribe-events-single-event-title {
+  @include font-size(36);
+  font-weight: normal;
+}
+
+.single-tribe_events .tribe-events-schedule {
+  margin: $space-medium 0;
+  border: none;
+  padding: 0;
+
+  h3 {
+    @include font-size(14);
+    color: $jumbo;
+    font-family: $font-family-sans-serif;
+  }
+
+  .recurringinfo {
+    vertical-align: top
+  }
+  .event-is-recurring {
+    @include font-size(14);
+    a {
+      @include font-size(14);
+    }
+  }
+
+}
+
+#tribe-events .tribe-events-content p,
+.tribe-events-before-html p,
+.tribe-events-after-html p {
+  margin-bottom: $space-small*2;
+}
+
+.single-tribe_events #tribe-events .tribe-events-cal-links {
+  .tribe-events-button {
+    margin-left: $space-small;
+    margin-bottom: 0;
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
+
+.single-tribe_events .tribe-events-event-meta {
+  border: none;
+  border-top: 3px solid $gainsboro;
+  background: $silver;
+}
+
+.tribe-events-meta-group .tribe-events-single-section-title {
+  font-weight: normal;
+  @include font-size(28);
+}
+
+// Map
+.single-tribe_events .tribe-events-venue-map,
+.tribe-events-venue .tribe-events-map-wrap {
+  border: none;
+  border-radius: 0;
+  background: $white;
+  padding: $space-small;
 }
