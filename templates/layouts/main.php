@@ -13,18 +13,15 @@
   <?php wp_head(); ?>
 
   <!--[if lt IE 9]>
-    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
-    <script src="http://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
-    <script src="http://html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/assets/js/ie/browser-support.js"></script>
   <![endif]-->
 
 </head>
 <body <?php body_class(); ?>>
 
   <!--[if lt IE 8]>
-    <div class="alert-box alert"><?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?></div>
+    <div class="alert-box alert"><?php _e('You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?></div>
   <![endif]-->
 
   <header class="site-header">
