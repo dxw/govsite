@@ -8795,7 +8795,7 @@ section.sidebar-content a.contact-link:before {
 }
 
 /* line 319, ../assets/scss/ie.scss */
-.lt-ie8 .dropdown {
+.lt-ie8 .top-bar-section .dropdown {
   display: none;
 }
 
