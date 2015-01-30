@@ -1,12 +1,18 @@
-<nav id="headermenu" class="headermenu" role="navigation">
+<nav id="headermenu" class="headermenu top-bar" data-topbar role="navigation">
+
   <button type="button" class="button-search show-for-medium-up"><span class="accessibility">Search</span></button>
+
   <?php
-    if (has_nav_menu('header')) :
-      wp_nav_menu(array(
-        'theme_location' => 'header',
-        'depth' => 2
-        ));
-    endif;
+  //Add headernav with arguments and a nice clean class structure yay!
+
+  if (has_nav_menu('header')) :
+    wp_nav_menu(array(
+      'theme_location' => 'header',
+      'menu_class' => 'menu',
+      'depth' => 2,
+      'container_class' => 'top-bar-section'
+      ));
+  endif;
   ?>
 </nav>
 
