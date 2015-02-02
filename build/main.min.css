@@ -5788,7 +5788,6 @@ header.site-header a.logo:hover, header.site-header a.logo:focus {
 /* line 22, ../assets/scss/common/header.scss */
 header.site-header a.logo img {
   width: 200px;
-  height: auto;
 }
 @media only screen and (max-width: 40em) {
   /* line 22, ../assets/scss/common/header.scss */
@@ -7238,8 +7237,9 @@ meta.foundation-mq-topbar {
   position: relative;
   width: 100%;
   margin: 0;
+  background: #2e69ac;
 }
-/* line 192, ../assets/scss/partials/nav.scss */
+/* line 193, ../assets/scss/partials/nav.scss */
 .site-header .dropdown li a {
   display: block;
   background: #2e69ac;
@@ -7248,7 +7248,7 @@ meta.foundation-mq-topbar {
   padding: 10px 40px 10px 10px;
   transition: all 300ms ease-in;
 }
-/* line 200, ../assets/scss/partials/nav.scss */
+/* line 201, ../assets/scss/partials/nav.scss */
 .site-header .dropdown li a:hover {
   background: #285a94;
   color: #FFFFFF;
