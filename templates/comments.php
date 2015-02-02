@@ -28,6 +28,7 @@
               <?php endif; ?>
             </ul>
           </nav>
+          <?php endif; ?>
 
         </section><!-- /#comments -->
 
@@ -36,7 +37,6 @@
     </div>
   <?php endif; ?>
 
-<?php endif; ?>
 
 <?php if (comments_open()) : ?>
   <?php get_template_part('partials/comment-form'); ?>
