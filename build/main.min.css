@@ -5787,12 +5787,13 @@ header.site-header a.logo:hover, header.site-header a.logo:focus {
 }
 /* line 22, ../assets/scss/common/header.scss */
 header.site-header a.logo img {
-  max-width: 200px;
+  max-width: 100%;
+  height: auto;
 }
 @media only screen and (max-width: 40em) {
   /* line 22, ../assets/scss/common/header.scss */
   header.site-header a.logo img {
-    max-width: 180px;
+    max-width: 200px;
   }
 }
 
@@ -6966,25 +6967,32 @@ meta.foundation-mq-topbar {
 .site-header .top-bar {
   height: auto;
 }
-/* line 7, ../assets/scss/partials/nav.scss */
+@media screen and (max-width: 880px) {
+  /* line 8, ../assets/scss/partials/nav.scss */
+  .site-header .top-bar-nav {
+    width: 100%;
+    float: left !important;
+  }
+}
+/* line 15, ../assets/scss/partials/nav.scss */
 .site-header .headermenu {
   width: 100%;
   display: inline-block;
   background: #FFFFFF;
 }
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 7, ../assets/scss/partials/nav.scss */
-  .site-header .headermenu {
-    float: right;
-  }
-}
 @media only screen and (min-width: 40.063em) {
-  /* line 16, ../assets/scss/partials/nav.scss */
+  /* line 22, ../assets/scss/partials/nav.scss */
   .site-header .headermenu div {
     float: right;
   }
 }
-/* line 24, ../assets/scss/partials/nav.scss */
+@media screen and (max-width: 880px) {
+  /* line 22, ../assets/scss/partials/nav.scss */
+  .site-header .headermenu div {
+    float: none;
+  }
+}
+/* line 34, ../assets/scss/partials/nav.scss */
 .site-header .headermenu ul {
   margin: 0 auto 1.0625rem auto;
   margin-left: -1.375rem;
@@ -7007,21 +7015,21 @@ meta.foundation-mq-topbar {
   display: block;
 }
 @media only screen and (max-width: 40em) {
-  /* line 24, ../assets/scss/partials/nav.scss */
+  /* line 34, ../assets/scss/partials/nav.scss */
   .site-header .headermenu ul {
     margin-bottom: 10px;
   }
 }
-/* line 33, ../assets/scss/partials/nav.scss */
+/* line 43, ../assets/scss/partials/nav.scss */
 .site-header .headermenu ul > li {
   margin-left: 0;
   background: #FFFFFF;
 }
-/* line 37, ../assets/scss/partials/nav.scss */
+/* line 47, ../assets/scss/partials/nav.scss */
 .site-header .headermenu ul > li .js-generated {
   display: none;
 }
-/* line 42, ../assets/scss/partials/nav.scss */
+/* line 52, ../assets/scss/partials/nav.scss */
 .site-header .headermenu ul a {
   background: #2e69ac;
   padding: 10px;
@@ -7031,13 +7039,13 @@ meta.foundation-mq-topbar {
   line-height: 1.5;
   transition: border-top 300ms ease-in;
 }
-/* line 48, ../assets/scss/partials/nav.scss */
+/* line 58, ../assets/scss/partials/nav.scss */
 .site-header .headermenu ul a:hover, .site-header .headermenu ul a:focus {
   background: #285a94;
   color: #FFFFFF;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 42, ../assets/scss/partials/nav.scss */
+  /* line 52, ../assets/scss/partials/nav.scss */
   .site-header .headermenu ul a {
     font-size: 16px;
     font-size: 0.992rem;
@@ -7045,39 +7053,39 @@ meta.foundation-mq-topbar {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 42, ../assets/scss/partials/nav.scss */
+  /* line 52, ../assets/scss/partials/nav.scss */
   .site-header .headermenu ul a {
     position: relative;
     background: transparent;
     padding: 38px 15px;
     color: #222;
   }
-  /* line 62, ../assets/scss/partials/nav.scss */
+  /* line 72, ../assets/scss/partials/nav.scss */
   .site-header .headermenu ul a:hover, .site-header .headermenu ul a:focus {
     background: transparent;
     color: #2e69ac;
   }
 }
-/* line 74, ../assets/scss/partials/nav.scss */
+/* line 84, ../assets/scss/partials/nav.scss */
 .site-header .headermenu li.active > a,
 .site-header .headermenu li.active > a {
   background: #1b325f;
   color: #FFFFFF;
 }
-/* line 77, ../assets/scss/partials/nav.scss */
+/* line 87, ../assets/scss/partials/nav.scss */
 .site-header .headermenu li.active > a:hover, .site-header .headermenu li.active > a:focus,
 .site-header .headermenu li.active > a:hover,
 .site-header .headermenu li.active > a:focus {
   background: #172b52;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 74, ../assets/scss/partials/nav.scss */
+  /* line 84, ../assets/scss/partials/nav.scss */
   .site-header .headermenu li.active > a,
   .site-header .headermenu li.active > a {
     background: transparent;
     color: #2e69ac;
   }
-  /* line 84, ../assets/scss/partials/nav.scss */
+  /* line 94, ../assets/scss/partials/nav.scss */
   .site-header .headermenu li.active > a:before,
   .site-header .headermenu li.active > a:before {
     width: 0;
@@ -7089,7 +7097,7 @@ meta.foundation-mq-topbar {
     border-right: 10px solid transparent;
     border-top: 10px solid #1b325f;
   }
-  /* line 87, ../assets/scss/partials/nav.scss */
+  /* line 97, ../assets/scss/partials/nav.scss */
   .site-header .headermenu li.active > a:hover, .site-header .headermenu li.active > a:focus,
   .site-header .headermenu li.active > a:hover,
   .site-header .headermenu li.active > a:focus {
@@ -7097,7 +7105,14 @@ meta.foundation-mq-topbar {
     color: #285a94;
   }
 }
-/* line 96, ../assets/scss/partials/nav.scss */
+@media screen and (max-width: 880px) {
+  /* line 103, ../assets/scss/partials/nav.scss */
+  .site-header .headermenu li.active > a:before,
+  .site-header .headermenu li.active > a:before {
+    border-top: none;
+  }
+}
+/* line 112, ../assets/scss/partials/nav.scss */
 .site-header .headermenu .button-search {
   margin-top: 30px;
   margin-left: 15px;
@@ -7119,11 +7134,11 @@ meta.foundation-mq-topbar {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 106, ../assets/scss/partials/nav.scss */
+/* line 122, ../assets/scss/partials/nav.scss */
 .site-header .headermenu .button-search:hover, .site-header .headermenu .button-search:focus {
   color: #2e69ac;
 }
-/* line 110, ../assets/scss/partials/nav.scss */
+/* line 126, ../assets/scss/partials/nav.scss */
 .site-header .headermenu .button-search.opened {
   color: #2e69ac;
 }
@@ -7139,13 +7154,13 @@ meta.foundation-mq-topbar {
   -moz-osx-font-smoothing: grayscale;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 96, ../assets/scss/partials/nav.scss */
+  /* line 112, ../assets/scss/partials/nav.scss */
   .site-header .headermenu .button-search {
     float: right;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 96, ../assets/scss/partials/nav.scss */
+  /* line 112, ../assets/scss/partials/nav.scss */
   .site-header .headermenu .button-search {
     font-size: 30px;
     font-size: 1.86rem;
@@ -7153,34 +7168,34 @@ meta.foundation-mq-topbar {
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 7, ../assets/scss/partials/nav.scss */
+  /* line 15, ../assets/scss/partials/nav.scss */
   .site-header .headermenu {
     clear: both;
     overflow: hidden;
     max-height: 0;
   }
-  /* line 129, ../assets/scss/partials/nav.scss */
+  /* line 145, ../assets/scss/partials/nav.scss */
   .site-header .headermenu.active {
     max-height: 15em;
   }
-  /* line 131, ../assets/scss/partials/nav.scss */
+  /* line 147, ../assets/scss/partials/nav.scss */
   .site-header .headermenu.active ul {
     float: none !important;
   }
-  /* line 134, ../assets/scss/partials/nav.scss */
+  /* line 150, ../assets/scss/partials/nav.scss */
   .site-header .headermenu.active li {
     display: block;
     float: none;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 143, ../assets/scss/partials/nav.scss */
+  /* line 159, ../assets/scss/partials/nav.scss */
   .site-header .toggle-container {
     display: none;
     visibility: hidden;
   }
 }
-/* line 150, ../assets/scss/partials/nav.scss */
+/* line 166, ../assets/scss/partials/nav.scss */
 .site-header .toggle-container .nav-toggle {
   margin-top: 5px;
   font-size: 32px;
@@ -7198,16 +7213,16 @@ meta.foundation-mq-topbar {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 154, ../assets/scss/partials/nav.scss */
+/* line 170, ../assets/scss/partials/nav.scss */
 .site-header .toggle-container .nav-toggle:visited {
   color: #2e69ac;
 }
-/* line 163, ../assets/scss/partials/nav.scss */
+/* line 179, ../assets/scss/partials/nav.scss */
 .site-header .dropdown {
   background: #2e69ac;
   top: 80px;
 }
-/* line 167, ../assets/scss/partials/nav.scss */
+/* line 183, ../assets/scss/partials/nav.scss */
 .site-header .dropdown:before {
   width: 0;
   content: '';
@@ -7218,13 +7233,13 @@ meta.foundation-mq-topbar {
   border-right: 10px solid transparent;
   border-bottom: 10px solid #2e69ac;
 }
-/* line 171, ../assets/scss/partials/nav.scss */
+/* line 187, ../assets/scss/partials/nav.scss */
 .site-header .dropdown li {
   position: relative;
   width: 100%;
   margin: 0;
 }
-/* line 176, ../assets/scss/partials/nav.scss */
+/* line 192, ../assets/scss/partials/nav.scss */
 .site-header .dropdown li a {
   display: block;
   background: #2e69ac;
@@ -7233,7 +7248,7 @@ meta.foundation-mq-topbar {
   padding: 10px 40px 10px 10px;
   transition: all 300ms ease-in;
 }
-/* line 184, ../assets/scss/partials/nav.scss */
+/* line 200, ../assets/scss/partials/nav.scss */
 .site-header .dropdown li a:hover {
   background: #285a94;
   color: #FFFFFF;

@@ -26,19 +26,15 @@
 
   <header class="site-header">
     <div class="row">
-      <div class="small-12 medium-4 large-4 columns">
+      <div class="small-12 medium-3 large-3 columns">
         <?php $logo = get_option('logo-setting'); ?>
         <a href="/" title="<?php bloginfo('name'); ?>" class="left logo"><img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?> logo"></a>
         <div class="toggle-container toggle-topbar hidden-for-medium-up right">
           <a href="#headermenu" class="nav-toggle"><span class="accessibility">Menu</span></a>
         </div>
       </div>
-      <div class="small-12 medium-8 large-8 columns">
-        <div class="row">
-          <div class="medium-12 large-12 columns">
+      <div class="small-12 medium-9 large-9 columns top-bar-nav">
             <?php get_template_part('partials/nav'); ?>
-          </div>
-        </div>
       </div>
     </div>
   </header>

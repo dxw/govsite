@@ -2,13 +2,18 @@
   <h3 class="hide-for-large-up">Share</h3>
   <ul>
     <li>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_guid($id); ?>" title="Facebook" class="facebook"></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_guid($id); ?>" title="Facebook" class="facebook">
+      <span class="accessibility">Facebook</span>
+      </a>
     </li>
     <li>
-      <a href="https://twitter.com/home?status=<?php the_title(); ?>%20<?php the_guid($id); ?>" title="Twitter" class="twitter"></a>
+      <a href="https://twitter.com/home?status=<?php the_title(); ?>%20<?php the_guid($id); ?>" title="Twitter" class="twitter"><span class="accessibility">Twitter</span>
+      </a>
     </li>
     <li>
-      <a href="mailto:?subject=Check%20out:%20<?php the_title(); ?>" title="E-mail" class="mail"></a>
+      <a href="mailto:?subject=Check%20out:%20<?php the_title(); ?>" title="E-mail" class="mail">
+      <span class="accessibility">E-mail</span>
+    </a>
     </li>
   </ul>
 </section>

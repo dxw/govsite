@@ -5,12 +5,13 @@
       $name = get_option('social-media-'.$i.'-name-setting');
       ?>
       <li>
-        <a href="<?php echo esc_attr($url); ?>" title="">
-          <?php 
-          if (!empty($name)) {
-            foreach ($name as $key => $option)
-              $options[$key] = $option;
-            ?>
+        <?php 
+        if (!empty($name)) {
+          foreach ($name as $key => $option)
+            $options[$key] = $option;
+          ?>
+          <a href="<?php echo esc_attr($url); ?>" title="<?php echo esc_attr($options[$key]); ?>">
+
             <span class="accessibility"><?php echo esc_attr($options[$key]); ?></span>
             <?php
           }
