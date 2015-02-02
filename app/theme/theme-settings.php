@@ -23,15 +23,18 @@ function govsite_theme_settings_admin_menu() {
     ),
   );
 
+  global $govsite_theme_settings_admin_menu_theme_page_page;
+  $govsite_theme_settings_admin_menu_theme_page_page = array();
+
   foreach ($pages as $page) {
-    global $govsite_theme_settings_admin_menu_theme_page_page;
-    $govsite_theme_settings_admin_menu_theme_page_page = $page;
+    $govsite_theme_settings_admin_menu_theme_page_page[$page->slug] = $page;
     add_theme_page($page->title, $page->title, 'manage_options', $page->slug, 'govsite_theme_settings_admin_menu_theme_page');
   }
 }
 function govsite_theme_settings_admin_menu_theme_page() {
   global $govsite_theme_settings_admin_menu_theme_page_page;
-  $page = $govsite_theme_settings_admin_menu_theme_page_page;
+  $slug = $_GET['page'];
+  $page = $govsite_theme_settings_admin_menu_theme_page_page[$slug];
   ?>
   <div class="wrap">
     <h2><?php echo esc_html($page->title) ?></h2>
