@@ -319,3 +319,9 @@
 .lt-ie8 .top-bar-section .dropdown {
   display: none;
 }
+
+// Events
+.lt-ie8 #tribe-bar-views { left: auto; right: 20px; top: 20px; }
+.lt-ie8 #tribe-bar-form .tribe-bar-filters { width: 80%; right: auto; left: -150px; }
+.lt-ie8 .tribe-events-event-meta .tribe-events-meta-group,
+.lt-ie8 .tribe-events-event-meta .column { width: 25%; }
