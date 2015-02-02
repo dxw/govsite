@@ -5787,13 +5787,13 @@ header.site-header a.logo:hover, header.site-header a.logo:focus {
 }
 /* line 22, ../assets/scss/common/header.scss */
 header.site-header a.logo img {
-  max-width: 100%;
+  width: 200px;
   height: auto;
 }
 @media only screen and (max-width: 40em) {
   /* line 22, ../assets/scss/common/header.scss */
   header.site-header a.logo img {
-    max-width: 200px;
+    max-width: 180px;
   }
 }
 

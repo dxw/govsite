@@ -20,10 +20,10 @@ header.site-header {
     }
 
     img {
-      max-width: 100%;
-      height: auto;
+      width: 200px;
+      
       @media #{$small-only} {
-        max-width: 200px;
+        max-width: 180px;
       }
     }
 
