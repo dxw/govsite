@@ -8,12 +8,12 @@
   <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/build/img/dxw.png" />
+  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/../build/img/dxw.png" />
 
   <?php wp_head(); ?>
 
   <!--[if lt IE 9]>
-    <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.9.0.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/../assets/js/ie/browser-support.js"></script>
   <![endif]-->
 
