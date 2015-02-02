@@ -1,5 +1,9 @@
 // default events list template
 
+#tribe-events-pg-template {
+  padding: 40px 0 0;
+}
+
 // Filters bar
 #tribe-bar-form {
   background: $white;
@@ -94,6 +98,9 @@ h2.tribe-events-page-title {
   display: block;
   @include font-size(28);
   font-weight: normal;
+  a {
+    @include font-size(28);
+  }
 }
 
 .tribe-events-loop .tribe-events-event-meta {
@@ -189,6 +196,20 @@ ul.tribe-events-sub-nav a,
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .tribe-events-sub-nav li a {
+    background: $primary-color;
+    &:hover, &:focus {
+      color: $white;
+      background: darken($primary-color, 15%);
+    }
+    &:visited {
+      color: $white;
+      background: $primary-color;
+    }
+  }
+}
+
 // Alerts
 .tribe-events-notices {
   background-color: $info-color;
@@ -261,16 +282,20 @@ ul.tribe-events-sub-nav a,
 
 }
 
-#tribe-events .tribe-events-content p,
+#tribe-events .tribe-events-content p {
+  margin-bottom: $space-small/2;
+}
+
 .tribe-events-before-html p,
 .tribe-events-after-html p {
   margin-bottom: $space-small*2;
 }
 
 .single-tribe_events #tribe-events .tribe-events-cal-links {
+  margin-bottom: $space-small*2;
   .tribe-events-button {
     margin-left: $space-small;
-    margin-bottom: 0;
+    margin-bottom: $space-small;
     &:first-of-type {
       margin-left: 0;
     }
@@ -295,4 +320,34 @@ ul.tribe-events-sub-nav a,
   border-radius: 0;
   background: $white;
   padding: $space-small;
+}
+
+// Venue & author
+.tribe-events-venue .tribe-events-venue-meta {
+  &.vcard {
+    display: block;
+  }
+}
+
+.tribe-events-venue-meta h2.entry-title,
+h2.entry-title.author {
+  font-weight: normal;
+  @include font-size(24);
+}
+
+.tribe-events-organizer address.organizer-address {
+  margin-bottom: $space-small;
+  border: none;
+  padding: 0;
+  font-weight: normal;
+  @include font-size(14);
+  a {
+    @include font-size(14);
+  }
+}
+
+.tribe-events-organizer .tribe-events-divider {
+  margin: 0;
+  padding: 0 $space-small/2;
+  color: $base;
 }
