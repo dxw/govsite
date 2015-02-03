@@ -233,7 +233,7 @@
 .lt-ie8 input[type="color"],
 .lt-ie8 textarea { padding: 10px; }
 
-.lt-ie8 .share a {
+.lt-ie9 .share a {
   padding: 0;
   &.facebook { background: $facebook-color url('#{$imagePath}/ie/social-icons-sprite.png') no-repeat 0 -35px; }
   &.twitter { background: $twitter-color url('#{$imagePath}/ie/social-icons-sprite.png') no-repeat 0 0; }
@@ -315,6 +315,10 @@
 
 .lt-ie8 .show-for-medium-up { display: inline-block !important; visibility: visible; } // display elements hidden using Foundation visibility classes
 
+.lt-ie9 .show-for-medium-up {
+  width: 10px;
+} 
+
 // Hides topbar dropdown from shit browsers
 .lt-ie8 .top-bar-section .dropdown {display: none;}
 
@@ -325,8 +329,8 @@
   color: $white;
 }
 
-.lt-ie9 .site-header a.logo {
-  width: 200px
+.lt-ie9 header.site-header a.logo {
+  width: 200px;
 }
 
 // Events

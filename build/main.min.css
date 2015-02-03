@@ -5792,7 +5792,7 @@ header.site-header a.logo img {
 @media only screen and (max-width: 40em) {
   /* line 22, ../assets/scss/common/header.scss */
   header.site-header a.logo img {
-    max-width: 180px;
+    width: 180px;
   }
 }
 
@@ -6425,7 +6425,7 @@ meta.foundation-mq-topbar {
   color: #FFFFFF;
 }
 /* line 348, ../assets/scss/common/top-bar.scss */
-.top-bar-section ul li:hover:not(.has-form) > a {
+.top-bar-section ul li:hover > a {
   background-color: #FFFFFF;
   background: #FFFFFF;
   color: #2e69ac;
@@ -6647,28 +6647,23 @@ meta.foundation-mq-topbar {
     padding: 12px 0.9375rem;
     background: #2e69ac;
   }
-  /* line 590, ../assets/scss/common/top-bar.scss */
-  .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
-    color: #FFFFFF;
-    background: #2e69ac;
-  }
-  /* line 595, ../assets/scss/common/top-bar.scss */
-  .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+  /* line 589, ../assets/scss/common/top-bar.scss */
+  .top-bar-section .dropdown li:hover {
     color: #FFFFFF;
     background-color: #FFFFFF;
     background: #285a94;
   }
-  /* line 604, ../assets/scss/common/top-bar.scss */
+  /* line 597, ../assets/scss/common/top-bar.scss */
   .top-bar-section .dropdown li label {
     white-space: nowrap;
     background: #333333;
   }
-  /* line 610, ../assets/scss/common/top-bar.scss */
+  /* line 603, ../assets/scss/common/top-bar.scss */
   .top-bar-section .dropdown li .dropdown {
     left: 100%;
     top: 0;
   }
-  /* line 617, ../assets/scss/common/top-bar.scss */
+  /* line 610, ../assets/scss/common/top-bar.scss */
   .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
     border-bottom: none;
     border-top: none;
@@ -6677,43 +6672,43 @@ meta.foundation-mq-topbar {
     height: 2.8125rem;
     width: 0;
   }
-  /* line 627, ../assets/scss/common/top-bar.scss */
+  /* line 620, ../assets/scss/common/top-bar.scss */
   .top-bar-section .has-form {
     background: #FFFFFF;
     padding: 0 0.9375rem;
     height: 2.8125rem;
   }
-  /* line 635, ../assets/scss/common/top-bar.scss */
+  /* line 628, ../assets/scss/common/top-bar.scss */
   .top-bar-section .right li .dropdown {
     left: auto;
     right: 0;
   }
-  /* line 639, ../assets/scss/common/top-bar.scss */
+  /* line 632, ../assets/scss/common/top-bar.scss */
   .top-bar-section .right li .dropdown li .dropdown {
     right: 100%;
   }
-  /* line 643, ../assets/scss/common/top-bar.scss */
+  /* line 636, ../assets/scss/common/top-bar.scss */
   .top-bar-section .left li .dropdown {
     right: auto;
     left: 0;
   }
-  /* line 647, ../assets/scss/common/top-bar.scss */
+  /* line 640, ../assets/scss/common/top-bar.scss */
   .top-bar-section .left li .dropdown li .dropdown {
     left: 100%;
   }
 
-  /* line 657, ../assets/scss/common/top-bar.scss */
+  /* line 650, ../assets/scss/common/top-bar.scss */
   .no-js .top-bar-section ul li:hover > a {
     background-color: #FFFFFF;
     background: #FFFFFF;
     color: #2e69ac;
   }
-  /* line 666, ../assets/scss/common/top-bar.scss */
+  /* line 659, ../assets/scss/common/top-bar.scss */
   .no-js .top-bar-section ul li:active > a {
     background: #FFFFFF;
     color: #2e69ac;
   }
-  /* line 674, ../assets/scss/common/top-bar.scss */
+  /* line 667, ../assets/scss/common/top-bar.scss */
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     display: block;
     position: static !important;
@@ -6723,7 +6718,7 @@ meta.foundation-mq-topbar {
     clip: auto;
     position: absolute !important;
   }
-  /* line 678, ../assets/scss/common/top-bar.scss */
+  /* line 671, ../assets/scss/common/top-bar.scss */
   .no-js .top-bar-section .has-dropdown > a:focus + .dropdown {
     display: block;
     position: static !important;
@@ -7188,13 +7183,13 @@ meta.foundation-mq-topbar {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 159, ../assets/scss/partials/nav.scss */
+  /* line 158, ../assets/scss/partials/nav.scss */
   .site-header .toggle-container {
     display: none;
     visibility: hidden;
   }
 }
-/* line 166, ../assets/scss/partials/nav.scss */
+/* line 165, ../assets/scss/partials/nav.scss */
 .site-header .toggle-container .nav-toggle {
   margin-top: 5px;
   font-size: 32px;
@@ -7212,16 +7207,16 @@ meta.foundation-mq-topbar {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 170, ../assets/scss/partials/nav.scss */
+/* line 169, ../assets/scss/partials/nav.scss */
 .site-header .toggle-container .nav-toggle:visited {
   color: #2e69ac;
 }
-/* line 179, ../assets/scss/partials/nav.scss */
+/* line 178, ../assets/scss/partials/nav.scss */
 .site-header .dropdown {
   background: #2e69ac;
   top: 80px;
 }
-/* line 183, ../assets/scss/partials/nav.scss */
+/* line 182, ../assets/scss/partials/nav.scss */
 .site-header .dropdown:before {
   width: 0;
   content: '';
@@ -7232,14 +7227,14 @@ meta.foundation-mq-topbar {
   border-right: 10px solid transparent;
   border-bottom: 10px solid #2e69ac;
 }
-/* line 187, ../assets/scss/partials/nav.scss */
+/* line 186, ../assets/scss/partials/nav.scss */
 .site-header .dropdown li {
   position: relative;
   width: 100%;
   margin: 0;
   background: #2e69ac;
 }
-/* line 193, ../assets/scss/partials/nav.scss */
+/* line 192, ../assets/scss/partials/nav.scss */
 .site-header .dropdown li a {
   display: block;
   background: #2e69ac;
@@ -7248,7 +7243,7 @@ meta.foundation-mq-topbar {
   padding: 10px 40px 10px 10px;
   transition: all 300ms ease-in;
 }
-/* line 201, ../assets/scss/partials/nav.scss */
+/* line 200, ../assets/scss/partials/nav.scss */
 .site-header .dropdown li a:hover {
   background: #285a94;
   color: #FFFFFF;
@@ -9235,19 +9230,19 @@ h2.entry-title.author {
 }
 
 /* line 236, ../assets/scss/ie.scss */
-.lt-ie8 .share a {
+.lt-ie9 .share a {
   padding: 0;
 }
 /* line 238, ../assets/scss/ie.scss */
-.lt-ie8 .share a.facebook {
+.lt-ie9 .share a.facebook {
   background: #3b5998 url("img/ie/social-icons-sprite.png") no-repeat 0 -35px;
 }
 /* line 239, ../assets/scss/ie.scss */
-.lt-ie8 .share a.twitter {
+.lt-ie9 .share a.twitter {
   background: #55acee url("img/ie/social-icons-sprite.png") no-repeat 0 0;
 }
 /* line 240, ../assets/scss/ie.scss */
-.lt-ie8 .share a.mail {
+.lt-ie9 .share a.mail {
   background: #1b325f url("img/ie/social-icons-sprite.png") no-repeat 0 -210px;
 }
 
@@ -9326,33 +9321,43 @@ h2.entry-title.author {
   visibility: visible;
 }
 
-/* line 319, ../assets/scss/ie.scss */
+/* line 318, ../assets/scss/ie.scss */
+.lt-ie9 .show-for-medium-up {
+  width: 10px;
+}
+
+/* line 323, ../assets/scss/ie.scss */
 .lt-ie8 .top-bar-section .dropdown {
   display: none;
 }
 
-/* line 322, ../assets/scss/ie.scss */
+/* line 326, ../assets/scss/ie.scss */
 .lt-ie9 .top-bar-section .dropdown li, .lt-ie9 .top-bar-section .dropdown li a,
 .lt-ie9 .top-bar-section .dropdown li a:hover {
   background: #2e69ac;
   color: #FFFFFF;
 }
 
-/* line 329, ../assets/scss/ie.scss */
+/* line 332, ../assets/scss/ie.scss */
+.lt-ie9 header.site-header a.logo {
+  width: 200px;
+}
+
+/* line 337, ../assets/scss/ie.scss */
 .lt-ie8 #tribe-bar-views {
   left: auto;
   right: 20px;
   top: 20px;
 }
 
-/* line 330, ../assets/scss/ie.scss */
+/* line 338, ../assets/scss/ie.scss */
 .lt-ie8 #tribe-bar-form .tribe-bar-filters {
   width: 80%;
   right: auto;
   left: -150px;
 }
 
-/* line 331, ../assets/scss/ie.scss */
+/* line 339, ../assets/scss/ie.scss */
 .lt-ie8 .tribe-events-event-meta .tribe-events-meta-group,
 .lt-ie8 .tribe-events-event-meta .column {
   width: 25%;

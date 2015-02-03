@@ -145,15 +145,14 @@ li.active {
   &.active {
     max-height: 15em;
     ul {
-float: none !important; // owerwritting Foundation inportant styles
-}
-li {
-  display: block;
-  float: none;
-}
-}
-}
-
+      float: none !important; // owerwritting Foundation inportant styles
+      }
+        li {
+          display: block;
+          float: none;
+        }
+      }
+    }
 }
 
 .toggle-container {

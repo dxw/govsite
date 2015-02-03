@@ -345,7 +345,7 @@ $topbar-dropdown-arrows: false !default; //Set false to remove the \00bb >> text
         }
 
         // Apply the hover link color when it has that class
-        &:hover:not(.has-form) > a {
+        &:hover > a {
           background-color: $topbar-link-bg-color-hover;
           @if ($topbar-link-bg-hover) {
             background: $topbar-link-bg-hover;
@@ -586,20 +586,13 @@ $topbar-dropdown-arrows: false !default; //Set false to remove the \00bb >> text
               background: $topbar-dropdown-link-bg;
             }
 
-            &:not(.has-form):not(.active) {
-              & > a:not(.button) {
-                color: $topbar-dropdown-link-color;
-                background: $topbar-dropdown-link-bg;
-              }
-
-              &:hover > a:not(.button) {
+              &:hover {
                 color: $topbar-dropdown-link-color-hover;
                 background-color: $topbar-link-bg-color-hover;
                 @if ($topbar-dropdown-link-bg-hover) {
                   background: $topbar-dropdown-link-bg-hover;
                 }
               }
-            }
 
             label {
               white-space: nowrap;
