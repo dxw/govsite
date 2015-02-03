@@ -109,6 +109,8 @@
 
 /* Other ---------------------- */
 
+.lt-ie9 :before { display: none; }
+
 .lt-ie9 p { margin-bottom: 20px; }
 
 .lt-ie9 h1, h2, h3, h4, h5, h6 { margin-bottom: 10px; }
