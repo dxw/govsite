@@ -31,6 +31,7 @@ require __DIR__ . '/theme/theme-settings.php';
 require __DIR__ . '/theme/breadcrumbs.php';
 require __DIR__ . '/theme/admin.php';
 require __DIR__ . '/theme/logo.php';
+require __DIR__ . '/theme/favicon.php';
 
 
 /*

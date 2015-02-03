@@ -9,6 +9,10 @@ add_action('admin_menu', function () {
       'title' => 'Logo',
     ],
     (object)[
+      'slug' => 'favicon',
+      'title' => 'Favicon',
+    ],
+    (object)[
       'slug' => 'social-media',
       'title' => 'Social media',
     ],
