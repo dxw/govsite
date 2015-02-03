@@ -9332,26 +9332,27 @@ h2.entry-title.author {
 }
 
 /* line 322, ../assets/scss/ie.scss */
-.lt-ie9 .top-bar-section .dropdown li, .lt-ie9 .top-bar-section .dropdown li a {
+.lt-ie9 .top-bar-section .dropdown li, .lt-ie9 .top-bar-section .dropdown li a,
+.lt-ie9 .top-bar-section .dropdown li a:hover {
   background: #2e69ac;
   color: #FFFFFF;
 }
 
-/* line 328, ../assets/scss/ie.scss */
+/* line 329, ../assets/scss/ie.scss */
 .lt-ie8 #tribe-bar-views {
   left: auto;
   right: 20px;
   top: 20px;
 }
 
-/* line 329, ../assets/scss/ie.scss */
+/* line 330, ../assets/scss/ie.scss */
 .lt-ie8 #tribe-bar-form .tribe-bar-filters {
   width: 80%;
   right: auto;
   left: -150px;
 }
 
-/* line 330, ../assets/scss/ie.scss */
+/* line 331, ../assets/scss/ie.scss */
 .lt-ie8 .tribe-events-event-meta .tribe-events-meta-group,
 .lt-ie8 .tribe-events-event-meta .column {
   width: 25%;

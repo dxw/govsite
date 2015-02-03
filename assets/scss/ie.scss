@@ -319,9 +319,14 @@
 .lt-ie8 .top-bar-section .dropdown {display: none;}
 
 // Dropdown background fix for IE8
-.lt-ie9 .top-bar-section .dropdown li, .lt-ie9 .top-bar-section .dropdown li a {
+.lt-ie9 .top-bar-section .dropdown li, .lt-ie9 .top-bar-section .dropdown li a,
+.lt-ie9 .top-bar-section .dropdown li a:hover {
   background: $primary-color;
   color: $white;
+}
+
+.lt-ie9 .site-header a.logo {
+  width: 200px
 }
 
 // Events
