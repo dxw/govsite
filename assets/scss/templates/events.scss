@@ -375,11 +375,9 @@ aside.sidebar section.widget a.tribe-mini-calendar-nav-link {
 }
 
 .tribe-venue-widget-venue-name {
-  //position: relative;
   margin-bottom: $space-small;
   border-bottom: 1px solid $gainsboro;
   padding-bottom: $space-small;
-  @include arrow(10px, down, 0, 40%, $gainsboro);
   a {
     font-weight: normal;
   }
