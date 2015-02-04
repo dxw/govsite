@@ -8667,24 +8667,40 @@ aside.sidebar section.widget a.tribe-mini-calendar-nav-link {
 }
 
 /* line 377, ../assets/scss/templates/events.scss */
-.tribe-venue-widget-venue-name {
-  margin-bottom: 10px;
-  border-bottom: 1px solid #DDDDDD;
-  padding-bottom: 10px;
+.tribe-venue-widget-venue {
+  position: relative;
 }
+
 /* line 381, ../assets/scss/templates/events.scss */
+.tribe-venue-widget-venue-name {
+  margin-bottom: 15px;
+  background: #DDDDDD;
+  padding: 5px 10px;
+}
+/* line 385, ../assets/scss/templates/events.scss */
+.tribe-venue-widget-venue-name:after {
+  width: 0;
+  content: '';
+  position: absolute;
+  top: 37px;
+  left: 15px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #DDDDDD;
+}
+/* line 388, ../assets/scss/templates/events.scss */
 .tribe-venue-widget-venue-name a {
   font-weight: normal;
 }
 
-/* line 390, ../assets/scss/templates/events.scss */
+/* line 397, ../assets/scss/templates/events.scss */
 .tribe-mini-calendar-event .vevent .summary,
 .tribe-venue-widget-list .vevent .summary,
 .tribe-events-adv-list-widget-2 .vevent .summary,
 .tribe-events-adv-list-widget .vevent .summary {
   font-weight: normal;
 }
-/* line 393, ../assets/scss/templates/events.scss */
+/* line 400, ../assets/scss/templates/events.scss */
 .tribe-mini-calendar-event h4,
 .tribe-venue-widget-list h4,
 .tribe-events-adv-list-widget-2 h4,
@@ -8694,7 +8710,7 @@ aside.sidebar section.widget a.tribe-mini-calendar-nav-link {
   font-size: 1.116rem;
   line-height: 1.5;
 }
-/* line 396, ../assets/scss/templates/events.scss */
+/* line 403, ../assets/scss/templates/events.scss */
 .tribe-mini-calendar-event h4 a,
 .tribe-venue-widget-list h4 a,
 .tribe-events-adv-list-widget-2 h4 a,
@@ -8703,7 +8719,7 @@ aside.sidebar section.widget a.tribe-mini-calendar-nav-link {
   font-size: 1.116rem;
   line-height: 1.5;
 }
-/* line 400, ../assets/scss/templates/events.scss */
+/* line 407, ../assets/scss/templates/events.scss */
 .tribe-mini-calendar-event .date-start,
 .tribe-mini-calendar-event .recurringinfo,
 .tribe-venue-widget-list .date-start,
@@ -8717,7 +8733,7 @@ aside.sidebar section.widget a.tribe-mini-calendar-nav-link {
   line-height: 1.5;
   color: #888888;
 }
-/* line 404, ../assets/scss/templates/events.scss */
+/* line 411, ../assets/scss/templates/events.scss */
 .tribe-mini-calendar-event .date-start a,
 .tribe-mini-calendar-event .recurringinfo a,
 .tribe-venue-widget-list .date-start a,
@@ -8730,7 +8746,7 @@ aside.sidebar section.widget a.tribe-mini-calendar-nav-link {
   font-size: 0.868rem;
   line-height: 1.5;
 }
-/* line 408, ../assets/scss/templates/events.scss */
+/* line 415, ../assets/scss/templates/events.scss */
 .tribe-mini-calendar-event .location,
 .tribe-venue-widget-list .location,
 .tribe-events-adv-list-widget-2 .location,
@@ -8738,13 +8754,13 @@ aside.sidebar section.widget a.tribe-mini-calendar-nav-link {
   margin-top: 5px;
 }
 
-/* line 414, ../assets/scss/templates/events.scss */
+/* line 421, ../assets/scss/templates/events.scss */
 .tribe-events-adv-list-widget .duration,
 .tribe-events-adv-list-widget .vcard .fn {
   font-weight: normal;
 }
 
-/* line 420, ../assets/scss/templates/events.scss */
+/* line 427, ../assets/scss/templates/events.scss */
 .tribe-events-widget-link a {
   border-style: solid;
   border-width: 0;
