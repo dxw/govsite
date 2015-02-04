@@ -351,3 +351,77 @@ h2.entry-title.author {
   padding: 0 $space-small/2;
   color: $base;
 }
+
+// Widgets
+// without !important some of the styles are not updated
+aside.sidebar section.widget a.tribe-mini-calendar-nav-link {
+  width: auto;
+}
+
+.tribe-mini-calendar {
+  .tribe-events-has-events a {
+    @include font-size(14);
+  }
+}
+
+.tribe-mini-calendar-event {
+  border-bottom: 1px solid $gainsboro !important;
+  .list-info h2 {
+    font-weight: normal !important;
+    a {
+      @include font-size(24);
+    }
+  }
+}
+
+.tribe-venue-widget-venue-name {
+  //position: relative;
+  margin-bottom: $space-small;
+  border-bottom: 1px solid $gainsboro;
+  padding-bottom: $space-small;
+  @include arrow(10px, down, 0, 40%, $gainsboro);
+  a {
+    font-weight: normal;
+  }
+}
+
+.tribe-mini-calendar-event,
+.tribe-venue-widget-list,
+.tribe-events-adv-list-widget-2,
+.tribe-events-adv-list-widget {
+  .vevent .summary {
+    font-weight: normal;
+  }
+  h4 {
+    margin-bottom: 0 !important;
+    @include font-size(18);
+    a {
+      @include font-size(18);
+    }
+  }
+  .date-start,
+  .recurringinfo {
+    @include font-size(14);
+    color: $jumbo;
+    a {
+      @include font-size(14);
+    }
+  }
+  .location {
+    margin-top: $space-small/2;
+  }
+}
+
+.tribe-events-adv-list-widget {
+  .duration,
+  .vcard .fn {
+    font-weight: normal;
+  }
+}
+
+.tribe-events-widget-link a {
+  @include button;
+  margin-bottom: 0;
+  padding: $space-small $space-small*2;
+}
+

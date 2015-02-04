@@ -5840,18 +5840,18 @@ aside.sidebar .panel a {
   text-align: center;
 }
 /* line 7, ../assets/scss/common/sidebar.scss */
-aside.sidebar ul {
+aside.sidebar ul, aside.sidebar ol {
   list-style: none;
   margin-left: 0;
 }
 /* line 11, ../assets/scss/common/sidebar.scss */
-aside.sidebar ul li {
+aside.sidebar ul li, aside.sidebar ol li {
   position: relative;
   margin: 5px 0 0 25px;
   padding: 0;
 }
 /* line 69, ../assets/scss/global.scss */
-aside.sidebar ul li:before {
+aside.sidebar ul li:before, aside.sidebar ol li:before {
   content: "";
   speak: none;
   font-style: normal;
@@ -5862,7 +5862,7 @@ aside.sidebar ul li:before {
   -moz-osx-font-smoothing: grayscale;
 }
 /* line 17, ../assets/scss/common/sidebar.scss */
-aside.sidebar ul li:before {
+aside.sidebar ul li:before, aside.sidebar ol li:before {
   position: absolute;
   top: 4px;
   left: -25px;
@@ -5871,7 +5871,7 @@ aside.sidebar ul li:before {
   color: #00a0b0;
 }
 /* line 26, ../assets/scss/common/sidebar.scss */
-aside.sidebar ul li:first-child {
+aside.sidebar ul li:first-child, aside.sidebar ol li:first-child {
   margin-top: 0;
 }
 /* line 35, ../assets/scss/common/sidebar.scss */
@@ -8637,6 +8637,155 @@ h2.entry-title.author {
   margin: 0;
   padding: 0 5px;
   color: #AAAAAA;
+}
+
+/* line 357, ../assets/scss/templates/events.scss */
+aside.sidebar section.widget a.tribe-mini-calendar-nav-link {
+  width: auto;
+}
+
+/* line 362, ../assets/scss/templates/events.scss */
+.tribe-mini-calendar .tribe-events-has-events a {
+  font-size: 14px;
+  font-size: 0.868rem;
+  line-height: 1.5;
+}
+
+/* line 367, ../assets/scss/templates/events.scss */
+.tribe-mini-calendar-event {
+  border-bottom: 1px solid #DDDDDD !important;
+}
+/* line 369, ../assets/scss/templates/events.scss */
+.tribe-mini-calendar-event .list-info h2 {
+  font-weight: normal !important;
+}
+/* line 371, ../assets/scss/templates/events.scss */
+.tribe-mini-calendar-event .list-info h2 a {
+  font-size: 24px;
+  font-size: 1.488rem;
+  line-height: 1.5;
+}
+
+/* line 377, ../assets/scss/templates/events.scss */
+.tribe-venue-widget-venue-name {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 10px;
+  width: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 40%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #DDDDDD;
+}
+/* line 383, ../assets/scss/templates/events.scss */
+.tribe-venue-widget-venue-name a {
+  font-weight: normal;
+}
+
+/* line 392, ../assets/scss/templates/events.scss */
+.tribe-mini-calendar-event .vevent .summary,
+.tribe-venue-widget-list .vevent .summary,
+.tribe-events-adv-list-widget-2 .vevent .summary,
+.tribe-events-adv-list-widget .vevent .summary {
+  font-weight: normal;
+}
+/* line 395, ../assets/scss/templates/events.scss */
+.tribe-mini-calendar-event h4,
+.tribe-venue-widget-list h4,
+.tribe-events-adv-list-widget-2 h4,
+.tribe-events-adv-list-widget h4 {
+  margin-bottom: 0 !important;
+  font-size: 18px;
+  font-size: 1.116rem;
+  line-height: 1.5;
+}
+/* line 398, ../assets/scss/templates/events.scss */
+.tribe-mini-calendar-event h4 a,
+.tribe-venue-widget-list h4 a,
+.tribe-events-adv-list-widget-2 h4 a,
+.tribe-events-adv-list-widget h4 a {
+  font-size: 18px;
+  font-size: 1.116rem;
+  line-height: 1.5;
+}
+/* line 402, ../assets/scss/templates/events.scss */
+.tribe-mini-calendar-event .date-start,
+.tribe-mini-calendar-event .recurringinfo,
+.tribe-venue-widget-list .date-start,
+.tribe-venue-widget-list .recurringinfo,
+.tribe-events-adv-list-widget-2 .date-start,
+.tribe-events-adv-list-widget-2 .recurringinfo,
+.tribe-events-adv-list-widget .date-start,
+.tribe-events-adv-list-widget .recurringinfo {
+  font-size: 14px;
+  font-size: 0.868rem;
+  line-height: 1.5;
+  color: #888888;
+}
+/* line 406, ../assets/scss/templates/events.scss */
+.tribe-mini-calendar-event .date-start a,
+.tribe-mini-calendar-event .recurringinfo a,
+.tribe-venue-widget-list .date-start a,
+.tribe-venue-widget-list .recurringinfo a,
+.tribe-events-adv-list-widget-2 .date-start a,
+.tribe-events-adv-list-widget-2 .recurringinfo a,
+.tribe-events-adv-list-widget .date-start a,
+.tribe-events-adv-list-widget .recurringinfo a {
+  font-size: 14px;
+  font-size: 0.868rem;
+  line-height: 1.5;
+}
+/* line 410, ../assets/scss/templates/events.scss */
+.tribe-mini-calendar-event .location,
+.tribe-venue-widget-list .location,
+.tribe-events-adv-list-widget-2 .location,
+.tribe-events-adv-list-widget .location {
+  margin-top: 5px;
+}
+
+/* line 416, ../assets/scss/templates/events.scss */
+.tribe-events-adv-list-widget .duration,
+.tribe-events-adv-list-widget .vcard .fn {
+  font-weight: normal;
+}
+
+/* line 422, ../assets/scss/templates/events.scss */
+.tribe-events-widget-link a {
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #2e69ac;
+  border-color: #25548a;
+  color: #FFFFFF;
+  transition: background-color 300ms ease-out;
+  margin-bottom: 0;
+  padding: 10px 20px;
+}
+/* line 161, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
+.tribe-events-widget-link a:hover, .tribe-events-widget-link a:focus {
+  background-color: #25548a;
+}
+/* line 167, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
+.tribe-events-widget-link a:hover, .tribe-events-widget-link a:focus {
+  color: #FFFFFF;
 }
 
 /* line 5, ../assets/scss/templates/search.scss */
