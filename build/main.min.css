@@ -6977,7 +6977,7 @@ meta.foundation-mq-topbar {
 @media only screen and (min-width: 40.063em) {
   /* line 20, ../assets/scss/partials/nav.scss */
   .site-header .headermenu div {
-    float: right;
+    float: left;
   }
 }
 @media screen and (max-width: 880px) {
@@ -9401,43 +9401,43 @@ aside.sidebar section.widget a.tribe-mini-calendar-nav-link {
 }
 
 /* line 245, ../assets/scss/ie.scss */
-.lt-ie8 .share ul, .lt-ie8 ul.social-media {
+.lt-ie9 .share ul, .lt-ie9 ul.social-media {
   margin: 0;
 }
 
 /* line 247, ../assets/scss/ie.scss */
-.lt-ie8 ul.social-media a {
+.lt-ie9 ul.social-media a {
   width: 35px;
   height: 35px;
   background-image: url("img/ie/social-icons-sprite.png");
   background-repeat: no-repeat;
 }
 /* line 252, ../assets/scss/ie.scss */
-.lt-ie8 ul.social-media a:hover, .lt-ie8 ul.social-media a:focus {
+.lt-ie9 ul.social-media a:hover, .lt-ie9 ul.social-media a:focus {
   background-image: url("img/ie/social-icons-sprite.png");
 }
 /* line 256, ../assets/scss/ie.scss */
-.lt-ie8 ul.social-media a[href^="http://twitter.com/"], .lt-ie8 ul.social-media a[href^="http://www.twitter.com/"], .lt-ie8 ul.social-media a[href^="https://twitter.com/"], .lt-ie8 ul.social-media a[href^="https://www.twitter.com/"] {
+.lt-ie9 ul.social-media a[href^="http://twitter.com/"], .lt-ie9 ul.social-media a[href^="http://www.twitter.com/"], .lt-ie9 ul.social-media a[href^="https://twitter.com/"], .lt-ie9 ul.social-media a[href^="https://www.twitter.com/"] {
   background-position: 0 0;
 }
 /* line 263, ../assets/scss/ie.scss */
-.lt-ie8 ul.social-media a[href^="http://facebook.com/"], .lt-ie8 ul.social-media a[href^="http://www.facebook.com/"], .lt-ie8 ul.social-media a[href^="https://facebook.com/"], .lt-ie8 ul.social-media a[href^="https://www.facebook.com/"] {
+.lt-ie9 ul.social-media a[href^="http://facebook.com/"], .lt-ie9 ul.social-media a[href^="http://www.facebook.com/"], .lt-ie9 ul.social-media a[href^="https://facebook.com/"], .lt-ie9 ul.social-media a[href^="https://www.facebook.com/"] {
   background-position: 0 -35px;
 }
 /* line 270, ../assets/scss/ie.scss */
-.lt-ie8 ul.social-media a[href^="http://plus.google.com/"], .lt-ie8 ul.social-media a[href^="https://plus.google.com/"] {
+.lt-ie9 ul.social-media a[href^="http://plus.google.com/"], .lt-ie9 ul.social-media a[href^="https://plus.google.com/"] {
   background-position: 0 -70px;
 }
 /* line 275, ../assets/scss/ie.scss */
-.lt-ie8 ul.social-media a[href^="http://linkedin.com/"], .lt-ie8 ul.social-media a[href^="http://www.linkedin.com/"], .lt-ie8 ul.social-media a[href^="https://linkedin.com/"], .lt-ie8 ul.social-media a[href^="https://www.linkedin.com/"] {
+.lt-ie9 ul.social-media a[href^="http://linkedin.com/"], .lt-ie9 ul.social-media a[href^="http://www.linkedin.com/"], .lt-ie9 ul.social-media a[href^="https://linkedin.com/"], .lt-ie9 ul.social-media a[href^="https://www.linkedin.com/"] {
   background-position: 0 -105px;
 }
 /* line 282, ../assets/scss/ie.scss */
-.lt-ie8 ul.social-media a[href^="http://flickr.com/"], .lt-ie8 ul.social-media a[href^="http://www.flickr.com/"], .lt-ie8 ul.social-media a[href^="https://flickr.com/"], .lt-ie8 ul.social-media a[href^="https://www.flickr.com/"] {
+.lt-ie9 ul.social-media a[href^="http://flickr.com/"], .lt-ie9 ul.social-media a[href^="http://www.flickr.com/"], .lt-ie9 ul.social-media a[href^="https://flickr.com/"], .lt-ie9 ul.social-media a[href^="https://www.flickr.com/"] {
   background-position: 0 -140px;
 }
 /* line 289, ../assets/scss/ie.scss */
-.lt-ie8 ul.social-media a[href^="http://youtube.com/"], .lt-ie8 ul.social-media a[href^="http://www.youtube.com/"], .lt-ie8 ul.social-media a[href^="https://youtube.com/"], .lt-ie8 ul.social-media a[href^="https://www.youtube.com/"] {
+.lt-ie9 ul.social-media a[href^="http://youtube.com/"], .lt-ie9 ul.social-media a[href^="http://www.youtube.com/"], .lt-ie9 ul.social-media a[href^="https://youtube.com/"], .lt-ie9 ul.social-media a[href^="https://www.youtube.com/"] {
   background-position: 0 -175px;
 }
 
@@ -9486,32 +9486,64 @@ aside.sidebar section.widget a.tribe-mini-calendar-nav-link {
 }
 
 /* line 328, ../assets/scss/ie.scss */
-.lt-ie9 .top-bar-section .dropdown li, .lt-ie9 .top-bar-section .dropdown li a,
-.lt-ie9 .top-bar-section .dropdown li a:hover {
+.lt-ie9 .top-bar-section .dropdown li {
   background: #2e69ac;
   color: #FFFFFF;
 }
 
-/* line 334, ../assets/scss/ie.scss */
+/* line 333, ../assets/scss/ie.scss */
+.lt-ie9 .top-bar-section .dropdown li a {
+  background: #2e69ac;
+  color: #FFFFFF;
+  padding: 10px 40px 10px 10px;
+}
+
+/* line 339, ../assets/scss/ie.scss */
+.lt-ie9 .top-bar-section .dropdown li a:hover {
+  background: #285a94;
+  color: #FFFFFF;
+}
+
+/* line 344, ../assets/scss/ie.scss */
 .lt-ie9 header.site-header a.logo {
   width: 200px;
 }
 
-/* line 339, ../assets/scss/ie.scss */
+/* line 348, ../assets/scss/ie.scss */
+.lt-ie9 .site-header .headermenu .button-search:before,
+.lt-ie9 ul.social-media a[href^="http://facebook.com/"]:before,
+.lt-ie9 ul.social-media a[href^="http://www.facebook.com/"]:before,
+.lt-ie9 ul.social-media a[href^="https://facebook.com/"]:before,
+.lt-ie9 ul.social-media a[href^="https://www.facebook.com/"]:before {
+  display: none;
+}
+
+/* line 356, ../assets/scss/ie.scss */
+.ie8 .site-header .headermenu .button-search {
+  background: transparent url("img/ie/icon-search.png") no-repeat 0 0;
+  height: 30px;
+  width: 30px;
+  margin-left: 0;
+  display: block;
+  position: absolute;
+  right: 0;
+}
+
+/* line 367, ../assets/scss/ie.scss */
 .lt-ie8 #tribe-bar-views {
   left: auto;
   right: 20px;
   top: 20px;
 }
 
-/* line 340, ../assets/scss/ie.scss */
+/* line 368, ../assets/scss/ie.scss */
 .lt-ie8 #tribe-bar-form .tribe-bar-filters {
   width: 80%;
   right: auto;
   left: -150px;
 }
 
-/* line 341, ../assets/scss/ie.scss */
+/* line 369, ../assets/scss/ie.scss */
 .lt-ie8 .tribe-events-event-meta .tribe-events-meta-group,
 .lt-ie8 .tribe-events-event-meta .column {
   width: 25%;

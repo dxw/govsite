@@ -20,6 +20,7 @@ function custom_wp_nav_menu($var) {
     )
   ) : '';
 }
+
 add_filter('nav_menu_css_class', 'custom_wp_nav_menu');
 add_filter('nav_menu_item_id', 'custom_wp_nav_menu');
 add_filter('page_css_class', 'custom_wp_nav_menu');

@@ -3,8 +3,6 @@
   <button type="button" class="button-search show-for-medium-up"><span class="accessibility">Search</span></button>
 
   <?php
-  //Add headernav with arguments and a nice clean class structure yay!
-
   if (has_nav_menu('header')) :
     wp_nav_menu(array(
       'theme_location' => 'header',

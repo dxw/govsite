@@ -242,9 +242,9 @@
   &.mail { background: $logo-color url('#{$imagePath}/ie/social-icons-sprite.png') no-repeat 0 -210px; }
 }
 
-.lt-ie8 .share ul, .lt-ie8 ul.social-media { margin: 0; }
+.lt-ie9 .share ul, .lt-ie9 ul.social-media { margin: 0; }
 
-.lt-ie8 ul.social-media a {
+.lt-ie9 ul.social-media a {
   width: 35px;
   height: 35px;
   background-image: url('#{$imagePath}/ie/social-icons-sprite.png');
@@ -325,14 +325,42 @@
 .lt-ie8 .top-bar-section .dropdown {display: none;}
 
 // Dropdown background fix for IE8
-.lt-ie9 .top-bar-section .dropdown li, .lt-ie9 .top-bar-section .dropdown li a,
-.lt-ie9 .top-bar-section .dropdown li a:hover {
+.lt-ie9 .top-bar-section .dropdown li {
   background: $primary-color;
+  color: $white;
+} 
+
+.lt-ie9 .top-bar-section .dropdown li a {
+  background: $primary-color;
+  color: $white;
+  padding: 10px 40px 10px 10px;
+}
+
+.lt-ie9 .top-bar-section .dropdown li a:hover {
+  background: scale-color($primary-color, $lightness: -14%);
   color: $white;
 }
 
 .lt-ie9 header.site-header a.logo {
   width: 200px;
+}
+
+.lt-ie9 .site-header .headermenu .button-search:before,
+.lt-ie9 ul.social-media a[href^="http://facebook.com/"]:before, 
+.lt-ie9 ul.social-media a[href^="http://www.facebook.com/"]:before, 
+.lt-ie9 ul.social-media a[href^="https://facebook.com/"]:before, 
+.lt-ie9 ul.social-media a[href^="https://www.facebook.com/"]:before {
+  display: none;
+}
+
+.ie8 .site-header .headermenu .button-search {
+  background: transparent url('#{$imagePath}/ie/icon-search.png') no-repeat 0 0;
+  height: 30px;
+  width: 30px;
+  margin-left: 0;
+  display: block;
+  position: absolute;
+  right: 0;
 }
 
 // Events

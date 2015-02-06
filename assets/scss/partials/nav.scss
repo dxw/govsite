@@ -19,7 +19,7 @@
 
     div {
       @media #{$medium-up} {
-        float: right;
+        float: left;
       }
 
       @media screen and (max-width: 880px) {
