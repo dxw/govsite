@@ -7236,7 +7236,7 @@ meta.foundation-mq-topbar {
   transition: all 300ms ease-in;
 }
 /* line 197, ../assets/scss/partials/nav.scss */
-.site-header .dropdown li a:hover, .site-header .dropdown .active a:hover {
+.site-header .dropdown li a:hover, .site-header .dropdown li a:focus, .site-header .dropdown .active a:hover, .site-header .dropdown .active a:focus {
   background: #285a94;
   color: #FFFFFF;
 }
