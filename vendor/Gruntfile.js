@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-img');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-clean');
     //grunt.loadNpmTasks('grunt-phpmd');
@@ -86,15 +86,15 @@ module.exports = function (grunt) {
            }
        },
 
-        img: {
-            dist1: {
-                src: ['../assets/img/*'],
-                dest: '../build/img'
+        imagemin: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '../assets/img',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: '../build/img',
+                }],
             },
-            dist2: {
-                src: ['../assets/img/ie/*'],
-                dest: '../build/img/ie'
-            }
         },
 
         _watch: {

@@ -1,11 +1,10 @@
 <?php
-namespace Whippet;
 
 /**
  * Theme wrapper, lifted from Roots, with some modifications. Thanks, Roots! (See: roots.io)
  */
 
-class Layout {
+class Whippet_Layout {
   // Stores the full path to the template file WordPress says we should use
   static $wordpress_template;
 
@@ -40,4 +39,4 @@ class Layout {
   }
 }
 
-add_filter('template_include', array('Whippet\Layout', 'apply'), 99);
+add_filter('template_include', array('Whippet_Layout', 'apply'), 99);

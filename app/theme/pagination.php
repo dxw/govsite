@@ -48,7 +48,7 @@ function pagination($q = null, $mode = null) {
 
       $uri = previous_posts(false);
       if ($mode) {
-        $uri = add_query_arg(['mode' => $mode], $uri);
+        $uri = add_query_arg(array('mode' => $mode), $uri);
       }
       printf( '<div class="previous btn-pagination left"><a href="%s">&laquo; Previous</a></div>', $uri);
     }
@@ -58,7 +58,7 @@ function pagination($q = null, $mode = null) {
 
       $uri = next_posts($q->max_num_pages, false);
       if ($mode) {
-        $uri = add_query_arg(['mode' => $mode], $uri);
+        $uri = add_query_arg(array('mode' => $mode), $uri);
       }
       printf( '<div class="next btn-pagination right"><a href="%s">Next &raquo;</a></div>', $uri);
     }
@@ -74,7 +74,7 @@ function pagination($q = null, $mode = null) {
 
       $uri = get_pagenum_link(1);
       if ($mode) {
-        $uri = add_query_arg(['mode' => $mode], $uri);
+        $uri = add_query_arg(array('mode' => $mode), $uri);
       }
       printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( $uri ), '1' );
 
@@ -88,7 +88,7 @@ function pagination($q = null, $mode = null) {
       $class = $paged == $link ? ' class="active"' : '';
       $uri = get_pagenum_link($link);
       if ($mode) {
-        $uri = add_query_arg(['mode' => $mode], $uri);
+        $uri = add_query_arg(array('mode' => $mode), $uri);
       }
       printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( $uri ), $link );
     }
@@ -101,7 +101,7 @@ function pagination($q = null, $mode = null) {
       $class = $paged == $max ? ' class="active"' : '';
       $uri = get_pagenum_link($max);
       if ($mode) {
-        $uri = add_query_arg(['mode' => $mode], $uri);
+        $uri = add_query_arg(array('mode' => $mode), $uri);
       }
       printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( $uri ), $max );
     }

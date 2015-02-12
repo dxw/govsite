@@ -4,39 +4,39 @@
  * Libraries and support code
  */
 
-require __DIR__ . '/lib/whippet/whippet.php';
-require __DIR__ . '/lib/roots_walker_comment.class.php';
+require dirname(__FILE__) . '/lib/whippet/whippet.php';
+require dirname(__FILE__) . '/lib/roots_walker_comment.class.php';
 
 
 /*
  * WordPress core behaviour adjustments
  */
 
-require __DIR__ . '/core_behaviour.php';
+require dirname(__FILE__) . '/core_behaviour.php';
 
 
 /*
  * Theme behaviour, media, assets and template tags
  */
 
-require __DIR__ . '/theme/scripts.php';
-require __DIR__ . '/theme/media.php';
-require __DIR__ . '/theme/menus.php';
-require __DIR__ . '/theme/widgets.php';
+require dirname(__FILE__) . '/theme/scripts.php';
+require dirname(__FILE__) . '/theme/media.php';
+require dirname(__FILE__) . '/theme/menus.php';
+require dirname(__FILE__) . '/theme/widgets.php';
 
-require __DIR__ . '/theme/helpers.php';  ## Needs more stuffs
-require __DIR__ . '/theme/pagination.php'; ## TODO: This should be refactored into lib, and be flexibile enough for all projects' needs
-require __DIR__ . '/theme/titles.php';
-require __DIR__ . '/theme/theme-settings.php';
-require __DIR__ . '/theme/breadcrumbs.php';
-require __DIR__ . '/theme/admin.php';
-require __DIR__ . '/theme/logo.php';
-require __DIR__ . '/theme/favicon.php';
+require dirname(__FILE__) . '/theme/helpers.php';  ## Needs more stuffs
+require dirname(__FILE__) . '/theme/pagination.php'; ## TODO: This should be refactored into lib, and be flexibile enough for all projects' needs
+require dirname(__FILE__) . '/theme/titles.php';
+require dirname(__FILE__) . '/theme/theme-settings.php';
+require dirname(__FILE__) . '/theme/breadcrumbs.php';
+require dirname(__FILE__) . '/theme/admin.php';
+require dirname(__FILE__) . '/theme/logo.php';
+require dirname(__FILE__) . '/theme/favicon.php';
 
 
 /*
  * Post types and additional fields
  */
 
-require __DIR__ . '/posts/post_types.php';
-require __DIR__ . '/posts/custom_fields.php';
+require dirname(__FILE__) . '/posts/post_types.php';
+require dirname(__FILE__) . '/posts/custom_fields.php';

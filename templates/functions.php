@@ -4,4 +4,4 @@
   * Anything you might want to do here should be done in app/functions.php, or app/lib.
  */
 
- require dirname(__DIR__) . '/app/functions.php';
+ require dirname(dirname(__FILE__)) . '/app/functions.php';
