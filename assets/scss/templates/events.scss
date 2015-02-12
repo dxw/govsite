@@ -6,7 +6,7 @@
 
 // Filters bar
 #tribe-bar-form {
-  background: $white;
+  background: #f8f8f8;
 
   label {
     text-transform: none;
@@ -60,6 +60,7 @@
 // Main title
 h2.tribe-events-page-title {
   font-weight: normal;
+  text-align: left;
 }
 
 // Checkbox
@@ -428,5 +429,117 @@ aside.sidebar section.widget a.tribe-mini-calendar-nav-link {
   @include button;
   margin-bottom: 0;
   padding: $space-small $space-small*2;
+}
+
+
+.tribe-events-single-section {
+  padding: 15px;
+
+  dl dd {
+    margin: 0;
+  }
+
+}
+
+
+
+#tribe-bar-views {
+  width: 25%;
+  float: right;
+}
+
+.tribe-bar-views-list {
+  display: none;
+}
+
+.tribe-bar-filters {
+  width: 50%;
+  float: left;
+}
+
+#tribe-events-header .tribe-events-sub-nav, #tribe-bar-collapse-toggle {
+  display: none;
+}
+
+#tribe-bar-form .tribe-bar-date-filter, #tribe-bar-form .tribe-bar-search-filter {
+  padding: 0;
+}
+
+#tribe-events-content ul.tribe-events-sub-nav .tribe-events-nav-prev,
+.tribe-events-nav-previous {
+  text-align: left;
+}
+
+#tribe-events-content ul.tribe-events-sub-nav .tribe-events-nav-next {
+  text-align: right;
+}
+
+.tribe-events-list .tribe-events-loop .tribe-events-content {
+  padding: 0 0 30px 0;
+}
+
+.tribe-events-list .vevent.hentry h2 {
+  padding: 15px 0;
+}
+
+// Clearfix for floats
+
+.tribe-events-meta-group-details:before, .tribe-events-meta-group-venue:before,
+.tribe-events-meta-group-details:after, .tribe-events-meta-group-venue:after {
+    content: " "; 
+    display: table;
+}
+
+.tribe-events-meta-group-details:after, .tribe-events-meta-group-venue:after {
+    clear: both;
+}
+
+.tribe-events-meta-group-details, .tribe-events-meta-group-venue {
+    *zoom: 1;
+}
+
+.tribe-events-meta-group-details {
+  width: 45%;
+  float: left;
+  padding: 0 0 30px 0;
+
+  dt {
+    width: 30%;
+    float: left;
+  }
+
+  dd {
+    width: 70%;
+    float: left;
+  }
+
+}
+
+.tribe-events-event-meta address.tribe-events-address {
+  margin: 0;
+}
+
+.tribe-events-meta-group-venue {
+  width: 45%;
+  float: right;
+  padding: 0 0 30px 0;
+} 
+
+.tribe-events-meta-group-gmap {
+  clear: both;
+}
+
+.tribe-events-event-meta abbr {
+  font-size: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #tribe-bar-views, .tribe-bar-filters, 
+  .tribe-events-meta-group-venue, .tribe-events-meta-group-details {
+    width: 100%;
+    float: none;
+  }
+
 }
 

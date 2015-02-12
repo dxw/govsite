@@ -2,6 +2,11 @@ label {
   margin-bottom: $space-small/2;
 }
 
+select {
+  background-color: $white;
+  border-color: #ddd;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="date"],
