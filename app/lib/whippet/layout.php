@@ -35,7 +35,7 @@ class Whippet_Layout {
       self::$base = false;
     }
 
-    return new Layout();
+    return new Whippet_Layout();
   }
 }
 
