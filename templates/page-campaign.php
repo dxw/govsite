@@ -15,27 +15,31 @@ the_post();
         <h1><?php the_title(); ?></h1>
       </header>
 
-      <div class="page-element row">
+      <div class="page-element">
 
-        <div class="medium-8 large-8 columns">
+        <div class="row">
 
-          <?php if ( get_field('show_video') == false ) { ?>
-            <figure>
-              <?php the_post_thumbnail('large'); ?>
-            </figure>
-          <?php } else { ?>
-            <div class="flex-video">
-              <?php _e( wp_oembed_get( get_field('featured_video_url') ) ); ?>
-            </div>
-          <?php } ?>
+          <div class="medium-8 large-8 columns">
 
-        </div>
+            <?php if ( get_field('show_video') == false ) { ?>
+              <figure>
+                <?php the_post_thumbnail('large'); ?>
+              </figure>
+            <?php } else { ?>
+              <div class="flex-video">
+                <?php _e( wp_oembed_get( get_field('featured_video_url') ) ); ?>
+              </div>
+            <?php } ?>
 
-        <div class="medium-4 large-4 columns">
+          </div>
 
-          <article class="main-content">
-            <?php the_content(); ?>
-          </article>
+          <div class="medium-4 large-4 columns">
+
+            <article class="main-content">
+              <?php the_content(); ?>
+            </article>
+
+          </div>
 
         </div>
 
