@@ -31,7 +31,6 @@ require dirname(__FILE__) . '/theme/theme-settings.php';
 require dirname(__FILE__) . '/theme/breadcrumbs.php';
 require dirname(__FILE__) . '/theme/admin.php';
 require dirname(__FILE__) . '/theme/logo.php';
-require dirname(__FILE__) . '/theme/favicon.php';
 
 
 /*

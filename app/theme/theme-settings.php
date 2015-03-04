@@ -10,10 +10,6 @@ function govsite_theme_settings_admin_menu() {
       'title' => 'Logo',
     ),
     (object)array(
-      'slug' => 'favicon',
-      'title' => 'Favicon',
-    ),
-    (object)array(
       'slug' => 'social-media',
       'title' => 'Social media',
     ),

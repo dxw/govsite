@@ -8,12 +8,26 @@
   <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <?php $favicon = get_option('favicon-setting'); ?>
-  <link rel="icon" type="image/png" href="<?php echo $favicon; ?>" />
+  <?php
+    // Get favicon from Media Library
+    function get_attachment_url_by_slug( $slug ) {
+    $args = array(
+      'post_type' => 'attachment',
+      'name' => sanitize_title($slug),
+      'posts_per_page' => 1,
+      'post_status' => 'inherit',
+    );
+    $_favicon = get_posts( $args );
+    $favicon = $_favicon ? array_pop($_favicon) : null;
+    return $favicon ? wp_get_attachment_url($favicon->ID) : '';
+  }
+  $favicon_url = get_attachment_url_by_slug('favicon');
+  ?>
+  <link rel="icon" type="image/png" href="<?php echo $favicon_url ?>" />
 
   <?php wp_head(); ?>
 
-    <!--[if lt IE 9]>
+  <!--[if lt IE 9]>
     <script src="//code.jquery.com/jquery-1.9.0.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/../assets/js/ie/browser-support.js"></script>
   <![endif]-->
