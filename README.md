@@ -15,8 +15,7 @@ GovSite is a customisable WordPress theme developed by [dxw](https://www.dxw.com
 * Google Analytics baked in
 * Browser support for IE7+, Firefox, Chrome, Safari, plus popular mobile browsers.
 
-// TODO - ADD LINK TO BLOG POST
-For more information about functionality, please refer to our blog post about GovSite.
+For more information about functionality, please refer to our blog post about GovSite (ADD LINK TO BLOG POST ABOUT GOVSITE).
 
 
 Installation
@@ -28,7 +27,7 @@ Installation
 4. Click Add New button.
 5. Click Upload Theme and upload the .zip format of GovSite that you previously downloaded to your computer.
 
-**Note: ** GovSite requires installation of [Advanced Custom Fields](http://www.advancedcustomfields.com/) plugin, otherwise some of the fields on page templates or post won’t work.
+**Note:** GovSite requires installation of [Advanced Custom Fields](http://www.advancedcustomfields.com/) plugin, otherwise some of the fields on page templates or post won’t work.
 
 
 Theme options
@@ -134,7 +133,5 @@ Authors
 -------
 
 Alex Sexton (alex@dxw.com)
-
 Magda Faizov (magda@dxw.com)
-
 Tom Adams (tom@dxw.com)
