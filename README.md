@@ -38,6 +38,7 @@ Theme options
 GovSite theme is built with SCSS. We use [Grunt](http://gruntjs.com/) for compiling it to CSS.
 
 **Instructions on setting up Grunt and Bower:**
+
 1. If you are unfamiliar with npm and don’t have node.js installed, [download](http://nodejs.org/download/) it first.
 2. Then from them command line:
   - Install `grunt-cli` and `bower` globally with `npm install -g grunt-cli bower`.
