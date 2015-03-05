@@ -40,8 +40,8 @@ GovSite theme is built with SCSS. We use [Grunt](http://gruntjs.com/) for compil
 **Instructions on setting up Grunt and Bower:**
 1. If you are unfamiliar with npm and don’t have node.js installed, [download](http://nodejs.org/download/) it first.
 2. Then from them command line:
-  * Install `grunt-cli` and `bower` globally with `npm install -g grunt-cli bower`.
-  * Navigate to the vendor folder in your theme directory and run `npm install`. npm will look at `package.json` and automatically install the necessary dependencies. It will also automatically install front-end packages defined in `bower.json`.
+  - Install `grunt-cli` and `bower` globally with `npm install -g grunt-cli bower`.
+  - Navigate to the vendor folder in your theme directory and run `npm install`. npm will look at `package.json` and automatically install the necessary dependencies. It will also automatically install front-end packages defined in `bower.json`.
 
 You can now run various Grunt commands from the theme vendor folder:
 * `grunt watch` - compile SCSS and JS assets when file changes are made
@@ -133,5 +133,7 @@ Authors
 -------
 
 Alex Sexton (alex@dxw.com)
+
 Magda Faizov (magda@dxw.com)
+
 Tom Adams (tom@dxw.com)
