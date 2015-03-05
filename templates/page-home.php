@@ -147,7 +147,7 @@ the_post();
 
               <header>
                 <h3><?php the_field('banner_title'); ?></h3>
-              <header>
+              </header>
 
               <p><?php the_field('banner_description'); ?></p>
 
