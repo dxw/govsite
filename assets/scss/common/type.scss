@@ -13,6 +13,7 @@ p, a, button, .button, ul, ol, dl {
 
 small {
   @include font-size(14);
+  
   a, button, .button {
     @include font-size(14);
   }
@@ -20,6 +21,7 @@ small {
 
 h1 {
   @include font-size(36);
+  
   a, button, .button {
     @include font-size(36);
   }
@@ -27,6 +29,7 @@ h1 {
 
 h2 {
   @include font-size(30);
+  
   a, button, .button {
     @include font-size(30);
   }
@@ -34,6 +37,7 @@ h2 {
 
 h3 {
   @include font-size(28);
+  
   a, button, .button {
     @include font-size(28);
   }
@@ -41,6 +45,7 @@ h3 {
 
 h4 {
   @include font-size(24);
+  
   a, button, .button {
     @include font-size(24);
   }
@@ -48,6 +53,7 @@ h4 {
 
 h5 {
   @include font-size(20);
+  
   a, button, .button {
     @include font-size(20);
   }
@@ -60,6 +66,7 @@ h6 {
 a {
   &:visited {
     color: $visited-color;
+    
     &:hover, &:focus {
       color: scale-color($visited-color, $lightness: -20%);
     }
@@ -78,6 +85,7 @@ hr.footer {
   margin-bottom: $space-small;
   border: none;
   padding: 0;
+  
   .fn {
     font-weight: 700;
     font-style: normal;
@@ -117,6 +125,7 @@ blockquote {
 
   p, ul, ol {
     color: $logo-color;
+    
     &:last-child {
       margin-bottom: 0;
     }
@@ -126,11 +135,11 @@ blockquote {
     margin-top: $space-small/2;
     color: $logo-color;
     @include font-size(18);
+    
     a {
       color: $primary-color;
     }
   }
-
 }
 
 code {

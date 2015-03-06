@@ -4,18 +4,17 @@
 the_post(); 
 
 ?>
+<main id="content" role="main" class="main">
 
-<?php if ( get_field('google_maps_url') ) { ?>
+  <?php if ( get_field('google_maps_url') ) { ?>
   <div class="map">
     <iframe src="<?php the_field('google_maps_url'); ?>" width="100%" height="300" frameborder="0" style="border:0"></iframe>
   </div>
-<?php } ?>
+  <?php } ?>
 
-<div class="row">
+  <div class="row">
 
-  <div class="large-12 columns">
-
-    <main id="content" role="main">
+    <div class="large-12 columns">
 
       <header class="page-header">
         <h1><?php the_title(); ?></h1>
@@ -25,33 +24,33 @@ the_post();
 
         <div class="medium-8 large-8 columns">
 
-         <?php the_content(); ?>
+          <?php the_content(); ?>
 
         </div>
 
-        <aside class="medium-4 large-4 columns sidebar">
+        <aside class="medium-4 large-4 columns sidebar" role="complementary">
 
           <?php if ( get_field('phone_number') || get_field('email_address') || get_field('address') ) { ?>
-          
-            <section class="sidebar-content">
 
-              <header>
-                <h3>Contact details</h3>
-              </header>
-              
-              <?php if ( get_field('address') ) { ?>
-                <address><?php the_field('address'); ?></address>
-              <?php } ?>
+          <section class="sidebar-content">
 
-              <?php if ( get_field('phone_number') ) { ?>
-                <a class="contact-link phone"><?php the_field('phone_number'); ?></a>
-              <?php } ?>
+            <header>
+              <h3>Contact details</h3>
+            </header>
 
-              <?php if ( get_field('email_address') ) { ?>
-                <a class="contact-link email"><?php the_field('email_address'); ?></a>
-              <?php } ?>
+            <?php if ( get_field('address') ) { ?>
+            <address><?php the_field('address'); ?></address>
+            <?php } ?>
 
-            </section>
+            <?php if ( get_field('phone_number') ) { ?>
+            <a class="contact-link phone"><?php the_field('phone_number'); ?></a>
+            <?php } ?>
+
+            <?php if ( get_field('email_address') ) { ?>
+            <a class="contact-link email"><?php the_field('email_address'); ?></a>
+            <?php } ?>
+
+          </section>
 
           <?php } ?>
 
@@ -59,8 +58,8 @@ the_post();
 
       </div>
 
-    </main>
+    </div>
 
   </div>
 
-</div>
+</main>

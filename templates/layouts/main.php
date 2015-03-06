@@ -39,7 +39,7 @@
     <div class="alert-box alert"><?php _e('You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?></div>
   <![endif]-->
 
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="row">
       <div class="small-12 medium-3 large-3 columns">
         <?php $logo = get_option('logo-setting'); ?>
@@ -58,7 +58,7 @@
 
   <?php w_requested_template(); ?>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
 
     <div class="navigation">
       <div class="row">

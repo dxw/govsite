@@ -1,5 +1,4 @@
-aside.sidebar {
-
+.sidebar {
   .panel {
     @include panel-styles($secondary-color);
   }
@@ -26,13 +25,10 @@ aside.sidebar {
       &:first-child {
         margin-top: 0;
       }
-
     }
-
   }
 
-  // WP widgets
-  section.widget {
+  .widget {
     @include panel-styles($secondary-color);
 
     .post-date, .rss-date {
@@ -46,9 +42,7 @@ aside.sidebar {
     }
   }
 
-  // Calendar widget
   #calendar_wrap {
-
     caption {
       margin-bottom: $space-medium;
       @include font-size(16);
@@ -66,5 +60,4 @@ aside.sidebar {
       border-color: $white;
     }
   }
-
 }

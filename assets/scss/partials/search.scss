@@ -36,7 +36,6 @@
       @media #{$small-only} {
         display: none;
       }
-
     }
 
     input {
@@ -55,21 +54,23 @@
         margin-left: 0;
         @include font-size(16);
       }
-
     }
 
     *::-webkit-input-placeholder {
       color: $white;
       @include opacity(0.4);
     }
+
     *:-moz-placeholder {
       color: $white;
       @include opacity(0.4);
     }
+
     *::-moz-placeholder {
       color: $white;
       @include opacity(0.4);
     }
+    
     *:-ms-input-placeholder {
       color: $white;
       @include opacity(0.4);

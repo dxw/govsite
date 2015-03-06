@@ -1,5 +1,4 @@
 .site-header {
-
   .top-bar {
     height: auto;
   }
@@ -9,7 +8,6 @@
       width: 100%;
       float: left!important;
     }
-
   }
 
   .headermenu {
@@ -25,9 +23,7 @@
       @media screen and (max-width: 880px) {
         float: none;
       }
-
     }
-
 
     ul {
       @include inline-list;
@@ -53,6 +49,7 @@
         color: $white;
         @include font-size(18);
         @include single-transition(border-top, 300ms, ease-in);
+        
         &:hover, &:focus {
           background: scale-color($primary-color, $lightness: -14%);
           color: $white;
@@ -67,14 +64,13 @@
           background: transparent;
           padding: 38px $space-medium;
           color: $body-font-color;
+          
           &:hover, &:focus {
             background: transparent;
             color: $primary-color;
           }
         }
-
       }
-
     }
 
     .menu > .active {
@@ -88,21 +84,22 @@
         @media #{$medium-up} {
           background: transparent;
           color: $primary-color;
+          
           &:before {
             @include arrow(10px, down, 0, 40%, $logo-color);
           }
+          
           &:hover, &:focus {
             background: transparent;
             color: scale-color($primary-color, $lightness: -14%);
           }
         }
+        
         @media screen and (max-width: 880px) {
           &:before {
             border-top:none;
           }
         }
-
-
       }
     }
 
@@ -114,7 +111,6 @@
       color: $body-font-color;
       @include font-size(25);
       @include icon(before, search);
-
 
       &:hover, &:focus {
         color: $primary-color;
@@ -128,10 +124,10 @@
       @media #{$medium-up} {
         float: right;
       }
+
       @media #{$large-up} {
         @include font-size(30);
       }
-
     }
 
     @media #{$small-only} {
@@ -141,68 +137,64 @@
 
       &.active {
         max-height: 15em;
+        
         ul {
-      float: none !important; // owerwritting Foundation inportant styles
-    }
-    li {
-      display: block;
-      float: none;
-    }
-  }
-}
-}
-
-.toggle-container {
-
-  @media #{$medium-up} {
-    display: none;
-    visibility: hidden;
-  }
-
-  .nav-toggle {
-    margin-top: $space-small/2;
-    @include font-size(32);
-    @include icon(before, menu);
-    &:visited {
-      color: $primary-color;
-    }
-  }
-
-}
-
-
-
-.dropdown {
-  background: $primary-color;
-  top:80px;
-
-  &:before {
-    @include arrow(10px, up, -10px, 25%, $primary-color);
-  }
-
-  li, .active {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    background: $primary-color;
-
-    a {
-      display: block;
-      background: $primary-color;
-      color: $white;
-      white-space: nowrap;
-      padding: 10px 40px 10px 10px;
-      @include single-transition(all, 300ms, ease-in);
-
-      &:hover, &:focus {
-        background: scale-color($primary-color, $lightness: -14%);
-        color: $white;
+          float: none !important;
+        }
+        li {
+          display: block;
+          float: none;
+        }
       }
-
     }
-
   }
 
-}
+  .toggle-container {
 
+    @media #{$medium-up} {
+      display: none;
+      visibility: hidden;
+    }
+
+    .nav-toggle {
+      margin-top: $space-small/2;
+      @include font-size(32);
+      @include icon(before, menu);
+      
+      &:visited {
+        color: $primary-color;
+      }
+    }
+  }
+
+
+  .dropdown {
+    background: $primary-color;
+    top:80px;
+
+    &:before {
+      @include arrow(10px, up, -10px, 25%, $primary-color);
+    }
+
+    li, .active {
+      position: relative;
+      width: 100%;
+      margin: 0;
+      background: $primary-color;
+
+      a {
+        display: block;
+        background: $primary-color;
+        color: $white;
+        white-space: nowrap;
+        padding: 10px 40px 10px 10px;
+        @include single-transition(all, 300ms, ease-in);
+
+        &:hover, &:focus {
+          background: scale-color($primary-color, $lightness: -14%);
+          color: $white;
+        }
+      }
+    }
+  }
 }

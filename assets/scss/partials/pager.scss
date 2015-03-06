@@ -17,6 +17,7 @@
   a {
     &:visited {
       color: $primary-color;
+      
       &:hover, &:focus {
         color: scale-color($primary-color, $lightness: -14%);
       }
@@ -29,15 +30,14 @@
     
     > li {
       margin-left: $space-small;
+      
       &:first-child {
         margin-left: 0;
       }
     }
-
   }
 
   li {
-
     a {
       border: 1px solid $smoke;
       @include radius($global-radius);
@@ -53,7 +53,5 @@
         cursor: default;
       }
     }
-
   }
-
 }

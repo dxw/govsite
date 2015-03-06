@@ -1,8 +1,8 @@
-<div class="row">
+<main id="content" role="main" class="main">
 
-  <div class="large-9 columns">
+  <div class="row">
 
-    <main id="content" role="main">
+    <div class="large-9 columns">
 
       <header class="page-header">
         <div class="header-group">
@@ -12,18 +12,17 @@
 
       <div class="page-element">
         <?php if (have_posts()) : ?>
-          <?php while (have_posts()) : the_post(); ?>
-            <?php get_template_part('partials/search-item'); ?>
-          <?php endwhile; ?>
+        <?php while (have_posts()) : the_post(); ?>
+        <?php get_template_part('partials/search-item'); ?>
+        <?php endwhile; ?>
         <?php else: ?>
-          <p>No results found. Search again?</p>
+        <p>No results found. Search again?</p>
         <?php endif; ?>
       </div>
 
-      <?php get_template_part('partials/pager') ?>
+    <?php get_template_part('partials/pager') ?>
 
-    </main>
+    </div>
 
   </div>
-
-</div>
+</main>

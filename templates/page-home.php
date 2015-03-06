@@ -5,7 +5,7 @@ the_post();
 
 ?>
 
-<main id="content" role="main">
+<main id="content" role="main" class="main">
 
   <?php
     $content = get_the_content();
@@ -139,7 +139,7 @@ the_post();
 
         </section>
 
-        <aside class="medium-4 large-4 columns sidebar">
+        <aside class="medium-4 large-4 columns sidebar" role="complementary">
 
           <?php if (get_field('banner_title')) { ?>
           

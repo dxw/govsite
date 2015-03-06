@@ -1,84 +1,82 @@
-<div class="row">
+<main id="content" role="main" class="main">
 
-  <div class="large-12 columns">
+  <div class="row">
 
-    <main id="content" role="main">
+    <div class="large-12 columns">
 
-      <header class="page-header">
-        <h1><?php the_title(); ?></h1>
-        <?php get_template_part('partials/date'); ?>
-      </header>
+    <header class="page-header">
+    <h1><?php the_title(); ?></h1>
+    <?php get_template_part('partials/date'); ?>
+    </header>
 
-      <?php if( get_field('show_featured_image') == true ) { ?>
+    <?php if( get_field('show_featured_image') == true ) { ?>
 
-        <div class="page-element">
+    <div class="page-element">
 
-          <figure class="featured">
-            <?php the_post_thumbnail('full'); ?>
-          </figure>
-          
-        </div>
+    <figure class="featured">
+    <?php the_post_thumbnail('full'); ?>
+    </figure>
 
-      <?php } ?>
+    </div>
 
-      <?php if( get_field('introduction_text') ) { ?>
+    <?php } ?>
 
-        <div class="page-element row">
+    <?php if( get_field('introduction_text') ) { ?>
 
-          <div class="medium-8 large-8 columns">
-            <?php if ( get_field('display_video') == false ) { ?>
-              <figure>
-                <?php the_post_thumbnail('large'); ?>
-              </figure>
-            <?php } else { ?>
-              <div class="flex-video">
-                <?php _e( wp_oembed_get( get_field('video_url') ) ); ?>
-              </div>
-            <?php } ?>
-          </div>
+    <div class="page-element row">
 
-          <div class="medium-4 large-4 columns">
+    <div class="medium-8 large-8 columns">
+    <?php if ( get_field('display_video') == false ) { ?>
+    <figure>
+    <?php the_post_thumbnail('large'); ?>
+    </figure>
+    <?php } else { ?>
+    <div class="flex-video">
+    <?php _e( wp_oembed_get( get_field('video_url') ) ); ?>
+    </div>
+    <?php } ?>
+    </div>
 
-            <article class="main-content">
-              <?php echo get_field('introduction_text'); ?>
-            </article>
+    <div class="medium-4 large-4 columns">
 
-          </div>
+    <article class="main-content">
+    <?php echo get_field('introduction_text'); ?>
+    </article>
 
-        </div>
+    </div>
 
-      <?php } ?>
+    </div>
 
-      <div class="page-element row">
+    <?php } ?>
 
-        <div class="medium-8 large-8 columns">
-          <?php 
+    <div class="page-element row">
 
-            the_content();
-            get_template_part('partials/share');
+    <div class="medium-8 large-8 columns">
+    <?php 
+    the_content();
+    get_template_part('partials/share');
+    ?>
+    </div>
 
-          ?>
-        </div>
+    <?php if (get_field('related_content')) { ?>
 
-        <?php if (get_field('related_content')) { ?>
+    <aside class="medium-4 large-4 columns sidebar" role="complementary">
 
-          <aside class="medium-4 large-4 columns sidebar">
+    <section class="panel">
+    <header>
+    <h3>Related content</h3>
+    </header>
+    <?php echo get_field('related_content'); ?>
+    </section>
 
-            <section class="panel">
-              <header>
-                <h3>Related content</h3>
-              </header>
-              <?php echo get_field('related_content'); ?>
-            </section>
+    </aside>
 
-          </aside>
+    <?php } ?>
 
-        <?php } ?>
+    </div>
 
-      </div>
-
-    </main>
+    </div>
 
   </div>
 
-</div>
+</main>

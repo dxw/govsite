@@ -1,8 +1,8 @@
-<div class="row">
+<main id="content" role="main" class="main">
 
-  <div class="large-12 columns">
+  <div class="row">
 
-    <main id="content" role="main">
+    <div class="large-12 columns">
 
       <header class="page-header">
         <h1><?php the_title(); ?></h1>
@@ -14,20 +14,20 @@
 
           <article>
             <?php if ( has_post_thumbnail() ) { ?>
-              <figure>
-                <?php the_post_thumbnail('large'); ?>
-              </figure>
+            <figure>
+              <?php the_post_thumbnail('large'); ?>
+            </figure>
             <?php } ?>
 
-           <?php the_content(); ?>
-         </article>
+            <?php the_content(); ?>
+          </article>
 
         </div>        
 
       </div>
 
-    </main>
+    </div>
 
   </div>
 
-</div>
+</main>
