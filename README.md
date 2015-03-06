@@ -125,10 +125,22 @@ Posts also have a custom sidebar next to the main content. It’s designed for l
 
 **Bottom banner** area has got the same functionality and editing options as it is on the Campaign page template.
 
-Licence
--------
+Documentation
+-------------
 
-GovSite is [MIT licensed](https://en.wikipedia.org/wiki/MIT_License) and free to use. You can fork the theme and modify it but you are not allowed to resell it.
+#### Whippet
+
+GovSite is a Whippet-based theme. [Whippet](https://github.com/dxw/whippet-server) is a stand-alone web server for a specific WordPress installation. It makes the WordPress theme easier to develop.
+
+#### Theme development
+
+GovSite directory structure:
+
+* **app** - includes theme functions, registered custom fields and post types and other theme-specific elements
+* **assets** - includes precompiled images, JS and SCSS files
+* **build** - includes compiled assets that are used on the site: images, JS, CSS, as well as the icon font files
+* **templates** - includes main layout file WordPress page templates
+* **vendor** - includes `Gruntfile.js`, `package.json` and `bower.json` that install the necessary dependencies and compile assets
 
 Authors
 -------
