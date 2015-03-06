@@ -1,5 +1,4 @@
-footer.site-footer {
-
+.site-footer {
   .navigation {
     background: $jet;
     padding: $space-small*2 0 $space-medium 0;
@@ -44,5 +43,4 @@ footer.site-footer {
     color: $white;
     @include font-size(12);
   }
-
 }

@@ -1,5 +1,4 @@
 // WP Images
-
 img, .wp-caption {
 
   &.alignleft, &.alignright, &.aligncenter, &.alignnone {
@@ -38,7 +37,6 @@ img, .wp-caption {
       background: $gainsboro;
     }
   }
-
 }
 
 .wp-caption {
@@ -58,6 +56,7 @@ img, .wp-caption {
   .gallery-item {
     margin-top: 0 !important; //overwriting WP styles
     margin-bottom: $space-small;
+    
     &:first-child {
       margin-left: 0;
     }
@@ -71,6 +70,7 @@ img, .wp-caption {
     width: 100%;
     border: 5px solid $smoke !important; //overwriting WP styles
     @include single-transition(all,$thumb-transition-speed,ease-out);
+    
     &:hover, &:focus {
       border-color: $gainsboro !important;
     }

@@ -1,7 +1,9 @@
 button, .button {
   padding: $space-small $space-small*2;
+  
   &:visited {
     color: $white;
+    
     &:hover, &:focus {
       color: $white;
     }
@@ -14,12 +16,15 @@ button, .button {
   padding: $space-medium $space-small*2;
   color: $secondary-color;
   @include font-size(20);
+  
   &:hover, &:focus {
     background: $white;
     color: darken($secondary-color, 15%);
   }
+  
   &:visited {
     color: $secondary-color;
+    
     &:hover, &:focus {
       color: darken($secondary-color, 15%);
     }
@@ -31,12 +36,15 @@ button, .button {
   background: $white;
   padding: $space-small;
   color: $logo-color;
+  
   &:hover, &:focus {
     background: $white;
     color: darken($logo-color, 15%);
   }
+  
   &:visited {
     color: $logo-color;
+    
     &:hover, &:focus {
       color: darken($logo-color, 15%);
     }

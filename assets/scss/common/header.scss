@@ -1,8 +1,6 @@
-header.site-header {
-
+.site-header {
   $header-top-margin: $space-small*2;
   $header-bottom-margin: $space-small*2;
-
   border-top: 10px solid $logo-color;
   border-bottom: 1px solid $white-smoke;
   background: $white;
@@ -15,6 +13,7 @@ header.site-header {
     @include font-size(50);
     line-height: 1;
     color: $logo-color;
+    
     &:hover, &:focus {
       color: scale-color($logo-color, $lightness: -14%);
     }
@@ -26,7 +25,5 @@ header.site-header {
         width: 180px;
       }
     }
-
   }
-
 }

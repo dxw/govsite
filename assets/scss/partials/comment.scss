@@ -8,14 +8,17 @@
 
   ol.media-list {
     margin-left: 0;
+    
     li.comment {
       clear:both;
       margin-bottom: $space-medium*2;
+      
       ul {
         // list of replies
         margin-top: $space-small*2;
         margin-left: $space-medium*2;
         list-style: none;
+        
         li {
           margin-bottom: 0;
           border-bottom: none;
@@ -30,6 +33,7 @@
 
   .comment-author {
     float: left;
+    
     .says {
       display: none;
       visibility: hidden;
@@ -39,9 +43,11 @@
   .comment-meta {
     float: right;
     margin-bottom: $space-small;
+    
     a {
       @include font-size(14);
     }
+    
     a.comment-edit-link {
       padding-left: $space-small/2;
     }
@@ -57,6 +63,7 @@
     border-top: 3px solid $gainsboro;
     background: $silver;
     padding: $space-small*2;
+    
     p {
       &:last-child {
         margin-bottom: 0;
@@ -70,7 +77,6 @@
     margin-bottom: 0;
     padding: $space-small $space-medium;
   }
-
 }
 
 .comment-form {
@@ -85,5 +91,4 @@
   p.cancel-comment-reply {
     padding-bottom: $space-small;
   }
-
 }

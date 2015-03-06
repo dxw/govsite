@@ -1,7 +1,5 @@
 .archive {
-
   article.post-summary {
-
     h1.entry-title {
       margin-bottom: $space-small;
     }
@@ -16,7 +14,6 @@
         width: 20%;
         margin-right: 3%;
       }
-
     }
 
     p {
@@ -26,13 +23,10 @@
     .button {
       margin-bottom: 0;
     }
-
   }
 
   article.sticky {
-
     header {
-
       h1 {
         line-height: 1;
         a {
@@ -41,5 +35,4 @@
       }
     }
   }
-
 }

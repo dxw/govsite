@@ -2,40 +2,39 @@
   return;
 }
 
-  if (have_comments()) : ?>
+if (have_comments()) : ?>
+<section id="comments" class="comments">
+  <div class="row">
 
-    <div class="row">
+    <div class="large-8 columns">
 
-      <div class="large-8 columns">
+      <button type="button" class="button right comment-scroll">Comment</button>
 
-        <button type="button" class="button right comment-scroll">Comment</button>
+      <h3><?php printf(_n('One response to &ldquo;%2$s&rdquo;', '%1$s comments', get_comments_number(), 'roots'), number_format_i18n(get_comments_number()), get_the_title()); ?></h3>
 
-        <section id="comments" class="comments">
-          <h3><?php printf(_n('One response to &ldquo;%2$s&rdquo;', '%1$s comments', get_comments_number(), 'roots'), number_format_i18n(get_comments_number()), get_the_title()); ?></h3>
+      <ol class="media-list">
+        <?php wp_list_comments(array('walker' => new Roots_Walker_Comment())); // TODO: What does this walker do, do we need it? How do we make sure this pulls through the comment partial? ?>
+      </ol>
 
-          <ol class="media-list">
-            <?php wp_list_comments(array('walker' => new Roots_Walker_Comment())); // TODO: What does this walker do, do we need it? How do we make sure this pulls through the comment partial? ?>
-          </ol>
+      <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : ?>
 
-          <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : ?>
-          <nav>
-            <ul class="pager">
-              <?php if (get_previous_comments_link()) : ?>
-              <li class="previous"><?php previous_comments_link(__('&larr; Older comments', 'roots')); ?></li>
-                <?php endif; ?>
-                <?php if (get_next_comments_link()) : ?>
-                <li class="next"><?php next_comments_link(__('Newer comments &rarr;', 'roots')); ?></li>
-              <?php endif; ?>
-            </ul>
-          </nav>
-          <?php endif; ?>
+      <ul class="pager">
+        <?php if (get_previous_comments_link()) : ?>
+        <li class="previous"><?php previous_comments_link(__('&larr; Older comments', 'roots')); ?></li>
+      <?php endif; ?>
+      <?php if (get_next_comments_link()) : ?>
+      <li class="next"><?php next_comments_link(__('Newer comments &rarr;', 'roots')); ?></li>
+    <?php endif; ?>
+  </ul>
 
-        </section><!-- /#comments -->
+<?php endif; ?>
 
-      </div>
+</div>
 
-    </div>
-  <?php endif; ?>
+</div>
+
+</section>
+<?php endif; ?>
 
 
 <?php if (comments_open()) : ?>

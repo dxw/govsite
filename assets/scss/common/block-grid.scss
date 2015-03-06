@@ -1,7 +1,5 @@
 ul[class*="block-grid-"] {
-
   li {
-
     p {
       margin-bottom: 0;
     }
@@ -16,23 +14,20 @@ ul[class*="block-grid-"] {
       margin-top: $space-medium;
       margin-bottom: 0;
     }
-
   }
-
 }
 
 ul[class*="small-block-grid-"] {
-  
   @media #{$small-only} {
     p {
       width: 54%;
       float: left;
     }
+
     a.image {
       width: 42%;
       float: left;
       margin-right: 4%;
     }
   }
-
 }

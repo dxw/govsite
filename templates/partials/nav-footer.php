@@ -1,4 +1,4 @@
-<nav>
+<nav role="navigation">
   <?php
     if (has_nav_menu('footer')) :
 

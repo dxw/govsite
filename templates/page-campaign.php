@@ -5,11 +5,11 @@ the_post();
 
 ?>
 
-<div class="row">
+<main id="content" role="main" class="main">
 
-  <div class="large-12 columns">
+  <div class="row">
 
-    <main id="content" role="main">
+    <div class="large-12 columns">
 
       <header class="page-header">
         <h1><?php the_title(); ?></h1>
@@ -22,13 +22,13 @@ the_post();
           <div class="medium-8 large-8 columns">
 
             <?php if ( get_field('show_video') == false ) { ?>
-              <figure>
-                <?php the_post_thumbnail('large'); ?>
-              </figure>
+            <figure>
+              <?php the_post_thumbnail('large'); ?>
+            </figure>
             <?php } else { ?>
-              <div class="flex-video">
-                <?php _e( wp_oembed_get( get_field('featured_video_url') ) ); ?>
-              </div>
+            <div class="flex-video">
+              <?php _e( wp_oembed_get( get_field('featured_video_url') ) ); ?>
+            </div>
             <?php } ?>
 
           </div>
@@ -45,72 +45,72 @@ the_post();
 
       </div>
 
-     <?php if (get_field('left_block_title')) {
+      <?php if (get_field('left_block_title')) {
 
-      $size = 'large';
+        $size = 'large';
 
-    ?>
-      
-      <div class="page-element">
+        ?>
 
-        <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
+        <div class="page-element">
 
-          <li>
+          <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
 
-            <article>
-              <?php
+            <li>
+
+              <article>
+                <?php
                 $image1 = get_field('left_block_image');
                 $thumb1 = $image1['sizes'][ $size ];
-              ?>
+                ?>
 
-              <header>
-                <h3><?php the_field('left_block_title') ?></h3>
-              </header>
+                <header>
+                  <h3><?php the_field('left_block_title') ?></h3>
+                </header>
 
-              <?php if ( get_field('blocks_with_images') == true ) { ?>
+                <?php if ( get_field('blocks_with_images') == true ) { ?>
                 <a class="image" href="<?php the_field('left_block_url'); ?>"><img class="th" src="<?php echo $thumb1; ?>" alt="<?php echo $image1['alt']; ?>"></a>
-              <?php } ?>
+                <?php } ?>
 
-              <?php echo get_field('left_block_text'); ?>
+                <?php echo get_field('left_block_text'); ?>
 
-              <a href="<?php the_field('left_block_url'); ?>" class="button"><?php the_field('left_block_call_to_action'); ?></a>
-            </article>
+                <a href="<?php the_field('left_block_url'); ?>" class="button"><?php the_field('left_block_call_to_action'); ?></a>
+              </article>
 
-          </li>
+            </li>
 
-          <li>
+            <li>
 
-            <article>
-              <?php
+              <article>
+                <?php
                 $image2 = get_field('right_block_image');
                 $thumb2 = $image2['sizes'][ $size ];
-              ?>
+                ?>
 
-              <header>
-                <h3><?php the_field('right_block_title') ?></h3>
-              </header>
+                <header>
+                  <h3><?php the_field('right_block_title') ?></h3>
+                </header>
 
-              <?php if ( get_field('blocks_with_images') == true ) { ?>
+                <?php if ( get_field('blocks_with_images') == true ) { ?>
                 <a class="image" href="<?php the_field('right_block_url'); ?>"><img class="th" src="<?php echo $thumb2; ?>" alt="<?php echo $image2['alt']; ?>"></a>
-              <?php } ?>
+                <?php } ?>
 
-              <?php echo get_field('right_block_text'); ?>
+                <?php echo get_field('right_block_text'); ?>
 
-              <a href="<?php the_field('right_block_url'); ?>" class="button"><?php the_field('right_block_call_to_action'); ?></a>
-            </article>
+                <a href="<?php the_field('right_block_url'); ?>" class="button"><?php the_field('right_block_call_to_action'); ?></a>
+              </article>
 
-          </li>
+            </li>
 
-        </ul>
+          </ul>
+
+        </div>
+
+        <?php } ?>
 
       </div>
 
-     <?php } ?>
+    </div>
 
-    </main>
+  </main>
 
-  </div>
-
-</div>
-
-<?php get_template_part('partials/bottom-banner'); ?>
+  <?php get_template_part('partials/bottom-banner'); ?>

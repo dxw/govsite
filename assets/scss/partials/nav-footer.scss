@@ -1,12 +1,8 @@
 footer.site-footer {
-
   nav {
-
     ul {
-
       @include inline-list;
       margin-bottom: 0;
-
     }
 
     a {
@@ -16,7 +12,5 @@ footer.site-footer {
         border-bottom: 1px solid $white;
       }
     }
-
   }
-
 }
