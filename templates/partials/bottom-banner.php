@@ -1,5 +1,4 @@
-<?php if ( get_field('banner_text') ) { ?>
-  
+<?php if ( get_field('banner_text') ) : ?>
   <div class="bottom-banner">
     <div class="row">
       <div class="large-12 columns">
@@ -8,5 +7,4 @@
       </div>
     </div>
   </div>
-
-<?php } ?>
+<?php endif ?>

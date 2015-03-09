@@ -1,7 +1,7 @@
 <article <?php post_class('summary'); ?>>
-  <?php if ( has_post_thumbnail() ) { ?>
+  <?php if ( has_post_thumbnail() ) : ?>
     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('letterhead'); ?></a>
-  <?php } ?>
+  <?php endif ?>
 
   <header>
     <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>

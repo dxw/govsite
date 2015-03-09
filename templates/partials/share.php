@@ -1,4 +1,4 @@
-<section class="share">
+<div class="share">
   <h3 class="hide-for-large-up">Share</h3>
   <ul>
     <li>
@@ -16,4 +16,4 @@
     </a>
     </li>
   </ul>
-</section>
+</div>
