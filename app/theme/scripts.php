@@ -30,3 +30,17 @@ add_action('admin_enqueue_scripts', 'govsite_scripts_admin_enqueue_scripts');
 function govsite_scripts_admin_enqueue_scripts() {
   wp_enqueue_script('admin', get_template_directory_uri() . '/../assets/js/admin.js', array('jquery'), '', true);
 }
+
+// Get favicon from Media Library
+function get_attachment_url_by_slug( $slug ) {
+  $args = array(
+    'post_type' => 'attachment',
+    'name' => sanitize_title($slug),
+    'posts_per_page' => 1,
+    'post_status' => 'inherit',
+  );
+  $_favicon = get_posts( $args );
+  $favicon = $_favicon ? array_pop($_favicon) : null;
+  
+  return $favicon ? wp_get_attachment_url($favicon->ID) : '';
+}

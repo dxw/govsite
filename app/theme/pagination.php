@@ -1,12 +1,5 @@
 <?php
 
-//
-// HARRY NOTE
-//
-// Though functional, this is shit. Please get rid of it or make it good, future me!
-//
-
-
 function pagination($q = null, $mode = null) {
     global $wp_query;
 

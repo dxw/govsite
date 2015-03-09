@@ -13,7 +13,7 @@ if (have_comments()) : ?>
       <h3><?php printf(_n('One response to &ldquo;%2$s&rdquo;', '%1$s comments', get_comments_number(), 'roots'), number_format_i18n(get_comments_number()), get_the_title()); ?></h3>
 
       <ol class="media-list">
-        <?php wp_list_comments(array('walker' => new Roots_Walker_Comment())); // TODO: What does this walker do, do we need it? How do we make sure this pulls through the comment partial? ?>
+        <?php wp_list_comments(array('walker' => new Roots_Walker_Comment())); ?>
       </ol>
 
       <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : ?>
