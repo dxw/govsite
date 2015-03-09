@@ -28,7 +28,6 @@ require dirname(__FILE__) . '/theme/helpers.php';
 require dirname(__FILE__) . '/theme/pagination.php';
 require dirname(__FILE__) . '/theme/titles.php';
 require dirname(__FILE__) . '/theme/theme-settings.php';
-require dirname(__FILE__) . '/theme/breadcrumbs.php';
 require dirname(__FILE__) . '/theme/admin.php';
 require dirname(__FILE__) . '/theme/logo.php';
 
