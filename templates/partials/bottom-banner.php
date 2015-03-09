@@ -1,6 +1,6 @@
 <?php if ( get_field('banner_text') ) { ?>
   
-  <div class="banner">
+  <div class="bottom-banner">
     <div class="row">
       <div class="large-12 columns">
         <h2><?php the_field('banner_text'); ?></h2>

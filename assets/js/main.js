@@ -42,7 +42,7 @@ jQuery(function ($) {
     });
 
     // Toggle navigation
-    var $menu = $('.headermenu'),
+    var $menu = $('.top-bar'),
     $menulink = $('.nav-toggle');
 
     $menulink.click(function() {
@@ -50,7 +50,6 @@ jQuery(function ($) {
         $menu.toggleClass('active');
         return false;
     });
-
 
     // Search
     var $searchicon = $('.header-search .icon-search'),
@@ -63,7 +62,7 @@ jQuery(function ($) {
         $searchicon.addClass('focus');
     });
 
-    var $headersearch = $('#headermenu .button-search'),
+    var $headersearch = $('#top-bar .button-search'),
     $searchbanner = $('.header-search');
 
     $headersearch.click(function() {
@@ -72,13 +71,10 @@ jQuery(function ($) {
     });
 
     // Scroll to commnets
-    $('button.comment-scroll').click(function(){
+    $('.comment-scroll').click(function(){
         $('html, body').animate({
             scrollTop: $("#comment-form").offset().top
         }, 1000);
     });
-
-
-
 
 });

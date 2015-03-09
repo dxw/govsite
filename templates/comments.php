@@ -1,14 +1,14 @@
+
 <?php if (post_password_required()) {
   return;
 }
-
 if (have_comments()) : ?>
-<section id="comments" class="comments">
+<section class="comments">
   <div class="row">
 
     <div class="large-8 columns">
 
-      <button type="button" class="button right comment-scroll">Comment</button>
+      <button type="button" class="button comment-scroll">Comment</button>
 
       <h3><?php printf(_n('One response to &ldquo;%2$s&rdquo;', '%1$s comments', get_comments_number(), 'roots'), number_format_i18n(get_comments_number()), get_the_title()); ?></h3>
 

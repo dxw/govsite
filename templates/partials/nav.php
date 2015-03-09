@@ -1,4 +1,4 @@
-<nav id="headermenu" class="headermenu top-bar" data-topbar role="navigation">
+<nav id="top-bar" class="top-bar" role="navigation" data-topbar>
 
   <button type="button" class="button-search show-for-medium-up"><span class="accessibility">Search</span></button>
 

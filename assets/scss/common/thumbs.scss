@@ -21,8 +21,8 @@ ul[class*="block-grid-"] li img {
   @include thumb($thumb-border-width);
 }
 
-ul.featured {
-  img.th {
+.featured {
+  .thumb {
     max-height: 150px;
   }
 }

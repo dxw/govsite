@@ -1,4 +1,4 @@
-section.sidebar-content {
+.address-panel {
   border-top: 5px solid $logo-color;
   padding-top: $space-medium;
 
@@ -19,7 +19,7 @@ section.sidebar-content {
   }
 
   address,
-  a.contact-link {
+  .contact-link {
     position: relative;
     padding-left: $space-large;
     padding-bottom: $space-medium;

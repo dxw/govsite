@@ -5,7 +5,7 @@
   border-bottom: 1px solid $white-smoke;
   background: $white;
 
-  a.logo {
+  .logo {
     margin-top: $header-top-margin;
     margin-bottom: $header-bottom-margin;
     font-family: $font-family-sans-serif;
@@ -13,6 +13,7 @@
     @include font-size(50);
     line-height: 1;
     color: $logo-color;
+    display: block;
     
     &:hover, &:focus {
       color: scale-color($logo-color, $lightness: -14%);

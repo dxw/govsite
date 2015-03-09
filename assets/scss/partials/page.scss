@@ -1,6 +1,6 @@
 // most of these elements are also used for posts
 
-header.page-header {
+.page-header {
   width: 100%;
   display: inline-block;
   margin-top: $space-medium*2;
@@ -12,7 +12,7 @@ header.page-header {
     }
   }
 
-  div.header-group {
+  .header-group {
     h1 {
       @media #{$large-up} {
         width: 100%;

@@ -5142,7 +5142,7 @@ ul[class*="block-grid-"] li img:hover, ul[class*="block-grid-"] li img:focus {
 }
 
 /* line 25, ../assets/scss/common/thumbs.scss */
-ul.featured img.th {
+.featured .thumb {
   max-height: 150px;
 }
 

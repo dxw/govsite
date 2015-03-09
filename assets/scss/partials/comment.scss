@@ -1,15 +1,19 @@
 .comments {
   clear: both;
 
-  ol.media-list,
-  ul.children {
+  .comment-scroll {
+    float: right;
+  }
+
+  .media-list,
+  .children {
     list-style: none;
   }
 
-  ol.media-list {
+  .media-list {
     margin-left: 0;
     
-    li.comment {
+    .comment {
       clear:both;
       margin-bottom: $space-medium*2;
       
@@ -27,7 +31,7 @@
     }
   }
 
-  ul.children {
+  .children {
     margin-left: $space-medium*2;
   }
 
@@ -83,12 +87,12 @@
   clear: both;
   margin-bottom: $space-medium*2;
 
-  p.cancel-comment-reply,
+  .cancel-comment-reply,
   form {
     margin-bottom: 0;
   }
 
-  p.cancel-comment-reply {
+  .cancel-comment-reply {
     padding-bottom: $space-small;
   }
 }

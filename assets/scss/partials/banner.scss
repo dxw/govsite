@@ -1,4 +1,19 @@
-.banner {
+.page-banner {
+  padding: $space-medium*2 0;
+  background: $secondary-color;
+  text-align: left;
+  color: $white;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $white;
+  }
+
+  h2 {
+    margin-bottom: $space-medium;
+  }
+}
+
+.bottom-banner {
   padding: $space-medium*2 0;
   background: $secondary-color;
   text-align: center;
@@ -11,8 +26,4 @@
   h2 {
     margin-bottom: $space-medium;
   }
-}
-
-.page-intro {
-  text-align: left;
 }

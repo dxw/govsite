@@ -1,7 +1,4 @@
 .site-header {
-  .top-bar {
-    height: auto;
-  }
 
   @media screen and (max-width: 880px) {
     .top-bar-nav {
@@ -10,10 +7,11 @@
     }
   }
 
-  .headermenu {
+  .top-bar {
     width: 100%;
     display: inline-block;
     background: $white;
+    height: auto;
 
     div {
       @media #{$medium-up} {

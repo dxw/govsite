@@ -41,14 +41,14 @@
 
   <header class="site-header" role="banner">
     <div class="row">
-      <div class="small-12 medium-3 large-3 columns">
+      <div class="small-12 medium-3 columns">
         <?php $logo = get_option('logo-setting'); ?>
-        <a href="/" title="<?php bloginfo('name'); ?>" class="left logo"><img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?> logo"></a>
-        <div class="toggle-container toggle-topbar hidden-for-medium-up right">
-          <a href="#headermenu" class="nav-toggle"><span class="accessibility">Menu</span></a>
+        <a href="/" title="<?php bloginfo('name'); ?>" class="logo"><img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?> logo"></a>
+        <div class="toggle-container hidden-for-medium-up">
+          <a href="#top-bar" class="nav-toggle"><span class="accessibility">Menu</span></a>
         </div>
       </div>
-      <div class="small-12 medium-9 large-9 columns top-bar-nav">
+      <div class="small-12 medium-9 columns">
             <?php get_template_part('partials/nav'); ?>
       </div>
     </div>
@@ -62,10 +62,10 @@
 
     <div class="navigation">
       <div class="row">
-        <div class="medium-6 large-6 columns">
+        <div class="medium-6 columns">
           <?php get_template_part('partials/nav-footer'); ?>
         </div>
-        <div class="medium-6 large-6 columns">
+        <div class="medium-6 columns">
           <?php if ( get_option('footer-link-text-setting') ) { ?>
             <p><?php echo get_option('footer-link-text-setting'); ?> <a href="<?php echo get_option('footer-link-url-setting'); ?>"><?php echo get_option('footer-link-cta-setting'); ?></a></p>
           <?php } ?>
@@ -75,10 +75,10 @@
 
     <div class="credits">
       <div class="row">
-        <div class="small-6 large-6 columns">
+        <div class="medium-6 columns">
           <small>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> copyright</small>
         </div>
-        <div class="medium-6 large-6 columns show-for-medium-up">
+        <div class="medium-6 columns show-for-medium-up">
           <?php get_template_part('partials/social-media'); ?>
         </div>
       </div>
