@@ -7101,162 +7101,172 @@ footer.site-footer nav a:hover, footer.site-footer nav a:focus {
   border-bottom: 1px solid #FFFFFF;
 }
 
-/* line 3, ../assets/scss/partials/page.scss */
+/* line 172, ../vendor/bower_components/foundation/scss/foundation/components/_global.scss */
+.post-summary:before, .post-summary:after {
+  content: " ";
+  display: table;
+}
+/* line 173, ../vendor/bower_components/foundation/scss/foundation/components/_global.scss */
+.post-summary:after {
+  clear: both;
+}
+
+/* line 7, ../assets/scss/partials/page.scss */
 .page-header {
   width: 100%;
   display: inline-block;
   margin-top: 30px;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 8, ../assets/scss/partials/page.scss */
+  /* line 12, ../assets/scss/partials/page.scss */
   .page-header h1 {
     width: 80%;
     float: left;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 16, ../assets/scss/partials/page.scss */
+  /* line 20, ../assets/scss/partials/page.scss */
   .page-header .header-group h1 {
     width: 100%;
     float: none;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 24, ../assets/scss/partials/page.scss */
+  /* line 28, ../assets/scss/partials/page.scss */
   .page-header ul.entry-meta {
     width: 20%;
     float: right;
     margin-top: 17px;
   }
-  /* line 29, ../assets/scss/partials/page.scss */
+  /* line 33, ../assets/scss/partials/page.scss */
   .page-header ul.entry-meta li {
     float: right;
   }
 }
 
-/* line 36, ../assets/scss/partials/page.scss */
+/* line 40, ../assets/scss/partials/page.scss */
 .page-element {
   border-bottom: 1px solid #DDDDDD;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 41, ../assets/scss/partials/page.scss */
+/* line 45, ../assets/scss/partials/page.scss */
 .page-element:last-of-type {
   border-bottom: 0;
 }
-/* line 45, ../assets/scss/partials/page.scss */
+/* line 49, ../assets/scss/partials/page.scss */
 .page-element figure {
   margin: 0;
 }
-/* line 48, ../assets/scss/partials/page.scss */
+/* line 52, ../assets/scss/partials/page.scss */
 .page-element figure img {
   border: 10px solid #FFFFFF;
 }
-/* line 53, ../assets/scss/partials/page.scss */
-.page-element .main-content {
+/* line 57, ../assets/scss/partials/page.scss */
+.page-element .main-content, .page-element .intro-content {
   border-top: 5px solid #00a0b0;
   padding-top: 15px;
 }
 
-/* line 59, ../assets/scss/partials/page.scss */
-article.summary,
-article.post-summary {
+/* line 63, ../assets/scss/partials/page.scss */
+.summary,
+.post-summary {
   margin-bottom: 25px;
   border-bottom: 1px solid #DDDDDD;
   padding-bottom: 30px;
 }
 /* line 172, ../vendor/bower_components/foundation/scss/foundation/components/_global.scss */
-article.summary:before, article.summary:after,
-article.post-summary:before,
-article.post-summary:after {
+.summary:before, .summary:after,
+.post-summary:before,
+.post-summary:after {
   content: " ";
   display: table;
 }
 /* line 173, ../vendor/bower_components/foundation/scss/foundation/components/_global.scss */
-article.summary:after,
-article.post-summary:after {
+.summary:after,
+.post-summary:after {
   clear: both;
 }
-/* line 66, ../assets/scss/partials/page.scss */
-article.summary:last-of-type,
-article.post-summary:last-of-type {
+/* line 70, ../assets/scss/partials/page.scss */
+.summary:last-of-type,
+.post-summary:last-of-type {
   margin-bottom: 30px;
   border-bottom: none;
   padding-bottom: 0;
 }
-/* line 72, ../assets/scss/partials/page.scss */
-article.summary a img,
-article.post-summary a img {
+/* line 76, ../assets/scss/partials/page.scss */
+.summary a img,
+.post-summary a img {
   float: left;
   margin-top: 8px;
   margin-right: 3%;
 }
-/* line 78, ../assets/scss/partials/page.scss */
-article.summary p,
-article.post-summary p {
+/* line 82, ../assets/scss/partials/page.scss */
+.summary p,
+.post-summary p {
   margin-bottom: 0;
 }
-/* line 82, ../assets/scss/partials/page.scss */
-article.summary header,
-article.post-summary header {
+/* line 86, ../assets/scss/partials/page.scss */
+.summary header,
+.post-summary header {
   position: relative;
 }
-/* line 86, ../assets/scss/partials/page.scss */
-article.summary.sticky,
-article.post-summary.sticky {
+/* line 90, ../assets/scss/partials/page.scss */
+.summary.sticky,
+.post-summary.sticky {
   position: relative;
   border-bottom: 3px solid #DDDDDD;
   background: #EEEEEE;
   padding: 10px 20px 20px 20px;
 }
-/* line 92, ../assets/scss/partials/page.scss */
-article.summary.sticky h4,
-article.post-summary.sticky h4 {
+/* line 96, ../assets/scss/partials/page.scss */
+.summary.sticky h4,
+.post-summary.sticky h4 {
   margin-top: 0;
 }
-/* line 94, ../assets/scss/partials/page.scss */
-article.summary.sticky h4 a,
-article.post-summary.sticky h4 a {
+/* line 98, ../assets/scss/partials/page.scss */
+.summary.sticky h4 a,
+.post-summary.sticky h4 a {
   font-size: 28px;
   font-size: 1.736rem;
   line-height: 1.5;
 }
-/* line 99, ../assets/scss/partials/page.scss */
-article.summary.sticky img,
-article.post-summary.sticky img {
+/* line 103, ../assets/scss/partials/page.scss */
+.summary.sticky img,
+.post-summary.sticky img {
   max-width: 100%;
   float: none;
   margin: 10px 0;
 }
-/* line 106, ../assets/scss/partials/page.scss */
-article.summary.sticky a img,
-article.post-summary.sticky a img {
+/* line 110, ../assets/scss/partials/page.scss */
+.summary.sticky a img,
+.post-summary.sticky a img {
   border: 5px solid #FFFFFF;
   transition: all 300ms ease-out;
 }
-/* line 109, ../assets/scss/partials/page.scss */
-article.summary.sticky a img:hover, article.summary.sticky a img:focus,
-article.post-summary.sticky a img:hover,
-article.post-summary.sticky a img:focus {
+/* line 113, ../assets/scss/partials/page.scss */
+.summary.sticky a img:hover, .summary.sticky a img:focus,
+.post-summary.sticky a img:hover,
+.post-summary.sticky a img:focus {
   border-color: #DDDDDD;
 }
-/* line 119, ../assets/scss/partials/page.scss */
-article.summary.post-password-required h2, article.summary.post-password-required h4, article.summary.status-private h2, article.summary.status-private h4,
-article.post-summary.post-password-required h2,
-article.post-summary.post-password-required h4,
-article.post-summary.status-private h2,
-article.post-summary.status-private h4 {
+/* line 123, ../assets/scss/partials/page.scss */
+.summary.post-password-required h2, .summary.post-password-required h4, .summary.status-private h2, .summary.status-private h4,
+.post-summary.post-password-required h2,
+.post-summary.post-password-required h4,
+.post-summary.status-private h2,
+.post-summary.status-private h4 {
   position: relative;
   display: table;
   margin-top: 0;
   padding-left: 40px;
 }
 /* line 69, ../assets/scss/global.scss */
-article.summary.post-password-required h2:before, article.summary.post-password-required h4:before, article.summary.status-private h2:before, article.summary.status-private h4:before,
-article.post-summary.post-password-required h2:before,
-article.post-summary.post-password-required h4:before,
-article.post-summary.status-private h2:before,
-article.post-summary.status-private h4:before {
+.summary.post-password-required h2:before, .summary.post-password-required h4:before, .summary.status-private h2:before, .summary.status-private h4:before,
+.post-summary.post-password-required h2:before,
+.post-summary.post-password-required h4:before,
+.post-summary.status-private h2:before,
+.post-summary.status-private h4:before {
   content: "";
   speak: none;
   font-style: normal;
@@ -7266,12 +7276,12 @@ article.post-summary.status-private h4:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 126, ../assets/scss/partials/page.scss */
-article.summary.post-password-required h2:before, article.summary.post-password-required h4:before, article.summary.status-private h2:before, article.summary.status-private h4:before,
-article.post-summary.post-password-required h2:before,
-article.post-summary.post-password-required h4:before,
-article.post-summary.status-private h2:before,
-article.post-summary.status-private h4:before {
+/* line 130, ../assets/scss/partials/page.scss */
+.summary.post-password-required h2:before, .summary.post-password-required h4:before, .summary.status-private h2:before, .summary.status-private h4:before,
+.post-summary.post-password-required h2:before,
+.post-summary.post-password-required h4:before,
+.post-summary.status-private h2:before,
+.post-summary.status-private h4:before {
   width: 30px;
   height: 30px;
   display: table-cell;
@@ -7286,10 +7296,10 @@ article.post-summary.status-private h4:before {
   text-align: center;
   vertical-align: middle;
 }
-/* line 142, ../assets/scss/partials/page.scss */
-article.summary.post-password-required h2:before, article.summary.status-private h2:before,
-article.post-summary.post-password-required h2:before,
-article.post-summary.status-private h2:before {
+/* line 146, ../assets/scss/partials/page.scss */
+.summary.post-password-required h2:before, .summary.status-private h2:before,
+.post-summary.post-password-required h2:before,
+.post-summary.status-private h2:before {
   top: 7px;
 }
 

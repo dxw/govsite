@@ -1,4 +1,8 @@
-// most of these elements are also used for posts
+// most of these elements are also used for pages and posts
+
+.post-summary {
+  @include clearfix;
+}
 
 .page-header {
   width: 100%;
@@ -50,14 +54,14 @@
     }
   }
 
-  .main-content {
+  .main-content, .intro-content {
     border-top: 5px solid $secondary-color;
     padding-top: $space-medium;
   }
 }
 
-article.summary,
-article.post-summary {
+.summary,
+.post-summary {
   @include clearfix;
   margin-bottom: $space-large;
   border-bottom: 1px solid $gainsboro;
