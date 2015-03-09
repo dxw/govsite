@@ -37,5 +37,4 @@ require dirname(__FILE__) . '/theme/logo.php';
  * Post types and additional fields
  */
 
-require dirname(__FILE__) . '/posts/post_types.php';
 require dirname(__FILE__) . '/posts/custom_fields.php';
