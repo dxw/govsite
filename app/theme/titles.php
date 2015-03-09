@@ -1,13 +1,5 @@
 <?php
 
-//
-// HARRY NOTE
-//
-// What is this shit? Please get rid of it or make it good, future me!
-//
-
-
-
 /**
  * Page titles
  */
