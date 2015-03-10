@@ -2,7 +2,7 @@
   <?php
   for ($i = 0; $i < 6; $i++) {
     if ($url = get_option('social-media-'.$i.'-url-setting')) {
-      $name = get_option('social-media-'.$i.'-name-setting');
+        $name = get_option('social-media-'.$i.'-name-setting');
       ?>
       <li>
         <?php 

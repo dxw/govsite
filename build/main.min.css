@@ -7380,16 +7380,6 @@ footer.site-footer nav a:hover, footer.site-footer nav a:focus {
   cursor: default;
 }
 
-/* line 172, ../vendor/bower_components/foundation/scss/foundation/components/_global.scss */
-.post-summary:before, .post-summary:after {
-  content: " ";
-  display: table;
-}
-/* line 173, ../vendor/bower_components/foundation/scss/foundation/components/_global.scss */
-.post-summary:after {
-  clear: both;
-}
-
 /* line 1, ../assets/scss/partials/search.scss */
 .header-search {
   display: none;

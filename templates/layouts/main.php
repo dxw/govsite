@@ -10,17 +10,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php $favicon_url = get_attachment_url_by_slug('favicon'); ?>
   <link rel="icon" type="image/png" href="<?php echo $favicon_url ?>" />
-
   <?php wp_head(); ?>
-
   <!--[if lt IE 9]>
     <script src="//code.jquery.com/jquery-1.9.0.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/../assets/js/ie/browser-support.js"></script>
   <![endif]-->
-
 </head>
 <body <?php body_class(); ?>>
-
   <!--[if lt IE 8]>
     <div class="alert-box alert"><?php _e('You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?></div>
   <![endif]-->
@@ -52,9 +48,9 @@
           <?php get_template_part('partials/nav-footer'); ?>
         </div>
         <div class="medium-6 columns">
-          <?php if ( get_option('footer-link-text-setting') ) { ?>
+          <?php if ( get_option('footer-link-text-setting') ) : ?>
             <p><?php echo get_option('footer-link-text-setting'); ?> <a href="<?php echo get_option('footer-link-url-setting'); ?>"><?php echo get_option('footer-link-cta-setting'); ?></a></p>
-          <?php } ?>
+          <?php endif ?>
         </div>
       </div>
     </div>
