@@ -7303,6 +7303,11 @@ footer.site-footer nav a:hover, footer.site-footer nav a:focus {
   top: 7px;
 }
 
+/* line 153, ../assets/scss/partials/page.scss */
+.news-posts {
+  margin-bottom: 30px;
+}
+
 /* line 1, ../assets/scss/partials/pager.scss */
 .pager {
   margin-bottom: 40px;
@@ -7966,6 +7971,11 @@ ul.social-media a[href^="http://youtube.com/"]:before, ul.social-media a[href^="
   left: 0;
   font-size: 20px;
   color: #1b325f;
+}
+
+/* line 39, ../assets/scss/templates/contact.scss */
+.page-template-page-contact .main {
+  padding-bottom: 30px;
 }
 
 /* line 3, ../assets/scss/templates/search.scss */
