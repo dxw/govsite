@@ -6640,46 +6640,70 @@ meta.foundation-mq-topbar {
   margin-left: 30px;
 }
 /* line 38, ../assets/scss/partials/comment.scss */
-.comments .comment-author {
-  float: left;
-}
-/* line 41, ../assets/scss/partials/comment.scss */
-.comments .comment-author .says {
-  display: none;
-  visibility: hidden;
-}
-/* line 47, ../assets/scss/partials/comment.scss */
 .comments .comment-meta {
-  float: right;
+  width: 100%;
+  display: inline-block;
   margin-bottom: 10px;
 }
-/* line 51, ../assets/scss/partials/comment.scss */
-.comments .comment-meta a {
+/* line 43, ../assets/scss/partials/comment.scss */
+.comments .comment-meta time {
+  float: right;
+}
+/* line 45, ../assets/scss/partials/comment.scss */
+.comments .comment-meta time a {
   font-size: 14px;
   font-size: 0.868rem;
   line-height: 1.5;
 }
-/* line 55, ../assets/scss/partials/comment.scss */
-.comments .comment-meta a.comment-edit-link {
-  padding-left: 5px;
+/* line 51, ../assets/scss/partials/comment.scss */
+.comments .comment-author {
+  display: inline-block;
+  margin-right: 10px;
+  float: left;
+  font-weight: 700;
 }
-/* line 60, ../assets/scss/partials/comment.scss */
+/* line 57, ../assets/scss/partials/comment.scss */
+.comments .comment-author img {
+  margin-right: 10px;
+}
+/* line 61, ../assets/scss/partials/comment.scss */
+.comments .comment-author a {
+  font-size: 18px;
+  font-size: 1.116rem;
+  line-height: 1.5;
+}
+/* line 65, ../assets/scss/partials/comment.scss */
+.comments .comment-author .says {
+  display: none;
+  visibility: hidden;
+}
+/* line 71, ../assets/scss/partials/comment.scss */
 .comments .alert-box {
   clear: both;
   margin-bottom: 10px;
 }
-/* line 65, ../assets/scss/partials/comment.scss */
+/* line 76, ../assets/scss/partials/comment.scss */
 .comments .comment-text {
   clear: both;
   border-top: 3px solid #DDDDDD;
   background: #EFEFEF;
   padding: 20px;
 }
-/* line 72, ../assets/scss/partials/comment.scss */
-.comments .comment-text p:last-child {
+/* line 83, ../assets/scss/partials/comment.scss */
+.comments .comment-text p:last-of-type {
   margin-bottom: 0;
 }
-/* line 78, ../assets/scss/partials/comment.scss */
+/* line 88, ../assets/scss/partials/comment.scss */
+.comments .comment-text a.comment-edit-link {
+  width: 100%;
+  display: inline-block;
+  margin-top: 10px;
+  text-align: right;
+  font-size: 14px;
+  font-size: 0.868rem;
+  line-height: 1.5;
+}
+/* line 97, ../assets/scss/partials/comment.scss */
 .comments .comment-reply-link {
   border-style: solid;
   border-width: 0;
@@ -6717,17 +6741,17 @@ meta.foundation-mq-topbar {
   color: #FFFFFF;
 }
 
-/* line 86, ../assets/scss/partials/comment.scss */
+/* line 105, ../assets/scss/partials/comment.scss */
 .comment-form {
   clear: both;
   margin-bottom: 30px;
 }
-/* line 90, ../assets/scss/partials/comment.scss */
+/* line 109, ../assets/scss/partials/comment.scss */
 .comment-form .cancel-comment-reply,
 .comment-form form {
   margin-bottom: 0;
 }
-/* line 95, ../assets/scss/partials/comment.scss */
+/* line 114, ../assets/scss/partials/comment.scss */
 .comment-form .cancel-comment-reply {
   padding-bottom: 10px;
 }
