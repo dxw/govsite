@@ -13,7 +13,7 @@
 
     <div class="row">
 
-    <div class="medium-8 columns">
+    <div class="medium-8 columns page-element">
     
     <ul>
     <li>We might have removed the page.</li>

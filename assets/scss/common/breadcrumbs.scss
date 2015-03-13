@@ -1,0 +1,18 @@
+ul.breadcrumbs {
+  margin-bottom: $space-medium;
+  border: none;
+  background: 0;
+  padding: 0;
+
+  a {
+    @include font-size(14);
+  }
+
+  > * {
+    text-transform: none;
+    @include icon(before, next);
+    &:before {
+      margin: 0 $space-small/2;
+    }
+  }
+}
