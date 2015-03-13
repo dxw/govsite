@@ -165,7 +165,10 @@ dl {
   }
 }
 
+// content visible for screen reader only
+// http://webaim.org/techniques/css/invisiblecontent/
 span.accessibility {
-  display: none;
-  visibility: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }

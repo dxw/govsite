@@ -3,16 +3,16 @@
   <ul>
     <li>
       <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_guid($id); ?>" title="Facebook" class="facebook">
-      <span class="accessibility">Facebook</span>
+      <span class="accessibility">Share on Facebook</span>
       </a>
     </li>
     <li>
-      <a href="https://twitter.com/home?status=<?php the_title(); ?>%20<?php the_guid($id); ?>" title="Twitter" class="twitter"><span class="accessibility">Twitter</span>
+      <a href="https://twitter.com/home?status=<?php the_title(); ?>%20<?php the_guid($id); ?>" title="Twitter" class="twitter"><span class="accessibility">Share on Twitter</span>
       </a>
     </li>
     <li>
       <a href="mailto:?subject=Check%20out:%20<?php the_title(); ?>" title="E-mail" class="mail">
-      <span class="accessibility">E-mail</span>
+      <span class="accessibility">Share via email</span>
     </a>
     </li>
   </ul>

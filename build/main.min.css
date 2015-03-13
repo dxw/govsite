@@ -5440,10 +5440,12 @@ dl dd {
   margin-left: 25px;
 }
 
-/* line 168, ../assets/scss/common/type.scss */
+/* line 170, ../assets/scss/common/type.scss */
 span.accessibility {
-  display: none;
-  visibility: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 /* line 1, ../assets/scss/common/common.scss */

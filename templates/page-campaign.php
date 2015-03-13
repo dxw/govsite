@@ -115,6 +115,6 @@ the_post();
 
 </section>
 
-</main>
-
 <?php get_template_part('partials/bottom-banner'); ?>
+
+</main>

@@ -41,7 +41,7 @@
 
           <?php endif; ?>
           <div class="form-group">
-            <label for="comment"><?php _e('Comment', 'roots'); ?></label>
+            <label for="comment"><?php _e('Your comment', 'roots'); ?></label>
             <textarea name="comment" id="comment" class="form-control" rows="5" aria-required="true"></textarea>
           </div>
           <input name="submit" class="button" type="submit" id="submit" value="<?php _e('Submit comment', 'roots'); ?>">
