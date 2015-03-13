@@ -45,8 +45,8 @@ img, .wp-caption {
   }
 }
 
-// WP Galery
-// I had to use a lot of !important here because Wordpress very usefully styles gallery using element ID and not CLASS...
+// WP Gallery styles
+// Using !important here because WP styles ID and not class
 
 .gallery {
   margin-bottom: $space-small*2 !important; //overwriting WP 
