@@ -5,7 +5,7 @@
   padding-left: 62px;
   @include font-size(60);
   @include icon(before, search2);
-  color: $aluminum;
+  color: darken($white, 40%);
   font-weight: bold;
 
   @media #{$medium-only} {
@@ -20,7 +20,7 @@
     left: 0;
     @include font-size(270);
     line-height: 1;
-    color: $iron;
+    color: darken($white, 20%);
     text-shadow: darken($iron, 5%) 1px 1px 0;
 
     @media #{$medium-only} {

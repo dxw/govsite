@@ -51,11 +51,11 @@ $topbar-dropdown-toggle-size: 5px !default;
 $topbar-dropdown-toggle-color: $white !default;
 $topbar-dropdown-toggle-alpha: 0.4 !default;
 
-$topbar-dropdown-label-color: $monsoon !default;
+$topbar-dropdown-label-color: lighten($black, 47%) !default;
 $topbar-dropdown-label-text-transform: uppercase !default;
 $topbar-dropdown-label-font-weight: $font-weight-bold !default;
 $topbar-dropdown-label-font-size: rem-calc(10) !default;
-$topbar-dropdown-label-bg: $oil !default;
+$topbar-dropdown-label-bg: lighten($black, 47%) !default;
 
 // Top menu icon styles
 $topbar-menu-link-transform: uppercase !default;
@@ -63,8 +63,8 @@ $topbar-menu-link-font-size: rem-calc(13) !default;
 $topbar-menu-link-weight: $font-weight-bold !default;
 $topbar-menu-link-color: $white !default;
 $topbar-menu-icon-color: $white !default;
-$topbar-menu-link-color-toggled: $jumbo !default;
-$topbar-menu-icon-color-toggled: $jumbo !default;
+$topbar-menu-link-color-toggled: darken($white, 47%) !default;
+$topbar-menu-icon-color-toggled: darken($white, 47%) !default;
 $topbar-menu-icon-position: $opposite-direction !default; // Change to $default-float for a left menu icon
 
 // Transitions and breakpoint styles

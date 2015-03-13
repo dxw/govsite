@@ -25,7 +25,7 @@ img, .wp-caption {
 
   .wp-caption-text {
     margin-bottom: 0;
-    background: $smoke;
+    background: darken($white, 7%);
     padding-top: $space-small;
     text-align: center;
     @include font-size(16);
@@ -34,7 +34,7 @@ img, .wp-caption {
 
   &:hover, &:focus {
     .wp-caption-text {
-      background: $gainsboro;
+      background: darken($white, 13%);
     }
   }
 }
@@ -50,8 +50,8 @@ img, .wp-caption {
 
 .gallery {
   margin-bottom: $space-small*2 !important; //overwriting WP 
-  border-bottom: 3px solid $gainsboro;
-  background: $smoke;
+  border-bottom: 3px solid darken($white, 13%);
+  background: darken($white, 7%);
 
   .gallery-item {
     margin-top: 0 !important; //overwriting WP styles
@@ -68,11 +68,11 @@ img, .wp-caption {
 
   img {
     width: 100%;
-    border: 5px solid $smoke !important; //overwriting WP styles
+    border: 5px solid darken($white, 7%) !important; //overwriting WP styles
     @include single-transition(all,$thumb-transition-speed,ease-out);
     
     &:hover, &:focus {
-      border-color: $gainsboro !important;
+      border-color: darken($white, 13%) !important;
     }
   }
 

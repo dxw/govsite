@@ -38,7 +38,7 @@
 }
 
 .page-element {
-  border-bottom: 1px solid $gainsboro;
+  border-bottom: 1px solid darken($white, 13%);
   padding-top: $space-medium*2;
   padding-bottom: $space-medium*2;
 
@@ -64,7 +64,7 @@
 .post-summary {
   @include clearfix;
   margin-bottom: $space-large;
-  border-bottom: 1px solid $gainsboro;
+  border-bottom: 1px solid darken($white, 13%);
   padding-bottom: $space-medium*2;
 
   &:last-of-type {
@@ -89,8 +89,8 @@
 
   &.sticky {
     position: relative;
-    border-bottom: 3px solid $gainsboro;
-    background: $smoke;
+    border-bottom: 3px solid darken($white, 13%);
+    background: darken($white, 7%);
     padding: $space-small $space-small*2 $space-small*2 $space-small*2;
     
     h4 {
@@ -111,7 +111,7 @@
         border: 5px solid $white;
         @include single-transition();
         &:hover, &:focus {
-          border-color: $gainsboro;
+          border-color: darken($white, 13%);
         }
       }
     }

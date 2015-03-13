@@ -75,8 +75,8 @@
 
   .comment-text {
     clear: both;
-    border-top: 3px solid $gainsboro;
-    background: $silver;
+    border-top: 3px solid darken($white, 13%);
+    background: darken($white, 6%);
     padding: $space-small*2;
     
     p {

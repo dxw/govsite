@@ -195,7 +195,7 @@
   input#s {
     width: 200px;
     height: 18px;
-    border: 1px solid $gainsboro;
+    border: 1px solid darken($white, 13%);
   }
   input#searchsubmit {
     width: 100px;

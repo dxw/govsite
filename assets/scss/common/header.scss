@@ -2,7 +2,7 @@
   $header-top-margin: $space-small*2;
   $header-bottom-margin: $space-small*2;
   border-top: 10px solid $logo-color;
-  border-bottom: 1px solid $white-smoke;
+  border-bottom: 1px solid darken($white, 2%);
   background: $white;
 
   .logo {

@@ -1,6 +1,6 @@
 .site-footer {
   .navigation {
-    background: $jet;
+    background: lighten($black, 14%);
     padding: $space-small*2 0 $space-medium 0;
 
     a {
@@ -26,7 +26,7 @@
   }
 
   .credits {
-    background: darken($jet, 5%);
+    background: lighten($black, 8%);
 
     small {
       padding: $space-small 0;

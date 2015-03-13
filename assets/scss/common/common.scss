@@ -1,4 +1,4 @@
 body {
   position: static; // fixed broken wpadmin bar on small screens
-  background: $snow;
+  background: darken($white, 2%);
 }
