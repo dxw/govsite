@@ -178,6 +178,11 @@
 
 /* IE7 */
 
+.lt-ie8 .ie-visible {
+  display: block;
+  visibility: visible;
+}
+
 .lt-ie8 .column, .lt-ie8 .columns { margin-left: 15px; padding: 0; }
 
 .lt-ie8 .site-header h1 { margin-top: $space-medium*2; }

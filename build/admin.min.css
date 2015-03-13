@@ -4997,14 +4997,6 @@ dl dd {
   margin-left: 25px;
 }
 
-/* line 170, ../assets/scss/common/type.scss */
-span.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
 /* line 1, ../assets/scss/common/buttons.scss */
 button, .button {
   padding: 10px 20px;

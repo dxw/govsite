@@ -2,3 +2,16 @@ body {
   position: static; // fixed broken wpadmin bar on small screens
   background: darken($lightest, 2%);
 }
+
+// content visible for screen reader only
+// http://webaim.org/techniques/css/invisiblecontent/
+span.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.ie-visible {
+  display: none;
+  visibility: hidden;
+}

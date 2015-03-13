@@ -32,10 +32,14 @@ textarea {
   }
 }
 
-.searchform {
-  width: 100%;
-  display: inline-block;
-  
+.widget_search {
+  .searchform {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.searchform {  
   label {
     margin-bottom: $space-small;
   }
