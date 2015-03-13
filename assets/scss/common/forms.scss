@@ -3,8 +3,8 @@ label {
 }
 
 select {
-  background-color: $white;
-  border-color: #ddd;
+  background-color: $lightest;
+  border-color: darken($lightest, 13%);
 }
 
 input[type="text"],
@@ -23,12 +23,12 @@ input[type="url"],
 input[type="color"],
 textarea {
   margin-bottom: $space-small*2;
-  border-color: darken($white, 13%);
+  border-color: darken($lightest, 13%);
   box-shadow: none;
   
   &:focus {
     box-shadow: none;
-    background: $white;
+    background: $lightest;
   }
 }
 
@@ -57,7 +57,7 @@ textarea {
     border: none;
     background: $primary-color;
     padding: 0.5rem;
-    color: $white;
+    color: $lightest;
     @include font-size(16);
     -webkit-font-smoothing: $font-smoothing;
     -moz-osx-font-smoothing: grayscale;

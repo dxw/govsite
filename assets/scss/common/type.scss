@@ -78,7 +78,7 @@ strong, b {
 }
 
 hr.footer {
-  border-color: lighten($black, 20%);
+  border-color: lighten($darkest, 20%);
 }
 
 .vcard {
@@ -144,7 +144,7 @@ blockquote {
 
 code {
   border: none;
-  background-color: darken($white, 13%);
+  background-color: darken($lightest, 13%);
   padding: $space-mini*2;
   margin: 0 $space-small/2;
 }

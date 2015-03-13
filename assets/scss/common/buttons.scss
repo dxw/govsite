@@ -2,23 +2,23 @@ button, .button {
   padding: $space-small $space-small*2;
   
   &:visited {
-    color: $white;
+    color: $lightest;
     
     &:hover, &:focus {
-      color: $white;
+      color: $lightest;
     }
   }
 }
 
 .button-banner {
   @include button;
-  background: $white;
+  background: $lightest;
   padding: $space-medium $space-small*2;
   color: $secondary-color;
   @include font-size(20);
   
   &:hover, &:focus {
-    background: $white;
+    background: $lightest;
     color: darken($secondary-color, 15%);
   }
   
@@ -33,12 +33,12 @@ button, .button {
 
 .button-search-form {
   @include button;
-  background: $white;
+  background: $lightest;
   padding: $space-small;
   color: $logo-color;
   
   &:hover, &:focus {
-    background: $white;
+    background: $lightest;
     color: darken($logo-color, 15%);
   }
   

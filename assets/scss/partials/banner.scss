@@ -2,7 +2,7 @@
   padding: $space-medium*2 0;
   background: $secondary-color;
   text-align: left;
-  color: $white;
+  color: $lightest;
 
   h1, h2, h3, h4, h5, h6 {
     color: $white;
@@ -17,10 +17,10 @@
   padding: $space-medium*2 0;
   background: $secondary-color;
   text-align: center;
-  color: $white;
+  color: $lightest;
 
   h1, h2, h3, h4, h5, h6 {
-    color: $white;
+    color: $lightest;
   }
 
   h2 {

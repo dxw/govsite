@@ -8,7 +8,7 @@
 $include-html-top-bar-classes: $include-html-classes !default;
 
 // Background color for the top bar
-$topbar-bg-color: $white !default;
+$topbar-bg-color: $lightest !default;
 $topbar-bg: $topbar-bg-color !default;
 
 // Height and margin
@@ -28,10 +28,10 @@ $topbar-link-weight: $font-weight-normal !default;
 $topbar-link-font-size: rem-calc(13) !default;
 $topbar-link-hover-lightness: -10% !default; // Darken by 10%
 $topbar-link-bg: $topbar-bg !default;
-$topbar-link-bg-hover: $white !default;
-$topbar-link-bg-color-hover: $white !default;
-$topbar-link-bg-active: $white !default;
-$topbar-link-bg-active-hover: $white !default;
+$topbar-link-bg-hover: $lightest !default;
+$topbar-link-bg-color-hover: $lightest !default;
+$topbar-link-bg-active: $lightest !default;
+$topbar-link-bg-active-hover: $lightest !default;
 $topbar-link-font-family: $body-font-family !default;
 $topbar-link-text-transform: none !default;
 $topbar-link-padding: ($topbar-height / 3) !default;
@@ -42,29 +42,29 @@ $topbar-button-top: 7px !default;
 
 // Style the top bar dropdown elements
 $topbar-dropdown-bg: $primary-color !default;
-$topbar-dropdown-link-color: $white !default;
-$topbar-dropdown-link-color-hover: $white !default;
+$topbar-dropdown-link-color: $lightest !default;
+$topbar-dropdown-link-color-hover: $lightest !default;
 $topbar-dropdown-link-bg: $primary-color !default;
 $topbar-dropdown-link-bg-hover: scale-color($primary-color, $lightness: -14%) !default;
 $topbar-dropdown-link-weight: $font-weight-normal !default;
 $topbar-dropdown-toggle-size: 5px !default;
-$topbar-dropdown-toggle-color: $white !default;
+$topbar-dropdown-toggle-color: $lightest !default;
 $topbar-dropdown-toggle-alpha: 0.4 !default;
 
-$topbar-dropdown-label-color: lighten($black, 47%) !default;
+$topbar-dropdown-label-color: lighten($darkest, 47%) !default;
 $topbar-dropdown-label-text-transform: uppercase !default;
 $topbar-dropdown-label-font-weight: $font-weight-bold !default;
 $topbar-dropdown-label-font-size: rem-calc(10) !default;
-$topbar-dropdown-label-bg: lighten($black, 47%) !default;
+$topbar-dropdown-label-bg: lighten($darkest, 47%) !default;
 
 // Top menu icon styles
 $topbar-menu-link-transform: uppercase !default;
 $topbar-menu-link-font-size: rem-calc(13) !default;
 $topbar-menu-link-weight: $font-weight-bold !default;
-$topbar-menu-link-color: $white !default;
-$topbar-menu-icon-color: $white !default;
-$topbar-menu-link-color-toggled: darken($white, 47%) !default;
-$topbar-menu-icon-color-toggled: darken($white, 47%) !default;
+$topbar-menu-link-color: $lightest !default;
+$topbar-menu-icon-color: $lightest !default;
+$topbar-menu-link-color-toggled: darken($lightest, 47%) !default;
+$topbar-menu-icon-color-toggled: darken($lightest, 47%) !default;
 $topbar-menu-icon-position: $opposite-direction !default; // Change to $default-float for a left menu icon
 
 // Transitions and breakpoint styles

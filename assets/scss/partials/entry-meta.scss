@@ -2,19 +2,19 @@
   width: 100%;
   display: inline-block;
   margin-bottom: $space-small;
-  color: darken($white, 32%);
+  color: darken($lightest, 32%);
   @include font-size(14);
 
   time {
     float: left;
     display: inline-block;
     margin-right: $space-small/2;
-    color: darken($white, 47%);
+    color: darken($lightest, 47%);
     
     &:after {
       content: "|";
       padding-left: $space-small/2;
-      color: darken($white, 32%);
+      color: darken($lightest, 32%);
     }
   }
 

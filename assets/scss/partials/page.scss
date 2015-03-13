@@ -38,7 +38,7 @@
 }
 
 .page-element {
-  border-bottom: 1px solid darken($white, 13%);
+  border-bottom: 1px solid darken($lightest, 13%);
   padding-top: $space-medium*2;
   padding-bottom: $space-medium*2;
 
@@ -50,7 +50,7 @@
     margin: 0;
 
     img {
-      border: 10px solid $white;
+      border: 10px solid $lightest;
     }
   }
 
@@ -64,7 +64,7 @@
 .post-summary {
   @include clearfix;
   margin-bottom: $space-large;
-  border-bottom: 1px solid darken($white, 13%);
+  border-bottom: 1px solid darken($lightest, 13%);
   padding-bottom: $space-medium*2;
 
   &:last-of-type {
@@ -89,8 +89,8 @@
 
   &.sticky {
     position: relative;
-    border-bottom: 3px solid darken($white, 13%);
-    background: darken($white, 7%);
+    border-bottom: 3px solid darken($lightest, 13%);
+    background: darken($lightest, 7%);
     padding: $space-small $space-small*2 $space-small*2 $space-small*2;
     
     h4 {
@@ -108,10 +108,10 @@
     
     a {
       img {
-        border: 5px solid $white;
+        border: 5px solid $lightest;
         @include single-transition();
         &:hover, &:focus {
-          border-color: darken($white, 13%);
+          border-color: darken($lightest, 13%);
         }
       }
     }
@@ -135,7 +135,7 @@
         top: 2px;
         left: 0;
         background: $primary-color;
-        color: $white;
+        color: $lightest;
         @include font-size(18);
         text-align: center;
         vertical-align: middle;

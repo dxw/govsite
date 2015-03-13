@@ -195,7 +195,7 @@
   input#s {
     width: 200px;
     height: 18px;
-    border: 1px solid darken($white, 13%);
+    border: 1px solid darken($lightest, 13%);
   }
   input#searchsubmit {
     width: 100px;
@@ -361,18 +361,18 @@
 // Dropdown background fix for IE8
 .lt-ie9 .top-bar-section .dropdown li {
   background: $primary-color;
-  color: $white;
+  color: $lightest;
 } 
 
 .lt-ie9 .top-bar-section .dropdown li a {
   background: $primary-color;
-  color: $white;
+  color: $lightest;
   padding: 10px 40px 10px 10px;
 }
 
 .lt-ie9 .top-bar-section .dropdown li a:hover {
   background: scale-color($primary-color, $lightness: -14%);
-  color: $white;
+  color: $lightest;
 }
 
 .lt-ie9 header.site-header a.logo {

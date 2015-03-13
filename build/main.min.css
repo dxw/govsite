@@ -5409,7 +5409,7 @@ label {
 /* line 5, ../assets/scss/common/forms.scss */
 select {
   background-color: #fff;
-  border-color: #ddd;
+  border-color: #dedede;
 }
 
 /* line 10, ../assets/scss/common/forms.scss */
@@ -5496,7 +5496,7 @@ textarea:focus {
 /* line 1, ../assets/scss/common/header.scss */
 .site-header {
   border-top: 10px solid #1b325f;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid whitesmoke;
   background: #fff;
 }
 /* line 8, ../assets/scss/common/header.scss */
