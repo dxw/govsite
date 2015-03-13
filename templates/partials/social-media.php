@@ -12,7 +12,7 @@
           ?>
           <a href="<?php echo esc_attr($url); ?>" title="<?php echo esc_attr($options[$key]); ?>">
 
-            <span class="accessibility"><?php echo esc_attr($options[$key]); ?></span>
+            <span class="visually-hidden"><?php echo esc_attr($options[$key]); ?></span>
             <?php
           }
           ?>

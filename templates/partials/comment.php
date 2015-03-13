@@ -1,8 +1,8 @@
 <div class="comment-meta">
   <span class="comment-author">
-    <?php echo get_avatar($comment, $size = 32) ?><span class="accessibility">Comment from </span><?php echo get_comment_author_link() ?>
+    <?php echo get_avatar($comment, $size = 32) ?><span class="visually-hidden">Comment from </span><?php echo get_comment_author_link() ?>
   </span>
-  <time datetime="<?php echo get_comment_date('c') ?>"><a href="<?php echo htmlspecialchars(get_comment_link($comment->comment_ID)) ?>"><?php printf(__('%1$s at %2$s', 'roots'), get_comment_date(),  get_comment_time()) ?></a></time>
+  <time datetime="<?php echo get_comment_date('c') ?>"><a href="<?php echo htmlspecialchars(get_comment_link($comment->comment_ID)) ?>"><?php printf(__('%1$s at %2$s', 'roots'), get_comment_date('F jS Y'),  get_comment_time()) ?></a></time>
 </div>
 
 <?php if ($comment->comment_approved == '0') : ?>

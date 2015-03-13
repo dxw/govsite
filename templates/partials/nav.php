@@ -1,5 +1,5 @@
 <nav id="top-bar" class="top-bar" role="navigation" data-topbar>
-  <button type="button" class="button-search show-for-medium-up"><span class="accessibility">Search</span></button>
+  <button type="button" class="button-search show-for-medium-up"><span class="visually-hidden">Search</span></button>
   <?php
   if (has_nav_menu('header')) :
     wp_nav_menu(array(

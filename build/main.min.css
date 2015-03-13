@@ -5329,7 +5329,7 @@ dl dd {
 }
 
 /* line 170, ../assets/scss/common/type.scss */
-span.accessibility {
+span.visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
