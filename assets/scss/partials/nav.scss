@@ -1,12 +1,4 @@
 .site-header {
-
-  @media screen and (max-width: 880px) {
-    .top-bar-nav {
-      width: 100%;
-      float: left!important;
-    }
-  }
-
   .top-bar {
     width: 100%;
     display: inline-block;
@@ -16,10 +8,6 @@
     div {
       @media #{$medium-up} {
         float: right;
-      }
-
-      @media screen and (max-width: 880px) {
-        float: none;
       }
     }
 
@@ -92,12 +80,6 @@
             color: scale-color($primary-color, $lightness: -14%);
           }
         }
-        
-        @media screen and (max-width: 880px) {
-          &:before {
-            border-top:none;
-          }
-        }
       }
     }
 
@@ -135,6 +117,7 @@
 
       &.active {
         max-height: 15em;
+        margin-bottom: $space-medium;
         
         ul {
           float: none !important;
@@ -155,6 +138,7 @@
     }
 
     .nav-toggle {
+      float: right;
       margin-top: $space-small/2;
       @include font-size(32);
       @include icon(before, menu);
@@ -165,10 +149,9 @@
     }
   }
 
-
   .dropdown {
     background: $primary-color;
-    top:80px;
+    top: 80px;
 
     &:before {
       @include arrow(10px, up, -10px, 25%, $primary-color);

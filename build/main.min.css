@@ -5620,6 +5620,7 @@ textarea:focus {
 }
 /* line 8, ../assets/scss/common/header.scss */
 .site-header .logo {
+  float: left;
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -5631,16 +5632,22 @@ textarea:focus {
   color: #1b325f;
   display: block;
 }
-/* line 18, ../assets/scss/common/header.scss */
+/* line 19, ../assets/scss/common/header.scss */
 .site-header .logo:hover, .site-header .logo:focus {
   color: #172b52;
 }
-/* line 22, ../assets/scss/common/header.scss */
+@media only screen and (min-width: 64.063em) {
+  /* line 8, ../assets/scss/common/header.scss */
+  .site-header .logo {
+    float: none;
+  }
+}
+/* line 27, ../assets/scss/common/header.scss */
 .site-header .logo img {
   width: 200px;
 }
 @media only screen and (max-width: 40em) {
-  /* line 22, ../assets/scss/common/header.scss */
+  /* line 27, ../assets/scss/common/header.scss */
   .site-header .logo img {
     width: 180px;
   }
@@ -6820,14 +6827,7 @@ meta.foundation-mq-topbar {
   line-height: 1.5;
 }
 
-@media screen and (max-width: 880px) {
-  /* line 4, ../assets/scss/partials/nav.scss */
-  .site-header .top-bar-nav {
-    width: 100%;
-    float: left !important;
-  }
-}
-/* line 10, ../assets/scss/partials/nav.scss */
+/* line 2, ../assets/scss/partials/nav.scss */
 .site-header .top-bar {
   width: 100%;
   display: inline-block;
@@ -6835,18 +6835,12 @@ meta.foundation-mq-topbar {
   height: auto;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 16, ../assets/scss/partials/nav.scss */
+  /* line 8, ../assets/scss/partials/nav.scss */
   .site-header .top-bar div {
     float: right;
   }
 }
-@media screen and (max-width: 880px) {
-  /* line 16, ../assets/scss/partials/nav.scss */
-  .site-header .top-bar div {
-    float: none;
-  }
-}
-/* line 26, ../assets/scss/partials/nav.scss */
+/* line 14, ../assets/scss/partials/nav.scss */
 .site-header .top-bar ul {
   margin: 0 auto 1.0625rem auto;
   margin-left: -1.375rem;
@@ -6869,21 +6863,21 @@ meta.foundation-mq-topbar {
   display: block;
 }
 @media only screen and (max-width: 40em) {
-  /* line 26, ../assets/scss/partials/nav.scss */
+  /* line 14, ../assets/scss/partials/nav.scss */
   .site-header .top-bar ul {
     margin-bottom: 10px;
   }
 }
-/* line 35, ../assets/scss/partials/nav.scss */
+/* line 23, ../assets/scss/partials/nav.scss */
 .site-header .top-bar ul > li {
   margin-left: 0;
   background: #fff;
 }
-/* line 39, ../assets/scss/partials/nav.scss */
+/* line 27, ../assets/scss/partials/nav.scss */
 .site-header .top-bar ul > li .js-generated {
   display: none;
 }
-/* line 44, ../assets/scss/partials/nav.scss */
+/* line 32, ../assets/scss/partials/nav.scss */
 .site-header .top-bar ul a {
   background: #2e69ac;
   padding: 10px;
@@ -6893,13 +6887,13 @@ meta.foundation-mq-topbar {
   line-height: 1.5;
   transition: border-top 300ms ease-in;
 }
-/* line 51, ../assets/scss/partials/nav.scss */
+/* line 39, ../assets/scss/partials/nav.scss */
 .site-header .top-bar ul a:hover, .site-header .top-bar ul a:focus {
   background: #285a94;
   color: #fff;
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 44, ../assets/scss/partials/nav.scss */
+  /* line 32, ../assets/scss/partials/nav.scss */
   .site-header .top-bar ul a {
     font-size: 16px;
     font-size: 0.992rem;
@@ -6907,35 +6901,35 @@ meta.foundation-mq-topbar {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 44, ../assets/scss/partials/nav.scss */
+  /* line 32, ../assets/scss/partials/nav.scss */
   .site-header .top-bar ul a {
     position: relative;
     background: transparent;
     padding: 38px 15px;
     color: #222;
   }
-  /* line 66, ../assets/scss/partials/nav.scss */
+  /* line 54, ../assets/scss/partials/nav.scss */
   .site-header .top-bar ul a:hover, .site-header .top-bar ul a:focus {
     background: transparent;
     color: #2e69ac;
   }
 }
-/* line 75, ../assets/scss/partials/nav.scss */
+/* line 63, ../assets/scss/partials/nav.scss */
 .site-header .top-bar .menu > .active > a {
   background: #1b325f;
   color: #fff;
 }
-/* line 78, ../assets/scss/partials/nav.scss */
+/* line 66, ../assets/scss/partials/nav.scss */
 .site-header .top-bar .menu > .active > a:hover, .site-header .top-bar .menu > .active > a:focus {
   background: #172b52;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 75, ../assets/scss/partials/nav.scss */
+  /* line 63, ../assets/scss/partials/nav.scss */
   .site-header .top-bar .menu > .active > a {
     background: transparent;
     color: #2e69ac;
   }
-  /* line 86, ../assets/scss/partials/nav.scss */
+  /* line 74, ../assets/scss/partials/nav.scss */
   .site-header .top-bar .menu > .active > a:before {
     width: 0;
     content: '';
@@ -6946,19 +6940,13 @@ meta.foundation-mq-topbar {
     border-right: 10px solid transparent;
     border-top: 10px solid #1b325f;
   }
-  /* line 90, ../assets/scss/partials/nav.scss */
+  /* line 78, ../assets/scss/partials/nav.scss */
   .site-header .top-bar .menu > .active > a:hover, .site-header .top-bar .menu > .active > a:focus {
     background: transparent;
     color: #285a94;
   }
 }
-@media screen and (max-width: 880px) {
-  /* line 97, ../assets/scss/partials/nav.scss */
-  .site-header .top-bar .menu > .active > a:before {
-    border-top: none;
-  }
-}
-/* line 104, ../assets/scss/partials/nav.scss */
+/* line 86, ../assets/scss/partials/nav.scss */
 .site-header .top-bar .button-search {
   margin-top: 30px;
   margin-left: 15px;
@@ -6980,11 +6968,11 @@ meta.foundation-mq-topbar {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 113, ../assets/scss/partials/nav.scss */
+/* line 95, ../assets/scss/partials/nav.scss */
 .site-header .top-bar .button-search:hover, .site-header .top-bar .button-search:focus {
   color: #2e69ac;
 }
-/* line 117, ../assets/scss/partials/nav.scss */
+/* line 99, ../assets/scss/partials/nav.scss */
 .site-header .top-bar .button-search.opened {
   color: #2e69ac;
 }
@@ -7000,13 +6988,13 @@ meta.foundation-mq-topbar {
   -moz-osx-font-smoothing: grayscale;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 104, ../assets/scss/partials/nav.scss */
+  /* line 86, ../assets/scss/partials/nav.scss */
   .site-header .top-bar .button-search {
     float: right;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 104, ../assets/scss/partials/nav.scss */
+  /* line 86, ../assets/scss/partials/nav.scss */
   .site-header .top-bar .button-search {
     font-size: 30px;
     font-size: 1.86rem;
@@ -7014,35 +7002,37 @@ meta.foundation-mq-topbar {
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 10, ../assets/scss/partials/nav.scss */
+  /* line 2, ../assets/scss/partials/nav.scss */
   .site-header .top-bar {
     clear: both;
     overflow: hidden;
     max-height: 0;
   }
-  /* line 136, ../assets/scss/partials/nav.scss */
+  /* line 118, ../assets/scss/partials/nav.scss */
   .site-header .top-bar.active {
     max-height: 15em;
+    margin-bottom: 15px;
   }
-  /* line 139, ../assets/scss/partials/nav.scss */
+  /* line 122, ../assets/scss/partials/nav.scss */
   .site-header .top-bar.active ul {
     float: none !important;
   }
-  /* line 142, ../assets/scss/partials/nav.scss */
+  /* line 125, ../assets/scss/partials/nav.scss */
   .site-header .top-bar.active li {
     display: block;
     float: none;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 150, ../assets/scss/partials/nav.scss */
+  /* line 133, ../assets/scss/partials/nav.scss */
   .site-header .toggle-container {
     display: none;
     visibility: hidden;
   }
 }
-/* line 157, ../assets/scss/partials/nav.scss */
+/* line 140, ../assets/scss/partials/nav.scss */
 .site-header .toggle-container .nav-toggle {
+  float: right;
   margin-top: 5px;
   font-size: 32px;
   font-size: 1.984rem;
@@ -7059,16 +7049,16 @@ meta.foundation-mq-topbar {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 162, ../assets/scss/partials/nav.scss */
+/* line 146, ../assets/scss/partials/nav.scss */
 .site-header .toggle-container .nav-toggle:visited {
   color: #2e69ac;
 }
-/* line 169, ../assets/scss/partials/nav.scss */
+/* line 152, ../assets/scss/partials/nav.scss */
 .site-header .dropdown {
   background: #2e69ac;
   top: 80px;
 }
-/* line 173, ../assets/scss/partials/nav.scss */
+/* line 156, ../assets/scss/partials/nav.scss */
 .site-header .dropdown:before {
   width: 0;
   content: '';
@@ -7079,14 +7069,14 @@ meta.foundation-mq-topbar {
   border-right: 10px solid transparent;
   border-bottom: 10px solid #2e69ac;
 }
-/* line 177, ../assets/scss/partials/nav.scss */
+/* line 160, ../assets/scss/partials/nav.scss */
 .site-header .dropdown li, .site-header .dropdown .active {
   position: relative;
   width: 100%;
   margin: 0;
   background: #2e69ac;
 }
-/* line 183, ../assets/scss/partials/nav.scss */
+/* line 166, ../assets/scss/partials/nav.scss */
 .site-header .dropdown li a, .site-header .dropdown .active a {
   display: block;
   background: #2e69ac;
@@ -7095,7 +7085,7 @@ meta.foundation-mq-topbar {
   padding: 10px 40px 10px 10px;
   transition: all 300ms ease-in;
 }
-/* line 191, ../assets/scss/partials/nav.scss */
+/* line 174, ../assets/scss/partials/nav.scss */
 .site-header .dropdown li a:hover, .site-header .dropdown li a:focus, .site-header .dropdown .active a:hover, .site-header .dropdown .active a:focus {
   background: #285a94;
   color: #fff;

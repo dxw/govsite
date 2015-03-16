@@ -6,6 +6,7 @@
   background: $lightest;
 
   .logo {
+    float: left;
     margin-top: $header-top-margin;
     margin-bottom: $header-bottom-margin;
     font-family: $font-family-sans-serif;
@@ -17,6 +18,10 @@
     
     &:hover, &:focus {
       color: scale-color($logo-color, $lightness: -14%);
+    }
+
+    @media #{$large-up} {
+      float: none;
     }
 
     img {
