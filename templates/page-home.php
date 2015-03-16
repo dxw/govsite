@@ -8,13 +8,6 @@ the_post();
 <?php 
 /* Template variables */ 
 $content = get_the_content();
-$size = 'full';
-$image1 = get_field('image_1'); 
-$thumb1 = $image1['sizes'][$size];
-$image2 = get_field('image_2'); 
-$thumb2 = $image2['sizes'][$size];
-$image3 = get_field('image_3'); 
-$thumb3 = $image3['sizes'][$size];
 
 ?>
 
@@ -38,41 +31,28 @@ $thumb3 = $image3['sizes'][$size];
     <section class="image-features">
       <div class="row">
         <div class="large-12 columns">
-
-          <?php if (get_field('image_1')) : ?>
-            <ul class="small-block-grid-1 medium-block-grid-3">
+          <ul class="small-block-grid-1 medium-block-grid-3">
+          
+            <?php for($img=1; $img<=3; $img++): ?>
+              <?php if(!($the_image = get_field('image_' . $img))) { break; } ?>
+              
               <li>
                 <article>
                   <header>
-                  <h3><?php the_field('title_1'); ?></h3>
+                    <h3><?php the_field('title_' . $img); ?></h3>
                   </header>
-                  <a class="image" href="<?php the_field('url_1'); ?>"><img class="thumb" src="<?php echo $thumb1; ?>" alt="<?php echo $image1['alt']; ?>"></a>
-                  <p><?php the_field('description_1'); ?> <a href="<?php the_field('url_1'); ?>">Read more &raquo;</a></p>
+                  <a class="image" href="<?php the_field('url_' . $img); ?>">
+                    <img class="thumb" src="<?php echo $the_image['sizes']['full'] ?>" alt="<?php echo $the_image['alt']; ?>">
+                  </a>
+                  <p>
+                    <?php the_field('description_' . $img); ?> <a href="<?php the_field('url_' . $img); ?>">Read more &raquo;</a>
+                  </p>
                 </article>
               </li>
-
-              <li>
-                <article>
-                  <header>
-                  <h3><?php the_field('title_2'); ?></h3>
-                  </header>
-                  <a class="image" href="<?php the_field('url_2'); ?>"><img class="thumb" src="<?php echo $thumb2; ?>" alt="<?php echo $image2['alt']; ?>"></a>
-                  <p><?php the_field('description_2'); ?> <a href="<?php the_field('url_2'); ?>">Read more &raquo;</a></p>
-                </article>
-              </li>
-
-              <li>
-                <article>
-                  <header>
-                  <h3><?php the_field('title_3'); ?></h3>
-                  </header>
-                  <a class="image" href="<?php the_field('url_3'); ?>"><img class="thumb" src="<?php echo $thumb3; ?>" alt="<?php echo $image3['alt']; ?>"></a>
-                  <p><?php the_field('description_3'); ?> <a href="<?php the_field('url_3'); ?>">Read more &raquo;</a></p>
-                </article>
-              </li>
-            </ul>
-          <?php endif ?>
-
+              
+            <?php endfor; ?>
+            
+          </ul>
         </div>
       </div>
     </section>
