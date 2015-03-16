@@ -1,5 +1,9 @@
+<?php 
+/* Template variables */ 
+echo get_avatar($comment, $size = 32) 
+?>
+
 <div class="comment-author vcard">
-  <?php echo get_avatar($comment, $size = 32) ?>
   <span class="fn"><?php echo get_comment_author_link() ?></span>
 </div>
 
