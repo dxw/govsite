@@ -1,25 +1,13 @@
 .site-header {
-
-  @media screen and (max-width: 880px) {
-    .top-bar-nav {
-      width: 100%;
-      float: left!important;
-    }
-  }
-
   .top-bar {
     width: 100%;
     display: inline-block;
-    background: $white;
+    background: $lightest;
     height: auto;
 
     div {
       @media #{$medium-up} {
         float: right;
-      }
-
-      @media screen and (max-width: 880px) {
-        float: none;
       }
     }
 
@@ -34,7 +22,7 @@
 
       > li {
         margin-left: 0;
-        background: $white;
+        background: $lightest;
 
         .js-generated {
           display: none;
@@ -44,13 +32,13 @@
       a {
         background: $primary-color;
         padding: $space-small;
-        color: $white;
+        color: $lightest;
         @include font-size(18);
         @include single-transition(border-top, 300ms, ease-in);
         
         &:hover, &:focus {
           background: scale-color($primary-color, $lightness: -14%);
-          color: $white;
+          color: $lightest;
         }
 
         @media #{$medium-only} {
@@ -74,7 +62,7 @@
     .menu > .active {
       > a {
         background: $logo-color;
-        color: $white;
+        color: $lightest;
         &:hover, &:focus {
           background: scale-color($logo-color, $lightness: -14%);
         }
@@ -90,12 +78,6 @@
           &:hover, &:focus {
             background: transparent;
             color: scale-color($primary-color, $lightness: -14%);
-          }
-        }
-        
-        @media screen and (max-width: 880px) {
-          &:before {
-            border-top:none;
           }
         }
       }
@@ -135,6 +117,7 @@
 
       &.active {
         max-height: 15em;
+        margin-bottom: $space-medium;
         
         ul {
           float: none !important;
@@ -155,6 +138,7 @@
     }
 
     .nav-toggle {
+      float: right;
       margin-top: $space-small/2;
       @include font-size(32);
       @include icon(before, menu);
@@ -165,10 +149,9 @@
     }
   }
 
-
   .dropdown {
     background: $primary-color;
-    top:80px;
+    top: 80px;
 
     &:before {
       @include arrow(10px, up, -10px, 25%, $primary-color);
@@ -183,14 +166,14 @@
       a {
         display: block;
         background: $primary-color;
-        color: $white;
+        color: $lightest;
         white-space: nowrap;
         padding: 10px 40px 10px 10px;
         @include single-transition(all, 300ms, ease-in);
 
         &:hover, &:focus {
           background: scale-color($primary-color, $lightness: -14%);
-          color: $white;
+          color: $lightest;
         }
       }
     }

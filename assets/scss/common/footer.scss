@@ -1,22 +1,22 @@
 .site-footer {
   .navigation {
-    background: $jet;
+    background: lighten($darkest, 14%);
     padding: $space-small*2 0 $space-medium 0;
 
     a {
-      color: $white;
+      color: $lightest;
       @include font-size(14);
       border-bottom: 1px solid transparent;
 
       &:hover, &:focus {
-        border-bottom-color: $white;
+        border-bottom-color: $lightest;
       }
     }
 
     p {
       margin: 0;
       text-align: right;
-      color: $white;
+      color: $lightest;
       @include font-size(14);
 
       @media #{$small-only} {
@@ -26,7 +26,7 @@
   }
 
   .credits {
-    background: darken($jet, 5%);
+    background: lighten($darkest, 8%);
 
     small {
       padding: $space-small 0;
@@ -40,7 +40,7 @@
 
   small {
     display: block;
-    color: $white;
+    color: $lightest;
     @include font-size(12);
   }
 }

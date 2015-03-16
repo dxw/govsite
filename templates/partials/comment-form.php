@@ -5,8 +5,7 @@
       <?php global $current_user; ?>
 
       <section id="comment-form" class="comment-form">
-
-        <h3><?php comment_form_title(__('Leave a comment', 'roots'), __('Leave a reply to %s', 'roots')); ?></h3>
+       <h3><?php comment_form_title(__('Leave a comment', 'roots'), __('Leave a reply to %s', 'roots')); ?></h3>
 
         <p class="cancel-comment-reply"><?php cancel_comment_reply_link(); ?></p>
 
@@ -15,7 +14,7 @@
         
         <?php else : ?>
 
-          <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
+          <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform" role="form">
 
             <?php if (is_user_logged_in()) : ?>
               <p>
@@ -29,10 +28,12 @@
                 <label for="author"><?php _e('Name', 'roots'); if ($req) _e(' (required)', 'roots'); ?></label>
                 <input type="text" class="form-control" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" <?php if ($req) echo 'aria-required="true"'; ?>>
               </div>
+
               <div class="form-group">
                 <label for="email"><?php _e('Email (will not be published)', 'roots'); if ($req) _e(' (required)', 'roots'); ?></label>
                 <input type="email" class="form-control" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" <?php if ($req) echo 'aria-required="true"'; ?>>
               </div>
+              
               <div class="form-group">
                 <label for="url"><?php _e('Website', 'roots'); ?></label>
                 <input type="url" class="form-control" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22">
@@ -50,7 +51,6 @@
           </form>
         
         <?php endif; ?>
-
       </section>
 
     </div>

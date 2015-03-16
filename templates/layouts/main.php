@@ -27,7 +27,7 @@
         <?php $logo = get_option('logo-setting'); ?>
         <a href="/" title="<?php bloginfo('name'); ?>" class="logo"><img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?> logo"></a>
         <div class="toggle-container hidden-for-medium-up">
-          <a href="#top-bar" class="nav-toggle"><span class="accessibility">Menu</span></a>
+          <a href="#top-bar" class="nav-toggle"><span class="visually-hidden">Menu</span></a>
         </div>
       </div>
       <div class="small-12 medium-9 columns">

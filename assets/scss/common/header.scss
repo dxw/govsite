@@ -2,10 +2,11 @@
   $header-top-margin: $space-small*2;
   $header-bottom-margin: $space-small*2;
   border-top: 10px solid $logo-color;
-  border-bottom: 1px solid $white-smoke;
-  background: $white;
+  border-bottom: 1px solid darken($lightest, 4%);
+  background: $lightest;
 
   .logo {
+    float: left;
     margin-top: $header-top-margin;
     margin-bottom: $header-bottom-margin;
     font-family: $font-family-sans-serif;
@@ -17,6 +18,10 @@
     
     &:hover, &:focus {
       color: scale-color($logo-color, $lightness: -14%);
+    }
+
+    @media #{$large-up} {
+      float: none;
     }
 
     img {

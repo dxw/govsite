@@ -28,7 +28,7 @@ class Roots_Walker_Comment extends Walker_Comment {
 
     extract($args, EXTR_SKIP); ?>
 
-  <li id="comment-<?php comment_ID(); ?>" <?php comment_class('media comment-' . get_comment_ID()); ?>>
+  <li id="comment-<?php comment_ID(); ?>" role="article" <?php comment_class('media comment-' . get_comment_ID()); ?>>
     <?php include(locate_template('partials/comment.php')); ?>
   <?php
   }

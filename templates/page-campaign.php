@@ -109,6 +109,6 @@ the_post();
     </div>
   </section>
 
-</main>
+<?php get_template_part('partials/bottom-banner'); ?>
 
-<?php get_template_part( 'partials/bottom-banner' ); ?>
+</main>

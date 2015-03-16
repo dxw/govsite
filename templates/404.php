@@ -11,7 +11,6 @@
       </header>
 
       <div class="row">
-
         <div class="medium-8 columns">
           <ul>
             <li>We might have removed the page.</li>

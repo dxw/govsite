@@ -27,7 +27,7 @@ Installation
 4. Click Add New button.
 5. Click Upload Theme and upload the .zip format of GovSite that you previously downloaded to your computer.
 
-**Note:** GovSite requires installation of [Advanced Custom Fields](http://www.advancedcustomfields.com/) plugin, otherwise some of the fields on page templates or post won’t work.
+**NB:** GovSite requires installation of [Advanced Custom Fields](http://www.advancedcustomfields.com/) plugin, otherwise some of the fields on page templates or post won't work. We are including them as a PHP export by default in **app/posts/** folder. If you want to change the fields, remove the PHP file and import the XML.
 
 
 Theme options
@@ -125,14 +125,8 @@ Posts also have a custom sidebar next to the main content. It’s designed for l
 
 **Bottom banner** area has got the same functionality and editing options as it is on the Campaign page template.
 
-Documentation
+Theme structure
 -------------
-
-#### Whippet
-
-GovSite is a Whippet-based theme. [Whippet](https://github.com/dxw/whippet-server) is a stand-alone web server for a specific WordPress installation. It makes the WordPress theme easier to develop.
-
-#### Theme development
 
 GovSite directory structure:
 
@@ -141,6 +135,8 @@ GovSite directory structure:
 * **build** - includes compiled assets that are used on the site: images, JS, CSS, as well as the icon font files
 * **templates** - includes main layout file WordPress page templates
 * **vendor** - includes `Gruntfile.js`, `package.json` and `bower.json` that install the necessary dependencies and compile assets
+
+**NB:** GovSite's theme structure is defined by Whippet, our (early stage) framework for WordPress development. [Whippet](github.com/dxw/whippet) is currently pre-release, but it is not a dependency for using GovSite. Also available is [Whippet-server](github.com/dxw/whippet-server), a standalone tool for running WordPress sites during development without having to use Apache.
 
 Authors
 -------

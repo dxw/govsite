@@ -12,10 +12,10 @@
   &.alert {
     background-color: $alert-color;
     border-color: darken($alert-color, 5%);
-    color: $white;
+    color: $lightest;
     a {
-      color: $white;
-      border-bottom: 1px solid $white;
+      color: $lightest;
+      border-bottom: 1px solid $lightest;
     }
   }
 

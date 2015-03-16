@@ -65,10 +65,10 @@ h6 {
 
 a {
   &:visited {
-    color: $visited-color;
+    color: $visited-link-color;
     
     &:hover, &:focus {
-      color: scale-color($visited-color, $lightness: -20%);
+      color: scale-color($visited-link-color, $lightness: -20%);
     }
   }
 }
@@ -78,7 +78,7 @@ strong, b {
 }
 
 hr.footer {
-  border-color: $oil;
+  border-color: lighten($darkest, 20%);
 }
 
 .vcard {
@@ -144,7 +144,7 @@ blockquote {
 
 code {
   border: none;
-  background-color: $gainsboro;
+  background-color: darken($lightest, 13%);
   padding: $space-mini*2;
   margin: 0 $space-small/2;
 }
@@ -163,9 +163,4 @@ dl {
   dd {
     margin-left: $space-large;
   }
-}
-
-span.accessibility {
-  display: none;
-  visibility: hidden;
 }

@@ -1,11 +1,17 @@
-<?php
+<main id="content" role="main" class="main">
 
-while (have_posts()) : the_post();
+  <?php
 
-  get_template_part('partials/post');
+  while (have_posts()) : the_post();
 
-  comments_template();
+    get_template_part('partials/post');
 
-  get_template_part('partials/bottom-banner');
-  
-endwhile;
+    comments_template();
+
+    get_template_part('partials/bottom-banner');
+    
+  endwhile;
+
+  ?>
+
+</main>

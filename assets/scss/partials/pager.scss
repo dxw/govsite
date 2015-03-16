@@ -1,7 +1,7 @@
 .pager {
   @include clearfix;
   margin-bottom: $space-small*4;
-  border-top: 1px solid $gainsboro;
+  border-top: 1px solid darken($lightest, 13%);
   padding-top: $space-small*4;
   text-align: center;
 
@@ -39,17 +39,17 @@
 
   li {
     a {
-      border: 1px solid $smoke;
+      border: 1px solid darken($lightest, 7%);
       @include radius($global-radius);
-      background: $white;
+      background: $lightest;
       padding: $space-small $space-medium;
     }
 
     &.active {
       a {
-        background: $smoke;
-        border-color: $gainsboro;
-        color: $steel;
+        background: darken($lightest, 7%);
+        border-color: darken($lightest, 13%);
+        color: lighten($darkest, 47%);
         cursor: default;
       }
     }

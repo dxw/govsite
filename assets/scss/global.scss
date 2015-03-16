@@ -29,6 +29,24 @@ $base-line-height: 1.5 !default;
 $imagePath: "img";
 $fontPath: "fonts";
 
+// Global colour variables
+
+// Warning colours from http://www.flatuicolorpicker.com/
+$alert-color: #cf000f;     // monza - accessibility passed with white text over
+$success-color: #87d37c;   // gossip - accessibility passed with dark text over
+$warning-color: #f5ab35;   // lightning yellow - accessibility passed with dark text over
+$info-color: #89c4f4;      // jordy blue - accessibility passed with dark text over
+
+// Social media colours
+$googleplus-color: #dd4b39;
+$facebook-color: #3b5998;
+$flickr-color: #ff0084;
+$linkedin-color: #0976b4;
+$twitter-color: #55acee;
+$youtube-color: #e52d27;
+
+$visited-link-color: #551a8b; // purple
+
 // Margin and padding widths
 
 $space-mini: 2px;
@@ -202,7 +220,7 @@ $icons: (
 @mixin panel-styles($border-color) {
   $panel-padding: rem-calc(20) !default;
 
-  @include panel($smoke, $panel-padding);
+  @include panel(darken($lightest, 7%), $panel-padding);
   margin-bottom: $space-medium*2;
   border: none;
   border-top: 5px solid $border-color;
@@ -414,34 +432,6 @@ $icons: (
   overflow: visible;
   clip: auto;
 }
-
-// We use these as default colors throughout
-$googleplus-color: #dd4b39;
-$facebook-color: #3b5998;
-$flickr-color: #ff0084;
-$linkedin-color: #0976b4;
-$twitter-color: #55acee;
-$youtube-color: #e52d27;
-
-$white         : #FFFFFF !default;
-$ghost         : #FAFAFA !default;
-$snow          : #F9F9F9 !default;
-$vapor         : #F6F6F6 !default;
-$white-smoke   : #F5F5F5 !default;
-$silver        : #EFEFEF !default;
-$smoke         : #EEEEEE !default;
-$gainsboro     : #DDDDDD !default;
-$iron          : #CCCCCC !default;
-$base          : #AAAAAA !default;
-$aluminum      : #999999 !default;
-$jumbo         : #888888 !default;
-$monsoon       : #777777 !default;
-$steel         : #666666 !default;
-$charcoal      : #555555 !default;
-$tuatara       : #444444 !default;
-$oil           : #333333 !default;
-$jet           : #222222 !default;
-$black         : #000000 !default;
 
 // We use these to define default font stacks
 $font-family-sans-serif: "Open Sans", Helvetica, Arial, sans-serif !default;

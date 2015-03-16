@@ -3,8 +3,8 @@ label {
 }
 
 select {
-  background-color: $white;
-  border-color: #ddd;
+  background-color: $lightest;
+  border-color: darken($lightest, 13%);
 }
 
 input[type="text"],
@@ -23,19 +23,23 @@ input[type="url"],
 input[type="color"],
 textarea {
   margin-bottom: $space-small*2;
-  border-color: $gainsboro;
+  border-color: darken($lightest, 13%);
   box-shadow: none;
   
   &:focus {
     box-shadow: none;
-    background: $white;
+    background: $lightest;
   }
 }
 
-.searchform {
-  width: 100%;
-  display: inline-block;
-  
+.widget_search {
+  .searchform {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.searchform {  
   label {
     margin-bottom: $space-small;
   }
@@ -57,7 +61,7 @@ textarea {
     border: none;
     background: $primary-color;
     padding: 0.5rem;
-    color: $white;
+    color: $lightest;
     @include font-size(16);
     -webkit-font-smoothing: $font-smoothing;
     -moz-osx-font-smoothing: grayscale;

@@ -41,7 +41,7 @@
     display: block;
     position: relative;
     padding: $space-small/2;
-    color: $white;
+    color: $lightest;
     text-align: center;
 
     @media #{$large-up} {
@@ -50,7 +50,7 @@
     }
 
     &:visited {
-      color: $white;
+      color: $lightest;
     }
 
     &.facebook {

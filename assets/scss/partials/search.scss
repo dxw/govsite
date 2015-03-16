@@ -24,7 +24,7 @@
       &:before {
         position: absolute;
         font-size: 36px;
-        color: $white;
+        color: $lightest;
       }
 
       &.focus {
@@ -44,9 +44,9 @@
       margin-left: 50px;
       background: transparent;
       border: none;
-      border-bottom: 1px solid $white;
+      border-bottom: 1px solid $lightest;
       padding: 0 0 $space-small 0;
-      color: $white;
+      color: $lightest;
       @include font-size(18);
 
       @media #{$small-only} {
@@ -57,22 +57,22 @@
     }
 
     *::-webkit-input-placeholder {
-      color: $white;
+      color: $lightest;
       @include opacity(0.4);
     }
 
     *:-moz-placeholder {
-      color: $white;
+      color: $lightest;
       @include opacity(0.4);
     }
 
     *::-moz-placeholder {
-      color: $white;
+      color: $lightest;
       @include opacity(0.4);
     }
     
     *:-ms-input-placeholder {
-      color: $white;
+      color: $lightest;
       @include opacity(0.4);
     }
   }

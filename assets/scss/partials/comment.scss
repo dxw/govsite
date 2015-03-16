@@ -35,25 +35,36 @@
     margin-left: $space-medium*2;
   }
 
+  .comment-meta {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: $space-small;
+
+    time {
+      float: right;
+      a {
+        @include font-size(14);
+      }
+    }    
+  }
+
   .comment-author {
+    display: inline-block;
+    margin-right: $space-small;
     float: left;
+    font-weight: 700;
+
+    img {
+      margin-right: $space-small;
+    }
+
+    a {
+      @include font-size(18);
+    }
     
     .says {
       display: none;
       visibility: hidden;
-    }
-  }
-
-  .comment-meta {
-    float: right;
-    margin-bottom: $space-small;
-    
-    a {
-      @include font-size(14);
-    }
-    
-    a.comment-edit-link {
-      padding-left: $space-small/2;
     }
   }
 
@@ -64,14 +75,22 @@
 
   .comment-text {
     clear: both;
-    border-top: 3px solid $gainsboro;
-    background: $silver;
+    border-top: 3px solid darken($lightest, 13%);
+    background: darken($lightest, 6%);
     padding: $space-small*2;
     
     p {
-      &:last-child {
+      &:last-of-type {
         margin-bottom: 0;
       }
+    }
+
+    a.comment-edit-link {
+      width: 100%;
+      display: inline-block;
+      margin-top: $space-small;
+      text-align: right;
+      @include font-size(14);
     }
   }
 

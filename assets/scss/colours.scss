@@ -1,13 +1,11 @@
-// Theme colors
+// Theme colours
+$white: #fff;
+$black: #000;
+
+$lightest: $white;
+$darkest: $black;
 $primary-color: #2e69ac;   // blue
 $secondary-color: #00a0b0; // turquoise blue
 $logo-color: #1b325f;      // dark blue
-$visited-color: #551a8b;   // purple
-
-// warning colours from http://www.flatuicolorpicker.com/
-$alert-color: #cf000f;     // monza - accessibility passed with white text over
-$success-color: #87d37c;   // gossip - accessibility passed with dark text over
-$warning-color: #f5ab35;   // lightning yellow - accessibility passed with dark text over
-$info-color: #89c4f4;      // jordy blue - accessibility passed with dark text over
 
 $mail-color: $logo-color;

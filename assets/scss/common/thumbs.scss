@@ -1,7 +1,7 @@
 $thumb-border-style: solid;
 $thumb-border-width: $space-small;
-$thumb-border-color: $smoke;
-$thumb-border-color-hover: $gainsboro;
+$thumb-border-color: darken($lightest, 7%);
+$thumb-border-color-hover: darken($lightest, 13%);
 
 @mixin thumb($border-width: $thumb-border-width) {
   line-height: 0;
