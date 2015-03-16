@@ -27,7 +27,7 @@ Installation
 4. Click Add New button.
 5. Click Upload Theme and upload the .zip format of GovSite that you previously downloaded to your computer.
 
-**Note:** GovSite requires installation of [Advanced Custom Fields](http://www.advancedcustomfields.com/) plugin, otherwise some of the fields on page templates or post won’t work.
+**NB:** GovSite requires installation of [Advanced Custom Fields](http://www.advancedcustomfields.com/) plugin, otherwise some of the fields on page templates or post won't work. We are including them as a PHP export by default in **app/posts/** folder. If you want to change the fields, remove the PHP file and import the XML.
 
 
 Theme options
@@ -136,7 +136,7 @@ GovSite directory structure:
 * **templates** - includes main layout file WordPress page templates
 * **vendor** - includes `Gruntfile.js`, `package.json` and `bower.json` that install the necessary dependencies and compile assets
 
-nb: GovSite's theme structure is defined by Whippet, our (early stage) framework for WordPress development. [Whippet](github.com/dxw/whippet) is currently pre-release, but it is not a dependency for using GovSite. Also available is [Whippet-server](github.com/dxw/whippet-server), a standalone tool for running WordPress sites during development without having to use Apache.
+**NB:** GovSite's theme structure is defined by Whippet, our (early stage) framework for WordPress development. [Whippet](github.com/dxw/whippet) is currently pre-release, but it is not a dependency for using GovSite. Also available is [Whippet-server](github.com/dxw/whippet-server), a standalone tool for running WordPress sites during development without having to use Apache.
 
 Authors
 -------
