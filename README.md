@@ -26,10 +26,9 @@ Installation
 3. Select the Appearance tab, then Themes.
 4. Click Add New button.
 5. Click Upload Theme and upload the .zip format of GovSite that you previously downloaded to your computer.
+6. Install the [Advanced Custom Fields](http://www.advancedcustomfields.com/) plugin.
 
-**NB:** 
-
-GovSite requires installation of [Advanced Custom Fields](http://www.advancedcustomfields.com/) plugin, otherwise some of the fields on page templates and posts won't be available. 
+**NB:** GovSite requires installation of [Advanced Custom Fields](http://www.advancedcustomfields.com/) plugin, otherwise some of the fields on page templates and posts won't be available. 
 
 The custom fields required for the theme will automatically be configured for the theme through a PHP file in the **app/posts/** folder. However, if you want to make changes to those fields or add new fields, remove the PHP file and import the XML file in **app/posts/** through the Advanced Custom Fields interface in the WordPress admin. 
 
