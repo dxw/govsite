@@ -96,7 +96,7 @@ the_post();
   <section class="news-posts">
     <div class="row">
 
-    <div class="posts medium-8 large-8 columns">
+    <div class="posts medium-8 columns">
 
     <header>
     <h2>News</h2>
@@ -140,7 +140,7 @@ the_post();
 
     </div>
 
-      <aside class="sidebar medium-4 large-4 columns" role="complementary">
+      <aside class="sidebar medium-4 columns" role="complementary">
 
       <?php if (get_field('banner_title')) : ?>
 
