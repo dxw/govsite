@@ -5,15 +5,9 @@ the_post();
 
 ?>
 
-<?php 
-/* Template variables */ 
-$content = get_the_content();
-
-?>
-
 <main id="content" role="main" class="main">
 
-  <?php if(!empty($content)) : ?>
+  <?php if(get_the_content()) : ?>
     <section class="page-banner">
       <div class="row">
         <div class="large-12 columns">
