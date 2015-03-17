@@ -20,33 +20,37 @@ global $wp_query;
 
         <div class="medium-8 large-8 columns">
 
-          <?php if (get_query_var('paged') < 2) : ?>
-          <?php
+          <?php $sticky_posts = get_option('sticky_posts'); ?>
+
+          <?php 
+          if (get_query_var('paged') < 2) :
+
             $q = $wp_query->query;
-            $q['ignore_sticky_posts'] = true;
-            $q['post__in'] = get_option('sticky_posts');
+            $q['post__in'] = $sticky_posts;
             $q['posts_per_page'] = -1;
             query_posts($q);
+
+            if (count($sticky_posts) > 0) :
+              while (have_posts()) : the_post();
+                get_template_part('partials/sticky-item');
+              endwhile;
+            endif;
+
+          endif;
           ?>
-
-            <?php while (have_posts()) : the_post() ?>
-              <?php get_template_part('partials/sticky-item') ?>
-            <?php endwhile; ?>
-
-          <?php endif; ?>
 
           <?php
-            wp_reset_query();
-            $q = $wp_query->query;
-            $q['ignore_sticky_posts'] = true;
-            $q['post__not_in'] = get_option('sticky_posts');
-            query_posts($q);
-          ?>
 
-          <?php while (have_posts()) : ?>
-            <?php the_post() ?>
-            <?php get_template_part('partials/article-list-item') ?>
-          <?php endwhile; ?>
+          wp_reset_query();
+          $q = $wp_query->query;
+          $q['post__not_in'] = $sticky_posts;
+          query_posts($q);
+
+          while (have_posts()) : the_post();
+            get_template_part('partials/article-list-item');
+          endwhile;
+
+          ?>
 
           <?php get_template_part('partials/pager') ?>
 

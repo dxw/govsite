@@ -34,25 +34,31 @@ add_theme_support( 'post-thumbnails' );
 
 // Archive page
 function archive_sticky_posts() {
-  $q = $wp_query->query;
-  $q['ignore_sticky_posts'] = true;
-  $q['post__in'] = get_option('sticky_posts');
-  $q['posts_per_page'] = -1;
-  query_posts($q);
+  $sticky_posts = get_option('sticky_posts');
 
-  while (have_posts()) : the_post();
-    get_template_part('../templates/partials/sticky-item');
-  endwhile;
+  if (get_query_var('paged') < 2) {
+
+    $q = $wp_query->query;
+    $q['post__in'] = $sticky_posts;
+    $q['posts_per_page'] = -1;
+    query_posts($q);
+
+    if (count($sticky_posts) > 0) {
+      while (have_posts()) : the_post();
+        get_template_part('partials/sticky-item');
+      endwhile;
+    }
+
+  }
 }
 
 function archive_not_sticky_posts() {
   wp_reset_query();
   $q = $wp_query->query;
-  $q['ignore_sticky_posts'] = true;
   $q['post__not_in'] = get_option('sticky_posts');
   query_posts($q);
 
   while (have_posts()) : the_post();
-    get_template_part('../templates/partials/article-list-item');
+    get_template_part('partials/article-list-item');
   endwhile;
 }
