@@ -7893,6 +7893,11 @@ ul.social-media a[href^="http://youtube.com/"]:before, ul.social-media a[href^="
   }
 }
 
+/* line 34, ../assets/scss/templates/404.scss */
+.page-template-404-php .medium-8 {
+  margin-bottom: 30px;
+}
+
 /* line 3, ../assets/scss/templates/archive.scss */
 .archive article.post-summary h1.entry-title {
   margin-bottom: 10px;

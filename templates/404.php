@@ -6,12 +6,12 @@
       <header class="page-header">
         <div class="header-group">
           <h1>Page not found</h1>
-          <h4>Sorry, but the page you were trying to view does not exist.</h4>
         </div>
       </header>
 
       <div class="row">
         <div class="medium-8 columns">
+          <h4>Sorry, but the page you were trying to view does not exist.</h4>
           <ul>
             <li>We might have removed the page.</li>
             <li>The link you clicked might be old.</li>
