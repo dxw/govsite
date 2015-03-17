@@ -41,22 +41,20 @@ the_post();
           </div>
         </div>
 
-        <?php if (get_field('left_block_title')) : $size = 'large';?>
+        <?php if (get_field('left_block_title')) : ?>
 
         <div class="page-element">
           <ul class="small-block-grid-1 medium-block-grid-2">
+
             <li>
               <article>
-                <?php
-                $image1 = get_field('left_block_image');
-                $thumb1 = $image1['sizes'][ $size ];
-                ?>
+                <?php $image1 = get_field('left_block_image'); $thumb1 = $image1['sizes']['large']; ?>
                 <header>
-                <h3><?php the_field('left_block_title') ?></h3>
+                  <h3><?php the_field('left_block_title') ?></h3>
                 </header>
 
                 <?php if (get_field('blocks_with_images') == true ) : ?>
-                <a class="image" href="<?php the_field('left_block_url'); ?>"><img class="thumb" src="<?php echo $thumb1; ?>" alt="<?php echo $image1['alt']; ?>"></a>
+                  <a class="image" href="<?php the_field('left_block_url'); ?>"><img class="thumb" src="<?php echo $thumb1; ?>" alt="<?php echo $image1['alt']; ?>"></a>
                 <?php endif ?>
 
                 <?php echo get_field('left_block_text'); ?>
@@ -66,17 +64,14 @@ the_post();
 
             <li>
               <article>
-                <?php
-                $image2 = get_field('right_block_image');
-                $thumb2 = $image2['sizes'][ $size ];
-                ?>
+                <?php $image2 = get_field('right_block_image'); $thumb2 = $image2['sizes']['large']; ?>
                 
                 <header>
                   <h3><?php the_field('right_block_title') ?></h3>
                 </header>
                 
                 <?php if (get_field('blocks_with_images') == true ) : ?>
-                <a class="image" href="<?php the_field('right_block_url'); ?>"><img class="thumb" src="<?php echo $thumb2; ?>" alt="<?php echo $image2['alt']; ?>"></a>
+                  <a class="image" href="<?php the_field('right_block_url'); ?>"><img class="thumb" src="<?php echo $thumb2; ?>" alt="<?php echo $image2['alt']; ?>"></a>
                 <?php endif ?>
                 
                 <?php echo get_field('right_block_text'); ?>
@@ -92,6 +87,6 @@ the_post();
     </div>
   </section>
 
-<?php get_template_part('partials/bottom-banner'); ?>
+  <?php get_template_part('partials/bottom-banner'); ?>
 
 </main>
