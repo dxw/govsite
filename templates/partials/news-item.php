@@ -5,7 +5,7 @@
 
   <?php get_template_part('partials/entry-meta'); ?>
 
-  <?php if ( has_post_thumbnail() ) : ?>
+  <?php if (has_post_thumbnail()) : ?>
     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
   <?php endif ?>
 

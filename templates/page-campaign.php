@@ -19,9 +19,9 @@ the_post();
           <div class="row">
 
             <div class="medium-8 columns">
-              <?php if (get_field('show_video') == false) : ?>
+              <?php if (get_field('show_video') == false ) : ?>
                 <figure>
-                  <?php the_post_thumbnail( 'large' ); ?>
+                  <?php the_post_thumbnail('large'); ?>
                 </figure>
               <?php else : ?>
                 <div class="flex-video">
@@ -55,7 +55,7 @@ the_post();
                 <h3><?php the_field('left_block_title') ?></h3>
                 </header>
 
-                <?php if (get_field( 'blocks_with_images') == true ) : ?>
+                <?php if (get_field('blocks_with_images') == true ) : ?>
                 <a class="image" href="<?php the_field('left_block_url'); ?>"><img class="thumb" src="<?php echo $thumb1; ?>" alt="<?php echo $image1['alt']; ?>"></a>
                 <?php endif ?>
 
