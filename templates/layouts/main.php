@@ -18,7 +18,7 @@
 </head>
 <body <?php body_class(); ?>>
   <!--[if lt IE 8]>
-    <div class="alert-box alert"><?php _e('You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?></div>
+    <div class="alert-box alert">You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
   <![endif]-->
 
   <header class="site-header" role="banner">
