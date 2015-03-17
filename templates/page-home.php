@@ -60,14 +60,14 @@ the_post();
             <h2>News</h2>
           </header>
 
-          <?php query_posts( array ( 'posts_per_page' => 4 ) ); ?>
+          <?php query_posts( array ('posts_per_page' => 4)); ?>
           
           <?php while (have_posts()) : the_post() ?>
-            <?php if ( is_sticky() ) : ?>
+            <?php if (is_sticky()) : ?>
 
             <?php get_template_part('partials/featured-news-item'); ?>
 
-              <?php elseif ( get_post_status() == 'private' || post_password_required() ) : ?>
+              <?php elseif (get_post_status() == 'private' || post_password_required()) : ?>
 
                 <article <?php post_class('summary'); ?>>
                   <header>
@@ -76,7 +76,7 @@ the_post();
 
                   <?php get_template_part('partials/entry-meta'); ?>
 
-                  <?php if ( has_post_thumbnail() ) : ?>
+                  <?php if (has_post_thumbnail()) : ?>
                     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
                   <?php endif ?>
 

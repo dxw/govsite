@@ -6,7 +6,7 @@
         <?php get_template_part('partials/date'); ?>
     </header>
 
-    <?php if( get_field('show_featured_image') == true ) : ?>
+    <?php if (get_field('show_featured_image') == true ) : ?>
       <div class="page-element">
 
       <figure class="featured">
@@ -14,21 +14,21 @@
       </figure>
 
       </div>
-    <?php endif ?>
+    <?php endif; ?>
 
-    <?php if( get_field('introduction_text') ) : ?>
+    <?php if (get_field('introduction_text')) : ?>
       <div class="page-element row">
         
         <div class="medium-8 columns">
-          <?php if ( get_field('display_video') == false ) : ?>
+          <?php if (get_field('display_video') == false ) : ?>
             <figure>
               <?php the_post_thumbnail('large'); ?>
             </figure>
           <?php else : ?>
             <div class="flex-video">
-              <?php _e( wp_oembed_get( get_field('video_url') ) ); ?>
+              <?php _e(wp_oembed_get( get_field('video_url'))) ; ?>
             </div>
-          <?php endif ?>
+          <?php endif; ?>
         </div>
 
         <div class="medium-4 columns">
@@ -38,7 +38,7 @@
         </div>
 
       </div>
-    <?php endif ?>
+    <?php endif; ?>
 
     <div class="page-element row">
 
@@ -60,7 +60,7 @@
             <?php echo get_field('related_content'); ?>
           </div>
         </aside>
-      <?php endif ?>
+      <?php endif; ?>
 
     </div>
 

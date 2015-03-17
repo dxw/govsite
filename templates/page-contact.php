@@ -27,7 +27,7 @@ the_post();
 
           <aside class="sidebar medium-4 columns" role="complementary">
 
-            <?php if (get_field('phone_number') || get_field('email_address') || get_field('address')): ?>
+            <?php if (get_field('phone_number') || get_field('email_address') || get_field('address')) : ?>
 
               <div class="address-panel">
 

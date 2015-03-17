@@ -1,6 +1,6 @@
 <article <?php post_class('summary sticky'); ?>>
 
-  <?php if ( has_post_thumbnail() ) : ?>
+  <?php if (has_post_thumbnail()) : ?>
     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('letterhead'); ?></a>
   <?php endif ?>
 

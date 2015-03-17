@@ -10,7 +10,7 @@
       <div class="page-element row">
         <div class="medium-8 large-8 columns">
           <article class="rte">
-            <?php if ( has_post_thumbnail() ) : ?>
+            <?php if (has_post_thumbnail()) : ?>
               <figure>
                 <?php the_post_thumbnail('large'); ?>
               </figure>
