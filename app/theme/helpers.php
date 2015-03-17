@@ -34,6 +34,7 @@ add_theme_support( 'post-thumbnails' );
 
 // Archive page
 function archive_sticky_posts() {
+  global $wp_query;
   $sticky_posts = get_option('sticky_posts');
 
   if (get_query_var('paged') < 2) {
@@ -53,6 +54,8 @@ function archive_sticky_posts() {
 }
 
 function archive_not_sticky_posts() {
+  global $wp_query;
+  
   wp_reset_query();
   $q = $wp_query->query;
   $q['post__not_in'] = get_option('sticky_posts');

@@ -20,39 +20,14 @@ global $wp_query;
 
         <div class="medium-8 large-8 columns">
 
-          <?php $sticky_posts = get_option('sticky_posts'); ?>
-
           <?php 
-          if (get_query_var('paged') < 2) :
 
-            $q = $wp_query->query;
-            $q['post__in'] = $sticky_posts;
-            $q['posts_per_page'] = -1;
-            query_posts($q);
+          archive_sticky_posts(); 
+          archive_not_sticky_posts();
 
-            if (count($sticky_posts) > 0) :
-              while (have_posts()) : the_post();
-                get_template_part('partials/sticky-item');
-              endwhile;
-            endif;
-
-          endif;
-          ?>
-
-          <?php
-
-          wp_reset_query();
-          $q = $wp_query->query;
-          $q['post__not_in'] = $sticky_posts;
-          query_posts($q);
-
-          while (have_posts()) : the_post();
-            get_template_part('partials/article-list-item');
-          endwhile;
+          get_template_part('partials/pager');
 
           ?>
-
-          <?php get_template_part('partials/pager') ?>
 
         </div>
 
