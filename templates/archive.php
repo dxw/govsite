@@ -1,6 +1,7 @@
 <?php
 global $wp_query;
 ?>
+
 <main id="content" role="main" class="main">
 
   <div class="row">
@@ -9,9 +10,9 @@ global $wp_query;
       <header class="page-header">
         <div class="header-group">
           <h1><?php echo w_template_title(); ?></h1>
-            <?php if(category_description()) :?>
+          <?php if(category_description()) :?>
             <?php echo category_description(); ?>
-            <?php endif; ?>
+          <?php endif; ?>
         </div>
       </header>
 
@@ -28,12 +29,11 @@ global $wp_query;
             query_posts($q);
           ?>
 
-            <?php while (have_posts()) : ?>
-              <?php the_post() ?>
+            <?php while (have_posts()) : the_post() ?>
               <?php get_template_part('partials/sticky-item') ?>
             <?php endwhile; ?>
 
-          <?php endif ?>
+          <?php endif; ?>
 
           <?php
             wp_reset_query();
