@@ -7,12 +7,12 @@ global $wp_query;
     <div class="large-12 columns">
 
       <header class="page-header">
-      <div class="header-group">
-      <h1><?php echo w_template_title(); ?></h1>
-      <?php if(category_description()) :?>
-      <?php echo category_description(); ?>
-      <?php endif; ?>
-      </div>
+        <div class="header-group">
+          <h1><?php echo w_template_title(); ?></h1>
+            <?php if(category_description()) :?>
+            <?php echo category_description(); ?>
+            <?php endif; ?>
+        </div>
       </header>
 
       <div class="row">
@@ -53,7 +53,7 @@ global $wp_query;
         </div>
 
         <aside class="sidebar medium-4 columns" role="complementary">
-          <?php if ( is_category() || is_tag() ) : ?>
+          <?php if (is_category() || is_tag()) : ?>
             <?php dynamic_sidebar('sidebar-primary'); ?>
           <?php endif ?>
         </aside>

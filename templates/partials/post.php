@@ -3,14 +3,14 @@
 
     <header class="page-header">
       <h1><?php the_title(); ?></h1>
-      <?php get_template_part('partials/date'); ?>
+        <?php get_template_part('partials/date'); ?>
     </header>
 
     <?php if( get_field('show_featured_image') == true ) : ?>
       <div class="page-element">
 
       <figure class="featured">
-      <?php the_post_thumbnail('full'); ?>
+        <?php the_post_thumbnail('full'); ?>
       </figure>
 
       </div>
@@ -24,7 +24,7 @@
             <figure>
               <?php the_post_thumbnail('large'); ?>
             </figure>
-            <?php else : ?>
+          <?php else : ?>
             <div class="flex-video">
               <?php _e( wp_oembed_get( get_field('video_url') ) ); ?>
             </div>
