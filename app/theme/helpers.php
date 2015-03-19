@@ -51,13 +51,14 @@ function show_archived_sticky_posts() {
       }
     }
 
+    wp_reset_query();
+
   }
 }
 
 function show_archived_not_sticky_posts() {
   global $wp_query;
   
-  wp_reset_query();
   $q = $wp_query->query;
   $q['post__not_in'] = get_option('sticky_posts');
   query_posts($q);
@@ -66,4 +67,6 @@ function show_archived_not_sticky_posts() {
     the_post();
     get_template_part('partials/article-list-item');
   }
+
+  wp_reset_query();
 }
