@@ -22,8 +22,8 @@ global $wp_query;
 
           <?php 
 
-          archive_sticky_posts(); 
-          archive_not_sticky_posts();
+          show_archived_sticky_posts(); 
+          show_archived_not_sticky_posts();
 
           get_template_part('partials/pager');
 

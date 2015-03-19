@@ -33,7 +33,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
 add_theme_support( 'post-thumbnails' );
 
 // Archive page
-function archive_sticky_posts() {
+function show_archived_sticky_posts() {
   global $wp_query;
   $sticky_posts = get_option('sticky_posts');
 
@@ -44,16 +44,17 @@ function archive_sticky_posts() {
     $q['posts_per_page'] = -1;
     query_posts($q);
 
-    if (count($sticky_posts) > 0) {
-      while (have_posts()) : the_post();
+    if ($sticky_posts) {
+      while (have_posts()) {
+        the_post();
         get_template_part('partials/sticky-item');
-      endwhile;
+      }
     }
 
   }
 }
 
-function archive_not_sticky_posts() {
+function show_archived_not_sticky_posts() {
   global $wp_query;
   
   wp_reset_query();
@@ -61,7 +62,8 @@ function archive_not_sticky_posts() {
   $q['post__not_in'] = get_option('sticky_posts');
   query_posts($q);
 
-  while (have_posts()) : the_post();
+  while (have_posts()) {
+    the_post();
     get_template_part('partials/article-list-item');
-  endwhile;
+  }
 }
