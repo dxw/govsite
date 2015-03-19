@@ -25,7 +25,7 @@ the_post();
                 </figure>
               <?php else : ?>
                 <div class="flex-video">
-                  <?php _e(wp_oembed_get(get_field('featured_video_url'))); ?>
+                  <?php echo wp_oembed_get(get_field('featured_video_url')); ?>
                 </div>
               <?php endif ?>
             </div>
