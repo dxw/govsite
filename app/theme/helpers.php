@@ -69,4 +69,5 @@ function show_archived_not_sticky_posts() {
   }
 
   wp_reset_query();
+  
 }
