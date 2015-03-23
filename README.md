@@ -15,7 +15,7 @@ GovSite is a customisable WordPress theme developed by [dxw](https://www.dxw.com
 * Google Analytics baked in
 * Browser support for IE7+, Firefox, Chrome, Safari, plus popular mobile browsers.
 
-For more information about functionality, please refer to our blog post about GovSite (ADD LINK TO BLOG POST ABOUT GOVSITE).
+For more information about functionality, please refer to our [blog post about GovSite](https://www.dxw.com/2015/03/govsite-a-flexible-wordpress-theme-developed-by-dxw/).
 
 
 Installation
