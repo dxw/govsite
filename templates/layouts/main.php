@@ -6,6 +6,9 @@
 <head>
   <meta charset="utf-8">
   <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
+  <link rel="dns-prefetch" href="//maps.gstatic.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php $favicon_url = get_attachment_url_by_slug('favicon'); ?>
