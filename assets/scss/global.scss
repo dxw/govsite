@@ -74,7 +74,6 @@ $icons: (
   close:      "\e60b",
   lock:       "\e60a",
   quoteleft:  "\f10d",
-
   previous:   "\e607",
   next:       "\e608"
 );
@@ -109,8 +108,8 @@ $icons: (
 @mixin font-size( $sizeValue: 12 ) {
   $pxValue: $sizeValue;
   $remValue: ($sizeValue * 0.062);
-  font-size: $pxValue + px; 
-  font-size: $remValue + rem; 
+  font-size: $pxValue + px;
+  font-size: $remValue + rem;
   line-height: 1.5;
 }
 
@@ -135,11 +134,11 @@ $icons: (
 // Triangle arrow
 
 @mixin arrow($width: 10px, $direction: up, $top: 0, $left: 50%, $color: red) {
-  
+
   width: 0;
   content: '';
   position: absolute;
-  
+
   // Right
   @if $direction == right {
     top: $top;
