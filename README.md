@@ -139,7 +139,7 @@ GovSite directory structure:
 * **templates** - includes main layout file WordPress page templates
 * **vendor** - includes `Gruntfile.js`, `package.json` and `bower.json` that install the necessary dependencies and compile assets
 
-**NB:** GovSite's theme structure is defined by Whippet, our (early stage) framework for WordPress development. [Whippet](github.com/dxw/whippet) is currently pre-release, but it is not a dependency for using GovSite. Also available is [Whippet-server](github.com/dxw/whippet-server), a standalone tool for running WordPress sites during development without having to use Apache.
+**NB:** GovSite's theme structure is defined by Whippet, our (early stage) framework for WordPress development. [Whippet](https://github.com/dxw/whippet) is currently pre-release, but it is not a dependency for using GovSite. Also available is [Whippet-server](https://github.com/dxw/whippet-server), a standalone tool for running WordPress sites during development without having to use Apache.
 
 Authors
 -------
