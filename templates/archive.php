@@ -9,31 +9,29 @@ global $wp_query;
 
       <header class="page-header">
         <div class="header-group">
-          <h1><?php echo w_template_title(); ?></h1>
-          <?php if(category_description()) :?>
-            <?php echo category_description(); ?>
-          <?php endif; ?>
+          <h1><?php echo w_template_title() ?></h1>
+          <?php if(category_description()) : ?>
+            <?php echo category_description() ?>
+          <?php endif ?>
         </div>
       </header>
 
       <div class="row">
 
         <div class="medium-8 large-8 columns">
+          <?php
 
-          <?php 
-
-          show_archived_sticky_posts(); 
+          show_archived_sticky_posts();
           show_archived_not_sticky_posts();
 
           get_template_part('partials/pager');
 
           ?>
-
         </div>
 
         <aside class="sidebar medium-4 columns" role="complementary">
           <?php if (is_category() || is_tag()) : ?>
-            <?php dynamic_sidebar('sidebar-primary'); ?>
+            <?php dynamic_sidebar('sidebar-primary') ?>
           <?php endif ?>
         </aside>
 

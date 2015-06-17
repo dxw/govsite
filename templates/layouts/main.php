@@ -34,7 +34,7 @@
         </div>
       </div>
       <div class="small-12 medium-9 columns">
-            <?php get_template_part('partials/nav'); ?>
+        <?php get_template_part('partials/nav'); ?>
       </div>
     </div>
   </header>
