@@ -1,13 +1,13 @@
-<?php 
-/* Template name: Homepage */
-
-the_post(); 
-
-?>
+<?php
+/**
+ * Template name: home
+ */
+the_post() ?>
 
 <main id="content" role="main" class="main">
 
   <?php if(get_the_content()) : ?>
+
     <section class="page-banner">
       <div class="row">
         <div class="large-12 columns">
@@ -20,101 +20,102 @@ the_post();
         </div>
       </div>
     </section>
+
   <?php endif ?>
 
-    <section class="image-features">
-      <div class="row">
-        <div class="large-12 columns">
-          <ul class="small-block-grid-1 medium-block-grid-3">
-          
-            <?php for($img=1; $img<=3; $img++): ?>
-              <?php if(!($the_image = get_field('image_' . $img))) { break; } ?>
-              
-              <li>
-                <article>
-                  <header>
-                    <h3><?php the_field('title_' . $img); ?></h3>
-                  </header>
-                  <a class="image" href="<?php the_field('url_' . $img); ?>">
-                    <img class="thumb" src="<?php echo $the_image['sizes']['full'] ?>" alt="<?php echo $the_image['alt']; ?>">
-                  </a>
-                  <p>
-                    <?php the_field('description_' . $img); ?> <a href="<?php the_field('url_' . $img); ?>">Read more &raquo;</a>
-                  </p>
-                </article>
-              </li>
-              
-            <?php endfor; ?>
-            
-          </ul>
-        </div>
+  <section class="image-features">
+    <div class="row">
+      <div class="large-12 columns">
+        <ul class="small-block-grid-1 medium-block-grid-3">
+
+          <?php for($img=1; $img<=3; $img++): ?>
+            <?php if(!($the_image = get_field('image_' . $img))) { break; } ?>
+
+            <li>
+              <article>
+                <header>
+                  <h3><?php the_field('title_' . $img); ?></h3>
+                </header>
+                <a class="image" href="<?php the_field('url_' . $img); ?>">
+                  <img class="thumb" src="<?php echo $the_image['sizes']['full'] ?>" alt="<?php echo $the_image['alt']; ?>">
+                </a>
+                <p>
+                  <?php the_field('description_' . $img); ?> <a href="<?php the_field('url_' . $img); ?>"><?php _e('Read more &raquo;', 'govsite') ?></a>
+                </p>
+              </article>
+            </li>
+
+          <?php endfor; ?>
+
+        </ul>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="news-posts">
-      <div class="row">
+  <section class="news-posts">
+    <div class="row">
 
-        <div class="posts medium-8 columns">
+      <div class="posts medium-8 columns">
 
-          <header>
-            <h2>News</h2>
-          </header>
+        <header>
+          <h2><?php _e('News', 'govsite') ?></h2>
+        </header>
 
-          <?php query_posts( array ('posts_per_page' => 4)); ?>
-          
-          <?php while (have_posts()) : the_post() ?>
-            <?php if (is_sticky()) : ?>
+        <?php $news = new WP_Query( array ('posts_per_page' => 4) ); ?>
 
-            <?php get_template_part('partials/featured-news-item'); ?>
+        <?php if( $news->have_posts()) : while ($news->have_posts()) : $news->the_post() ?>
+          <?php if (is_sticky()) : ?>
 
-              <?php elseif (get_post_status() == 'private' || post_password_required()) : ?>
+          <?php get_template_part('partials/featured-news-item') ?>
 
-                <article <?php post_class('summary'); ?>>
-                  <header>
-                    <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                  </header>
+            <?php elseif (get_post_status() == 'private' || post_password_required()) : ?>
 
-                  <?php get_template_part('partials/entry-meta'); ?>
+              <article <?php post_class('summary') ?>>
+                <header>
+                  <h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
+                </header>
 
-                  <?php if (has_post_thumbnail()) : ?>
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a>
-                  <?php endif ?>
+                <?php get_template_part('partials/entry-meta') ?>
 
-                  <?php the_excerpt(); ?>
-                </article>
+                <?php if (has_post_thumbnail()) : ?>
+                  <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('thumbnail') ?></a>
+                <?php endif ?>
 
-              <?php else : ?>
+                <?php the_excerpt() ?>
+              </article>
 
-            <?php get_template_part('partials/news-item'); ?>
+            <?php else : ?>
 
-            <?php endif ?>
-          <?php endwhile; ?>
-          
-          <?php wp_reset_query(); ?>
+          <?php get_template_part('partials/news-item') ?>
 
-          <?php if (get_field('news_page_url')) : ?>
-            <a href="<?php the_field('news_page_url'); ?>" class="button">More news</a>
           <?php endif ?>
+        <?php endwhile; endif; ?>
 
-        </div>
+        <?php wp_reset_query() ?>
 
-        <aside class="sidebar medium-4 columns" role="complementary">
-
-          <?php if (get_field('banner_title')) : ?>
-            <div class="panel">
-              <header>
-                <h3><?php the_field('banner_title'); ?></h3>
-              </header>
-
-              <p><?php the_field('banner_description'); ?></p>
-
-              <a href="<?php the_field('banner_url'); ?>" class="button secondary"><?php the_field('banner_url_description'); ?></a>
-            </div>
-          <?php endif ?>
-
-        </aside>
+        <?php if (get_field('news_page_url')) : ?>
+          <a href="<?php the_field('news_page_url') ?>" class="button"><?php _e('More news', 'govsite') ?></a>
+        <?php endif ?>
 
       </div>
-    </section>
+
+      <aside class="sidebar medium-4 columns" role="complementary">
+
+        <?php if (get_field('banner_title')) : ?>
+          <div class="panel">
+            <header>
+              <h3><?php the_field('banner_title') ?></h3>
+            </header>
+
+            <p><?php the_field('banner_description') ?></p>
+
+            <a href="<?php the_field('banner_url') ?>" class="button secondary"><?php the_field('banner_url_description') ?></a>
+          </div>
+        <?php endif ?>
+
+      </aside>
+
+    </div>
+  </section>
 
 </main>
