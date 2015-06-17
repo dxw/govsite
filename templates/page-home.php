@@ -8,18 +8,7 @@ the_post() ?>
 
   <?php if(get_the_content()) : ?>
 
-    <section class="page-banner">
-      <div class="row">
-        <div class="large-12 columns">
-          <article class="rte">
-            <?php the_content(); ?>
-          </article>
-          <?php if (get_field('main_button_url')) : ?>
-            <a href="<?php the_field('main_button_url'); ?>" title="<?php the_field('main_button_description'); ?>" class="button-banner"><?php the_field('main_button_description'); ?></a>
-          <?php endif ?>
-        </div>
-      </div>
-    </section>
+    <?php get_template_part('partials/page', 'banner') ?>
 
   <?php endif ?>
 
@@ -29,21 +18,12 @@ the_post() ?>
         <ul class="small-block-grid-1 medium-block-grid-3">
 
           <?php for($img=1; $img<=3; $img++): ?>
-            <?php if(!($the_image = get_field('image_' . $img))) { break; } ?>
 
-            <li>
-              <article>
-                <header>
-                  <h3><?php the_field('title_' . $img); ?></h3>
-                </header>
-                <a class="image" href="<?php the_field('url_' . $img); ?>">
-                  <img class="thumb" src="<?php echo $the_image['sizes']['full'] ?>" alt="<?php echo $the_image['alt']; ?>">
-                </a>
-                <p>
-                  <?php the_field('description_' . $img); ?> <a href="<?php the_field('url_' . $img); ?>"><?php _e('Read more &raquo;', 'govsite') ?></a>
-                </p>
-              </article>
-            </li>
+            <?php
+              // Pass the $img variable into the partial
+              set_query_var( 'img', $img );
+              get_template_part( 'partials/image', 'feature' );
+            ?>
 
           <?php endfor; ?>
 
@@ -56,7 +36,6 @@ the_post() ?>
     <div class="row">
 
       <div class="posts medium-8 columns">
-
         <header>
           <h2><?php _e('News', 'govsite') ?></h2>
         </header>
@@ -64,29 +43,14 @@ the_post() ?>
         <?php $news = new WP_Query( array ('posts_per_page' => 4) ); ?>
 
         <?php if( $news->have_posts()) : while ($news->have_posts()) : $news->the_post() ?>
+
           <?php if (is_sticky()) : ?>
 
-          <?php get_template_part('partials/featured-news-item') ?>
+            <?php get_template_part('partials/featured-news-item') ?>
 
-            <?php elseif (get_post_status() == 'private' || post_password_required()) : ?>
+          <?php else : ?>
 
-              <article <?php post_class('summary') ?>>
-                <header>
-                  <h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
-                </header>
-
-                <?php get_template_part('partials/entry-meta') ?>
-
-                <?php if (has_post_thumbnail()) : ?>
-                  <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('thumbnail') ?></a>
-                <?php endif ?>
-
-                <?php the_excerpt() ?>
-              </article>
-
-            <?php else : ?>
-
-          <?php get_template_part('partials/news-item') ?>
+            <?php get_template_part('partials/news-item') ?>
 
           <?php endif ?>
         <?php endwhile; endif; ?>
@@ -96,24 +60,11 @@ the_post() ?>
         <?php if (get_field('news_page_url')) : ?>
           <a href="<?php the_field('news_page_url') ?>" class="button"><?php _e('More news', 'govsite') ?></a>
         <?php endif ?>
-
       </div>
 
-      <aside class="sidebar medium-4 columns" role="complementary">
-
-        <?php if (get_field('banner_title')) : ?>
-          <div class="panel">
-            <header>
-              <h3><?php the_field('banner_title') ?></h3>
-            </header>
-
-            <p><?php the_field('banner_description') ?></p>
-
-            <a href="<?php the_field('banner_url') ?>" class="button secondary"><?php the_field('banner_url_description') ?></a>
-          </div>
-        <?php endif ?>
-
-      </aside>
+      <?php if (get_field('banner_title')) : ?>
+        <?php get_template_part('partials/sidebar', 'banner') ?>
+      <?php endif ?>
 
     </div>
   </section>
