@@ -10,6 +10,7 @@ global $wp_query;
       <header class="page-header">
         <div class="header-group">
           <h1><?php echo w_template_title() ?></h1>
+
           <?php if(category_description()) : ?>
             <?php echo category_description() ?>
           <?php endif ?>
