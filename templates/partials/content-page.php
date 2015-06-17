@@ -17,7 +17,7 @@
             <?php endif ?>
             <?php the_content(); ?>
           </article>
-        </div>        
+        </div>
       </div>
 
     </div>

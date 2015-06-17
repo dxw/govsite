@@ -38,9 +38,9 @@ the_post() ?>
       <?php if( $news->have_posts()) : while ($news->have_posts()) : $news->the_post() ?>
 
         <?php if (is_sticky()) : ?>
-          <?php get_template_part('partials/featured-news-item') ?>
+          <?php get_template_part('partials/loop', 'featured-news') ?>
         <?php else : ?>
-          <?php get_template_part('partials/news-item') ?>
+          <?php get_template_part('partials/loop', 'news') ?>
         <?php endif ?>
 
       <?php endwhile; endif; ?>

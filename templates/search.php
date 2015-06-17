@@ -11,7 +11,7 @@
         <div class="page-element">
           <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post() ?>
-              <?php get_template_part('partials/search-item') ?>
+              <?php get_template_part('partials/loop', 'search') ?>
             <?php endwhile ?>
           <?php else: ?>
             <p><?php _e('No results found. Search again?', 'govsite') ?></p>
