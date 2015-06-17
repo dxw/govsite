@@ -1,1 +1,0 @@
-<?php the_breadcrumbs(false) ?>
