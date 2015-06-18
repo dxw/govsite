@@ -209,9 +209,9 @@ if(function_exists("register_field_group"))
     'location' => array (
       array (
         array (
-          'param' => 'page_template',
+          'param' => 'page_type',
           'operator' => '==',
-          'value' => 'page-home.php',
+          'value' => 'front_page',
           'order_no' => 0,
           'group_no' => 0,
         ),
@@ -221,6 +221,7 @@ if(function_exists("register_field_group"))
       'position' => 'normal',
       'layout' => 'default',
       'hide_on_screen' => array (
+        0 => 'the_content',
       ),
     ),
     'menu_order' => 0,
@@ -246,9 +247,9 @@ if(function_exists("register_field_group"))
     'location' => array (
       array (
         array (
-          'param' => 'page_template',
+          'param' => 'page_type',
           'operator' => '==',
-          'value' => 'page-home.php',
+          'value' => 'front_page',
           'order_no' => 0,
           'group_no' => 0,
         ),
@@ -258,6 +259,7 @@ if(function_exists("register_field_group"))
       'position' => 'normal',
       'layout' => 'default',
       'hide_on_screen' => array (
+        0 => 'the_content',
       ),
     ),
     'menu_order' => 0,
@@ -318,9 +320,9 @@ if(function_exists("register_field_group"))
     'location' => array (
       array (
         array (
-          'param' => 'page_template',
+          'param' => 'page_type',
           'operator' => '==',
-          'value' => 'page-home.php',
+          'value' => 'front_page',
           'order_no' => 0,
           'group_no' => 0,
         ),
@@ -330,6 +332,7 @@ if(function_exists("register_field_group"))
       'position' => 'side',
       'layout' => 'default',
       'hide_on_screen' => array (
+        0 => 'the_content',
       ),
     ),
     'menu_order' => 0,
