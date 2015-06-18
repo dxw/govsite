@@ -5,13 +5,22 @@ if(function_exists("register_field_group"))
 
   // Homepage template
   register_field_group(array (
-    'id' => 'acf_main-call-to-action',
-    'title' => 'Main call to action',
+    'id' => 'acf_page-banner',
+    'title' => 'Page Banner',
     'fields' => array (
       array (
+        'key' => 'field_5582d48263aff',
+        'label' => 'Banner content',
+        'name' => 'banner_content',
+        'type' => 'wysiwyg',
+        'default_value' => '',
+        'toolbar' => 'full',
+        'media_upload' => 'yes',
+      ),
+      array (
         'key' => 'field_543561833db70',
-        'label' => 'Main button description',
-        'name' => 'main_button_description',
+        'label' => 'Button description',
+        'name' => 'banner_button_description',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
@@ -22,8 +31,8 @@ if(function_exists("register_field_group"))
       ),
       array (
         'key' => 'field_5435618c3db71',
-        'label' => 'Main button URL',
-        'name' => 'main_button_url',
+        'label' => 'Button URL',
+        'name' => 'banner_button_url',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
@@ -36,9 +45,9 @@ if(function_exists("register_field_group"))
     'location' => array (
       array (
         array (
-          'param' => 'page_template',
+          'param' => 'page_type',
           'operator' => '==',
-          'value' => 'page-home.php',
+          'value' => 'front_page',
           'order_no' => 0,
           'group_no' => 0,
         ),
@@ -48,11 +57,12 @@ if(function_exists("register_field_group"))
       'position' => 'acf_after_title',
       'layout' => 'default',
       'hide_on_screen' => array (
+        0 => 'the_content',
       ),
     ),
     'menu_order' => 0,
   ));
-  
+
   register_field_group(array (
     'id' => 'acf_images',
     'title' => 'Images',
