@@ -4,7 +4,7 @@
 
     get_template_part('partials/content', 'post');
     comments_template();
-    get_template_part('partials/bottom-banner');
+    get_template_part('partials/banner', 'bottom');
 
   endwhile; ?>
 

@@ -7,7 +7,7 @@ the_post() ?>
 <main id="content" role="main" class="main">
 
   <?php if(get_the_content()) : ?>
-    <?php get_template_part('partials/page', 'banner') ?>
+    <?php get_template_part('partials/banner', 'page') ?>
   <?php endif ?>
 
   <section class="image-features row">
@@ -53,7 +53,7 @@ the_post() ?>
     </div>
 
     <?php if (get_field('banner_title')) : ?>
-      <?php get_template_part('partials/sidebar', 'banner') ?>
+      <?php get_template_part('partials/banner', 'sidebar') ?>
     <?php endif ?>
 
   </section>
