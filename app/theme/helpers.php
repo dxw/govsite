@@ -47,7 +47,7 @@ function show_archived_sticky_posts() {
     if ($sticky_posts) {
       while (have_posts()) {
         the_post();
-        get_template_part('partials/sticky-item');
+        get_template_part('partials/loop-sticky');
       }
     }
 
@@ -58,16 +58,16 @@ function show_archived_sticky_posts() {
 
 function show_archived_not_sticky_posts() {
   global $wp_query;
-  
+
   $q = $wp_query->query;
   $q['post__not_in'] = get_option('sticky_posts');
   query_posts($q);
 
   while (have_posts()) {
     the_post();
-    get_template_part('partials/article-list-item');
+    get_template_part('partials/loop-article');
   }
 
   wp_reset_query();
-  
+
 }

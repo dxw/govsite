@@ -3,7 +3,9 @@
 
     <header class="page-header">
       <h1><?php the_title(); ?></h1>
-        <?php get_template_part('partials/date'); ?>
+      <div class="entry-meta date">
+        <time class="published" datetime="<?php echo get_the_time('c'); ?>"><?php echo the_time('F jS Y'); ?></time>
+      </div>
     </header>
 
     <?php if (get_field('show_featured_image') == true ) : ?>
@@ -18,7 +20,7 @@
 
     <?php if (get_field('introduction_text')) : ?>
       <div class="page-element row">
-        
+
         <div class="medium-8 columns">
           <?php if (get_field('display_video') == false ) : ?>
             <figure>
@@ -43,8 +45,8 @@
     <div class="page-element row">
 
       <div class="medium-8 columns">
-        <article class="rte">    
-          <?php 
+        <article class="rte">
+          <?php
           the_content();
           get_template_part('partials/share');
           ?>
