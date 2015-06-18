@@ -391,18 +391,9 @@ if(function_exists("register_field_group"))
     'title' => 'Content blocks',
     'fields' => array (
       array (
-        'key' => 'field_543e74bae75df',
-        'label' => 'Blocks with images',
-        'name' => 'blocks_with_images',
-        'type' => 'true_false',
-        'instructions' => 'Include horizontal images?',
-        'message' => '',
-        'default_value' => 0,
-      ),
-      array (
         'key' => 'field_543e740d941c5',
         'label' => 'Left block title',
-        'name' => 'left_block_title',
+        'name' => 'block_title_1',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
@@ -414,7 +405,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e7442941c7',
         'label' => 'Left block text',
-        'name' => 'left_block_text',
+        'name' => 'block_text_1',
         'type' => 'wysiwyg',
         'default_value' => '',
         'toolbar' => 'full',
@@ -423,19 +414,8 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e7425941c6',
         'label' => 'Left block image',
-        'name' => 'left_block_image',
+        'name' => 'block_image_1',
         'type' => 'image',
-        'conditional_logic' => array (
-          'status' => 1,
-          'rules' => array (
-            array (
-              'field' => 'field_543e74bae75df',
-              'operator' => '==',
-              'value' => '1',
-            ),
-          ),
-          'allorany' => 'all',
-        ),
         'save_format' => 'object',
         'preview_size' => 'thumbnail',
         'library' => 'all',
@@ -443,7 +423,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e748eafd9e',
         'label' => 'Left block call to action',
-        'name' => 'left_block_call_to_action',
+        'name' => 'block_call_to_action_1',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
@@ -455,7 +435,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e749dafd9f',
         'label' => 'Left block URL',
-        'name' => 'left_block_url',
+        'name' => 'block_url_1',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
@@ -467,7 +447,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e75a364eaf',
         'label' => 'Right block title',
-        'name' => 'right_block_title',
+        'name' => 'block_title_2',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
@@ -479,7 +459,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e75af64eb0',
         'label' => 'Right block text',
-        'name' => 'right_block_text',
+        'name' => 'block_text_2',
         'type' => 'wysiwyg',
         'default_value' => '',
         'toolbar' => 'full',
@@ -488,19 +468,8 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e75c464eb1',
         'label' => 'Right block image',
-        'name' => 'right_block_image',
+        'name' => 'block_image_2',
         'type' => 'image',
-        'conditional_logic' => array (
-          'status' => 1,
-          'rules' => array (
-            array (
-              'field' => 'field_543e74bae75df',
-              'operator' => '==',
-              'value' => '1',
-            ),
-          ),
-          'allorany' => 'all',
-        ),
         'save_format' => 'object',
         'preview_size' => 'thumbnail',
         'library' => 'all',
@@ -508,7 +477,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e75d364eb2',
         'label' => 'Right block call to action',
-        'name' => 'right_block_call_to_action',
+        'name' => 'block_call_to_action_2',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
@@ -520,7 +489,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e75e464eb3',
         'label' => 'Right block URL',
-        'name' => 'right_block_url',
+        'name' => 'block_url_2',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
