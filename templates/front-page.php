@@ -1,8 +1,4 @@
-<?php
-/**
- * Template name: home
- */
-the_post() ?>
+<?php the_post() ?>
 
 <main id="content" role="main" class="main">
 

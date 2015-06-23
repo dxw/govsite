@@ -5,13 +5,22 @@ if(function_exists("register_field_group"))
 
   // Homepage template
   register_field_group(array (
-    'id' => 'acf_main-call-to-action',
-    'title' => 'Main call to action',
+    'id' => 'acf_page-banner',
+    'title' => 'Page Banner',
     'fields' => array (
       array (
+        'key' => 'field_5582d48263aff',
+        'label' => 'Banner content',
+        'name' => 'banner_content',
+        'type' => 'wysiwyg',
+        'default_value' => '',
+        'toolbar' => 'full',
+        'media_upload' => 'yes',
+      ),
+      array (
         'key' => 'field_543561833db70',
-        'label' => 'Main button description',
-        'name' => 'main_button_description',
+        'label' => 'Button description',
+        'name' => 'banner_button_description',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
@@ -22,8 +31,8 @@ if(function_exists("register_field_group"))
       ),
       array (
         'key' => 'field_5435618c3db71',
-        'label' => 'Main button URL',
-        'name' => 'main_button_url',
+        'label' => 'Button URL',
+        'name' => 'banner_button_url',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
@@ -36,9 +45,9 @@ if(function_exists("register_field_group"))
     'location' => array (
       array (
         array (
-          'param' => 'page_template',
+          'param' => 'page_type',
           'operator' => '==',
-          'value' => 'page-home.php',
+          'value' => 'front_page',
           'order_no' => 0,
           'group_no' => 0,
         ),
@@ -48,11 +57,12 @@ if(function_exists("register_field_group"))
       'position' => 'acf_after_title',
       'layout' => 'default',
       'hide_on_screen' => array (
+        0 => 'the_content',
       ),
     ),
     'menu_order' => 0,
   ));
-  
+
   register_field_group(array (
     'id' => 'acf_images',
     'title' => 'Images',
@@ -199,9 +209,9 @@ if(function_exists("register_field_group"))
     'location' => array (
       array (
         array (
-          'param' => 'page_template',
+          'param' => 'page_type',
           'operator' => '==',
-          'value' => 'page-home.php',
+          'value' => 'front_page',
           'order_no' => 0,
           'group_no' => 0,
         ),
@@ -211,6 +221,7 @@ if(function_exists("register_field_group"))
       'position' => 'normal',
       'layout' => 'default',
       'hide_on_screen' => array (
+        0 => 'the_content',
       ),
     ),
     'menu_order' => 0,
@@ -236,9 +247,9 @@ if(function_exists("register_field_group"))
     'location' => array (
       array (
         array (
-          'param' => 'page_template',
+          'param' => 'page_type',
           'operator' => '==',
-          'value' => 'page-home.php',
+          'value' => 'front_page',
           'order_no' => 0,
           'group_no' => 0,
         ),
@@ -248,6 +259,7 @@ if(function_exists("register_field_group"))
       'position' => 'normal',
       'layout' => 'default',
       'hide_on_screen' => array (
+        0 => 'the_content',
       ),
     ),
     'menu_order' => 0,
@@ -308,9 +320,9 @@ if(function_exists("register_field_group"))
     'location' => array (
       array (
         array (
-          'param' => 'page_template',
+          'param' => 'page_type',
           'operator' => '==',
-          'value' => 'page-home.php',
+          'value' => 'front_page',
           'order_no' => 0,
           'group_no' => 0,
         ),
@@ -320,6 +332,7 @@ if(function_exists("register_field_group"))
       'position' => 'side',
       'layout' => 'default',
       'hide_on_screen' => array (
+        0 => 'the_content',
       ),
     ),
     'menu_order' => 0,
@@ -378,18 +391,9 @@ if(function_exists("register_field_group"))
     'title' => 'Content blocks',
     'fields' => array (
       array (
-        'key' => 'field_543e74bae75df',
-        'label' => 'Blocks with images',
-        'name' => 'blocks_with_images',
-        'type' => 'true_false',
-        'instructions' => 'Include horizontal images?',
-        'message' => '',
-        'default_value' => 0,
-      ),
-      array (
         'key' => 'field_543e740d941c5',
         'label' => 'Left block title',
-        'name' => 'left_block_title',
+        'name' => 'block_title_1',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
@@ -401,7 +405,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e7442941c7',
         'label' => 'Left block text',
-        'name' => 'left_block_text',
+        'name' => 'block_text_1',
         'type' => 'wysiwyg',
         'default_value' => '',
         'toolbar' => 'full',
@@ -410,19 +414,8 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e7425941c6',
         'label' => 'Left block image',
-        'name' => 'left_block_image',
+        'name' => 'block_image_1',
         'type' => 'image',
-        'conditional_logic' => array (
-          'status' => 1,
-          'rules' => array (
-            array (
-              'field' => 'field_543e74bae75df',
-              'operator' => '==',
-              'value' => '1',
-            ),
-          ),
-          'allorany' => 'all',
-        ),
         'save_format' => 'object',
         'preview_size' => 'thumbnail',
         'library' => 'all',
@@ -430,7 +423,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e748eafd9e',
         'label' => 'Left block call to action',
-        'name' => 'left_block_call_to_action',
+        'name' => 'block_call_to_action_1',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
@@ -442,7 +435,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e749dafd9f',
         'label' => 'Left block URL',
-        'name' => 'left_block_url',
+        'name' => 'block_url_1',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
@@ -454,7 +447,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e75a364eaf',
         'label' => 'Right block title',
-        'name' => 'right_block_title',
+        'name' => 'block_title_2',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
@@ -466,7 +459,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e75af64eb0',
         'label' => 'Right block text',
-        'name' => 'right_block_text',
+        'name' => 'block_text_2',
         'type' => 'wysiwyg',
         'default_value' => '',
         'toolbar' => 'full',
@@ -475,19 +468,8 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e75c464eb1',
         'label' => 'Right block image',
-        'name' => 'right_block_image',
+        'name' => 'block_image_2',
         'type' => 'image',
-        'conditional_logic' => array (
-          'status' => 1,
-          'rules' => array (
-            array (
-              'field' => 'field_543e74bae75df',
-              'operator' => '==',
-              'value' => '1',
-            ),
-          ),
-          'allorany' => 'all',
-        ),
         'save_format' => 'object',
         'preview_size' => 'thumbnail',
         'library' => 'all',
@@ -495,7 +477,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e75d364eb2',
         'label' => 'Right block call to action',
-        'name' => 'right_block_call_to_action',
+        'name' => 'block_call_to_action_2',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
@@ -507,7 +489,7 @@ if(function_exists("register_field_group"))
       array (
         'key' => 'field_543e75e464eb3',
         'label' => 'Right block URL',
-        'name' => 'right_block_url',
+        'name' => 'block_url_2',
         'type' => 'text',
         'default_value' => '',
         'placeholder' => '',
