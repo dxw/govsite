@@ -16,7 +16,7 @@
       <?php endif ?>
 
       <div class="large-12 column">
-        <?php get_template_part('partials/pager') ?>
+        <?php get_template_part('partials/nav', 'pager') ?>
       </div>
 
   </div>

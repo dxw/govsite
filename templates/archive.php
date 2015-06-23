@@ -1,6 +1,4 @@
-<?php
-global $wp_query;
-?>
+<?php global $wp_query ?>
 
 <main id="content" role="main" class="main">
 
@@ -25,7 +23,7 @@ global $wp_query;
           show_archived_sticky_posts();
           show_archived_not_sticky_posts();
 
-          get_template_part('partials/pager');
+          get_template_part('partials/nav', 'pager');
 
           ?>
         </div>

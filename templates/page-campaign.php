@@ -53,6 +53,6 @@ the_post();
     </div>
   </section>
 
-  <?php get_template_part('partials/bottom-banner'); ?>
+  <?php get_template_part('partials/banner', 'bottom') ?>
 
 </main>

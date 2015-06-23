@@ -18,7 +18,7 @@
           <?php endif ?>
         </div>
 
-        <?php get_template_part('partials/pager') ?>
+        <?php get_template_part('partials/nav', 'pager') ?>
 
       </div>
     </div>
