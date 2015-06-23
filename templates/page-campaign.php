@@ -39,45 +39,15 @@ the_post();
           </div>
         </div>
 
-        <?php if (get_field('left_block_title')) : ?>
+        <div class="page-element">
+          <ul class="small-block-grid-1 medium-block-grid-2">
+            <?php for( $i=1; $i<3; $i++ ) : ?>
+              <?php set_query_var('idx', $i) ?>
 
-          <div class="page-element">
-            <ul class="small-block-grid-1 medium-block-grid-2">
-              <li>
-                <article>
-                  <?php $image1 = get_field('left_block_image'); $thumb1 = $image1['sizes']['large']; ?>
-                  <header>
-                    <h3><?php the_field('left_block_title') ?></h3>
-                  </header>
-
-                  <?php if (get_field('blocks_with_images') == true ) : ?>
-                    <a class="image" href="<?php the_field('left_block_url'); ?>"><img class="thumb" src="<?php echo $thumb1; ?>" alt="<?php echo $image1['alt']; ?>"></a>
-                  <?php endif ?>
-
-                  <?php echo get_field('left_block_text'); ?>
-                  <a href="<?php the_field('left_block_url'); ?>" class="button"><?php the_field('left_block_call_to_action'); ?></a>
-                </article>
-              </li>
-              <li>
-                <article>
-                  <?php $image2 = get_field('right_block_image'); $thumb2 = $image2['sizes']['large']; ?>
-
-                  <header>
-                    <h3><?php the_field('right_block_title') ?></h3>
-                  </header>
-
-                  <?php if (get_field('blocks_with_images') == true ) : ?>
-                    <a class="image" href="<?php the_field('right_block_url'); ?>"><img class="thumb" src="<?php echo $thumb2; ?>" alt="<?php echo $image2['alt']; ?>"></a>
-                  <?php endif ?>
-
-                  <?php echo get_field('right_block_text'); ?>
-                  <a href="<?php the_field('right_block_url'); ?>" class="button"><?php the_field('right_block_call_to_action'); ?></a>
-                </article>
-              </li>
-            </ul>
-          </div>
-
-        <?php endif ?>
+              <li><?php get_template_part('partials/loop', 'image-block') ?></li>
+            <?php endfor ?>
+          </ul>
+        </div>
 
       </div>
     </div>
