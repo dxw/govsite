@@ -436,6 +436,42 @@ if( ! function_exists('govsite_register_base_custom_fields') ) :
       'menu_order' => 0,
     ));
 
+    // Post - related content sidebar
+    register_field_group(array (
+      'id' => 'acf_related-content',
+      'title' => 'Related content',
+      'fields' => array (
+        array (
+          'key' => 'field_543ff29221d11',
+          'label' => 'Related content',
+          'name' => 'related_content',
+          'type' => 'wysiwyg',
+          'instructions' => 'Add related content as unordered list',
+          'default_value' => '',
+          'toolbar' => 'basic',
+          'media_upload' => 'no',
+        ),
+      ),
+      'location' => array (
+        array (
+          array (
+            'param' => 'post_type',
+            'operator' => '==',
+            'value' => 'post',
+            'order_no' => 0,
+            'group_no' => 0,
+          ),
+        ),
+      ),
+      'options' => array (
+        'position' => 'normal',
+        'layout' => 'no_box',
+        'hide_on_screen' => array (
+        ),
+      ),
+      'menu_order' => 0,
+    ));
+
   }
 endif;
 
@@ -779,42 +815,6 @@ if( ! function_exists('govsite_register_modular_custom_fields') ) :
       ),
       'options' => array (
         'position' => 'acf_after_title',
-        'layout' => 'default',
-        'hide_on_screen' => array (
-        ),
-      ),
-      'menu_order' => 0,
-    ));
-
-    // Post - related content sidebar
-    register_field_group(array (
-      'id' => 'acf_related-content',
-      'title' => 'Related content',
-      'fields' => array (
-        array (
-          'key' => 'field_543ff29221d11',
-          'label' => 'Related content',
-          'name' => 'related_content',
-          'type' => 'wysiwyg',
-          'instructions' => 'Add related content as unordered list',
-          'default_value' => '',
-          'toolbar' => 'basic',
-          'media_upload' => 'no',
-        ),
-      ),
-      'location' => array (
-        array (
-          array (
-            'param' => 'post_type',
-            'operator' => '==',
-            'value' => 'post',
-            'order_no' => 0,
-            'group_no' => 0,
-          ),
-        ),
-      ),
-      'options' => array (
-        'position' => 'normal',
         'layout' => 'default',
         'hide_on_screen' => array (
         ),
