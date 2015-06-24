@@ -1,0 +1,7 @@
+# Local configuration.
+default:
+  context:
+    parameters:
+      wp_users:
+        editor-user:
+          'password for user here'
