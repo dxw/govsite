@@ -1,7 +1,9 @@
-# Local configuration.
+# Default context
 default:
-  context:
-    parameters:
-      wp_users:
-        editor-user:
-          'password for user here'
+    suites:
+        default:
+            contexts:
+                - FeatureContext:
+                    wp_users:
+                      editor-qa:
+                        "password"
