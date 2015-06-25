@@ -1,6 +1,25 @@
+# Theme assets
 vendor/node_modules
 vendor/.grunt
 vendor/bower_components
 vendor/npm-debug.log
 vendor/.sass-cache
 npm-debug.log
+
+# Behat testing suite
+behat.local.yml
+composer.lock
+
+vendor/autoload.php
+vendor/behat/
+vendor/bin/
+vendor/composer/
+vendor/doctrine/
+vendor/fabpot/
+vendor/guzzlehttp/
+vendor/phpdocumentor/
+vendor/phpspec/
+vendor/phpunit/
+vendor/react/
+vendor/sebastian/
+vendor/symfony/
