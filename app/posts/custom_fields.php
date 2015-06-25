@@ -472,6 +472,62 @@ if( ! function_exists('govsite_register_base_custom_fields') ) :
       'menu_order' => 0,
     ));
 
+    // Post - video with some comments
+    register_field_group(array (
+      'id' => 'acf_videoimage-and-introduction',
+      'title' => 'Video/image and introduction',
+      'fields' => array (
+        array (
+          'key' => 'field_5441444c2f780',
+          'label' => 'Display video',
+          'name' => 'display_video',
+          'type' => 'true_false',
+          'instructions' => 'Display video instead of featured image?',
+          'message' => '',
+          'default_value' => 0,
+        ),
+        array (
+          'key' => 'field_543fdadc6e9b8',
+          'label' => 'Video URL',
+          'name' => 'video_url',
+          'type' => 'text',
+          'default_value' => '',
+          'placeholder' => '',
+          'prepend' => '',
+          'append' => '',
+          'formatting' => 'html',
+          'maxlength' => '',
+        ),
+        array (
+          'key' => 'field_543fdb506e9b9',
+          'label' => 'Introduction text',
+          'name' => 'introduction_text',
+          'type' => 'wysiwyg',
+          'default_value' => '',
+          'toolbar' => 'full',
+          'media_upload' => 'no',
+        ),
+      ),
+      'location' => array (
+        array (
+          array (
+            'param' => 'post_type',
+            'operator' => '==',
+            'value' => 'post',
+            'order_no' => 0,
+            'group_no' => 0,
+          ),
+        ),
+      ),
+      'options' => array (
+        'position' => 'acf_after_title',
+        'layout' => 'default',
+        'hide_on_screen' => array (
+        ),
+      ),
+      'menu_order' => 0,
+    ));
+
   }
 endif;
 
@@ -724,62 +780,6 @@ if( ! function_exists('govsite_register_modular_custom_fields') ) :
       ),
       'options' => array (
         'position' => 'side',
-        'layout' => 'default',
-        'hide_on_screen' => array (
-        ),
-      ),
-      'menu_order' => 0,
-    ));
-
-    // Post - video with some comments
-    register_field_group(array (
-      'id' => 'acf_videoimage-and-introduction',
-      'title' => 'Video/image and introduction',
-      'fields' => array (
-        array (
-          'key' => 'field_5441444c2f780',
-          'label' => 'Display video',
-          'name' => 'display_video',
-          'type' => 'true_false',
-          'instructions' => 'Display video instead of featured image?',
-          'message' => '',
-          'default_value' => 0,
-        ),
-        array (
-          'key' => 'field_543fdadc6e9b8',
-          'label' => 'Video URL',
-          'name' => 'video_url',
-          'type' => 'text',
-          'default_value' => '',
-          'placeholder' => '',
-          'prepend' => '',
-          'append' => '',
-          'formatting' => 'html',
-          'maxlength' => '',
-        ),
-        array (
-          'key' => 'field_543fdb506e9b9',
-          'label' => 'Introduction text',
-          'name' => 'introduction_text',
-          'type' => 'wysiwyg',
-          'default_value' => '',
-          'toolbar' => 'full',
-          'media_upload' => 'no',
-        ),
-      ),
-      'location' => array (
-        array (
-          array (
-            'param' => 'post_type',
-            'operator' => '==',
-            'value' => 'post',
-            'order_no' => 0,
-            'group_no' => 0,
-          ),
-        ),
-      ),
-      'options' => array (
-        'position' => 'acf_after_title',
         'layout' => 'default',
         'hide_on_screen' => array (
         ),
