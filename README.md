@@ -22,11 +22,11 @@ Installation
 ------------
 
 1. Download GovSite.
-2. Log in to your WordPress admin area.
-3. Select the Appearance tab, then Themes.
-4. Click Add New button.
-5. Click Upload Theme and upload the .zip format of GovSite that you previously downloaded to your computer.
-6. Install the [Advanced Custom Fields](http://www.advancedcustomfields.com/) plugin.
+2. Upload the zip file to your `/wp-content/themes` folder in your WordPress install
+3. Log in to your WordPress admin area.
+4. Install the [Advanced Custom Fields](http://www.advancedcustomfields.com/) plugin.
+5. Select the Appearance tab, then Themes.
+6. Activate the GovSite theme
 
 **NB:** GovSite requires installation of [Advanced Custom Fields](http://www.advancedcustomfields.com/) plugin, otherwise some of the fields on page templates and posts won't be available. 
 
