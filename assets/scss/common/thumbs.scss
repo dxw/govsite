@@ -1,24 +1,8 @@
-$thumb-border-style: solid;
-$thumb-border-width: $space-small;
-$thumb-border-color: darken($lightest, 7%);
-$thumb-border-color-hover: darken($lightest, 13%);
-
-@mixin thumb($border-width: $thumb-border-width) {
+@mixin thumb() {
   line-height: 0;
   display: inline-block;
-  border: $thumb-border-style $border-width $thumb-border-color;
   max-width: 100%;
   box-shadow: none;
-
-  &:hover,
-  &:focus {
-    border-color: $thumb-border-color-hover;
-    box-shadow: none;
-  }
-}
-
-ul[class*="block-grid-"] li img {
-  @include thumb($thumb-border-width);
 }
 
 .featured {

@@ -5164,21 +5164,7 @@ input.button, button.button {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 20, ../assets/scss/common/thumbs.scss */
-ul[class*="block-grid-"] li img {
-  line-height: 0;
-  display: inline-block;
-  border: solid 10px #ededed;
-  max-width: 100%;
-  box-shadow: none;
-}
-/* line 13, ../assets/scss/common/thumbs.scss */
-ul[class*="block-grid-"] li img:hover, ul[class*="block-grid-"] li img:focus {
-  border-color: #dedede;
-  box-shadow: none;
-}
-
-/* line 25, ../assets/scss/common/thumbs.scss */
+/* line 9, ../assets/scss/common/thumbs.scss */
 .featured .thumb {
   max-height: 150px;
 }
@@ -5187,16 +5173,10 @@ ul[class*="block-grid-"] li img:hover, ul[class*="block-grid-"] li img:focus {
 img.alignleft, img.alignright, img.aligncenter, img.alignnone, .wp-caption.alignleft, .wp-caption.alignright, .wp-caption.aligncenter, .wp-caption.alignnone {
   line-height: 0;
   display: inline-block;
-  border: solid 10px #ededed;
   max-width: 100%;
   box-shadow: none;
   transition: all 200ms ease-out;
   margin-bottom: 10px;
-}
-/* line 13, ../assets/scss/common/thumbs.scss */
-img.alignleft:hover, img.alignleft:focus, img.alignright:hover, img.alignright:focus, img.aligncenter:hover, img.aligncenter:focus, img.alignnone:hover, img.alignnone:focus, .wp-caption.alignleft:hover, .wp-caption.alignleft:focus, .wp-caption.alignright:hover, .wp-caption.alignright:focus, .wp-caption.aligncenter:hover, .wp-caption.aligncenter:focus, .wp-caption.alignnone:hover, .wp-caption.alignnone:focus {
-  border-color: #dedede;
-  box-shadow: none;
 }
 /* line 10, ../assets/scss/common/wordpress.scss */
 img.alignleft, .wp-caption.alignleft {
