@@ -1,7 +1,10 @@
-<?php the_post() ?>
+<?php
+/**
+ * Template Name: Home
+ */
+the_post() ?>
 
 <main id="content" role="main" class="main">
-
   <?php if(get_the_content()) : ?>
     <?php get_template_part('partials/banner', 'page') ?>
   <?php endif ?>
