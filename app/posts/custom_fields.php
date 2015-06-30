@@ -194,6 +194,258 @@ if( ! function_exists('govsite_register_base_custom_fields') ) :
       'menu_order' => 0,
     ));
 
+    // Campaign page template - featured video
+    register_field_group(array (
+      'id' => 'acf_featured-video',
+      'title' => 'Featured video',
+      'fields' => array (
+        array (
+          'key' => 'field_543e65b4b108d',
+          'label' => 'Show video',
+          'name' => 'show_video',
+          'type' => 'true_false',
+          'instructions' => 'Show featured video instead of featured image?',
+          'message' => '',
+          'default_value' => 0,
+        ),
+        array (
+          'key' => 'field_543e65f0b108e',
+          'label' => 'Featured video URL',
+          'name' => 'featured_video_url',
+          'type' => 'text',
+          'default_value' => '',
+          'placeholder' => '',
+          'prepend' => '',
+          'append' => '',
+          'formatting' => 'html',
+          'maxlength' => '',
+        ),
+      ),
+      'location' => array (
+        array (
+          array (
+            'param' => 'page_template',
+            'operator' => '==',
+            'value' => 'page-campaign.php',
+            'order_no' => 0,
+            'group_no' => 0,
+          ),
+        ),
+      ),
+      'options' => array (
+        'position' => 'acf_after_title',
+        'layout' => 'default',
+        'hide_on_screen' => array (
+        ),
+      ),
+      'menu_order' => 0,
+    ));
+
+    // Two content blocks on campaign page template
+    register_field_group(array (
+      'id' => 'acf_content-blocks',
+      'title' => 'Content blocks',
+      'fields' => array (
+        array (
+          'key' => 'field_543e740d941c5',
+          'label' => 'Left block title',
+          'name' => 'block_title_1',
+          'type' => 'text',
+          'default_value' => '',
+          'placeholder' => '',
+          'prepend' => '',
+          'append' => '',
+          'formatting' => 'html',
+          'maxlength' => '',
+        ),
+        array (
+          'key' => 'field_543e7442941c7',
+          'label' => 'Left block text',
+          'name' => 'block_text_1',
+          'type' => 'wysiwyg',
+          'default_value' => '',
+          'toolbar' => 'full',
+          'media_upload' => 'no',
+        ),
+        array (
+          'key' => 'field_543e7425941c6',
+          'label' => 'Left block image',
+          'name' => 'block_image_1',
+          'type' => 'image',
+          'save_format' => 'object',
+          'preview_size' => 'thumbnail',
+          'library' => 'all',
+        ),
+        array (
+          'key' => 'field_543e748eafd9e',
+          'label' => 'Left block call to action',
+          'name' => 'block_call_to_action_1',
+          'type' => 'text',
+          'default_value' => '',
+          'placeholder' => '',
+          'prepend' => '',
+          'append' => '',
+          'formatting' => 'html',
+          'maxlength' => '',
+        ),
+        array (
+          'key' => 'field_543e749dafd9f',
+          'label' => 'Left block URL',
+          'name' => 'block_url_1',
+          'type' => 'text',
+          'default_value' => '',
+          'placeholder' => '',
+          'prepend' => '',
+          'append' => '',
+          'formatting' => 'html',
+          'maxlength' => '',
+        ),
+        array (
+          'key' => 'field_543e75a364eaf',
+          'label' => 'Right block title',
+          'name' => 'block_title_2',
+          'type' => 'text',
+          'default_value' => '',
+          'placeholder' => '',
+          'prepend' => '',
+          'append' => '',
+          'formatting' => 'html',
+          'maxlength' => '',
+        ),
+        array (
+          'key' => 'field_543e75af64eb0',
+          'label' => 'Right block text',
+          'name' => 'block_text_2',
+          'type' => 'wysiwyg',
+          'default_value' => '',
+          'toolbar' => 'full',
+          'media_upload' => 'no',
+        ),
+        array (
+          'key' => 'field_543e75c464eb1',
+          'label' => 'Right block image',
+          'name' => 'block_image_2',
+          'type' => 'image',
+          'save_format' => 'object',
+          'preview_size' => 'thumbnail',
+          'library' => 'all',
+        ),
+        array (
+          'key' => 'field_543e75d364eb2',
+          'label' => 'Right block call to action',
+          'name' => 'block_call_to_action_2',
+          'type' => 'text',
+          'default_value' => '',
+          'placeholder' => '',
+          'prepend' => '',
+          'append' => '',
+          'formatting' => 'html',
+          'maxlength' => '',
+        ),
+        array (
+          'key' => 'field_543e75e464eb3',
+          'label' => 'Right block URL',
+          'name' => 'block_url_2',
+          'type' => 'text',
+          'default_value' => '',
+          'placeholder' => '',
+          'prepend' => '',
+          'append' => '',
+          'formatting' => 'html',
+          'maxlength' => '',
+        ),
+      ),
+      'location' => array (
+        array (
+          array (
+            'param' => 'page_template',
+            'operator' => '==',
+            'value' => 'page-campaign.php',
+            'order_no' => 0,
+            'group_no' => 0,
+          ),
+        ),
+      ),
+      'options' => array (
+        'position' => 'normal',
+        'layout' => 'default',
+        'hide_on_screen' => array (
+        ),
+      ),
+      'menu_order' => 0,
+    ));
+
+    // Post and campaign page template - bottom banner
+    register_field_group(array (
+      'id' => 'acf_bottom-banner',
+      'title' => 'Bottom banner',
+      'fields' => array (
+        array (
+          'key' => 'field_54412e08fcaf0',
+          'label' => 'Banner text',
+          'name' => 'banner_text',
+          'type' => 'text',
+          'default_value' => '',
+          'placeholder' => '',
+          'prepend' => '',
+          'append' => '',
+          'formatting' => 'html',
+          'maxlength' => '',
+        ),
+        array (
+          'key' => 'field_54412e16fcaf1',
+          'label' => 'Banner call to action',
+          'name' => 'banner_call_to_action',
+          'type' => 'text',
+          'default_value' => '',
+          'placeholder' => '',
+          'prepend' => '',
+          'append' => '',
+          'formatting' => 'html',
+          'maxlength' => '',
+        ),
+        array (
+          'key' => 'field_54412e22fcaf2',
+          'label' => 'Banner URL',
+          'name' => 'banner_url',
+          'type' => 'text',
+          'default_value' => '',
+          'placeholder' => '',
+          'prepend' => '',
+          'append' => '',
+          'formatting' => 'html',
+          'maxlength' => '',
+        ),
+      ),
+      'location' => array (
+        array (
+          array (
+            'param' => 'post_type',
+            'operator' => '==',
+            'value' => 'post',
+            'order_no' => 0,
+            'group_no' => 0,
+          ),
+        ),
+        array (
+          array (
+            'param' => 'page_template',
+            'operator' => '==',
+            'value' => 'page-campaign.php',
+            'order_no' => 0,
+            'group_no' => 1,
+          ),
+        ),
+      ),
+      'options' => array (
+        'position' => 'side',
+        'layout' => 'default',
+        'hide_on_screen' => array (
+        ),
+      ),
+      'menu_order' => 0,
+    ));
+
   }
 endif;
 
@@ -541,258 +793,6 @@ endif;
 if( ! function_exists('govsite_register_modular_custom_fields') ) :
 
   function govsite_register_modular_custom_fields() {
-
-    // Campaign page template - featured video
-    register_field_group(array (
-      'id' => 'acf_featured-video',
-      'title' => 'Featured video',
-      'fields' => array (
-        array (
-          'key' => 'field_543e65b4b108d',
-          'label' => 'Show video',
-          'name' => 'show_video',
-          'type' => 'true_false',
-          'instructions' => 'Show featured video instead of featured image?',
-          'message' => '',
-          'default_value' => 0,
-        ),
-        array (
-          'key' => 'field_543e65f0b108e',
-          'label' => 'Featured video URL',
-          'name' => 'featured_video_url',
-          'type' => 'text',
-          'default_value' => '',
-          'placeholder' => '',
-          'prepend' => '',
-          'append' => '',
-          'formatting' => 'html',
-          'maxlength' => '',
-        ),
-      ),
-      'location' => array (
-        array (
-          array (
-            'param' => 'page_template',
-            'operator' => '==',
-            'value' => 'page-campaign.php',
-            'order_no' => 0,
-            'group_no' => 0,
-          ),
-        ),
-      ),
-      'options' => array (
-        'position' => 'acf_after_title',
-        'layout' => 'default',
-        'hide_on_screen' => array (
-        ),
-      ),
-      'menu_order' => 0,
-    ));
-
-    // Two content blocks on campaign page template
-    register_field_group(array (
-      'id' => 'acf_content-blocks',
-      'title' => 'Content blocks',
-      'fields' => array (
-        array (
-          'key' => 'field_543e740d941c5',
-          'label' => 'Left block title',
-          'name' => 'block_title_1',
-          'type' => 'text',
-          'default_value' => '',
-          'placeholder' => '',
-          'prepend' => '',
-          'append' => '',
-          'formatting' => 'html',
-          'maxlength' => '',
-        ),
-        array (
-          'key' => 'field_543e7442941c7',
-          'label' => 'Left block text',
-          'name' => 'block_text_1',
-          'type' => 'wysiwyg',
-          'default_value' => '',
-          'toolbar' => 'full',
-          'media_upload' => 'no',
-        ),
-        array (
-          'key' => 'field_543e7425941c6',
-          'label' => 'Left block image',
-          'name' => 'block_image_1',
-          'type' => 'image',
-          'save_format' => 'object',
-          'preview_size' => 'thumbnail',
-          'library' => 'all',
-        ),
-        array (
-          'key' => 'field_543e748eafd9e',
-          'label' => 'Left block call to action',
-          'name' => 'block_call_to_action_1',
-          'type' => 'text',
-          'default_value' => '',
-          'placeholder' => '',
-          'prepend' => '',
-          'append' => '',
-          'formatting' => 'html',
-          'maxlength' => '',
-        ),
-        array (
-          'key' => 'field_543e749dafd9f',
-          'label' => 'Left block URL',
-          'name' => 'block_url_1',
-          'type' => 'text',
-          'default_value' => '',
-          'placeholder' => '',
-          'prepend' => '',
-          'append' => '',
-          'formatting' => 'html',
-          'maxlength' => '',
-        ),
-        array (
-          'key' => 'field_543e75a364eaf',
-          'label' => 'Right block title',
-          'name' => 'block_title_2',
-          'type' => 'text',
-          'default_value' => '',
-          'placeholder' => '',
-          'prepend' => '',
-          'append' => '',
-          'formatting' => 'html',
-          'maxlength' => '',
-        ),
-        array (
-          'key' => 'field_543e75af64eb0',
-          'label' => 'Right block text',
-          'name' => 'block_text_2',
-          'type' => 'wysiwyg',
-          'default_value' => '',
-          'toolbar' => 'full',
-          'media_upload' => 'no',
-        ),
-        array (
-          'key' => 'field_543e75c464eb1',
-          'label' => 'Right block image',
-          'name' => 'block_image_2',
-          'type' => 'image',
-          'save_format' => 'object',
-          'preview_size' => 'thumbnail',
-          'library' => 'all',
-        ),
-        array (
-          'key' => 'field_543e75d364eb2',
-          'label' => 'Right block call to action',
-          'name' => 'block_call_to_action_2',
-          'type' => 'text',
-          'default_value' => '',
-          'placeholder' => '',
-          'prepend' => '',
-          'append' => '',
-          'formatting' => 'html',
-          'maxlength' => '',
-        ),
-        array (
-          'key' => 'field_543e75e464eb3',
-          'label' => 'Right block URL',
-          'name' => 'block_url_2',
-          'type' => 'text',
-          'default_value' => '',
-          'placeholder' => '',
-          'prepend' => '',
-          'append' => '',
-          'formatting' => 'html',
-          'maxlength' => '',
-        ),
-      ),
-      'location' => array (
-        array (
-          array (
-            'param' => 'page_template',
-            'operator' => '==',
-            'value' => 'page-campaign.php',
-            'order_no' => 0,
-            'group_no' => 0,
-          ),
-        ),
-      ),
-      'options' => array (
-        'position' => 'normal',
-        'layout' => 'default',
-        'hide_on_screen' => array (
-        ),
-      ),
-      'menu_order' => 0,
-    ));
-
-    // Post and campaign page template - bottom banner
-    register_field_group(array (
-      'id' => 'acf_bottom-banner',
-      'title' => 'Bottom banner',
-      'fields' => array (
-        array (
-          'key' => 'field_54412e08fcaf0',
-          'label' => 'Banner text',
-          'name' => 'banner_text',
-          'type' => 'text',
-          'default_value' => '',
-          'placeholder' => '',
-          'prepend' => '',
-          'append' => '',
-          'formatting' => 'html',
-          'maxlength' => '',
-        ),
-        array (
-          'key' => 'field_54412e16fcaf1',
-          'label' => 'Banner call to action',
-          'name' => 'banner_call_to_action',
-          'type' => 'text',
-          'default_value' => '',
-          'placeholder' => '',
-          'prepend' => '',
-          'append' => '',
-          'formatting' => 'html',
-          'maxlength' => '',
-        ),
-        array (
-          'key' => 'field_54412e22fcaf2',
-          'label' => 'Banner URL',
-          'name' => 'banner_url',
-          'type' => 'text',
-          'default_value' => '',
-          'placeholder' => '',
-          'prepend' => '',
-          'append' => '',
-          'formatting' => 'html',
-          'maxlength' => '',
-        ),
-      ),
-      'location' => array (
-        array (
-          array (
-            'param' => 'post_type',
-            'operator' => '==',
-            'value' => 'post',
-            'order_no' => 0,
-            'group_no' => 0,
-          ),
-        ),
-        array (
-          array (
-            'param' => 'page_template',
-            'operator' => '==',
-            'value' => 'page-campaign.php',
-            'order_no' => 0,
-            'group_no' => 1,
-          ),
-        ),
-      ),
-      'options' => array (
-        'position' => 'side',
-        'layout' => 'default',
-        'hide_on_screen' => array (
-        ),
-      ),
-      'menu_order' => 0,
-    ));
 
     // Post - show full width featured image
     register_field_group(array (
