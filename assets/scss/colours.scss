@@ -1,11 +1,11 @@
 // Theme colours
-$white: #fff;
-$black: #000;
+$white: #fff !default;
+$black: #000 !default;
 
-$lightest: $white;
-$darkest: $black;
-$primary-color: #2e69ac;   // blue
-$secondary-color: #00a0b0; // turquoise blue
-$logo-color: #1b325f;      // dark blue
+$lightest: $white !default;
+$darkest: $black !default;
+$primary-color: #2e69ac !default;   // blue
+$secondary-color: #00a0b0 !default; // turquoise blue
+$logo-color: #1b325f !default;      // dark blue
 
-$mail-color: $logo-color;
+$mail-color: $logo-color !default;
