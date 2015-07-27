@@ -48,7 +48,7 @@ if( ! function_exists('govsite_register_base_custom_fields') ) :
           array (
             'param' => 'page_template',
             'operator' => '==',
-            'value' => 'page-contact.php',
+            'value' => 'template-contact.php',
             'order_no' => 0,
             'group_no' => 0,
           ),
@@ -187,7 +187,7 @@ if( ! function_exists('govsite_register_base_custom_fields') ) :
           array (
             'param' => 'page_template',
             'operator' => '==',
-            'value' => 'page-campaign.php',
+            'value' => 'template-campaign.php',
             'order_no' => 0,
             'group_no' => 0,
           ),
@@ -321,7 +321,7 @@ if( ! function_exists('govsite_register_base_custom_fields') ) :
           array (
             'param' => 'page_template',
             'operator' => '==',
-            'value' => 'page-campaign.php',
+            'value' => 'template-campaign.php',
             'order_no' => 0,
             'group_no' => 0,
           ),
@@ -392,7 +392,7 @@ if( ! function_exists('govsite_register_base_custom_fields') ) :
           array (
             'param' => 'page_template',
             'operator' => '==',
-            'value' => 'page-campaign.php',
+            'value' => 'template-campaign.php',
             'order_no' => 0,
             'group_no' => 1,
           ),
@@ -457,7 +457,7 @@ if( ! function_exists('govsite_register_front_page_fields') ) :
           array (
             'param' => 'page_template',
             'operator' => '==',
-            'value' => 'page-home.php',
+            'value' => 'template-home.php',
             'order_no' => 0,
             'group_no' => 0,
           ),
@@ -621,7 +621,7 @@ if( ! function_exists('govsite_register_front_page_fields') ) :
           array (
             'param' => 'page_template',
             'operator' => '==',
-            'value' => 'page-home.php',
+            'value' => 'template-home.php',
             'order_no' => 0,
             'group_no' => 0,
           ),
@@ -659,7 +659,7 @@ if( ! function_exists('govsite_register_front_page_fields') ) :
           array (
             'param' => 'page_template',
             'operator' => '==',
-            'value' => 'page-home.php',
+            'value' => 'template-home.php',
             'order_no' => 0,
             'group_no' => 0,
           ),
@@ -732,7 +732,7 @@ if( ! function_exists('govsite_register_front_page_fields') ) :
           array (
             'param' => 'page_template',
             'operator' => '==',
-            'value' => 'page-home.php',
+            'value' => 'template-home.php',
             'order_no' => 0,
             'group_no' => 0,
           ),
@@ -814,7 +814,7 @@ if( ! function_exists('govsite_register_modular_custom_fields') ) :
           array (
             'param' => 'page_template',
             'operator' => '==',
-            'value' => 'page-contact.php',
+            'value' => 'template-contact.php',
             'order_no' => 0,
             'group_no' => 0,
           ),
