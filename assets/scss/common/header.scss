@@ -15,7 +15,7 @@
     line-height: 1;
     color: $logo-color;
     display: block;
-    
+
     &:hover, &:focus {
       color: scale-color($logo-color, $lightness: -14%);
     }
@@ -25,10 +25,10 @@
     }
 
     img {
-      width: 200px;
-      
+      max-width: 200px;
+
       @media #{$small-only} {
-        width: 180px;
+        max-width: 180px;
       }
     }
   }
