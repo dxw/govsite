@@ -27,8 +27,13 @@
   <header class="site-header" role="banner">
     <div class="row">
       <div class="small-12 medium-3 columns">
-        <?php $logo = get_option('logo-setting') ?>
-        <a href="<?php echo home_url('/') ?>" title="<?php bloginfo('name') ?>" class="logo"><img src="<?php echo $logo ?>" alt="<?php bloginfo('name') ?> logo"></a>
+        <a href="<?php echo home_url('/') ?>" title="<?php bloginfo('name') ?>" class="logo">
+          <?php if( $logo = get_option('logo-setting') ): ?>
+            <img src="<?php echo $logo ?>" alt="<?php bloginfo('name') ?> logo">
+          <?php else: ?>
+            <?php bloginfo('name') ?>
+          <?php endif; ?>
+        </a>
         <div class="toggle-container hidden-for-medium-up">
           <a href="#top-bar" class="nav-toggle"><span class="visually-hidden"><?php _e('Menu', 'govsite') ?></span></a>
         </div>
