@@ -35,7 +35,7 @@
         color: $lightest;
         @include font-size(18);
         @include single-transition(border-top, 300ms, ease-in);
-        
+
         &:hover, &:focus {
           background: scale-color($primary-color, $lightness: -14%);
           color: $lightest;
@@ -50,7 +50,7 @@
           background: transparent;
           padding: 38px $space-medium;
           color: $body-font-color;
-          
+
           &:hover, &:focus {
             background: transparent;
             color: $primary-color;
@@ -70,11 +70,11 @@
         @media #{$medium-up} {
           background: transparent;
           color: $primary-color;
-          
+
           &:before {
             @include arrow(10px, down, 0, 40%, $logo-color);
           }
-          
+
           &:hover, &:focus {
             background: transparent;
             color: scale-color($primary-color, $lightness: -14%);
@@ -118,7 +118,7 @@
       &.active {
         max-height: 15em;
         margin-bottom: $space-medium;
-        
+
         ul {
           float: none !important;
         }
@@ -142,7 +142,7 @@
       margin-top: $space-small/2;
       @include font-size(32);
       @include icon(before, menu);
-      
+
       &:visited {
         color: $primary-color;
       }
