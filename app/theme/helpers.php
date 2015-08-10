@@ -31,6 +31,16 @@ add_filter('excerpt_more', 'new_excerpt_more');
 
 // Featured images in posts and pages
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'title-tag' );
+
+if ( ! function_exists( '_wp_render_title_tag' ) ) {
+  function theme_slug_render_title() {
+    ?>
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <?php
+  }
+  add_action( 'wp_head', 'theme_slug_render_title' );
+}
 
 // Archive page
 function show_archived_sticky_posts($type = 'sticky') {

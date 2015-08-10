@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes() ?>> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title><?php wp_title('|', true, 'right') ?><?php bloginfo('name') ?></title>
   <link rel="dns-prefetch" href="//maps.gstatic.com">
   <link rel="dns-prefetch" href="//www.google-analytics.com">
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
