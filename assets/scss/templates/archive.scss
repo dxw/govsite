@@ -1,9 +1,10 @@
-.archive {
+.main-archive,
+.main-home {
   article.post-summary {
     h1.entry-title {
       margin-bottom: $space-small;
     }
-    
+
     img {
       max-width: 30%;
       float: left;
