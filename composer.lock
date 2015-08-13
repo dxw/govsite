@@ -1,0 +1,55 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "d262cf9e9187bd5ff691868287c5442d",
+    "packages": [
+        {
+            "name": "dxw/pagination",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dxw/pagination.git",
+                "reference": "47322b25de7d0811c07e4995f3c5051466216fab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dxw/pagination/zipball/47322b25de7d0811c07e4995f3c5051466216fab",
+                "reference": "47322b25de7d0811c07e4995f3c5051466216fab",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dxw\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tom Adams",
+                    "email": "tom@dxw.com",
+                    "homepage": "https://www.dxw.com/"
+                }
+            ],
+            "description": "Unit-tested framework-agnostic pagination that works with Bootstrap and Foundation",
+            "homepage": "https://github.com/dxw/pagination",
+            "time": "2015-06-23 18:39:39"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "dxw/pagination": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

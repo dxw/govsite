@@ -1,6 +1,11 @@
 <?php
 
 /*
+ * Require autoload file
+ */
+require dirname(__FILE__) . '/../vendor/autoload.php';
+
+/*
  * Libraries and support code
  */
 
