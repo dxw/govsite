@@ -1,0 +1,15 @@
+<phpunit
+  bootstrap="test/bootstrap.php"
+  backupGlobals="false"
+  colors="true">
+  <testsuites>
+    <testsuite>
+      <directory suffix="_test.php">test</directory>
+    </testsuite>
+  </testsuites>
+  <filter>
+    <whitelist addUncoveredFilesFromWhitelist="true">
+      <directory suffix=".php">src</directory>
+    </whitelist>
+  </filter>
+</phpunit>

@@ -1,0 +1,20 @@
+{
+    "name": "dxw/pagination",
+    "description": "Unit-tested framework-agnostic pagination that works with Bootstrap and Foundation",
+    "homepage": "https://github.com/dxw/pagination",
+    "type": "library",
+    "version": "0.1.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tom Adams",
+            "email": "tom@dxw.com",
+            "homepage": "https://www.dxw.com/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dxw\\": "src/"
+        }
+    }
+}
