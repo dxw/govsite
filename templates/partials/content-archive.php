@@ -13,8 +13,12 @@
 
     <div class="row">
 
-      <div class="medium-8 large-8 columns">
-        <?php
+      <?php if ( dynamic_sidebar('sidebar-primary') ) : ?>
+        <div class="medium-8 large-8 columns">
+      <?php else: ?>
+        <div class="medium-12 large-12 columns">
+      <?php endif; ?>
+      <?php
 
         show_archived_sticky_posts();
         show_archived_not_sticky_posts();
