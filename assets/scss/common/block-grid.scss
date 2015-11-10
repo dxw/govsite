@@ -1,33 +1,16 @@
-ul[class*="block-grid-"] {
-  li {
-    p {
-      margin-bottom: 0;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-      margin-bottom: $space-medium;
-    }
-
-    .button {
-      margin-top: $space-medium;
-      margin-bottom: 0;
-    }
+ul[class*="block-grid-"] li {
+  p {
+    margin-bottom: 0;
   }
-}
 
-ul[class*="small-block-grid-"] {
-  @media #{$small-only} {
-    p {
-      width: 54%;
-      float: left;
-    }
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: $space-medium;
+  }
 
-    a.image {
-      width: 42%;
-      float: left;
-      margin-right: 4%;
-    }
+  .button {
+    margin-top: $space-medium;
+    margin-bottom: 0;
   }
 }

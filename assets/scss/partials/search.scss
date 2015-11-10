@@ -70,7 +70,7 @@
       color: $lightest;
       @include opacity(0.4);
     }
-    
+
     *:-ms-input-placeholder {
       color: $lightest;
       @include opacity(0.4);
@@ -83,8 +83,6 @@
   }
 }
 
-body.search-no-results {
-  .page-element {
-    min-height: 200px;
-  }
+.search-no-results .page-element {
+  min-height: 200px;
 }

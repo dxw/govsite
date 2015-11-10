@@ -1,6 +1,6 @@
 .main-archive,
 .main-home {
-  article.post-summary {
+  .post-summary {
     h1.entry-title {
       margin-bottom: $space-small;
     }
@@ -26,14 +26,11 @@
     }
   }
 
-  article.sticky {
-    header {
-      h1 {
-        line-height: 1;
-        a {
-          @include font-size(30);
-        }
-      }
+  .sticky header h1 {
+    line-height: 1;
+
+    a {
+      @include font-size(30);
     }
   }
 }
