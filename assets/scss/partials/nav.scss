@@ -138,10 +138,19 @@
     }
 
     .nav-toggle {
+      @include font-size(16);
+      @include icon(after, menu);
       float: right;
       margin-top: $space-small/2;
-      @include font-size(32);
-      @include icon(before, menu);
+      line-height: 1;
+
+      &:after {
+        @include font-size(32);
+        position: relative;
+        top: 7px;
+        line-height: 1;
+        margin-left: 5px;
+      }
 
       &:visited {
         color: $primary-color;
