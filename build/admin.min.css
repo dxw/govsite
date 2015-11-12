@@ -5099,7 +5099,7 @@ button:visited:hover, button:visited:focus, .button:visited:hover, .button:visit
 /* line 20, ../assets/scss/common/buttons.scss */
 .button-banner:hover, .button-banner:focus {
   background: #fff;
-  color: #005a64;
+  color: #005a63;
 }
 /* line 25, ../assets/scss/common/buttons.scss */
 .button-banner:visited {
@@ -5107,7 +5107,7 @@ button:visited:hover, button:visited:focus, .button:visited:hover, .button:visit
 }
 /* line 28, ../assets/scss/common/buttons.scss */
 .button-banner:visited:hover, .button-banner:visited:focus {
-  color: #005a64;
+  color: #005a63;
 }
 
 /* line 34, ../assets/scss/common/buttons.scss */

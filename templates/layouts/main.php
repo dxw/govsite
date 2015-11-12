@@ -34,7 +34,7 @@
           <?php endif; ?>
         </a>
         <div class="toggle-container hidden-for-medium-up">
-          <a href="#top-bar" class="nav-toggle"><span class="visually-hidden"><?php _e('Menu', 'govsite') ?></span></a>
+          <a href="#top-bar" class="nav-toggle"><?php _e('Menu', 'govsite') ?></a>
         </div>
       </div>
       <div class="small-12 medium-9 columns">

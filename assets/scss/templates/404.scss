@@ -30,8 +30,6 @@
   }
 }
 
-.page-template-404-php {
-  .medium-8 {
-    margin-bottom: $space-medium*2;
-  }
+.page-template-404-php .medium-8 {
+  margin-bottom: $space-medium*2;
 }
