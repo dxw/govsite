@@ -6,9 +6,15 @@ body {
 // content visible for screen reader only
 // http://webaim.org/techniques/css/invisiblecontent/
 span.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
 }
 
 .ie-visible {
