@@ -1,7 +1,7 @@
 <section class="page-banner">
   <div class="row">
     <div class="large-12 columns">
-      <article class="rte">
+      <article class="rich-text">
         <?php the_field('banner_content'); ?>
       </article>
       <?php if (get_field('banner_button_url')) : ?>

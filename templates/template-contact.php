@@ -19,7 +19,7 @@ the_post();
         <div class="row">
 
           <div class="medium-8 columns">
-            <article class="rte">
+            <article class="rich-text">
               <?php the_content() ?>
             </article>
           </div>

@@ -43,7 +43,7 @@
     <div class="page-element row">
 
       <div class="medium-8 columns">
-        <article class="rte">
+        <article class="rich-text">
           <?php
           the_content();
           get_template_part('partials/share');

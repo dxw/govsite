@@ -9,7 +9,7 @@
 
       <div class="page-element row">
         <div class="medium-8 large-8 columns">
-          <article class="rte">
+          <article class="rich-text">
             <?php if (has_post_thumbnail()) : ?>
               <figure>
                 <?php the_post_thumbnail('large'); ?>
