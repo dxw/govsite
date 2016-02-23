@@ -79,8 +79,13 @@
 
     &.mail {
       background: $mail-color;
-      @include icon(before, envelope);
       @include box-shadow(0, 2px, 0, 0, darken($mail-color, 15%));
+
+      &:before {
+        content: '';
+        display: block;
+        @include background-image('icon-email', 20px, 20px, $lightest);
+      }
 
       &:hover, &:focus {
         top: 2px;

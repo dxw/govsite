@@ -84,21 +84,21 @@
     }
 
     .button-search {
-      margin-top: 30px;
+      margin-top: 40px;
       margin-left: $space-medium;
-      background: transparent;
       padding: 0;
-      color: $body-font-color;
-      @include font-size(25);
-      @include icon(before, search);
+      background: transparent;
+      color: $primary-color;
+      display: block;
+      @include background-image('icon-search', 25px, 25px, lighten($darkest, 13));
 
       &:hover, &:focus {
-        color: $primary-color;
+        background-color: $primary-color;
       }
 
       &.opened {
-        @include icon(before, close);
-        color: $primary-color;
+        margin-top: 45px;
+        @include background-image('icon-close', 15px, 15px, $primary-color);
       }
 
       @media #{$medium-up} {
@@ -139,9 +139,9 @@
 
     .nav-toggle {
       float: right;
-      margin-top: $space-small/2;
+      margin-top: $space-small*2;
       @include font-size(32);
-      @include icon(before, menu);
+      @include background-image('icon-menu', 30px, 30px, $primary-color);
 
       &:visited {
         color: $primary-color;

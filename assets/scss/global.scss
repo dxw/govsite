@@ -64,20 +64,7 @@ $icons: (
   twitter:    "\e602",
   flickr:     "\e603",
 
-  calendar:   "\f133",
-  envelope:   "\f0e0",
   menu:       "\e604",
-  location:   "\e605",
-  phone:      "\e606",
-  search:     "\e609",
-  search2:    "\e60c",
-  close:      "\e60b",
-  lock:       "\e60a",
-  quoteleft:  "\f10d",
-  previous:   "\e607",
-  next:       "\e608",
-  doctext:    "\f15c",
-  doc:        "\f15b"
 );
 
 @mixin icon($position: before, $icon: false, $styles: true) {
@@ -102,6 +89,19 @@ $icons: (
     }
     // Include any extra rules supplied for the pseudo-element
     @content;
+  }
+}
+
+// SVG icons
+
+@mixin background-image($icon, $width: false, $height: false, $color: false){
+  background-color: $color;
+  -webkit-mask-image: url(#{$imagePath}/#{$icon}.svg);
+  mask-image: url(#{$imagePath}/#{$icon}.svg);
+  @if($width){
+    width: $width;
+    height: $height;
+    background-size: $width $height;
   }
 }
 

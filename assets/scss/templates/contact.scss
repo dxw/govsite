@@ -4,17 +4,26 @@
 
   address {
     font-style: normal;
-    @include icon(before, location);
+    &:before {
+      content: '';
+      @include background-image('icon-pin', 20px, 20px, $logo-color);
+    }
   }
 
   .contact-link {
     display: block;
 
     &.phone {
-      @include icon(before, phone);
+      &:before {
+        content: '';
+        @include background-image('icon-phone', 20px, 20px, $logo-color);
+      }
     }
     &.email {
-      @include icon(before, envelope);
+      &:before {
+        content: '';
+        @include background-image('icon-email', 20px, 20px, $logo-color);
+      }
     }
   }
 

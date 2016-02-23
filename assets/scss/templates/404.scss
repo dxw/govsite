@@ -1,33 +1,23 @@
 .error-image {
   display: block;
   position: relative;
-  padding-top: 67px;
-  padding-left: 62px;
+  padding-top: 55px;
+  padding-left: 55px;
   @include font-size(60);
-  @include icon(before, search2);
   color: darken($lightest, 40%);
   font-weight: bold;
-
-  @media #{$medium-only} {
-    padding-top: 49px;
-    padding-left: 45px;
-    @include font-size(55);
-  }
-
   &:before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    @include font-size(270);
-    line-height: 1;
-    color: darken($lightest, 20%);
-    text-shadow: darken($lightest, 25%) 1px 1px 0;
-
-    @media #{$medium-only} {
-      @include font-size(220);
-      line-height: 1;
-    }
+    @include background-image('icon-search', 250px, 250px, darken($lightest, 20%));
   }
+
+  @media #{$medium-only} {
+    @include font-size(55);
+  }
+
 }
 
 .page-template-404-php {

@@ -18,14 +18,10 @@
     margin-top: 4px;
 
     .icon-search {
-      display: block;
-      @include icon(before, search);
-
-      &:before {
-        position: absolute;
-        font-size: 36px;
-        color: $lightest;
-      }
+      display: inline-block;
+      float: left;
+      margin-top: 5px;
+      @include background-image('icon-search', 25px, 25px, $lightest);
 
       &.focus {
         &:before {
@@ -41,7 +37,8 @@
     input {
       width: 90%;
       display: inline-block;
-      margin-left: 50px;
+      float: left;
+      margin-left: 30px;
       background: transparent;
       border: none;
       border-bottom: 1px solid $lightest;

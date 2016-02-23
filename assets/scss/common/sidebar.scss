@@ -11,15 +11,15 @@
       position: relative;
       margin: $space-small/2 0 0 $space-large;
       padding: 0;
-      @include icon(before, next);
 
       &:before {
+        content: '';
         position: absolute;
-        top: 4px;
+        top: 8px;
         left: -25px;
         display: inline-block;
         margin-right: $space-small;
-        color: $secondary-color;
+        @include background-image('icon-arrow-right', 10px, 10px, $secondary-color);
       }
 
       &:first-child {

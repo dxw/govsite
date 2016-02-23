@@ -10,9 +10,9 @@ ul.breadcrumbs {
 
   > * {
     text-transform: none;
-    @include icon(before, next);
     &:before {
       margin: 0 $space-small/2;
+      @include background-image('icon-arrow-right', 10px, 10px, lighten($darkest, 13));
     }
   }
 }
