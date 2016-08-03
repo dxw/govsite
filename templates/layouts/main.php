@@ -55,10 +55,10 @@
 
     <div class="navigation">
       <div class="row">
-        <div class="medium-6 columns">
+        <div class="medium-8 columns">
           <?php get_template_part('partials/nav-footer') ?>
         </div>
-        <div class="medium-6 columns">
+        <div class="medium-4 columns">
           <?php if ( get_option('footer-link-text-setting') ) : ?>
             <p><?php echo get_option('footer-link-text-setting') ?> <a href="<?php echo get_option('footer-link-url-setting') ?>"><?php echo get_option('footer-link-cta-setting') ?></a></p>
           <?php endif ?>
