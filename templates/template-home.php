@@ -9,52 +9,58 @@ the_post() ?>
     <?php get_template_part('partials/banner', 'page') ?>
   <?php endif ?>
 
-  <section class="image-features row">
-    <ul class="small-block-grid-1 medium-block-grid-3">
+  <div class="row">
+    <div class="large-12 columns">
 
-      <?php for($img=1; $img<=3; $img++): ?>
+        <section class="image-features">
+          <ul class="small-block-grid-1 medium-block-grid-3">
 
-        <?php
-          // Pass the $img variable into the partial
-          set_query_var( 'img', $img );
-          get_template_part( 'partials/image', 'feature' );
-        ?>
+            <?php for($img=1; $img<=3; $img++): ?>
 
-      <?php endfor; ?>
+              <?php
+                // Pass the $img variable into the partial
+                set_query_var( 'img', $img );
+                get_template_part( 'partials/image', 'feature' );
+              ?>
 
-    </ul>
-  </section>
+            <?php endfor; ?>
 
-  <section class="news-posts row">
+          </ul>
+        </section>
 
-    <div class="posts medium-8 columns">
-      <header>
-        <h2><?php _e('News', 'govsite') ?></h2>
-      </header>
+        <section class="news-posts row">
 
-      <?php $news = new WP_Query( array ('posts_per_page' => 4) ); ?>
+          <div class="posts medium-8 columns">
+            <header>
+              <h2><?php _e('News', 'govsite') ?></h2>
+            </header>
 
-      <?php if( $news->have_posts()) : while ($news->have_posts()) : $news->the_post() ?>
+            <?php $news = new WP_Query( array ('posts_per_page' => 4) ); ?>
 
-        <?php if (is_sticky()) : ?>
-          <?php get_template_part('partials/loop', 'featured-news') ?>
-        <?php else : ?>
-          <?php get_template_part('partials/loop', 'news') ?>
-        <?php endif ?>
+            <?php if( $news->have_posts()) : while ($news->have_posts()) : $news->the_post() ?>
 
-      <?php endwhile; endif; ?>
+              <?php if (is_sticky()) : ?>
+                <?php get_template_part('partials/loop', 'featured-news') ?>
+              <?php else : ?>
+                <?php get_template_part('partials/loop', 'news') ?>
+              <?php endif ?>
 
-      <?php wp_reset_query() ?>
+            <?php endwhile; endif; ?>
 
-      <?php if (get_field('news_page_url')) : ?>
-        <a href="<?php the_field('news_page_url') ?>" class="button"><?php _e('More news', 'govsite') ?></a>
-      <?php endif ?>
+            <?php wp_reset_query() ?>
+
+            <?php if (get_field('news_page_url')) : ?>
+              <a href="<?php the_field('news_page_url') ?>" class="button"><?php _e('More news', 'govsite') ?></a>
+            <?php endif ?>
+          </div>
+
+          <?php if (get_field('banner_title')) : ?>
+            <?php get_template_part('partials/banner', 'sidebar') ?>
+          <?php endif ?>
+
+        </section>
+
     </div>
-
-    <?php if (get_field('banner_title')) : ?>
-      <?php get_template_part('partials/banner', 'sidebar') ?>
-    <?php endif ?>
-
-  </section>
+  </div>
 
 </main>
