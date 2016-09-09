@@ -188,4 +188,6 @@ module.exports = function (grunt) {
         'sass:' + env,
         'uglify:'+ env
     ]);
+
+    grunt.registerTask('prod', ['uglify:production']);
 };
