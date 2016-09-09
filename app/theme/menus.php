@@ -30,9 +30,9 @@ add_filter('page_css_class', 'custom_wp_nav_menu');
 function current_to_active($text){
   $replace = array(
     //List of menu item classes that should be changed to "active"
-    'current_page_item' => 'active',
-    'current_page_parent' => 'active',
-    'current_page_ancestor' => 'active',
+    'current_page_item' => 'active-page-item',
+    'current_page_parent' => 'active-page-parent',
+    'current_page_ancestor' => 'active-page-ancestor',
     'current-menu-item' => 'active',
     'menu-item-has-children' => 'has-dropdown',
     'sub-menu' => 'dropdown',
