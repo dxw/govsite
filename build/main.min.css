@@ -6848,7 +6848,7 @@ meta.foundation-mq-topbar {
 /* line 23, ../assets/scss/partials/nav.scss */
 .site-header .top-bar ul > li {
   margin-left: 0;
-  background: #2e69ac;
+  background: #fff;
 }
 /* line 27, ../assets/scss/partials/nav.scss */
 .site-header .top-bar ul > li .js-generated {
