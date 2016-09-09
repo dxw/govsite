@@ -22,10 +22,13 @@
 
       > li {
         margin-left: 0;
-        background: $lightest;
+        background: $primary-color;
 
         .js-generated {
           display: none;
+          @media #{$small-only} {
+            display: block;
+          }
         }
       }
 

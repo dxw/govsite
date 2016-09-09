@@ -21,7 +21,7 @@ module.exports = function (grunt) {
           development: {
             options: {
               style: 'expanded',
-//              sourcemap: 'auto',
+              // sourcemap: 'auto',
               trace: true,
               debugInfo: false, // This should stay FALSE because debug code breaks older versions of IE
               lineNumbers: true

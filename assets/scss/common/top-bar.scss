@@ -176,8 +176,6 @@ $topbar-dropdown-arrows: false !default; //Set false to remove the \00bb >> text
         padding-bottom: .35rem + rem-calc(1);
         margin-bottom: 0;
         font-size: $topbar-button-font-size;
-        // position: relative;
-        // top: -1px;
 
         // Corrects a slight misalignment when put next to an input field
         @media #{$small-only} {
@@ -245,17 +243,6 @@ $topbar-dropdown-arrows: false !default; //Set false to remove the \00bb >> text
             position: relative;
 
             & {
-              // @include hamburger icon
-              //
-              // We use this to create the icon with three lines aka the hamburger icon, the menu-icon or the navicon
-              // $width - Width of hamburger icon
-              // $left - If false, icon will be centered horizontally || explicitly set value in rem
-              // $top - If false, icon will be centered vertically || explicitly set value in rem
-              // $thickness - thickness of lines in hamburger icon, set value in px
-              // $gap - spacing between the lines in hamburger icon, set value in px
-              // $color - icon color
-              // $hover-color - icon color during hover, here it isn't set b/c it would override $topbar-menu-icon-color-toggled
-              // $offcanvas - Set to false of @include in topbar
               @include hamburger(16px, false, 0, 1px, 6px, $topbar-menu-icon-color, "", false);
             }
           }
@@ -271,7 +258,7 @@ $topbar-dropdown-arrows: false !default; //Set false to remove the \00bb >> text
 
         .toggle-topbar {
           a { color: $topbar-menu-link-color-toggled;
-      span::after {
+            span::after {
               // Shh, don't tell, but box-shadows create the menu icon :)
               // Change the color of the bars when the menu is expanded, using given thickness from hamburger() above
               box-shadow: 0 0 0 1px $topbar-menu-icon-color-toggled,
@@ -388,6 +375,10 @@ $topbar-dropdown-arrows: false !default; //Set false to remove the \00bb >> text
           & > .dropdown {
             @include topbar-show-dropdown();
             width: 100%;
+            top: 0;
+            &:before {
+              display: none;
+            }
           }
           & > a:after {
             display: none;
@@ -422,10 +413,12 @@ $topbar-dropdown-arrows: false !default; //Set false to remove the \00bb >> text
             margin-top: 0;
             font-size: $topbar-back-link-size;
             a {
-              color: $topbar-link-color;
-              // line-height: ($topbar-height / 2);
+              background: $logo-color;
+              color: $lightest;
               display: block;
-              &:hover { background:none; }
+              &:hover, &:focus {
+                background: scale-color($logo-color, $lightness: -14%);
+              }
             }
           }
           &.has-form { padding: 8px $topbar-link-padding; }
@@ -458,15 +451,6 @@ $topbar-dropdown-arrows: false !default; //Set false to remove the \00bb >> text
         .title-area { float: $default-float; }
         .name h1 a { width: auto; }
 
-        // input,
-        // .button,
-        // button {
-        //   font-size: rem-calc(14);
-        //   position: relative;
-        //   height: $topbar-input-height;
-        //   top: (($topbar-height - $topbar-input-height) / 2);
-        // }
-
         &.expanded { background: $topbar-bg; }
       }
 
@@ -490,43 +474,6 @@ $topbar-dropdown-arrows: false !default; //Set false to remove the \00bb >> text
             .js-generated { display: none; }
           }
         }
-
-        // li {
-        //   &.hover {
-        //     > a:not(.button) {
-        //       background-color: $topbar-link-bg-color-hover;
-        //       @if ($topbar-link-bg-hover) {
-        //         background: $topbar-link-bg-hover;
-        //       }
-        //       color: $topbar-link-color-hover;
-        //     }
-        //   }
-        //   &:not(.has-form) {
-        //     a:not(.button) {
-        //       padding: 0 $topbar-link-padding;
-        //       line-height: $topbar-height;
-        //       background: $topbar-link-bg;
-        //       &:hover {
-        //         background-color: $topbar-link-bg-color-hover;
-        //         @if ($topbar-link-bg-hover) {
-        //           background: $topbar-link-bg-hover;
-        //         }
-        //       }
-        //     }
-        //   }
-        //   &.active:not(.has-form) {
-        //     a:not(.button) {
-        //       padding: 0 $topbar-link-padding;
-        //       line-height: $topbar-height;
-        //       color: $topbar-link-color-active;
-        //       background: $topbar-link-bg-active;
-        //       &:hover {
-        //         background: $topbar-link-bg-active-hover;
-        //         color: $topbar-link-color-active-hover;
-        //       }
-        //     }
-        //   }
-        // }
 
         .has-dropdown {
           @if($topbar-arrows){
