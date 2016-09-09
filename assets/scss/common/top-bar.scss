@@ -51,6 +51,8 @@ $topbar-dropdown-toggle-size: 5px !default;
 $topbar-dropdown-toggle-color: $lightest !default;
 $topbar-dropdown-toggle-alpha: 0.4 !default;
 
+$topbar-dropdown-back-link-bg: scale-color($logo-color, $lightness: -14%);
+
 $topbar-dropdown-label-color: lighten($darkest, 47%) !default;
 $topbar-dropdown-label-text-transform: uppercase !default;
 $topbar-dropdown-label-font-weight: $font-weight-bold !default;
@@ -417,7 +419,7 @@ $topbar-dropdown-arrows: false !default; //Set false to remove the \00bb >> text
               color: $lightest;
               display: block;
               &:hover, &:focus {
-                background: scale-color($logo-color, $lightness: -14%);
+                background: $topbar-dropdown-back-link-bg;
               }
             }
           }
