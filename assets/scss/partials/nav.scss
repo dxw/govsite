@@ -26,6 +26,9 @@
 
         .js-generated {
           display: none;
+          @media #{$small-only} {
+            display: block;
+          }
         }
       }
 
@@ -37,7 +40,7 @@
         @include single-transition(border-top, 300ms, ease-in);
 
         &:hover, &:focus {
-          background: scale-color($primary-color, $lightness: -14%);
+          background: $topbar-dropdown-link-bg-hover;
           color: $lightest;
         }
 
