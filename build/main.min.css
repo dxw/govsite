@@ -6993,27 +6993,26 @@ meta.foundation-mq-topbar {
   }
   /* line 121, ../assets/scss/partials/nav.scss */
   .site-header .top-bar.active {
-    max-height: 15em;
-    margin-bottom: 15px;
+    max-height: 100%;
   }
-  /* line 125, ../assets/scss/partials/nav.scss */
+  /* line 124, ../assets/scss/partials/nav.scss */
   .site-header .top-bar.active ul {
     float: none !important;
   }
-  /* line 128, ../assets/scss/partials/nav.scss */
+  /* line 127, ../assets/scss/partials/nav.scss */
   .site-header .top-bar.active li {
     display: block;
     float: none;
   }
 }
 @media only screen and (min-width: 48.75em) {
-  /* line 136, ../assets/scss/partials/nav.scss */
+  /* line 135, ../assets/scss/partials/nav.scss */
   .site-header .toggle-container {
     display: none;
     visibility: hidden;
   }
 }
-/* line 143, ../assets/scss/partials/nav.scss */
+/* line 142, ../assets/scss/partials/nav.scss */
 .site-header .toggle-container .nav-toggle {
   float: right;
   margin-top: 5px;
@@ -7032,16 +7031,16 @@ meta.foundation-mq-topbar {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 149, ../assets/scss/partials/nav.scss */
+/* line 148, ../assets/scss/partials/nav.scss */
 .site-header .toggle-container .nav-toggle:visited {
   color: #2e69ac;
 }
-/* line 155, ../assets/scss/partials/nav.scss */
+/* line 154, ../assets/scss/partials/nav.scss */
 .site-header .dropdown {
   background: #2e69ac;
   top: 80px;
 }
-/* line 159, ../assets/scss/partials/nav.scss */
+/* line 158, ../assets/scss/partials/nav.scss */
 .site-header .dropdown:before {
   width: 0;
   content: '';
@@ -7052,14 +7051,14 @@ meta.foundation-mq-topbar {
   border-right: 10px solid transparent;
   border-bottom: 10px solid #2e69ac;
 }
-/* line 163, ../assets/scss/partials/nav.scss */
+/* line 162, ../assets/scss/partials/nav.scss */
 .site-header .dropdown li, .site-header .dropdown .active {
   position: relative;
   width: 100%;
   margin: 0;
   background: #2e69ac;
 }
-/* line 169, ../assets/scss/partials/nav.scss */
+/* line 168, ../assets/scss/partials/nav.scss */
 .site-header .dropdown li a, .site-header .dropdown .active a {
   display: block;
   background: #2e69ac;
@@ -7068,7 +7067,7 @@ meta.foundation-mq-topbar {
   padding: 10px 40px 10px 10px;
   transition: all 300ms ease-in;
 }
-/* line 177, ../assets/scss/partials/nav.scss */
+/* line 176, ../assets/scss/partials/nav.scss */
 .site-header .dropdown li a:hover, .site-header .dropdown li a:focus, .site-header .dropdown .active a:hover, .site-header .dropdown .active a:focus {
   background: #285a94;
   color: #fff;

@@ -119,8 +119,7 @@
       max-height: 0;
 
       &.active {
-        max-height: 15em;
-        margin-bottom: $space-medium;
+        max-height: 100%;
 
         ul {
           float: none !important;
