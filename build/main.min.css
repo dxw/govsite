@@ -7087,7 +7087,7 @@ meta.foundation-mq-topbar {
   content: '';
   position: absolute;
   top: -10px;
-  left: 25%;
+  left: 25px;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 10px solid #2e69ac;

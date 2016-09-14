@@ -156,7 +156,7 @@
     top: 80px;
 
     &:before {
-      @include arrow(10px, up, -10px, 25%, $primary-color);
+      @include arrow(10px, up, -10px, 25px, $primary-color);
     }
 
     li, .active {
