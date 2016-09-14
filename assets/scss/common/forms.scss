@@ -71,3 +71,12 @@ textarea {
     }
   }
 }
+
+//Contact Form 7
+.wpcf7 {
+  input[type="submit"] {
+    @include button;
+    padding: $space-small $space-small*2;
+    @include font-size(18);
+  }
+}
