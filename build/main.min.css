@@ -5871,7 +5871,7 @@ img.aligncenter, .wp-caption.aligncenter {
 img .wp-caption-text, .wp-caption .wp-caption-text {
   margin-bottom: 0;
   background: #ededed;
-  padding-top: 10px;
+  padding: 10px;
   text-align: center;
   font-size: 16px;
   font-size: 0.992rem;
@@ -5885,39 +5885,44 @@ img:hover .wp-caption-text, img:focus .wp-caption-text, .wp-caption:hover .wp-ca
 
 /* line 43, ../assets/scss/common/wordpress.scss */
 .wp-caption.alignleft, .wp-caption.alignright, .wp-caption.aligncenter, .wp-caption.alignnone {
+  border: 5px solid #ededed;
   margin-bottom: 20px;
 }
+/* line 47, ../assets/scss/common/wordpress.scss */
+.wp-caption.alignleft:hover, .wp-caption.alignleft:focus, .wp-caption.alignright:hover, .wp-caption.alignright:focus, .wp-caption.aligncenter:hover, .wp-caption.aligncenter:focus, .wp-caption.alignnone:hover, .wp-caption.alignnone:focus {
+  border-color: #dedede;
+}
 
-/* line 51, ../assets/scss/common/wordpress.scss */
+/* line 56, ../assets/scss/common/wordpress.scss */
 .gallery {
   margin-bottom: 20px !important;
   border-bottom: 3px solid #dedede;
   background: #ededed;
 }
-/* line 56, ../assets/scss/common/wordpress.scss */
+/* line 61, ../assets/scss/common/wordpress.scss */
 .gallery .gallery-item {
   margin-top: 0 !important;
   margin-bottom: 10px;
 }
-/* line 60, ../assets/scss/common/wordpress.scss */
+/* line 65, ../assets/scss/common/wordpress.scss */
 .gallery .gallery-item:first-child {
   margin-left: 0;
 }
-/* line 65, ../assets/scss/common/wordpress.scss */
+/* line 70, ../assets/scss/common/wordpress.scss */
 .gallery .gallery-icon {
   margin-bottom: 0;
 }
-/* line 69, ../assets/scss/common/wordpress.scss */
+/* line 74, ../assets/scss/common/wordpress.scss */
 .gallery img {
   width: 100%;
   border: 5px solid #ededed !important;
   transition: all 200ms ease-out;
 }
-/* line 74, ../assets/scss/common/wordpress.scss */
+/* line 79, ../assets/scss/common/wordpress.scss */
 .gallery img:hover, .gallery img:focus {
   border-color: #dedede !important;
 }
-/* line 79, ../assets/scss/common/wordpress.scss */
+/* line 84, ../assets/scss/common/wordpress.scss */
 .gallery .gallery-caption {
   margin-bottom: 0;
   padding: 5px 10px;
