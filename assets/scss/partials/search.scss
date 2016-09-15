@@ -3,8 +3,17 @@
   background: $logo-color;
   padding: $space-medium*2 0;
 
+  &.expanded {
+    display: block;
+  }
+
   @media #{$small-only} {
     display: block;
+    height: 100%;
+
+    &.expanded {
+      display: block;
+    }
   }
 
   input, button {

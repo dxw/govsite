@@ -7435,24 +7435,33 @@ footer.site-footer nav a:hover, footer.site-footer nav a:focus {
   background: #1b325f;
   padding: 30px 0;
 }
+/* line 6, ../assets/scss/partials/search.scss */
+.header-search.expanded {
+  display: block;
+}
 @media only screen and (max-width: 48.6875em) {
   /* line 1, ../assets/scss/partials/search.scss */
   .header-search {
     display: block;
+    height: 100%;
+  }
+  /* line 14, ../assets/scss/partials/search.scss */
+  .header-search.expanded {
+    display: block;
   }
 }
-/* line 10, ../assets/scss/partials/search.scss */
+/* line 19, ../assets/scss/partials/search.scss */
 .header-search input, .header-search button {
   margin-bottom: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 16, ../assets/scss/partials/search.scss */
+/* line 25, ../assets/scss/partials/search.scss */
 .header-search .search-field {
   position: relative;
   margin-top: 4px;
 }
-/* line 20, ../assets/scss/partials/search.scss */
+/* line 29, ../assets/scss/partials/search.scss */
 .header-search .search-field .icon-search {
   display: block;
 }
@@ -7467,24 +7476,24 @@ footer.site-footer nav a:hover, footer.site-footer nav a:focus {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 24, ../assets/scss/partials/search.scss */
+/* line 33, ../assets/scss/partials/search.scss */
 .header-search .search-field .icon-search:before {
   position: absolute;
   font-size: 36px;
   color: #fff;
 }
-/* line 31, ../assets/scss/partials/search.scss */
+/* line 40, ../assets/scss/partials/search.scss */
 .header-search .search-field .icon-search.focus:before {
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
 @media only screen and (max-width: 48.6875em) {
-  /* line 20, ../assets/scss/partials/search.scss */
+  /* line 29, ../assets/scss/partials/search.scss */
   .header-search .search-field .icon-search {
     display: none;
   }
 }
-/* line 41, ../assets/scss/partials/search.scss */
+/* line 50, ../assets/scss/partials/search.scss */
 .header-search .search-field input {
   width: 90%;
   display: inline-block;
@@ -7499,7 +7508,7 @@ footer.site-footer nav a:hover, footer.site-footer nav a:focus {
   line-height: 1.5;
 }
 @media only screen and (max-width: 48.6875em) {
-  /* line 41, ../assets/scss/partials/search.scss */
+  /* line 50, ../assets/scss/partials/search.scss */
   .header-search .search-field input {
     width: 100%;
     margin-left: 0;
@@ -7508,37 +7517,37 @@ footer.site-footer nav a:hover, footer.site-footer nav a:focus {
     line-height: 1.5;
   }
 }
-/* line 59, ../assets/scss/partials/search.scss */
+/* line 68, ../assets/scss/partials/search.scss */
 .header-search .search-field *::-webkit-input-placeholder {
   color: #fff;
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
-/* line 64, ../assets/scss/partials/search.scss */
+/* line 73, ../assets/scss/partials/search.scss */
 .header-search .search-field *:-moz-placeholder {
   color: #fff;
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
-/* line 69, ../assets/scss/partials/search.scss */
+/* line 78, ../assets/scss/partials/search.scss */
 .header-search .search-field *::-moz-placeholder {
   color: #fff;
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
-/* line 74, ../assets/scss/partials/search.scss */
+/* line 83, ../assets/scss/partials/search.scss */
 .header-search .search-field *:-ms-input-placeholder {
   color: #fff;
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
-/* line 80, ../assets/scss/partials/search.scss */
+/* line 89, ../assets/scss/partials/search.scss */
 .header-search button {
   width: 100%;
   display: inline-block;
 }
 
-/* line 87, ../assets/scss/partials/search.scss */
+/* line 96, ../assets/scss/partials/search.scss */
 body.search-no-results .page-element {
   min-height: 200px;
 }
