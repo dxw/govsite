@@ -26,7 +26,7 @@ img, .wp-caption {
   .wp-caption-text {
     margin-bottom: 0;
     background: darken($lightest, 7%);
-    padding-top: $space-small;
+    padding: $space-small;
     text-align: center;
     @include font-size(16);
     @include single-transition(all,$thumb-transition-speed,ease-out);
@@ -41,7 +41,12 @@ img, .wp-caption {
 
 .wp-caption {
   &.alignleft, &.alignright, &.aligncenter, &.alignnone {
+    border: 5px solid darken($lightest, 7%);
     margin-bottom: $space-small*2;
+
+    &:hover, &:focus {
+      border-color: darken($lightest, 13%);
+    }
   }
 }
 

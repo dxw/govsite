@@ -5605,6 +5605,42 @@ textarea:focus {
   background: #235084;
 }
 
+/* line 77, ../assets/scss/common/forms.scss */
+.wpcf7 input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2rem 1.0625rem 2rem;
+  font-size: 1rem;
+  background-color: #2e69ac;
+  border-color: #25548a;
+  color: #fff;
+  transition: background-color 300ms ease-out;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-size: 1.116rem;
+  line-height: 1.5;
+}
+/* line 163, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
+.wpcf7 input[type="submit"]:hover, .wpcf7 input[type="submit"]:focus {
+  background-color: #25548a;
+}
+/* line 169, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
+.wpcf7 input[type="submit"]:hover, .wpcf7 input[type="submit"]:focus {
+  color: #fff;
+}
+
 /* line 1, ../assets/scss/common/header.scss */
 .site-header {
   border-top: 10px solid #1b325f;
@@ -5835,7 +5871,7 @@ img.aligncenter, .wp-caption.aligncenter {
 img .wp-caption-text, .wp-caption .wp-caption-text {
   margin-bottom: 0;
   background: #ededed;
-  padding-top: 10px;
+  padding: 10px;
   text-align: center;
   font-size: 16px;
   font-size: 0.992rem;
@@ -5849,39 +5885,44 @@ img:hover .wp-caption-text, img:focus .wp-caption-text, .wp-caption:hover .wp-ca
 
 /* line 43, ../assets/scss/common/wordpress.scss */
 .wp-caption.alignleft, .wp-caption.alignright, .wp-caption.aligncenter, .wp-caption.alignnone {
+  border: 5px solid #ededed;
   margin-bottom: 20px;
 }
+/* line 47, ../assets/scss/common/wordpress.scss */
+.wp-caption.alignleft:hover, .wp-caption.alignleft:focus, .wp-caption.alignright:hover, .wp-caption.alignright:focus, .wp-caption.aligncenter:hover, .wp-caption.aligncenter:focus, .wp-caption.alignnone:hover, .wp-caption.alignnone:focus {
+  border-color: #dedede;
+}
 
-/* line 51, ../assets/scss/common/wordpress.scss */
+/* line 56, ../assets/scss/common/wordpress.scss */
 .gallery {
   margin-bottom: 20px !important;
   border-bottom: 3px solid #dedede;
   background: #ededed;
 }
-/* line 56, ../assets/scss/common/wordpress.scss */
+/* line 61, ../assets/scss/common/wordpress.scss */
 .gallery .gallery-item {
   margin-top: 0 !important;
   margin-bottom: 10px;
 }
-/* line 60, ../assets/scss/common/wordpress.scss */
+/* line 65, ../assets/scss/common/wordpress.scss */
 .gallery .gallery-item:first-child {
   margin-left: 0;
 }
-/* line 65, ../assets/scss/common/wordpress.scss */
+/* line 70, ../assets/scss/common/wordpress.scss */
 .gallery .gallery-icon {
   margin-bottom: 0;
 }
-/* line 69, ../assets/scss/common/wordpress.scss */
+/* line 74, ../assets/scss/common/wordpress.scss */
 .gallery img {
   width: 100%;
   border: 5px solid #ededed !important;
   transition: all 200ms ease-out;
 }
-/* line 74, ../assets/scss/common/wordpress.scss */
+/* line 79, ../assets/scss/common/wordpress.scss */
 .gallery img:hover, .gallery img:focus {
   border-color: #dedede !important;
 }
-/* line 79, ../assets/scss/common/wordpress.scss */
+/* line 84, ../assets/scss/common/wordpress.scss */
 .gallery .gallery-caption {
   margin-bottom: 0;
   padding: 5px 10px;
@@ -7046,7 +7087,7 @@ meta.foundation-mq-topbar {
   content: '';
   position: absolute;
   top: -10px;
-  left: 25%;
+  left: 25px;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 10px solid #2e69ac;
@@ -7394,24 +7435,33 @@ footer.site-footer nav a:hover, footer.site-footer nav a:focus {
   background: #1b325f;
   padding: 30px 0;
 }
+/* line 6, ../assets/scss/partials/search.scss */
+.header-search.expanded {
+  display: block;
+}
 @media only screen and (max-width: 48.6875em) {
   /* line 1, ../assets/scss/partials/search.scss */
   .header-search {
     display: block;
+    height: 100%;
+  }
+  /* line 14, ../assets/scss/partials/search.scss */
+  .header-search.expanded {
+    display: block;
   }
 }
-/* line 10, ../assets/scss/partials/search.scss */
+/* line 19, ../assets/scss/partials/search.scss */
 .header-search input, .header-search button {
   margin-bottom: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 16, ../assets/scss/partials/search.scss */
+/* line 25, ../assets/scss/partials/search.scss */
 .header-search .search-field {
   position: relative;
   margin-top: 4px;
 }
-/* line 20, ../assets/scss/partials/search.scss */
+/* line 29, ../assets/scss/partials/search.scss */
 .header-search .search-field .icon-search {
   display: block;
 }
@@ -7426,24 +7476,24 @@ footer.site-footer nav a:hover, footer.site-footer nav a:focus {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 24, ../assets/scss/partials/search.scss */
+/* line 33, ../assets/scss/partials/search.scss */
 .header-search .search-field .icon-search:before {
   position: absolute;
   font-size: 36px;
   color: #fff;
 }
-/* line 31, ../assets/scss/partials/search.scss */
+/* line 40, ../assets/scss/partials/search.scss */
 .header-search .search-field .icon-search.focus:before {
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
 @media only screen and (max-width: 48.6875em) {
-  /* line 20, ../assets/scss/partials/search.scss */
+  /* line 29, ../assets/scss/partials/search.scss */
   .header-search .search-field .icon-search {
     display: none;
   }
 }
-/* line 41, ../assets/scss/partials/search.scss */
+/* line 50, ../assets/scss/partials/search.scss */
 .header-search .search-field input {
   width: 90%;
   display: inline-block;
@@ -7458,7 +7508,7 @@ footer.site-footer nav a:hover, footer.site-footer nav a:focus {
   line-height: 1.5;
 }
 @media only screen and (max-width: 48.6875em) {
-  /* line 41, ../assets/scss/partials/search.scss */
+  /* line 50, ../assets/scss/partials/search.scss */
   .header-search .search-field input {
     width: 100%;
     margin-left: 0;
@@ -7467,37 +7517,37 @@ footer.site-footer nav a:hover, footer.site-footer nav a:focus {
     line-height: 1.5;
   }
 }
-/* line 59, ../assets/scss/partials/search.scss */
+/* line 68, ../assets/scss/partials/search.scss */
 .header-search .search-field *::-webkit-input-placeholder {
   color: #fff;
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
-/* line 64, ../assets/scss/partials/search.scss */
+/* line 73, ../assets/scss/partials/search.scss */
 .header-search .search-field *:-moz-placeholder {
   color: #fff;
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
-/* line 69, ../assets/scss/partials/search.scss */
+/* line 78, ../assets/scss/partials/search.scss */
 .header-search .search-field *::-moz-placeholder {
   color: #fff;
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
-/* line 74, ../assets/scss/partials/search.scss */
+/* line 83, ../assets/scss/partials/search.scss */
 .header-search .search-field *:-ms-input-placeholder {
   color: #fff;
   opacity: 0.4;
   filter: alpha(opacity=40);
 }
-/* line 80, ../assets/scss/partials/search.scss */
+/* line 89, ../assets/scss/partials/search.scss */
 .header-search button {
   width: 100%;
   display: inline-block;
 }
 
-/* line 87, ../assets/scss/partials/search.scss */
+/* line 96, ../assets/scss/partials/search.scss */
 body.search-no-results .page-element {
   min-height: 200px;
 }

@@ -66,8 +66,13 @@ jQuery(function ($) {
     $searchbanner = $('.header-search');
 
     $headersearch.click(function() {
-        $searchbanner.slideToggle('fast');
-        $headersearch.toggleClass('opened');
+        if ($headersearch.hasClass('opened')) {
+            $headersearch.removeClass('opened');
+            $searchbanner.removeClass('expanded');
+        } else {
+            $headersearch.addClass('opened');
+            $searchbanner.addClass('expanded');
+        }
     });
 
     // Scroll to commnets
