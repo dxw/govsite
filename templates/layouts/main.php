@@ -71,7 +71,7 @@
         <div class="medium-6 columns">
           <small>&copy; <?php echo date('Y') ?> <?php bloginfo('name') ?> copyright</small>
         </div>
-        <div class="medium-6 columns show-for-medium-up">
+        <div class="medium-6 columns">
           <?php get_template_part('partials/social-media') ?>
         </div>
       </div>

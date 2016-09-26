@@ -3,7 +3,10 @@
   <?php for ($i = 0; $i < 6; $i++) : ?> 
   
     <?php if ($url = get_option('social-media-'.$i.'-url-setting')): ?>
-      <?php $name = get_option('social-media-'.$i.'-name-setting'); ?>
+      <?php
+        $options = get_option('social-media-'.$i.'-name-setting');
+        $name = ($options['dropdown']);
+      ?>
       <li>
         <a href="<?php echo esc_attr($url); ?>" title="<?php echo esc_attr($name); ?>">
           <span class="visually-hidden"><?php echo esc_attr($name); ?></span>
