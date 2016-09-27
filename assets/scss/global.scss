@@ -41,9 +41,9 @@ $info-color: #89c4f4;      // jordy blue - accessibility passed with dark text o
 $googleplus-color: #dd4b39;
 $facebook-color: #3b5998;
 $flickr-color: #ff0084;
-$linkedin-color: #0976b4;
-$twitter-color: #55acee;
-$youtube-color: #e52d27;
+$linkedin-color: #0077b5;
+$twitter-color: #1da1f2;
+$youtube-color: #cd201f;
 
 $visited-link-color: #551a8b; // purple
 
@@ -485,6 +485,7 @@ $column-gutter: rem-calc(30) !default;
 // Media Query Ranges
 $small-range: (0, 48.6875em) !default;
 $medium-range: (48.75em, 64em) !default;
+$narrow-desktop-range: (48.75em, 55.313em) !default;
 $large-range: (64.063em, 90em) !default;
 $xlarge-range: (90.063em, 120em) !default;
 $xxlarge-range: (120.063em, 99999999em) !default;
@@ -499,6 +500,8 @@ $small-only: "#{$screen} and (max-width: #{upper-bound($small-range)})" !default
 
 $medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})" !default;
 $medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})" !default;
+
+$narrow-desktop-only: "#{$screen} and (min-width:#{lower-bound($narrow-desktop-range)}) and (max-width:#{upper-bound($narrow-desktop-range)})" !default;
 
 $large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})" !default;
 $large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})" !default;

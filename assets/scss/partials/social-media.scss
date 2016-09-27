@@ -3,6 +3,12 @@ ul.social-media {
   float: right;
   margin: 0;
 
+  @media #{$small-only} {
+    float: none;
+    display: inline-block;
+    margin-bottom: $space-small;
+  }
+
   > li {
     float: left;
     margin-left: 1px;
@@ -29,53 +35,37 @@ ul.social-media {
     }
 
     // Twitter
-    &[href^="http://twitter.com/"],
-    &[href^="http://www.twitter.com/"],
-    &[href^="https://twitter.com/"],
-    &[href^="https://www.twitter.com/"] {
+    &[href*="twitter"] {
       @include link-background($twitter-color);
       @include icon(before, twitter);
     }
     
     // Facebook
-    &[href^="http://facebook.com/"],
-    &[href^="http://www.facebook.com/"],
-    &[href^="https://facebook.com/"],
-    &[href^="https://www.facebook.com/"] {
+    &[href*="facebook"] {
       @include link-background($facebook-color);
       @include icon(before, facebook);
     }
 
     // Google +
-    &[href^="http://plus.google.com/"],
-    &[href^="https://plus.google.com/"] {
+    &[href*="plus.google"] {
       @include link-background($googleplus-color);
       @include icon(before, googleplus);
     }
 
     // Flickr
-    &[href^="http://flickr.com/"],
-    &[href^="http://www.flickr.com/"],
-    &[href^="https://flickr.com/"],
-    &[href^="https://www.flickr.com/"] {
+    &[href*="flickr"] {
       @include link-background($flickr-color);
       @include icon(before, flickr);
     }
 
     // LinkedIn
-    &[href^="http://linkedin.com/"],
-    &[href^="http://www.linkedin.com/"],
-    &[href^="https://linkedin.com/"],
-    &[href^="https://www.linkedin.com/"] {
+    &[href*="linkedin"] {
       @include link-background($linkedin-color);
       @include icon(before, linkedin);
     }
 
     // YouTube
-    &[href^="http://youtube.com/"],
-    &[href^="http://www.youtube.com/"],
-    &[href^="https://youtube.com/"],
-    &[href^="https://www.youtube.com/"] {
+    &[href*="youtube"] {
       @include link-background($youtube-color);
       @include icon(before, youtube);
     }

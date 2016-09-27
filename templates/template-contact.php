@@ -39,11 +39,12 @@ the_post();
                 <?php endif; ?>
 
                 <?php if (get_field('phone_number')) : ?>
-                  <a class="contact-link phone"><?php the_field('phone_number') ?></a>
+                  <?php $phone_digits = preg_replace('/\s+/', '', get_field('phone_number')); ?>
+                  <a class="contact-link phone" href="tel:<?php echo $phone_digits ?>"><?php the_field('phone_number') ?></a>
                 <?php endif; ?>
 
                 <?php if (get_field('email_address')) : ?>
-                  <a class="contact-link email"><?php the_field('email_address') ?></a>
+                  <a class="contact-link email" href="mailto:<?php the_field('email_address') ?>"><?php the_field('email_address') ?></a>
                 <?php endif; ?>
 
               </div>

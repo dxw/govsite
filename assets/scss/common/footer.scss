@@ -28,6 +28,10 @@
   .credits {
     background: lighten($darkest, 8%);
 
+    @media #{$small-only} {
+      text-align: center;
+    }
+
     small {
       padding: $space-small 0;
     }

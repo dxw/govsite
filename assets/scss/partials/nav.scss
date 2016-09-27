@@ -59,6 +59,11 @@
             color: $primary-color;
           }
         }
+
+        @media #{$narrow-desktop-only} {
+          padding-left: 8px;
+          padding-right: 8px;
+        }
       }
     }
 
