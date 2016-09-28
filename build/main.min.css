@@ -4874,7 +4874,7 @@ blockquote p {
   color: #fff;
 }
 /* line 121, ../vendor/bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
-.alert-box.alert {
+.alert-box.alert, .wpcf7 div.wpcf7-validation-errors {
   background-color: #cf000f;
   border-color: #b2000d;
   color: #fff;
@@ -5006,13 +5006,13 @@ blockquote p {
   border-bottom: 1px solid #222;
 }
 /* line 12, ../assets/scss/common/alert-boxes.scss */
-.alert-box.alert {
+.alert-box.alert, .wpcf7 div.wpcf7-validation-errors {
   background-color: #cf000f;
   border-color: #b6000d;
   color: #fff;
 }
 /* line 16, ../assets/scss/common/alert-boxes.scss */
-.alert-box.alert a {
+.alert-box.alert a, .wpcf7 div.wpcf7-validation-errors a {
   color: #fff;
   border-bottom: 1px solid #fff;
 }
@@ -5645,6 +5645,39 @@ textarea:focus {
 /* line 169, ../vendor/bower_components/foundation/scss/foundation/components/_buttons.scss */
 .wpcf7 input[type="submit"]:hover, .wpcf7 input[type="submit"]:focus {
   color: #fff;
+}
+/* line 83, ../assets/scss/common/forms.scss */
+.wpcf7 label, .wpcf7 p {
+  font-size: 0.875rem;
+  color: #4d4d4d;
+}
+/* line 87, ../assets/scss/common/forms.scss */
+.wpcf7 label span.wpcf7-form-control-wrap, .wpcf7 p span.wpcf7-form-control-wrap {
+  display: block;
+  margin-top: 5px;
+}
+/* line 94, ../assets/scss/common/forms.scss */
+.wpcf7 span.wpcf7-not-valid-tip {
+  position: relative;
+  padding: 5px;
+  color: #cf000f;
+  border: 2px solid #cf000f;
+}
+/* line 99, ../assets/scss/common/forms.scss */
+.wpcf7 span.wpcf7-not-valid-tip:before {
+  width: 0;
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #cf000f;
+}
+/* line 104, ../assets/scss/common/forms.scss */
+.wpcf7 div.wpcf7-validation-errors {
+  margin: 0 0 1.25rem;
+  padding: 10px;
 }
 
 /* line 1, ../assets/scss/common/header.scss */
@@ -7946,7 +7979,7 @@ ul.social-media a[href*="youtube"]:before {
 }
 
 /* line 34, ../assets/scss/templates/404.scss */
-.page-template-404-php .medium-8 {
+.error404 main .medium-8 {
   margin-bottom: 30px;
 }
 
