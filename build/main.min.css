@@ -5646,19 +5646,24 @@ textarea:focus {
 .wpcf7 input[type="submit"]:hover, .wpcf7 input[type="submit"]:focus {
   color: #fff;
 }
-/* line 84, ../assets/scss/common/forms.scss */
-.wpcf7 label span.wpcf7-form-control-wrap {
+/* line 83, ../assets/scss/common/forms.scss */
+.wpcf7 label, .wpcf7 p {
+  font-size: 0.875rem;
+  color: #4d4d4d;
+}
+/* line 87, ../assets/scss/common/forms.scss */
+.wpcf7 label span.wpcf7-form-control-wrap, .wpcf7 p span.wpcf7-form-control-wrap {
   display: block;
   margin-top: 5px;
 }
-/* line 91, ../assets/scss/common/forms.scss */
+/* line 94, ../assets/scss/common/forms.scss */
 .wpcf7 span.wpcf7-not-valid-tip {
   position: relative;
   padding: 5px;
   color: #cf000f;
   border: 2px solid #cf000f;
 }
-/* line 96, ../assets/scss/common/forms.scss */
+/* line 99, ../assets/scss/common/forms.scss */
 .wpcf7 span.wpcf7-not-valid-tip:before {
   width: 0;
   content: '';
@@ -5669,7 +5674,7 @@ textarea:focus {
   border-right: 8px solid transparent;
   border-bottom: 8px solid #cf000f;
 }
-/* line 101, ../assets/scss/common/forms.scss */
+/* line 104, ../assets/scss/common/forms.scss */
 .wpcf7 div.wpcf7-validation-errors {
   margin: 0 0 1.25rem;
   padding: 10px;
