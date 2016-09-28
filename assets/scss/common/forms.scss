@@ -79,4 +79,28 @@ textarea {
     padding: $space-small $space-small*2;
     @include font-size(18);
   }
+
+  label {
+    span.wpcf7-form-control-wrap {
+      display: block;
+      margin-top: $space-small/2;
+    }
+  }
+
+  //error messages
+  span.wpcf7-not-valid-tip {
+    position: relative;
+    padding: $space-small/2;
+    color: $alert-color;
+    border: 2px solid $alert-color;
+    &:before {
+      @include arrow(8px, up, -8px, 10px, $alert-color);
+    }
+  }
+
+  div.wpcf7-validation-errors {
+    @extend .alert-box.alert;
+    margin: 0 0 1.25rem;
+    padding: $space-small;
+  }
 }
