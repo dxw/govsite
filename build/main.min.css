@@ -4868,7 +4868,7 @@ blockquote p {
   border-radius: 1000px;
 }
 /* line 120, ../vendor/bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
-.alert-box.success {
+.alert-box.success, .wpcf7 div.wpcf7-mail-sent-ok {
   background-color: #87d37c;
   border-color: #67c759;
   color: #fff;
@@ -5017,7 +5017,7 @@ blockquote p {
   border-bottom: 1px solid #fff;
 }
 /* line 22, ../assets/scss/common/alert-boxes.scss */
-.alert-box.success {
+.alert-box.success, .wpcf7 div.wpcf7-mail-sent-ok {
   background-color: #87d37c;
   border-color: #76cd69;
 }
@@ -5678,6 +5678,12 @@ textarea:focus {
 .wpcf7 div.wpcf7-validation-errors {
   margin: 0 0 1.25rem;
   padding: 10px;
+}
+/* line 110, ../assets/scss/common/forms.scss */
+.wpcf7 div.wpcf7-mail-sent-ok {
+  margin: 0 0 1.25rem;
+  padding: 10px;
+  color: #222;
 }
 
 /* line 1, ../assets/scss/common/header.scss */

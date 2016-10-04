@@ -90,7 +90,7 @@ textarea {
     }
   }
 
-  //error messages
+  //error messages and notifications
   span.wpcf7-not-valid-tip {
     position: relative;
     padding: $space-small/2;
@@ -105,5 +105,12 @@ textarea {
     @extend .alert-box.alert;
     margin: 0 0 1.25rem;
     padding: $space-small;
+  }
+
+  div.wpcf7-mail-sent-ok {
+    @extend .alert-box.success;
+    margin: 0 0 1.25rem;
+    padding: $space-small;
+    color: $body-font-color;
   }
 }
