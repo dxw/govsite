@@ -1,3 +1,8 @@
+Unmaintianed
+------------
+
+This theme is no longer maintained.
+
 GovSite
 -------
 
@@ -144,8 +149,8 @@ GovSite directory structure:
 Authors
 -------
 
-Alex Sexton (alex@dxw.com)
+Alex Sexton
 
-Magda Faizov (magda@dxw.com)
+Magda Faizov
 
-Tom Adams (tom@dxw.com)
+Mallory Adams (mallory@dxw.com)
